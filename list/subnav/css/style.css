@@ -1,0 +1,37 @@
+.menubox{ width: 100%; position: relative;  height: 50px; overflow: hidden}
+.submenus {
+    position: relative;
+}
+.submenu {
+    float: left;
+    display: inline-block;
+    font-size: 14px;
+    line-height: 42px;
+    padding-top: 4px;
+    cursor: pointer;
+
+}
+.submenu a {
+    text-decoration: none;
+    color: #107bcf;
+    cursor: pointer;
+}
+.indicator {
+    position: absolute;
+    margin-top: 40px;
+    border-bottom: 4px solid #107bcf;
+    left: 0;
+    width:28px;
+    cursor: pointer;
+}
+.subhover {
+    border-bottom: 4px solid #107bcf;
+}
+.separator {
+    padding: 0 15px;
+    float: left;
+    display: inline-block;
+    font-size: 14px;
+    color: #107bcf;
+    line-height: 50px;
+}

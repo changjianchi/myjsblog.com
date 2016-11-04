@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>产品概况</title>
+    <link rel="stylesheet" href="../css/vip.css">
+    <link rel="stylesheet" href="../css/jquery.mCustomScrollbar.min.css">
+    <script src="../script/jquery.js"></script>
+    <script src="../script/vip.js"></script>
+    <script src="../script/jquery.mCustomScrollbar.concat.min.js"></script>
+    <script src="../build/dist/echarts.js"></script>
+    <style>
+    html, body{
+        background: #161c22;
+    }
+    </style>
+</head>
+<body class="iframes mCustomScrollbar">
+    <div class="tables mCustomScrollbar">
+        <div class="table_box">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <td class="border_bottom"><span class="border_right">产品代码</span></td>
+                        <td class="border_bottom"><span class="border_right">产品名称</span></td>
+                        <td class="border_bottom"><span class="border_right">负债端-实收信托</span></td>
+                        <td class="border_bottom"><span class="border_right">负债端-加权资金成本</span></td>
+                        <td class="border_bottom"><span class="border_right">资产端-债券全价市值</span></td>
+                        <td class="border_bottom"><span class="border_right">资产端-组合到期收益率</span></td>
+                        <td class="border_bottom"><span class="border_right">资产端-组合估值收益率</span></td>
+                        <td class="border_bottom"><span class="border_right">资产端-杠杆率</span></td>
+                        <td class="border_bottom"><span class="border_right">资产端-加权剩余期限</span></td>
+                        <td class="border_bottom"><span class="border_right">资产端-加权修正久期</span></td>
+                        <td class="border_bottom"><span class="border_right">资产端-基点价值</span></td>
+                        <td class="border_bottom"><span class="border_right">资产端-每日万分收益</span></td>
+                        <td class="border_bottom"><span class="border_right">资产端-年化收益率</span></td>
+                        <td class="border_bottom"><span class="border_right">资产端-每日利润</span></td>
+                        <td class="border_bottom"><span class="border_right">资产端-净价浮动盈亏</span></td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="border_bottom"><span class="border_right">1</span></td>
+                        <td class="border_bottom"><span class="border_right"></span></td>
+                        <td class="border_bottom"><span class="border_right"></span></td>
+                        <td class="border_bottom"><span class="border_right"></span></td>
+                        <td class="border_bottom"><span class="border_right"></span></td>
+                        <td class="border_bottom"><span class="border_right"></span></td>
+                        <td class="border_bottom"><span class="border_right"></span></td>
+                        <td class="border_bottom"><span class="border_right"></span></td>
+                        <td class="border_bottom"><span class="border_right"></span></td>
+                        <td class="border_bottom"><span class="border_right"></span></td>
+                        <td class="border_bottom"><span class="border_right"></span></td>
+                        <td class="border_bottom"><span class="border_right"></span></td>
+                        <td class="border_bottom"><span class="border_right"></span></td>
+                        <td class="border_bottom"><span class="border_right"></span></td>
+                        <td class="border_bottom"><span class="border_right"></span></td>
+                    </tr>
+                    <tr>
+                        <td class="border_bottom"><span class="border_right">2</span></td>
+                        <td class="border_bottom"><span class="border_right"></span></td>
+                        <td class="border_bottom"><span class="border_right"></span></td>
+                        <td class="border_bottom"><span class="border_right"></span></td>
+                        <td class="border_bottom"><span class="border_right"></span></td>
+                        <td class="border_bottom"><span class="border_right"></span></td>
+                        <td class="border_bottom"><span class="border_right"></span></td>
+                        <td class="border_bottom"><span class="border_right"></span></td>
+                        <td class="border_bottom"><span class="border_right"></span></td>
+                        <td class="border_bottom"><span class="border_right"></span></td>
+                        <td class="border_bottom"><span class="border_right"></span></td>
+                        <td class="border_bottom"><span class="border_right"></span></td>
+                        <td class="border_bottom"><span class="border_right"></span></td>
+                        <td class="border_bottom"><span class="border_right"></span></td>
+                        <td class="border_bottom"><span class="border_right"></span></td>
+                    </tr>
+                    <tr>
+                        <td class="border_bottom"><span class="border_right">3</span></td>
+                        <td class="border_bottom"><span class="border_right"></span></td>
+                        <td class="border_bottom"><span class="border_right"></span></td>
+                        <td class="border_bottom"><span class="border_right"></span></td>
+                        <td class="border_bottom"><span class="border_right"></span></td>
+                        <td class="border_bottom"><span class="border_right"></span></td>
+                        <td class="border_bottom"><span class="border_right"></span></td>
+                        <td class="border_bottom"><span class="border_right"></span></td>
+                        <td class="border_bottom"><span class="border_right"></span></td>
+                        <td class="border_bottom"><span class="border_right"></span></td>
+                        <td class="border_bottom"><span class="border_right"></span></td>
+                        <td class="border_bottom"><span class="border_right"></span></td>
+                        <td class="border_bottom"><span class="border_right"></span></td>
+                        <td class="border_bottom"><span class="border_right"></span></td>
+                        <td class="border_bottom"><span class="border_right"></span></td>
+                    </tr>
+                    <tr>
+                        <td class="border_bottom"><span class="border_right">4</span></td>
+                        <td class="border_bottom"><span class="border_right"></span></td>
+                        <td class="border_bottom"><span class="border_right"></span></td>
+                        <td class="border_bottom"><span class="border_right"></span></td>
+                        <td class="border_bottom"><span class="border_right"></span></td>
+                        <td class="border_bottom"><span class="border_right"></span></td>
+                        <td class="border_bottom"><span class="border_right"></span></td>
+                        <td class="border_bottom"><span class="border_right"></span></td>
+                        <td class="border_bottom"><span class="border_right"></span></td>
+                        <td class="border_bottom"><span class="border_right"></span></td>
+                        <td class="border_bottom"><span class="border_right"></span></td>
+                        <td class="border_bottom"><span class="border_right"></span></td>
+                        <td class="border_bottom"><span class="border_right"></span></td>
+                        <td class="border_bottom"><span class="border_right"></span></td>
+                        <td class="border_bottom"><span class="border_right"></span></td>
+                    </tr>
+                    <tr>
+                        <td class="border_bottom"><span class="border_right">5</span></td>
+                        <td class="border_bottom"><span class="border_right"></span></td>
+                        <td class="border_bottom"><span class="border_right"></span></td>
+                        <td class="border_bottom"><span class="border_right"></span></td>
+                        <td class="border_bottom"><span class="border_right"></span></td>
+                        <td class="border_bottom"><span class="border_right"></span></td>
+                        <td class="border_bottom"><span class="border_right"></span></td>
+                        <td class="border_bottom"><span class="border_right"></span></td>
+                        <td class="border_bottom"><span class="border_right"></span></td>
+                        <td class="border_bottom"><span class="border_right"></span></td>
+                        <td class="border_bottom"><span class="border_right"></span></td>
+                        <td class="border_bottom"><span class="border_right"></span></td>
+                        <td class="border_bottom"><span class="border_right"></span></td>
+                        <td class="border_bottom"><span class="border_right"></span></td>
+                        <td class="border_bottom"><span class="border_right"></span></td>
+                    </tr>
+                    <tr>
+                        <td class="border_bottom"><span class="border_right">6</span></td>
+                        <td class="border_bottom"><span class="border_right"></span></td>
+                        <td class="border_bottom"><span class="border_right"></span></td>
+                        <td class="border_bottom"><span class="border_right"></span></td>
+                        <td class="border_bottom"><span class="border_right"></span></td>
+                        <td class="border_bottom"><span class="border_right"></span></td>
+                        <td class="border_bottom"><span class="border_right"></span></td>
+                        <td class="border_bottom"><span class="border_right"></span></td>
+                        <td class="border_bottom"><span class="border_right"></span></td>
+                        <td class="border_bottom"><span class="border_right"></span></td>
+                        <td class="border_bottom"><span class="border_right"></span></td>
+                        <td class="border_bottom"><span class="border_right"></span></td>
+                        <td class="border_bottom"><span class="border_right"></span></td>
+                        <td class="border_bottom"><span class="border_right"></span></td>
+                        <td class="border_bottom"><span class="border_right"></span></td>
+                    </tr>
+                    <tr>
+                        <td class="border_bottom"><span class="border_right">7</span></td>
+                        <td class="border_bottom"><span class="border_right"></span></td>
+                        <td class="border_bottom"><span class="border_right"></span></td>
+                        <td class="border_bottom"><span class="border_right"></span></td>
+                        <td class="border_bottom"><span class="border_right"></span></td>
+                        <td class="border_bottom"><span class="border_right"></span></td>
+                        <td class="border_bottom"><span class="border_right"></span></td>
+                        <td class="border_bottom"><span class="border_right"></span></td>
+                        <td class="border_bottom"><span class="border_right"></span></td>
+                        <td class="border_bottom"><span class="border_right"></span></td>
+                        <td class="border_bottom"><span class="border_right"></span></td>
+                        <td class="border_bottom"><span class="border_right"></span></td>
+                        <td class="border_bottom"><span class="border_right"></span></td>
+                        <td class="border_bottom"><span class="border_right"></span></td>
+                        <td class="border_bottom"><span class="border_right"></span></td>
+                    </tr>
+                    <tr>
+                        <td class="border_bottom"><span class="border_right">8</span></td>
+                        <td class="border_bottom"><span class="border_right"></span></td>
+                        <td class="border_bottom"><span class="border_right"></span></td>
+                        <td class="border_bottom"><span class="border_right"></span></td>
+                        <td class="border_bottom"><span class="border_right"></span></td>
+                        <td class="border_bottom"><span class="border_right"></span></td>
+                        <td class="border_bottom"><span class="border_right"></span></td>
+                        <td class="border_bottom"><span class="border_right"></span></td>
+                        <td class="border_bottom"><span class="border_right"></span></td>
+                        <td class="border_bottom"><span class="border_right"></span></td>
+                        <td class="border_bottom"><span class="border_right"></span></td>
+                        <td class="border_bottom"><span class="border_right"></span></td>
+                        <td class="border_bottom"><span class="border_right"></span></td>
+                        <td class="border_bottom"><span class="border_right"></span></td>
+                        <td class="border_bottom"><span class="border_right"></span></td>
+                    </tr>
+                    <tr>
+                        <td class="border_bottom"><span class="border_right">9</span></td>
+                        <td class="border_bottom"><span class="border_right"></span></td>
+                        <td class="border_bottom"><span class="border_right"></span></td>
+                        <td class="border_bottom"><span class="border_right"></span></td>
+                        <td class="border_bottom"><span class="border_right"></span></td>
+                        <td class="border_bottom"><span class="border_right"></span></td>
+                        <td class="border_bottom"><span class="border_right"></span></td>
+                        <td class="border_bottom"><span class="border_right"></span></td>
+                        <td class="border_bottom"><span class="border_right"></span></td>
+                        <td class="border_bottom"><span class="border_right"></span></td>
+                        <td class="border_bottom"><span class="border_right"></span></td>
+                        <td class="border_bottom"><span class="border_right"></span></td>
+                        <td class="border_bottom"><span class="border_right"></span></td>
+                        <td class="border_bottom"><span class="border_right"></span></td>
+                        <td class="border_bottom"><span class="border_right"></span></td>
+                    </tr>
+                    <tr>
+                        <td class="border_bottom"><span class="border_right">10</span></td>
+                        <td class="border_bottom"><span class="border_right"></span></td>
+                        <td class="border_bottom"><span class="border_right"></span></td>
+                        <td class="border_bottom"><span class="border_right"></span></td>
+                        <td class="border_bottom"><span class="border_right"></span></td>
+                        <td class="border_bottom"><span class="border_right"></span></td>
+                        <td class="border_bottom"><span class="border_right"></span></td>
+                        <td class="border_bottom"><span class="border_right"></span></td>
+                        <td class="border_bottom"><span class="border_right"></span></td>
+                        <td class="border_bottom"><span class="border_right"></span></td>
+                        <td class="border_bottom"><span class="border_right"></span></td>
+                        <td class="border_bottom"><span class="border_right"></span></td>
+                        <td class="border_bottom"><span class="border_right"></span></td>
+                        <td class="border_bottom"><span class="border_right"></span></td>
+                        <td class="border_bottom"><span class="border_right"></span></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</body>
+</html>

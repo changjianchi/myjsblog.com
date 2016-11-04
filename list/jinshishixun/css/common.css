@@ -1,0 +1,263 @@
+@charset "utf-8";
+/* CSS Document */
+
+*{
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+html,body{width:100%; height:auto; position: relative; margin: 0 auto; font-size: 14px; font-family:"微软雅黑","华文细黑","Arial","黑体","\5b8b\4f53","sans-serif"; background:#FFF; color:#1d1d1d;}
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,button,textarea,blockquote,th,td,p,img{margin:0;padding:0; -webkit-tap-highlight-color:transparent;}
+/*点击没有虚线*/
+a{outline:none; display: inline-block; star:expression(this.onFocus=this.blur()); text-decoration:none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0);}
+a:hover{text-decoration:none;}
+a img{border:none;}
+img{border:none; display:inline-block;}
+ul li,
+dl dd{list-style:none;}
+
+.header,
+.footer{
+    width: 100%;
+    height: auto;
+    color: #fff;
+}
+.header{
+    background: url("../images/head_bg.png") repeat-x 0 0;
+}
+.head,
+.foot{
+    width: 100%;
+    max-width: 1000px;
+    min-width: 800px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.head{
+    height: 87px;
+}
+.logo{
+    width: auto;
+    float: left;
+}
+.nav{
+    width: auto;
+    float: right;
+    overflow: hidden;
+}
+.nav a{
+    width: auto;
+    height: 100%;
+    float: left;
+    padding: 0 32px;
+    line-height: 87px;
+    color: #fff;
+    font-size: 19px;
+    position: relative;
+}
+.nav a.active::after{
+    content: "";
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    opacity: 0.1;
+    filter: alpha(opacity=10);
+}
+.subnav{
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    background: #ecf0f4;
+}
+.subinfo,
+.content{
+    width: 100%;
+    max-width: 1000px;
+    min-width: 800px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.footer{
+    margin-top: 10px;
+    background: #373839;
+}
+.foot{
+    height: 107px;
+}
+.foot_logo{
+    width: auto;
+    height: auto;
+    float: left;
+    display: inline;
+    margin: 30px 30px 0;
+}
+.foot_info{
+    width: auto;
+    height: auto;
+    float: left;
+    display: inline;
+    margin-top: 26px;
+}
+.foot_info p{
+    height: 26px;
+    line-height: 26px;
+    font-size: 15px;
+}
+.page{
+    width: auto;
+    height: auto;
+    overflow: hidden;
+}
+
+.pagination {
+    display: inline-block;
+    padding-left: 0;
+    margin: 20px 0;
+    border-radius: 4px
+}
+.pagination>li {
+    display: inline
+}
+.pagination>li>a,
+.pagination>li>span {
+    position: relative;
+    float: left;
+    padding: 6px 12px;
+    margin-left: -1px;
+    line-height: 1.42857143;
+    color: #337ab7;
+    text-decoration: none;
+    background-color: #fff;
+    border: 1px solid #ddd
+}
+.pagination>li:first-child>a,
+.pagination>li:first-child>span {
+    margin-left: 0;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px
+}
+.pagination>li:last-child>a,
+.pagination>li:last-child>span {
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px
+}
+.pagination>li>a:focus,
+.pagination>li>a:hover,
+.pagination>li>span:focus,
+.pagination>li>span:hover {
+    z-index: 3;
+    color: #23527c;
+    background-color: #eee;
+    border-color: #ddd
+}
+.pagination>.active>a,
+.pagination>.active>a:focus,
+.pagination>.active>a:hover,
+.pagination>.active>span,
+.pagination>.active>span:focus,
+.pagination>.active>span:hover {
+    z-index: 2;
+    color: #fff;
+    cursor: default;
+    background-color: #337ab7;
+    border-color: #337ab7
+}
+.pagination>.disabled>a,
+.pagination>.disabled>a:focus,
+.pagination>.disabled>a:hover,
+.pagination>.disabled>span,
+.pagination>.disabled>span:focus,
+.pagination>.disabled>span:hover {
+    color: #777;
+    cursor: not-allowed;
+    background-color: #fff;
+    border-color: #ddd
+}
+.pagination-lg>li>a,
+.pagination-lg>li>span {
+    padding: 10px 16px;
+    font-size: 18px;
+    line-height: 1.3333333
+}
+.pagination-lg>li:first-child>a,
+.pagination-lg>li:first-child>span {
+    border-top-left-radius: 6px;
+    border-bottom-left-radius: 6px
+}
+.pagination-lg>li:last-child>a,
+.pagination-lg>li:last-child>span {
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px
+}
+.pagination-sm>li>a,
+.pagination-sm>li>span {
+    padding: 5px 10px;
+    font-size: 12px;
+    line-height: 1.5
+}
+.pagination-sm>li:first-child>a,
+.pagination-sm>li:first-child>span {
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px
+}
+.pagination-sm>li:last-child>a,
+.pagination-sm>li:last-child>span {
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px
+}
+.pagination{
+    margin: 20px auto;
+    display: block;
+    text-align: center
+    }
+.pagination li{
+    display: inline-block;
+}
+.submenus{
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+.submenus a{
+    color: #0079d2;
+}
+.indicator{
+    position: absolute;
+    margin-top: 40px;
+    border-bottom: 4px solid #107bcf;
+    left: 0;
+    width: 28px;
+    cursor: pointer;
+}
+.submenu,
+.separator{
+    float: left;
+    font-size: 14px;
+}
+.submenu{
+    line-height: 42px;
+    padding-top: 4px;
+    cursor: pointer;
+}
+.separator{
+    padding: 0 15px;
+    color: #107bcf;
+    line-height: 50px;
+}
+.con-cmt{ width: 100%; height: 50px; margin: 50px auto;}
+.con-cmt ul{ text-align: center}
+.con-cmt li{ margin: 0 1%;float: left; text-align:center;  line-height: 40px; height: 40px; display: inline-block;  width: 48%;}
+.con-cmt li#flower{ text-align: right}
+.con-cmt li#egg{text-align: left}
+.con-cmt .flower,.con-cmt .egg{ text-align: center; position: relative;  vertical-align: middle; border-radius: 3px; font-size: 14px; cursor: pointer;  background-image: url(../images/news-cmt.png); background-repeat: no-repeat; border: 1px solid #eaeaea;
+    display:inline-block; box-sizing: content-box; padding: 0 0 0 30px; width:80px; height: 40px; margin:0 5px 0 10px;}
+.con-cmt p.num{ vertical-align: middle; color: #aaaaaa; display:inline-block;height: 40px; line-height: 42px; margin:0 ; font-size: 20px; font-family: arial, sans-serif;}
+p.num.bigger{animation: bigger 600ms ease-out ;-moz-animation: bigger 600ms ease-out ;-webkit-animation: bigger 600ms ease-out ;}
+.con-cmt .flower{ background-position:7px 1px; }
+.con-cmt .flower:hover{ background-position:7px -44px; }
+.con-cmt .egg{ background-position:8px -96px;}
+.con-cmt .egg:hover{ background-position:9px -142px;}

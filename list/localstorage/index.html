@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>localstorage</title>
+    <style>
+    *{
+        margin: 0;
+        padding: 0;
+        font-size: 14px;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+    }
+    .tabtitle{
+        min-width: 100%;
+        height: auto;
+        display: -webkit-box;
+        display: -webkit-flex;
+        background: #333;
+    }
+    .tabtitle span{
+        display: block;
+        -webkit-box-flex: 1;
+        -webkit-flex: 1 1 auto;
+        width: 16.66666667%;
+        height: 48px;
+        line-height: 48px;
+        color: #fff;
+        text-align: center;
+        cursor: default;
+        border-right: 2px solid #666;
+    }
+    .tabtitle span:last-child{
+        border: none;
+    }
+    .con{
+        width: auto;
+        height: 300px;
+        line-height: 300px;
+        font-size: 40px;
+        text-align: center;
+        background: #666;
+        color: #fff;
+        display: none;
+    }
+    .tab .active{
+        display: block;
+    }
+    .tabtitle .active{
+        background: #666;
+    }
+    </style>
+    <script src="script/jquery.js"></script>
+    <script>
+    $(function () {
+        var localArr = [];
+        var $tab = $('.tab');
+        var $tabtitle = $tab.find('.tabtitle');
+        var $tabcon = $tab.find('.con');
+        var select = 'select';
+        var data = {};
+
+        var storage = JSON.parse(window.localStorage ? localStorage.getItem(select) : Cookie.read(select));
+        
+        if (storage) {
+            $tabtitle.find('.tab_sp').eq(storage.index).addClass('active').siblings().removeClass('active');
+            $tabcon.eq(storage.index).addClass('active').siblings().removeClass('active');
+        }
+
+        $tabtitle.on('click', '.tab_sp', function () {
+            var $this = $(this);
+            var index = $this.index();
+            $this.addClass('active').siblings().removeClass('active');
+            $tabcon.eq(index).addClass('active').siblings().removeClass('active');
+
+            data.text = $.text($this);
+            data.index = index;
+
+            if (window.localStorage) {
+                localStorage.setItem(select, JSON.stringify(data));
+            }
+            else {
+                Cookie.write(select, JSON.stringify(data));
+            }
+        });
+    });
+    </script>
+</head>
+<body>
+    <div class="tab">
+        <div class="tabtitle">
+            <span class="tab_sp active" onselectstart="return false;">切换一</span>
+            <span class="tab_sp" onselectstart="return false;">切换二</span>
+            <span class="tab_sp" onselectstart="return false;">切换三</span>
+        </div>
+        <div class="con active">切换一内容</div>
+        <div class="con">切换二内容</div>
+        <div class="con">切换三内容</div>
+    </div>
+</body>
+</html>

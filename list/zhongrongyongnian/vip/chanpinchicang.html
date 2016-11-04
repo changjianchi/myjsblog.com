@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>产品持仓</title>
+    <link rel="stylesheet" href="../css/vip.css">
+    <link rel="stylesheet" href="../css/jquery.mCustomScrollbar.min.css">
+    <script src="../script/jquery.js"></script>
+    <script src="../script/vip.js"></script>
+    <script src="../script/jquery.mCustomScrollbar.concat.min.js"></script>
+    <!-- 日历组件 -->
+    <script type="text/javascript" src="jedate/jedate.js"></script>
+    <link type="text/css" rel="stylesheet" href="jedate/skin/jedate.css">
+    <!-- echarts组件要放在日历组件的下面否则会导致日历组件报错 -->
+    <script src="../build/dist/echarts.js"></script>
+    <style>
+    html, body{
+        background: #161c22;
+    }
+    </style>
+</head>
+<body class="iframes mCustomScrollbar">
+    <div class="viptitle border_bottom">
+        <div class="vipleft">
+            <div class="vipbox" data-flag="" onselectstart="return false;">
+                <input class="date start" type="text" placeholder="开始日期" readonly>
+            </div>
+            <div class="date_bg">至</div>
+            <div class="vipbox" data-flag="" onselectstart="return false;">
+                <input class="date end" type="text" placeholder="结束日期" readonly>
+            </div>
+            <div class="vipbox" data-flag="" onselectstart="return false;">
+                <div class="viptit">产品种类</div>
+                <div class="vipin">
+                    <a href="#">种类列表</a>
+                    <a href="#">种类列表</a>
+                    <a href="#">种类列表</a>
+                    <a href="#">种类列表</a>
+                    <a href="#">种类列表</a>
+                    <a href="#">种类列表</a>
+                    <a href="#">种类列表</a>
+                </div>
+            </div>
+            <div class="vipbox" data-flag="" onselectstart="return false;">
+                <div class="viptit">每页显示总数</div>
+                <div class="vipin">
+                    <a href="#">5页</a>
+                    <a href="#">10页</a>
+                    <a href="#">20页</a>
+                    <a href="#">30页</a>
+                    <a href="#">40页</a>
+                    <a href="#">50页</a>
+                    <a href="#">100页</a>
+                </div>
+            </div>
+        </div>
+        <div class="vipbtn">
+            <div class="vipbox" data-flag="" onselectstart="return false;">
+                <div class="viptit">确定</div>
+            </div>
+        </div>
+    </div>
+    <div class="chart">
+        <div class="chart_wrap">
+            <div class="chart_box">
+                <div class="chart_title border_bottom">
+                    <h4>发行人比例</h4>
+                    <div class="zoom">
+                        <a href="javascript:;"><img src="../images/big.png"></a>
+                        <a href="javascript:;"><img src="../images/small.png"></a>
+                    </div>
+                </div>
+                <div class="chart_bg"></div>
+                <div class="chart_info"  id="faxingrenbili"></div>
+                <script src="../script/chart/faxingrenbili.js"></script>
+            </div>
+        </div>
+        <div class="chart_wrap">
+            <div class="chart_box">
+                <div class="chart_title border_bottom">
+                    <h4>债券种类</h4>
+                    <div class="zoom">
+                        <a href="javascript:;"><img src="../images/big.png"></a>
+                        <a href="javascript:;"><img src="../images/small.png"></a>
+                    </div>
+                </div>
+                <div class="chart_bg"></div>
+                <div class="chart_info" id="zhaiquanzhonglei">
+                    <script src="../script/chart/zhaiquanzhonglei.js"></script>
+                </div>
+            </div>
+        </div>
+        <div class="chart_wrap">
+            <div class="chart_box">
+                <div class="chart_title border_bottom">
+                    <h4>中银评级</h4>
+                    <div class="zoom">
+                        <a href="javascript:;"><img src="../images/big.png"></a>
+                        <a href="javascript:;"><img src="../images/small.png"></a>
+                    </div>
+                </div>
+                <div class="chart_bg"></div>
+                <div class="chart_info" id="zhongyinpingji">
+                    <script src="../script/chart/zhongyinpingji.js"></script>
+                </div>
+            </div>
+        </div>
+        <div class="chart_wrap">
+            <div class="chart_box">
+                <div class="chart_title border_bottom">
+                    <h4>中融评级</h4>
+                    <div class="zoom">
+                        <a href="javascript:;"><img src="../images/big.png"></a>
+                        <a href="javascript:;"><img src="../images/small.png"></a>
+                    </div>
+                </div>
+                <div class="chart_bg"></div>
+                <div class="chart_info" id="zhongrongpingji">
+                    <script src="../script/chart/zhongrongpingji.js"></script>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="tables mCustomScrollbar">
+        <div class="table_box">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <td class="border_bottom"><span class="border_right">账户代码</span></td>
+                        <td class="border_bottom"><span class="border_right">债券代码</span></td>
+                        <td class="border_bottom"><span class="border_right">债券名称</span></td>
+                        <td class="border_bottom"><span class="border_right">持仓数量</span></td>
+                        <td class="border_bottom"><span class="border_right">买入净价</span></td>
+                        <td class="border_bottom"><span class="border_right">应计利息</span></td>
+                        <td class="border_bottom"><span class="border_right">票面利率</span></td>
+                        <td class="border_bottom"><span class="border_right">摊余成本</span></td>
+                        <td class="border_bottom"><span class="border_right">到期日期</span></td>
+                        <td class="border_bottom"><span class="border_right">最新面值</span></td>
+                        <td class="border_bottom"><span class="border_right">债券市值</span></td>
+                        <td class="border_bottom"><span class="border_right">发行人</span></td>
+                        <td class="border_bottom"><span class="border_right">中银评级</span></td>
+                        <td class="border_bottom"><span class="border_right">中融评级</span></td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="border_bottom"><span class="border_right">7</span></td>
+                        <td class="border_bottom"><span class="border_right"></span></td>
+                        <td class="border_bottom"><span class="border_right"></span></td>
+                        <td class="border_bottom"><span class="border_right"></span></td>
+                        <td class="border_bottom"><span class="border_right"></span></td>
+                        <td class="border_bottom"><span class="border_right"></span></td>
+                        <td class="border_bottom"><span class="border_right"></span></td>
+                        <td class="border_bottom"><span class="border_right"></span></td>
+                        <td class="border_bottom"><span class="border_right"></span></td>
+                        <td class="border_bottom"><span class="border_right"></span></td>
+                        <td class="border_bottom"><span class="border_right"></span></td>
+                        <td class="border_bottom"><span class="border_right"></span></td>
+                        <td class="border_bottom"><span class="border_right"></span></td>
+                        <td class="border_bottom"><span class="border_right"></span></td>
+                    </tr>
+                    <tr>
+                        <td class="border_bottom"><span class="border_right">7</span></td>
+                        <td class="border_bottom"><span class="border_right"></span></td>
+                        <td class="border_bottom"><span class="border_right"></span></td>
+                        <td class="border_bottom"><span class="border_right"></span></td>
+                        <td class="border_bottom"><span class="border_right"></span></td>
+                        <td class="border_bottom"><span class="border_right"></span></td>
+                        <td class="border_bottom"><span class="border_right"></span></td>
+                        <td class="border_bottom"><span class="border_right"></span></td>
+                        <td class="border_bottom"><span class="border_right"></span></td>
+                        <td class="border_bottom"><span class="border_right"></span></td>
+                        <td class="border_bottom"><span class="border_right"></span></td>
+                        <td class="border_bottom"><span class="border_right"></span></td>
+                        <td class="border_bottom"><span class="border_right"></span></td>
+                        <td class="border_bottom"><span class="border_right"></span></td>
+                    </tr>
+                    <tr>
+                        <td class="border_bottom"><span class="border_right">7</span></td>
+                        <td class="border_bottom"><span class="border_right"></span></td>
+                        <td class="border_bottom"><span class="border_right"></span></td>
+                        <td class="border_bottom"><span class="border_right"></span></td>
+                        <td class="border_bottom"><span class="border_right"></span></td>
+                        <td class="border_bottom"><span class="border_right"></span></td>
+                        <td class="border_bottom"><span class="border_right"></span></td>
+                        <td class="border_bottom"><span class="border_right"></span></td>
+                        <td class="border_bottom"><span class="border_right"></span></td>
+                        <td class="border_bottom"><span class="border_right"></span></td>
+                        <td class="border_bottom"><span class="border_right"></span></td>
+                        <td class="border_bottom"><span class="border_right"></span></td>
+                        <td class="border_bottom"><span class="border_right"></span></td>
+                        <td class="border_bottom"><span class="border_right"></span></td>
+                    </tr>
+                    <tr>
+                        <td class="border_bottom"><span class="border_right">7</span></td>
+                        <td class="border_bottom"><span class="border_right"></span></td>
+                        <td class="border_bottom"><span class="border_right"></span></td>
+                        <td class="border_bottom"><span class="border_right"></span></td>
+                        <td class="border_bottom"><span class="border_right"></span></td>
+                        <td class="border_bottom"><span class="border_right"></span></td>
+                        <td class="border_bottom"><span class="border_right"></span></td>
+                        <td class="border_bottom"><span class="border_right"></span></td>
+                        <td class="border_bottom"><span class="border_right"></span></td>
+                        <td class="border_bottom"><span class="border_right"></span></td>
+                        <td class="border_bottom"><span class="border_right"></span></td>
+                        <td class="border_bottom"><span class="border_right"></span></td>
+                        <td class="border_bottom"><span class="border_right"></span></td>
+                        <td class="border_bottom"><span class="border_right"></span></td>
+                    </tr>
+                    <tr>
+                        <td class="border_bottom"><span class="border_right">7</span></td>
+                        <td class="border_bottom"><span class="border_right"></span></td>
+                        <td class="border_bottom"><span class="border_right"></span></td>
+                        <td class="border_bottom"><span class="border_right"></span></td>
+                        <td class="border_bottom"><span class="border_right"></span></td>
+                        <td class="border_bottom"><span class="border_right"></span></td>
+                        <td class="border_bottom"><span class="border_right"></span></td>
+                        <td class="border_bottom"><span class="border_right"></span></td>
+                        <td class="border_bottom"><span class="border_right"></span></td>
+                        <td class="border_bottom"><span class="border_right"></span></td>
+                        <td class="border_bottom"><span class="border_right"></span></td>
+                        <td class="border_bottom"><span class="border_right"></span></td>
+                        <td class="border_bottom"><span class="border_right"></span></td>
+                        <td class="border_bottom"><span class="border_right"></span></td>
+                    </tr>
+                    <tr>
+                        <td class="border_bottom"><span class="border_right">7</span></td>
+                        <td class="border_bottom"><span class="border_right"></span></td>
+                        <td class="border_bottom"><span class="border_right"></span></td>
+                        <td class="border_bottom"><span class="border_right"></span></td>
+                        <td class="border_bottom"><span class="border_right"></span></td>
+                        <td class="border_bottom"><span class="border_right"></span></td>
+                        <td class="border_bottom"><span class="border_right"></span></td>
+                        <td class="border_bottom"><span class="border_right"></span></td>
+                        <td class="border_bottom"><span class="border_right"></span></td>
+                        <td class="border_bottom"><span class="border_right"></span></td>
+                        <td class="border_bottom"><span class="border_right"></span></td>
+                        <td class="border_bottom"><span class="border_right"></span></td>
+                        <td class="border_bottom"><span class="border_right"></span></td>
+                        <td class="border_bottom"><span class="border_right"></span></td>
+                    </tr>
+                    <tr>
+                        <td class="border_bottom"><span class="border_right">7</span></td>
+                        <td class="border_bottom"><span class="border_right"></span></td>
+                        <td class="border_bottom"><span class="border_right"></span></td>
+                        <td class="border_bottom"><span class="border_right"></span></td>
+                        <td class="border_bottom"><span class="border_right"></span></td>
+                        <td class="border_bottom"><span class="border_right"></span></td>
+                        <td class="border_bottom"><span class="border_right"></span></td>
+                        <td class="border_bottom"><span class="border_right"></span></td>
+                        <td class="border_bottom"><span class="border_right"></span></td>
+                        <td class="border_bottom"><span class="border_right"></span></td>
+                        <td class="border_bottom"><span class="border_right"></span></td>
+                        <td class="border_bottom"><span class="border_right"></span></td>
+                        <td class="border_bottom"><span class="border_right"></span></td>
+                        <td class="border_bottom"><span class="border_right"></span></td>
+                    </tr>
+                    <tr>
+                        <td class="border_bottom"><span class="border_right">7</span></td>
+                        <td class="border_bottom"><span class="border_right"></span></td>
+                        <td class="border_bottom"><span class="border_right"></span></td>
+                        <td class="border_bottom"><span class="border_right"></span></td>
+                        <td class="border_bottom"><span class="border_right"></span></td>
+                        <td class="border_bottom"><span class="border_right"></span></td>
+                        <td class="border_bottom"><span class="border_right"></span></td>
+                        <td class="border_bottom"><span class="border_right"></span></td>
+                        <td class="border_bottom"><span class="border_right"></span></td>
+                        <td class="border_bottom"><span class="border_right"></span></td>
+                        <td class="border_bottom"><span class="border_right"></span></td>
+                        <td class="border_bottom"><span class="border_right"></span></td>
+                        <td class="border_bottom"><span class="border_right"></span></td>
+                        <td class="border_bottom"><span class="border_right"></span></td>
+                    </tr>
+                    <tr>
+                        <td class="border_bottom"><span class="border_right">7</span></td>
+                        <td class="border_bottom"><span class="border_right"></span></td>
+                        <td class="border_bottom"><span class="border_right"></span></td>
+                        <td class="border_bottom"><span class="border_right"></span></td>
+                        <td class="border_bottom"><span class="border_right"></span></td>
+                        <td class="border_bottom"><span class="border_right"></span></td>
+                        <td class="border_bottom"><span class="border_right"></span></td>
+                        <td class="border_bottom"><span class="border_right"></span></td>
+                        <td class="border_bottom"><span class="border_right"></span></td>
+                        <td class="border_bottom"><span class="border_right"></span></td>
+                        <td class="border_bottom"><span class="border_right"></span></td>
+                        <td class="border_bottom"><span class="border_right"></span></td>
+                        <td class="border_bottom"><span class="border_right"></span></td>
+                        <td class="border_bottom"><span class="border_right"></span></td>
+                    </tr>
+                    <tr>
+                        <td class="border_bottom"><span class="border_right">7</span></td>
+                        <td class="border_bottom"><span class="border_right"></span></td>
+                        <td class="border_bottom"><span class="border_right"></span></td>
+                        <td class="border_bottom"><span class="border_right"></span></td>
+                        <td class="border_bottom"><span class="border_right"></span></td>
+                        <td class="border_bottom"><span class="border_right"></span></td>
+                        <td class="border_bottom"><span class="border_right"></span></td>
+                        <td class="border_bottom"><span class="border_right"></span></td>
+                        <td class="border_bottom"><span class="border_right"></span></td>
+                        <td class="border_bottom"><span class="border_right"></span></td>
+                        <td class="border_bottom"><span class="border_right"></span></td>
+                        <td class="border_bottom"><span class="border_right"></span></td>
+                        <td class="border_bottom"><span class="border_right"></span></td>
+                        <td class="border_bottom"><span class="border_right"></span></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <div class="pagelist">
+        <div class="page">
+            <span><a href="#"><i>&lt;&lt;</i>Previous</a></span>
+            <span><a href="#">1</a></span>
+            <span><a href="#">2</a></span>
+            <span><a href="#">3</a></span>
+            <span><a href="#">4</a></span>
+            <span><a href="#">5</a></span>
+            <span><a href="#">6</a></span>
+            <span><a href="#">7</a></span>
+            <span><a href="#">8</a></span>
+            <span><a href="#">9</a></span>
+            <span class="ellip">......</span>
+            <span><a href="#">103</a></span>
+            <span><a href="#">104</a></span>
+            <span><a href="#">Last<i>&gt;&gt;</i></a></span>
+        </div>
+    </div>
+
+    <script  type="text/javascript">
+        /**
+         * [start 开始日期方法]
+         * @type {Object}
+         */
+        var start = {
+           dateCell: '.start',
+           format: 'YYYY-MM-DD',
+           minDate: jeDate.now(0), //设定最小日期为当前日期
+           festival:true,
+           maxDate: '2099-06-30 23:59:59', //最大日期
+           choosefun: function(elem,datas){
+               //console.log(datas)
+               end.minDate = datas; //开始日选好后，重置结束日的最小日期
+           }
+        };
+
+        /**
+         * [end 结束日期方法]
+         * @type {Object}
+         */
+        var end = {
+           dateCell: '.end',
+           format: 'YYYY-MM-DD',
+           minDate: jeDate.now(0), //设定最小日期为当前日期
+           festival:true,
+           maxDate: '2099-06-16 23:59:59', //最大日期
+           choosefun: function(elem,datas){
+               //console.log(end.minDate)
+               start.maxDate = datas; //将结束日的初始值设定为开始日的最大日期
+           }
+        };
+        jeDate(start);
+        jeDate(end);
+    </script>
+</body>
+</html>

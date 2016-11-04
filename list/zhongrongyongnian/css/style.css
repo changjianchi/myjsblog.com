@@ -1,0 +1,369 @@
+/* 登录模块样式 */
+.login{
+    width: auto;
+    height: auto;
+    padding: 60px 50px;
+    overflow: hidden;
+}
+.login h2{
+    height: 27px;
+    font-size: 26px;
+    color: #ee9500;
+    font-weight: normal;
+}
+.login .p1{
+    font-weight: bold;
+    margin-top: 4px;
+    padding-bottom: 5px;
+}
+.login .form label{
+    display: block;
+}
+.login .form label.inp{
+    width: 310px;
+}
+.login .form label.inp p{
+    margin-top: 14px;
+}
+.login .form label.inp input{
+    width: 100%;
+    height: 48px;
+    line-height: 48px\9;
+    padding: 0 16px;
+    margin-top: 10px;
+    font-size: 16px;
+    overflow: hidden;
+    border: 1px solid #c2c3c4;
+}
+.login .form label.inp input.focus{
+    border-color: #213449;
+    border-width: 2px;
+}
+.login .form label.check{
+    margin-top: 15px;
+}
+.login .form label.check input{
+    width: 12px;
+    height: 12px;
+    position: relative;
+    margin-right: 5px;
+}
+.login .form label.check input,
+.login .form label.check p{
+    display: inline-block;
+    vertical-align: middle;
+}
+.login .form label.btn{
+    width: 124px;
+    height: 48px;
+    margin-top: 27px;
+}
+.login .form label.btn input{
+    width: 100%;
+    height: 100%;
+    line-height: 48px\9;
+    background: #213449;
+    color: #fff;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: bold;
+    border: 0 none;
+}
+.login .form label.foot{
+    margin-top: 39px;
+}
+.login .form label.foot p{
+    height: 26px;
+    line-height: 26px;
+}
+.login .form label.foot p a{
+    display: inline-block;
+    margin: 0 3px;
+    font-weight: bold;
+}
+.logina,
+.reg{
+    padding: 0 32px;
+}
+.logina{
+    position: relative;
+    margin-top: 75px;
+    font-size: 12px;
+    color: #666;
+}
+.logina a{
+    display: block;
+    width: auto;
+    height: 36px;
+    line-height: 36px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 14px;
+    color: #213449;
+    -webkit-border-radius: 18px;
+    -moz-border-radius: 18px;
+    -ms-border-radius: 18px;
+    -o-border-radius: 18px;
+    border-radius: 18px;
+    background: #cad1da;
+    position: absolute;
+    left: 21px;
+    right: 21px;
+    border: 2px solid #8e98a2;
+}
+.logina a:hover{
+    color: #ee9500;
+    border-color: #ee9500;
+    background: none;
+}
+.logina .p1{
+    padding-top: 54px;
+}
+.reg{
+    overflow: hidden;
+    margin-top: 32px;
+    padding-top: 22px;
+    background: url("../images/login_bg.png") no-repeat center top;
+}
+.reg p{
+    margin-top: 9px;
+    font-size: 12px;
+    color: #666;
+}
+.reg a{
+    font-weight: bold;
+}
+.loginfo{
+    width: auto;
+    height: auto;
+    overflow: hidden;
+}
+.loginfo h2{
+    font-size: 20px;
+    font-weight: normal;
+    margin-top: 67px;
+}
+.about h3{
+    font-size: 15px;
+    margin-top: 14px;
+    padding-bottom: 4px;
+}
+.about p{
+    color: #666;
+    line-height: 24px;
+}
+.about p a{
+    margin-left: 10px;
+}
+.about h3 p{
+    margin-top: 5px;
+    color: #223448;
+}
+.b_title{
+    width: auto;
+    height: 52px;
+    line-height: 52px;
+    margin-top: 58px;
+    font-size: 20px;
+    font-weight: bold;
+    background: url("../images/border_bg.png") repeat-x 0 bottom;
+}
+.b_title span{
+    display: inline-block;
+    margin-left: 5px;
+}
+.b_info,
+.b_info ul,
+.news,
+.news_box dl{
+    width: auto;
+    overflow: hidden;
+}
+.b_info ul{
+    margin-top: 29px;
+}
+.b_info ul li{
+    width: 50%;
+    float: left;
+    padding-right: 30px;
+}
+.b_info ul li h4{
+    font-size: 15px;
+    text-indent: 14px;
+    padding-bottom: 8px;
+    background: url("../images/b_bg.png") no-repeat 0 8px;
+}
+.b_info ul li p{
+    height: auto;
+    line-height: 26px;
+    text-indent: 7px;
+}
+.b_info ul li p,
+.b_info ul li p a{
+    color: #666;
+}
+.b_info ul li p a:hover{
+    color: #ee9500;
+}
+.news{
+    margin-top: 64px;
+}
+.news_box{
+    width: 50%;
+    float: left;
+    overflow: hidden;
+}
+.news_box .b_title{
+    margin-top: 0;
+}
+.news_box dl{
+    margin-top: 24px;
+}
+.news_box dl dt,
+.news_box dl dd{
+    width: auto;
+    float: left;
+    display: inline;
+}
+.news_box dl dt{
+    width: 112px;
+    height: 142px;
+}
+.news_box dl dt img{
+    width: 110px;
+    height: 140px;
+    border: 1px solid #ddd;
+}
+.news_box dl dt a{
+    display: none;
+}
+.news_box dl dt a.active{
+    display: block;
+}
+.news_box dl dd{
+    width: 350px;
+    font-size: 15px;
+    line-height: 30px;
+    padding-left: 34px;
+    background: url("../images/dl_bg.png") no-repeat 20px 14px;
+}
+.news_box dl dd p{
+    display: none;
+}
+.news_box dl dd.first{
+    line-height: 20px;
+    background-position: 20px 8px;
+}
+.news_box dl dd.first p{
+    display: block;
+}
+.news_box2 dl dd{
+    width: 100%;
+    overflow: hidden;
+}
+.news_box dl dd .news_p,
+.news_box dl dd a{
+    color: #666;
+}
+.news_box dl dd a:hover{
+    color: #ee9500;
+}
+.news_box2 dl dd span{
+    float: right;
+    display: inline;
+    margin-right: 10px;
+    color: #666;
+}
+.left .list{
+    margin: 28px 0 0;
+    font-size: 14px;
+}
+.left .list dt,
+.left .list dt a{
+    width: 100%;
+    height: auto;
+}
+.left .list dt a{
+    height: 46px;
+    line-height: 46px;
+    text-indent: 32px;
+    font-weight: bold;
+    display: inline-block;
+}
+.left .list .active a{
+    color: #ee9500;
+}
+.news_title{
+    font-size: 26px;
+    margin-top: 48px;
+}
+.news_title span{
+    display: inline-block;
+    margin-left: 8px;
+    font-size: 22px;
+}
+.new_info{
+    width: auto;
+    margin-top: 36px;
+    overflow: hidden;
+}
+.new_info dl{
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    padding: 23px 0;
+    border-bottom: 1px dashed #d1d1d1;
+}
+.new_info dl dt{
+    width: 200px;
+    height: 138px;
+    float: left;
+}
+.new_info dl dd{
+    width: 710px;
+    height: auto;
+    float: left;
+    display: inline;
+    margin: 0 0 0 34px;
+}
+.new_info dl dd h4{
+    font-size: 15px;
+}
+.new_info dl dd .time{
+    font-size: 14px;
+    font-weight: bold;
+    margin-top: 5px;
+}
+.new_info dl dd p{
+    margin-top: 5px;
+    padding-bottom: 8px;
+    color: #666;
+}
+.bsu_info dl dd{
+    width: auto;
+    margin: 0;
+}
+.ar_title h4{
+    width: auto;
+    height: auto;
+    line-height: 38px;
+    padding: 7px 0;
+    margin-top: 35px;
+    font-size: 26px;
+    border-bottom: 1px dashed #d1d1d1;
+}
+.ar_title p{
+    font-weight: bold;
+    margin-top: 15px;
+}
+.ar_info{
+    padding: 10px 0 20px;
+    overflow: hidden;
+}
+.ar_info p{
+    width: auto;
+    height: auto;
+    min-height: 24px;
+    line-height: 24px;
+    color: #666;
+}

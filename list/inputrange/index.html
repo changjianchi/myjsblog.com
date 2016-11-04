@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <title>Document</title>
+    <style>
+    *{
+        margin: 0;
+        padding: 0;
+        font-size: 62.5%;
+        -moz-box-sizing: border-box;
+        -webkit-tap-highlight-color: rgba(0,0,0,0);
+    }
+    .wrap{
+        width: 78%;
+        height: auto;
+        margin: 10px auto;
+    }
+    .input{
+        width: 100%;
+        margin: 20px auto;
+    }
+    .content{
+        height: 15rem;
+        line-height: 15rem;
+        font-size: 30px;
+        text-align: center;
+        background: #666;
+        margin: 0 auto;
+        color: #fff;
+        display: none;
+    }
+    .tabtitle{
+        display: -webkit-box;
+        display: -webkit-flex;
+    }
+    .tabtitle span{
+        width: 33.3333333%;
+        text-align: center;
+        height: 4rem;
+        line-height: 4rem;
+        background: #333;
+        font-size: 16px;
+        color: #fff;
+        border-right: 1px solid #aaa;
+        -webkit-box-flex: 1;
+        -webkit-flex: 1 1 auto;
+    }
+    .tabtitle span:last-child{
+        border-right: none;
+    }
+    .tabtitle span.selected{
+        background: #666;
+    }
+    .active{
+        display: block;
+    }
+    </style>
+    <script src="script/jquery.js"></script>
+    <script>
+    $(function () {
+        var $wrap = $('.wrap');
+        var $tabtitle = $wrap.find('.tabtitle');
+        var $content = $wrap.find('.content');
+        var $input = $('.input');
+
+        $tabtitle.on('click', 'span', function () {
+            var $this = $(this);
+            var index = $this.index();
+            $this.addClass('selected').siblings().removeClass('selected');
+            $content.eq(index).addClass('active').siblings().removeClass('active');
+            $input.val($content.eq(index).attr('data-index'));
+        });
+
+
+        var val = 1;
+        $input.on('change', function () {
+            setInput($(this));
+        });
+
+        $input.on('input', function () {
+            setInput($(this));
+        });
+
+        function setInput(obj) {
+            $wrap.find('.active').attr('data-index', obj.val());
+            if (obj.val() > val) {
+                mathContent(true);
+            }
+            else if (obj.val() < val) {
+                mathContent(false);
+            }
+            val = obj.val();
+        }
+
+        function mathContent(flag) {
+            var $active = $wrap.find('.active');
+            var text = parseInt($.text($active));
+
+            if (flag) {
+                text = text + 1;
+            }
+            else {
+                text = text - 1;
+            }
+            $active.text(text);
+        };
+    });
+    </script>
+</head>
+<body>
+    <div class="wrap">
+        <div class="content active" data-index="1">1</div>
+        <div class="content" data-index="1">101</div>
+        <div class="content" data-index="1">1001</div>
+        <div class="tabtitle">
+            <span class="selected" data-index="1">切换一</span>
+            <span>切换二</span>
+            <span>切换三</span>
+        </div>
+        <input type="range" class="input" value="1" min="1" max="32">
+    </div>
+</body>
+</html>

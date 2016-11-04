@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    .wrap,
+    .demo{
+        width: 25%;
+        height: auto;
+        float: left;
+        position: relative;
+    }
+    .title{
+        width: 100%;
+        height: 50px;
+        line-height: 50px;
+        color: #fff;
+        font-size: 16px;
+        text-align: center;
+        color: #fff;
+        background: #333;
+    }
+    .info{
+        position: absolute;
+        left: 0;
+        top: 50px;
+        width: 100%;
+        height: auto;
+        overflow: hidden;
+        background: #444;
+        color: #ddd;
+        font-size: 14px;
+        display: none;
+        border: 2px solid #333;
+        border-top: none;
+    }
+    .info p{
+        width: auto;
+        height: 40px;
+        line-height: 40px;
+        padding: 0 15px;
+    }
+    .info p.active{
+        background: #333;
+        color: #fff;
+    }
+    </style>
+    <script src="http://115.28.207.231/script/jquery.js"></script>
+    <script>
+    $(function () {
+        var $wrap = $('.wrap');
+        var $demo = $('.demo');
+        var text = '';
+
+        $(document).on('click', function (event) {
+            var self = event.target;
+            var $title = '';
+            var $info = '';
+            var $p = '';
+
+            if ($(self).hasClass('p') || $(self).parents('.p').length > 0) {
+                if ($(self).hasClass('p')) {
+                    $p = $(self);
+                }
+                else {
+                    $p = $(self).parents('.p');
+                }
+                $p.addClass('active').siblings().removeClass('active');
+                text = $.text($p);
+            }
+
+            if ($(self).hasClass('title') || $(self).parents('.title').length > 0) {
+                up($wrap, text);
+                up($demo, text);
+
+                if ($(self).hasClass('title')) {
+                    $title = $(self);
+                }
+                else {
+                    $title = $(self).parents('.title');
+                }
+
+                text = $.text($title);
+                $info = $title.parent().find('.info');
+
+                $title.parent().addClass('active');
+                $info.stop(true).slideDown(150);
+            }
+            else {
+                up($wrap, text);
+                up($demo, text);
+            }
+
+            return false;
+        });
+
+        var up = function (obj, text) {
+            $.each(obj, function (key, val) {
+                if ($(val).hasClass('active')) {
+                    $(val).find('.title').html(text);
+                    $(val).find('.info').stop(true).slideUp(80);
+                    $(val).removeClass('active');
+                }
+            });
+        }
+    });
+    </script>
+</head>
+<body>
+    <div class="wrap">
+        <div class="title">请点我</div>
+        <div class="info">
+            <p class="p">p标签1</p>
+            <p class="p">p标签2</p>
+            <p class="p">p标签3</p>
+            <p class="p">p标签4</p>
+            <p class="p">p标签5</p>
+        </div>
+    </div>
+    <div class="wrap">
+        <div class="title">请点我</div>
+        <div class="info">
+            <p class="p">p标签1</p>
+            <p class="p">p标签2</p>
+            <p class="p">p标签3</p>
+            <p class="p">p标签4</p>
+            <p class="p">p标签5</p>
+        </div>
+    </div>
+    <div class="wrap">
+        <div class="title">请点我</div>
+        <div class="info">
+            <p class="p">p标签1</p>
+            <p class="p">p标签2</p>
+            <p class="p">p标签3</p>
+            <p class="p">p标签4</p>
+            <p class="p">p标签5</p>
+        </div>
+    </div>
+
+    <div class="wrap">
+        <div class="title">请点我</div>
+        <div class="info">
+            <p class="p">p标签1</p>
+            <p class="p">p标签2</p>
+            <p class="p">p标签3</p>
+            <p class="p">p标签4</p>
+            <p class="p">p标签5</p>
+        </div>
+    </div>
+</body>
+</html>

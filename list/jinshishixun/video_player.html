@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>动态视讯-视频详情页</title>
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="script/jquery.js"></script>
+    <script src="script/main.js"></script>
+</head>
+<body>
+    <div class="header">
+        <div class="head">
+            <div class="logo"><a href="index.html" target="_blank"><img src="images/logo.png"></a></div>
+            <div class="nav">
+                <a href="index.html" target="_blank">首页</a>
+                <a href="news.html" target="_blank">新闻资讯</a>
+                <a href="video.html" target="_blank">动态视讯</a>
+                <a href="app.html" target="_blank">手机APP</a>
+            </div>
+        </div>
+        <div class="subnav">
+            <div class="subinfo">
+                <div class="submenus scroll">
+                    <div class="indicator"></div>
+                    <div class="submenu" id="subShutHover"><a href="/">首页</a></div>
+                    <div class="separator">|</div>
+                    <div class="submenu"><a href="#" target="_blank">环球辛闻社</a></div>
+                    <div class="separator">|</div>
+                    <div class="submenu"><a href="#" target="_blank">财经babala</a></div>
+                    <div class="separator">|</div>
+                    <div class="submenu"><a href="#" target="_blank">华尔街时刻</a></div>
+                    <div class="separator">|</div>
+                    <div class="submenu"><a href="#" target="_blank">财经潜台词</a></div>
+                    <div class="separator">|</div>
+                    <div class="submenu"><a href="#" target="_blank">财经街访</a></div>
+                    <div class="separator">|</div>
+                    <div class="submenu"><a href="#" target="_blank">财经日历</a></div>
+                    <div class="separator">|</div>
+                    <div class="submenu"><a href="#" target="_blank">金十译讯</a></div>
+                    <div class="separator">|</div>
+                    <div class="submenu"><a href="#" target="_blank">国外精选</a></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="content">
+        <div class="slist">
+            <div class="paneltitle videotitle">
+                <div class="qishu">
+                    <div class="vname">
+                        <a target="_blank" href="/cate/9">财经babala</a>
+                    </div>
+                    <img src="http://cdn2.jin10.com/news/jin10/img/vtjoin.png">
+                    <div class="vper">第二季</div>
+                    <img src="http://cdn2.jin10.com/news/jin10/img/vtjoin.png">
+                    <div class="vper">19期</div>
+                    <img src="http://cdn2.jin10.com/news/jin10/img/vtright.png">
+                </div>
+                <div class="videotitle-txt">职场法则：告诉你，如何让老板为你升职加薪！</div>
+                <div class="hostwb">
+                    <a target="_blank" href="http://weibo.com/u/5684818223">
+                        <div class="wbbtn">关注微博</div>
+                    </a>
+                    <p>雨曦发发发</p>
+                    <img src="http://cdn2.jin10.com/news/jin10/img/weibo.png">
+                </div>
+            </div>
+
+            <div class="ckplayer">
+                <script src="http://v.jin10.com/plugins/Media/mediaelement-and-player.min.js"></script>
+                <link rel="stylesheet" href="css/mediaelementplayer.min.css"/>
+                <video width="1000" height="563" class="vs" id="a1" poster="images/player.jpg" controls="controls" preload="none">
+                     <source type="video/mp4" src="http://3690.vod.myqcloud.com/3690_d80dde82652511e685ee37363e9e20ab.f30.mp4" />
+                     <object class="vs" width="1000" height="600" type="application/x-shockwave-flash" data="script/flashmediaelement-cdn.swf">
+                        <param name="movie" value="script/flashmediaelement-cdn.swf" />
+                        <param name="flashvars" value="controls=true&poster=http://cdn.jin10.com/video/pic/05557ab21641ee1949f2d9011c7e6af3.jpg&file=http://3690.vod.myqcloud.com/3690_d80dde82652511e685ee37363e9e20ab.f30.mp4" />
+                        <!-- Image fall back for non-HTML5 browser with JavaScript turned off and no Flash player installed -->
+                        <img class="v-img" src="images/player.jpg" width="100%" height="100%" />
+                    </object>
+                </video>
+                <script language="javascript">
+                    $(function(){
+                        var w = parseInt($(".slist").css("width").replace("px",""));
+                        var player = new MediaElementPlayer('#a1', {
+                            features: ['playpause','loop','current','progress','duration','volume','fullscreen'],
+                            startLanguage: 'zh-cn',
+                            showTimecodeFrameCount: true,
+                            framesPerSecond: 10,
+                            alwaysShowControls: false,
+                            defaultVideoWidth: w,
+                            defaultVideoHeight: w/16*9.008
+                        });
+                    })
+                </script>
+
+                <div class="playnum clear">
+                  <div class="clear sharebox">
+                    <div class="share">
+                        <div class="bdsharebuttonbox"><a href="#" class="bds_more" data-cmd="more"></a><a href="#" class="bds_qzone" data-cmd="qzone" title="分享到QQ空间"></a><a href="#" class="bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a><a href="#" class="bds_tqq" data-cmd="tqq" title="分享到腾讯微博"></a><a href="#" class="bds_renren" data-cmd="renren" title="分享到人人网"></a><a href="#" class="bds_weixin" data-cmd="weixin" title="分享到微信"></a></div>
+                        <script>
+                            window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"","bdMini":"1","bdMiniList":false,"bdPic":"","bdStyle":"1","bdSize":"24"},"share":{}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];
+                        </script>
+                    </div>
+                    <div id="favor" class="v-savebox">
+                        <div class="v-save"></div>
+                        <p class="savetags">收藏</p>
+                    </div>
+                    <div class="v-play">
+                        <div class="v-play-num vct">5115</div>
+                        <img src="images/bofang.png"/>
+                    </div>
+                    <div class="download"><a class="doLogin" href="javascript:;">下载</a></div>
+                </div>
+                <div class="v-info clear">
+                    <table cellpadding="0" cellspacing="0">
+                        <tr ><td width="75" ><span class="v-tt">视频简介：</span></td>
+                            <td>
+                                <div class="v-jianjie">
+                                   财经Babala｜《董明珠怒摔手机有底气！告诉你，这样才能升职加薪！》职场现实版纸牌屋，看菜鸟如何升职加薪成功&ldquo;上位&rdquo;？三位女高管现身说法，不靠手段靠才华！传授制敌三招，马屁究竟要怎么拍才最讨喜？本期节目，惊现神曲《直接一点加薪好吗》，加班狗怒斥无良老板，办公室疯狂撒欢，精彩MV，不容错过！
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td width="75">
+                                <span class="v-tt">发布时间：</span></td><td><span class="publish-time">2016-08-18</span>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <div class="con-cmt">
+                <ul class="clear">
+                    <li id="flower">
+                        <div class="flower commend">送花
+                            <div class="plus"></div>
+                        </div>
+                        <p class="num">48</p></li>
+                    <li id="egg">
+                        <div class="egg commend">扔蛋
+                            <div class="plus wuwu"></div>
+                        </div>
+                        <p class="num">6</p></li>
+                </ul>
+                <div class="notice clear"></div>
+            </div>
+
+            <div class="group">
+                <div class="grouphead">
+                    <div class="panelhead">
+                        <div class="paneltitle">推荐视频</div>
+                    </div>
+                    <div class="panelline"></div>
+                </div>
+                <div class="panelbody">
+                    <div class="panelin clearfix">
+                        <div class="card240">
+                            <!--card图片-->
+                            <div class="cardthumb241">
+                                <a href="#">
+                                    <img src="images/pic1.jpg">
+                                    <div class="hovercon">
+                                        <img class="hoverplay" src="images/play.png">
+                                        <div class="cardview">
+                                            <div class="col col1">
+                                                <div class="cardicon"><span class="icon-rili"></span></div>
+                                                <div class="cardtext">08-11</div>
+                                            </div>
+                                            <div class="col col2">
+                                                <div class="cardicon"><span class="icon-play"></span></div>
+                                                <div class="cardtext vct">22,028</div>
+                                            </div>
+                                            <div class="col col3">
+                                                <div class="cardicon"><span class="icon-remark"></span></div>
+                                                <div class="cardtext">52</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <!--card标题-->
+                            <div class="cardtitle18">
+                                <a href="#">北上广惊现人口拐点&nbsp;谁来当接盘侠？</a>
+                            </div>
+                        </div>
+                        <div class="card240">
+                            <!--card图片-->
+                            <div class="cardthumb241">
+                                <a href="#">
+                                    <img src="images/pic1.jpg">
+                                    <div class="hovercon">
+                                        <img class="hoverplay" src="images/play.png">
+                                        <div class="cardview">
+                                            <div class="col col1">
+                                                <div class="cardicon"><span class="icon-rili"></span></div>
+                                                <div class="cardtext">08-11</div>
+                                            </div>
+                                            <div class="col col2">
+                                                <div class="cardicon"><span class="icon-play"></span></div>
+                                                <div class="cardtext vct">22,028</div>
+                                            </div>
+                                            <div class="col col3">
+                                                <div class="cardicon"><span class="icon-remark"></span></div>
+                                                <div class="cardtext">52</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <!--card标题-->
+                            <div class="cardtitle18">
+                                <a href="#">北上广惊现人口拐点&nbsp;谁来当接盘侠？</a>
+                            </div>
+                        </div>
+                        <div class="card240">
+                            <!--card图片-->
+                            <div class="cardthumb241">
+                                <a href="#">
+                                    <img src="images/pic1.jpg">
+                                    <div class="hovercon">
+                                        <img class="hoverplay" src="images/play.png">
+                                        <div class="cardview">
+                                            <div class="col col1">
+                                                <div class="cardicon"><span class="icon-rili"></span></div>
+                                                <div class="cardtext">08-11</div>
+                                            </div>
+                                            <div class="col col2">
+                                                <div class="cardicon"><span class="icon-play"></span></div>
+                                                <div class="cardtext vct">22,028</div>
+                                            </div>
+                                            <div class="col col3">
+                                                <div class="cardicon"><span class="icon-remark"></span></div>
+                                                <div class="cardtext">52</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <!--card标题-->
+                            <div class="cardtitle18">
+                                <a href="#">北上广惊现人口拐点&nbsp;谁来当接盘侠？</a>
+                            </div>
+                        </div>
+                        <div class="card240">
+                            <!--card图片-->
+                            <div class="cardthumb241">
+                                <a href="#">
+                                    <img src="images/pic1.jpg">
+                                    <div class="hovercon">
+                                        <img class="hoverplay" src="images/play.png">
+                                        <div class="cardview">
+                                            <div class="col col1">
+                                                <div class="cardicon"><span class="icon-rili"></span></div>
+                                                <div class="cardtext">08-11</div>
+                                            </div>
+                                            <div class="col col2">
+                                                <div class="cardicon"><span class="icon-play"></span></div>
+                                                <div class="cardtext vct">22,028</div>
+                                            </div>
+                                            <div class="col col3">
+                                                <div class="cardicon"><span class="icon-remark"></span></div>
+                                                <div class="cardtext">52</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <!--card标题-->
+                            <div class="cardtitle18">
+                                <a href="#">北上广惊现人口拐点&nbsp;谁来当接盘侠？</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            </div>
+        </div>
+
+
+        <script type="text/javascript">
+
+        var url = "http://v.jin10.com/1337/职场法则：告诉你，如何让老板为你升职加薪！";
+        var vUrl = "c";
+        var videoId = "1337";
+        $(function(){
+
+            //控制简介字数
+            $(".v-jianjie").show();
+            var info=$(".v-jianjie").html();
+            var maxlen=400;
+            if(info.length>maxlen){
+                $(".v-jianjie").html(info.substring(0,maxlen)+"...<a class='moreinfo' href='javascript:void(0)'>更多</a>");
+            $(".moreinfo").click(function(){
+                $(".v-jianjie").html(info);
+            })
+            }
+
+//            console.log(w,w*16/9);
+
+//            $(".vs").attr("width",w);
+//            $(".vs").attr("height",w/16*9);
+
+
+
+            $(function(){
+               /* var vW=$("#a1").width();
+                $("#a1").height(vW/16*9.008);*/
+
+                var vW2=$("#mep_0").width();
+                $("#mep_0").height(vW2/16*9.488);
+            })
+
+
+
+            /*播放量千位加逗号*/
+            function toThousands(num) {
+                var num = (num || 0).toString(), result = '';
+                while (num.length > 3) {
+                    result = ',' + num.slice(-3) + result;
+                    num = num.slice(0, num.length - 3);
+                }
+                if (num) { result = num + result; }
+                return result;
+            }
+
+            var onum=$(".vct");
+            var l=onum.length;
+            var n;
+            for(var i=0;i<l;i++){
+                n=$(onum[i]).text();
+                n=toThousands(n);
+                $(onum[i]).text(n);
+            }
+
+
+            var favoring = false;
+            $(".news_txt img").removeAttr("style");
+            var id = "1337";
+            var favorUrl = "/favor/" + id;
+
+            function dj(status) {
+                $("#favor").find(".v-save").addClass('dianji');
+                $("#favor").find(".v-save").one('webkitAnimationEnd animationend', function () {
+                    $(this).removeClass('dianji');
+                });
+                if (status == false) {
+                    $("#favor").find(".v-save").removeClass('saved');
+                } else {
+                    $("#favor").find(".v-save").addClass('saved');
+
+                }
+
+
+            }
+
+            function doFavor() {
+                if (favoring) return;
+                favoring = true;
+                $("#loading").removeClass('hide');
+                $.ajax({
+                    type: "get",
+                    async: true,
+                    url: favorUrl,
+                    dataType: "json",
+                    success: function (e) {
+                        $("#loading").addClass('hide');
+                        favoring = false;
+                        if (e.doLogin == true) {
+                            loginShow();
+                        } else {
+                            if (e.favored == false) {
+                                //取消收藏成功
+                                dj(false);
+                            } else {
+                                //收藏成功
+                                dj();
+                            }
+                        }
+                    },
+                    error: function () {
+                        $("#loading").addClass('hide');
+                        favoring = false;
+                    }
+                });
+            }
+
+            $('#favor').click(function () {
+                if (!User.id) {
+                    //未登陆不能收藏
+                    loginShow();
+                } else {
+                    //通知收藏
+                    doFavor();
+                }
+            });
+            $(".doLogin").click(function(){
+                loginShow();
+            });
+
+            //鼠标经过视频效果
+            $(".card240").mouseover(function(){
+                $(".card240").find(".hovercon").hide();
+                $(this).find(".hovercon").show();
+            });
+            $(".card240").mouseout(function(){
+                $(".card240").find(".hovercon").hide();
+            });
+
+        });
+    </script>
+
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="foot">
+            <div class="foot_logo"><img src="images/foot_logo.png"></div>
+            <div class="foot_info">
+                <p>Copyright © 2013 - 2016 Jin10.com All Rights Reserved</p>
+                <p>金十数据 粤ICP备16010774号</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

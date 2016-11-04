@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>大类资产变动</title>
+    <link rel="stylesheet" href="../css/vip.css">
+    <link rel="stylesheet" href="../css/jquery.mCustomScrollbar.min.css">
+    <script src="../script/jquery.js"></script>
+    <script src="../script/vip.js"></script>
+    <script src="../script/jquery.mCustomScrollbar.concat.min.js"></script>
+    <script src="../build/dist/echarts.js"></script>
+    <style>
+    html, body{
+        background: #161c22;
+    }
+    </style>
+</head>
+<body class="iframes mCustomScrollbar">
+    <div class="tables mCustomScrollbar">
+        <div class="table_box">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <td class="border_bottom"><span class="border_right">大类资产的变动</span></td>
+                        <td class="border_bottom"><span class="border_right">能源指数</span></td>
+                        <td class="border_bottom"><span class="border_right">农产品指数</span></td>
+                        <td class="border_bottom"><span class="border_right">标准普尔500指数</span></td>
+                        <td class="border_bottom"><span class="border_right">亚洲股市</span></td>
+                        <td class="border_bottom"><span class="border_right">恒生指数</span></td>
+                        <td class="border_bottom"><span class="border_right">美元指数</span></td>
+                        <td class="border_bottom"><span class="border_right">人民币指数</span></td>
+                        <td class="border_bottom"><span class="border_right">人民币远期1y fwd价格</span></td>
+                        <td class="border_bottom"><span class="border_right">美国国债10y</span></td>
+                        <td class="border_bottom"><span class="border_right">美国30y房贷利率</span></td>
+                        <td class="border_bottom"><span class="border_right">美国国债10y-1y</span></td>
+                        <td class="border_bottom"><span class="border_right">欧洲美元期货</span></td>
+                        <td class="border_bottom"><span class="border_right">美国高收益债指数</span></td>
+                        <td class="border_bottom"><span class="border_right">tips10y隐含通胀</span></td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="border_bottom"><span class="border_right">日变动</span></td>
+                        <td class="border_bottom"><span class="border_right"></span></td>
+                        <td class="border_bottom"><span class="border_right"></span></td>
+                        <td class="border_bottom"><span class="border_right"></span></td>
+                        <td class="border_bottom"><span class="border_right"></span></td>
+                        <td class="border_bottom"><span class="border_right"></span></td>
+                        <td class="border_bottom"><span class="border_right"></span></td>
+                        <td class="border_bottom"><span class="border_right"></span></td>
+                        <td class="border_bottom"><span class="border_right"></span></td>
+                        <td class="border_bottom"><span class="border_right"></span></td>
+                        <td class="border_bottom"><span class="border_right"></span></td>
+                        <td class="border_bottom"><span class="border_right"></span></td>
+                        <td class="border_bottom"><span class="border_right"></span></td>
+                        <td class="border_bottom"><span class="border_right"></span></td>
+                        <td class="border_bottom"><span class="border_right"></span></td>
+                    </tr>
+                    <tr>
+                        <td class="border_bottom"><span class="border_right">周变动</span></td>
+                        <td class="border_bottom"><span class="border_right"></span></td>
+                        <td class="border_bottom"><span class="border_right"></span></td>
+                        <td class="border_bottom"><span class="border_right"></span></td>
+                        <td class="border_bottom"><span class="border_right"></span></td>
+                        <td class="border_bottom"><span class="border_right"></span></td>
+                        <td class="border_bottom"><span class="border_right"></span></td>
+                        <td class="border_bottom"><span class="border_right"></span></td>
+                        <td class="border_bottom"><span class="border_right"></span></td>
+                        <td class="border_bottom"><span class="border_right"></span></td>
+                        <td class="border_bottom"><span class="border_right"></span></td>
+                        <td class="border_bottom"><span class="border_right"></span></td>
+                        <td class="border_bottom"><span class="border_right"></span></td>
+                        <td class="border_bottom"><span class="border_right"></span></td>
+                        <td class="border_bottom"><span class="border_right"></span></td>
+                    </tr>
+                    <tr>
+                        <td class="border_bottom"><span class="border_right">月变动</span></td>
+                        <td class="border_bottom"><span class="border_right"></span></td>
+                        <td class="border_bottom"><span class="border_right"></span></td>
+                        <td class="border_bottom"><span class="border_right"></span></td>
+                        <td class="border_bottom"><span class="border_right"></span></td>
+                        <td class="border_bottom"><span class="border_right"></span></td>
+                        <td class="border_bottom"><span class="border_right"></span></td>
+                        <td class="border_bottom"><span class="border_right"></span></td>
+                        <td class="border_bottom"><span class="border_right"></span></td>
+                        <td class="border_bottom"><span class="border_right"></span></td>
+                        <td class="border_bottom"><span class="border_right"></span></td>
+                        <td class="border_bottom"><span class="border_right"></span></td>
+                        <td class="border_bottom"><span class="border_right"></span></td>
+                        <td class="border_bottom"><span class="border_right"></span></td>
+                        <td class="border_bottom"><span class="border_right"></span></td>
+                    </tr>
+                    <tr>
+                        <td class="border_bottom"><span class="border_right">年初至今变动</span></td>
+                        <td class="border_bottom"><span class="border_right"></span></td>
+                        <td class="border_bottom"><span class="border_right"></span></td>
+                        <td class="border_bottom"><span class="border_right"></span></td>
+                        <td class="border_bottom"><span class="border_right"></span></td>
+                        <td class="border_bottom"><span class="border_right"></span></td>
+                        <td class="border_bottom"><span class="border_right"></span></td>
+                        <td class="border_bottom"><span class="border_right"></span></td>
+                        <td class="border_bottom"><span class="border_right"></span></td>
+                        <td class="border_bottom"><span class="border_right"></span></td>
+                        <td class="border_bottom"><span class="border_right"></span></td>
+                        <td class="border_bottom"><span class="border_right"></span></td>
+                        <td class="border_bottom"><span class="border_right"></span></td>
+                        <td class="border_bottom"><span class="border_right"></span></td>
+                        <td class="border_bottom"><span class="border_right"></span></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <div class="viptitle border_bottom">
+        <div class="vipleft">
+            <div class="vipbox" data-flag="" onselectstart="return false;">
+                <div class="viptit">时间段</div>
+            </div>
+            <div class="vipbox" data-flag="" onselectstart="return false;">
+                <div class="viptit">每页显示总数</div>
+                <div class="vipin">
+                    <a href="#">5页</a>
+                    <a href="#">10页</a>
+                    <a href="#">20页</a>
+                    <a href="#">30页</a>
+                    <a href="#">40页</a>
+                    <a href="#">50页</a>
+                    <a href="#">100页</a>
+                </div>
+            </div>
+        </div>
+        <div class="vipbtn">
+            <div class="vipbox" data-flag="" onselectstart="return false;">
+                <div class="viptit">确定</div>
+            </div>
+        </div>
+    </div>
+    <div class="chart xianjinliuyuce">
+        <div class="chart_wrap">
+            <div class="chart_box">
+                <div class="chart_title border_bottom">
+                    <h4>股市指数</h4>
+                    <div class="zoom">
+                        <a href="javascript:;"><img src="../images/big.png"></a>
+                        <a href="javascript:;"><img src="../images/small.png"></a>
+                    </div>
+                </div>
+                <div class="chart_bg"></div>
+                <div class="chart_info" id="daleizichanbiandong">
+                    <script src="../script/chart/daleizichanbiandong.js"></script>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="tables mCustomScrollbar">
+        <div class="table_box">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <td class="border_bottom"><span class="border_right">日期</span></td>
+                        <td class="border_bottom"><span class="border_right">标准普尔500指数</span></td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="border_bottom"><span class="border_right">2016-05-24</span></td>
+                        <td class="border_bottom"><span class="border_right">16498.76</span></td>
+                    </tr>
+                    <tr>
+                        <td class="border_bottom"><span class="border_right">2016-05-24</span></td>
+                        <td class="border_bottom"><span class="border_right">16498.76</span></td>
+                    </tr>
+                    <tr>
+                        <td class="border_bottom"><span class="border_right">2016-05-24</span></td>
+                        <td class="border_bottom"><span class="border_right">16498.76</span></td>
+                    </tr>
+                    <tr>
+                        <td class="border_bottom"><span class="border_right">2016-05-24</span></td>
+                        <td class="border_bottom"><span class="border_right">16498.76</span></td>
+                    </tr>
+                    <tr>
+                        <td class="border_bottom"><span class="border_right">2016-05-24</span></td>
+                        <td class="border_bottom"><span class="border_right">16498.76</span></td>
+                    </tr>
+                    <tr>
+                        <td class="border_bottom"><span class="border_right">2016-05-24</span></td>
+                        <td class="border_bottom"><span class="border_right">16498.76</span></td>
+                    </tr>
+                    <tr>
+                        <td class="border_bottom"><span class="border_right">2016-05-24</span></td>
+                        <td class="border_bottom"><span class="border_right">16498.76</span></td>
+                    </tr>
+                    <tr>
+                        <td class="border_bottom"><span class="border_right">2016-05-24</span></td>
+                        <td class="border_bottom"><span class="border_right">16498.76</span></td>
+                    </tr>
+                    <tr>
+                        <td class="border_bottom"><span class="border_right">2016-05-24</span></td>
+                        <td class="border_bottom"><span class="border_right">16498.76</span></td>
+                    </tr>
+                    <tr>
+                        <td class="border_bottom"><span class="border_right">2016-05-24</span></td>
+                        <td class="border_bottom"><span class="border_right">16498.76</span></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <div class="pagelist">
+        <div class="page">
+            <span><a href="#"><i>&lt;&lt;</i>Previous</a></span>
+            <span><a href="#">1</a></span>
+            <span><a href="#">2</a></span>
+            <span><a href="#">3</a></span>
+            <span><a href="#">4</a></span>
+            <span><a href="#">5</a></span>
+            <span><a href="#">6</a></span>
+            <span><a href="#">7</a></span>
+            <span><a href="#">8</a></span>
+            <span><a href="#">9</a></span>
+            <span class="ellip">......</span>
+            <span><a href="#">103</a></span>
+            <span><a href="#">104</a></span>
+            <span><a href="#">Last<i>&gt;&gt;</i></a></span>
+        </div>
+    </div>
+</body>
+</html>

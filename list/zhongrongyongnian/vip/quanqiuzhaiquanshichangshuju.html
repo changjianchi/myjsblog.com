@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>全球债券市场数据</title>
+    <link rel="stylesheet" href="../css/vip.css">
+    <link rel="stylesheet" href="../css/jquery.mCustomScrollbar.min.css">
+    <script src="../script/jquery.js"></script>
+    <script src="../script/vip.js"></script>
+    <script src="../script/jquery.mCustomScrollbar.concat.min.js"></script>
+    <!-- 日历组件 -->
+    <script type="text/javascript" src="jedate/jedate.js"></script>
+    <link type="text/css" rel="stylesheet" href="jedate/skin/jedate.css">
+    <!-- echarts组件要放在日历组件的下面否则会导致日历组件报错 -->
+    <script src="../build/dist/echarts.js"></script>
+    <style>
+    html, body{
+        background: #161c22;
+    }
+    </style>
+</head>
+<body class="iframes mCustomScrollbar">
+    <div class="viptitle border_bottom">
+        <div class="vipleft">
+            <div class="vipbox" data-flag="" onselectstart="return false;">
+                <input class="date start" type="text" placeholder="开始日期" readonly>
+            </div>
+            <div class="date_bg">至</div>
+            <div class="vipbox" data-flag="" onselectstart="return false;">
+                <input class="date end" type="text" placeholder="结束日期" readonly>
+            </div>
+        </div>
+        <div class="vipbtn">
+            <div class="vipbox" data-flag="" onselectstart="return false;">
+                <div class="viptit">确定</div>
+            </div>
+        </div>
+        <div class="vipcheck">
+            <div class="vipcheck_left">股指：</div>
+            <div class="vipcheck_right">
+                <label>
+                    <input type="checkbox" value="true">
+                    <span data-arr="200, 50, 78, 100">美国10年期国债收益率</span>
+                </label>
+                <label>
+                    <input type="checkbox" value="true">
+                    <span data-arr="150, 150, 38, 100">英国10年期国债收益率</span>
+                </label>
+                <label>
+                    <input type="checkbox" value="true">
+                    <span data-arr="20, 250, 178, 100">德国10年期国债收益率</span>
+                </label>
+                <label>
+                    <input type="checkbox" value="true">
+                    <span data-arr="100, 50, 278, 100">希腊10年期国债收益率</span>
+                </label>
+                <label>
+                    <input type="checkbox" value="true">
+                    <span data-arr="230, 150, 78, 100">日本10年期国债收益率</span>
+                </label>
+                <label>
+                    <input type="checkbox" value="true">
+                    <span data-arr="130, 230, 78, 100">中国10年期国债收益率</span>
+                </label>
+                <label>
+                    <input type="checkbox" value="true">
+                    <span data-arr="160, 500, 78, 100">美国1年期利率呼唤价格</span>
+                </label>
+                <label>
+                    <input type="checkbox" value="true">
+                    <span data-arr="110, 550, 78, 100">美林高收益债指数</span>
+                </label>
+                <label>
+                    <input type="checkbox" value="true">
+                    <span data-arr="310, 70, 78, 100">美国10年期tips brekeven价格</span>
+                </label>
+                <label>
+                    <input type="checkbox" value="true">
+                    <span data-arr="50, 90, 78, 100">ted价差</span>
+                </label>
+            </div>
+        </div>
+    </div>
+    <div class="chart xianjinliuyuce">
+        <div class="chart_wrap">
+            <div class="chart_box">
+                <div class="chart_title border_bottom">
+                    <h4>股市指数</h4>
+                    <div class="zoom">
+                        <a href="javascript:;"><img src="../images/big.png"></a>
+                        <a href="javascript:;"><img src="../images/small.png"></a>
+                    </div>
+                </div>
+                <div class="chart_bg"></div>
+                <div class="chart_info" id="quanqiuzhaiquanshichangshuju">
+                    <script src="../script/chart/quanqiuzhaiquanshichangshuju.js"></script>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="tables mCustomScrollbar">
+        <div class="table_box">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <td class="border_bottom"><span class="border_right">日期</span></td>
+                        <td class="border_bottom"><span class="border_right">欧元兑美元</span></td>
+                        <td class="border_bottom"><span class="border_right">英镑兑美元</span></td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="border_bottom"><span class="border_right">2016-05-24</span></td>
+                        <td class="border_bottom"><span class="border_right">16498.76</span></td>
+                        <td class="border_bottom"><span class="border_right">19830.43</span></td>
+                    </tr>
+                    <tr>
+                        <td class="border_bottom"><span class="border_right">2016-05-24</span></td>
+                        <td class="border_bottom"><span class="border_right">16498.76</span></td>
+                        <td class="border_bottom"><span class="border_right">19830.43</span></td>
+                    </tr>
+                    <tr>
+                        <td class="border_bottom"><span class="border_right">2016-05-24</span></td>
+                        <td class="border_bottom"><span class="border_right">16498.76</span></td>
+                        <td class="border_bottom"><span class="border_right">19830.43</span></td>
+                    </tr>
+                    <tr>
+                        <td class="border_bottom"><span class="border_right">2016-05-24</span></td>
+                        <td class="border_bottom"><span class="border_right">16498.76</span></td>
+                        <td class="border_bottom"><span class="border_right">19830.43</span></td>
+                    </tr>
+                    <tr>
+                        <td class="border_bottom"><span class="border_right">2016-05-24</span></td>
+                        <td class="border_bottom"><span class="border_right">16498.76</span></td>
+                        <td class="border_bottom"><span class="border_right">19830.43</span></td>
+                    </tr>
+                    <tr>
+                        <td class="border_bottom"><span class="border_right">2016-05-24</span></td>
+                        <td class="border_bottom"><span class="border_right">16498.76</span></td>
+                        <td class="border_bottom"><span class="border_right">19830.43</span></td>
+                    </tr>
+                    <tr>
+                        <td class="border_bottom"><span class="border_right">2016-05-24</span></td>
+                        <td class="border_bottom"><span class="border_right">16498.76</span></td>
+                        <td class="border_bottom"><span class="border_right">19830.43</span></td>
+                    </tr>
+                    <tr>
+                        <td class="border_bottom"><span class="border_right">2016-05-24</span></td>
+                        <td class="border_bottom"><span class="border_right">16498.76</span></td>
+                        <td class="border_bottom"><span class="border_right">19830.43</span></td>
+                    </tr>
+                    <tr>
+                        <td class="border_bottom"><span class="border_right">2016-05-24</span></td>
+                        <td class="border_bottom"><span class="border_right">16498.76</span></td>
+                        <td class="border_bottom"><span class="border_right">19830.43</span></td>
+                    </tr>
+                    <tr>
+                        <td class="border_bottom"><span class="border_right">2016-05-24</span></td>
+                        <td class="border_bottom"><span class="border_right">16498.76</span></td>
+                        <td class="border_bottom"><span class="border_right">19830.43</span></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <div class="pagelist">
+        <div class="page">
+            <span><a href="#"><i>&lt;&lt;</i>Previous</a></span>
+            <span><a href="#">1</a></span>
+            <span><a href="#">2</a></span>
+            <span><a href="#">3</a></span>
+            <span><a href="#">4</a></span>
+            <span><a href="#">5</a></span>
+            <span><a href="#">6</a></span>
+            <span><a href="#">7</a></span>
+            <span><a href="#">8</a></span>
+            <span><a href="#">9</a></span>
+            <span class="ellip">......</span>
+            <span><a href="#">103</a></span>
+            <span><a href="#">104</a></span>
+            <span><a href="#">Last<i>&gt;&gt;</i></a></span>
+        </div>
+    </div>
+
+    <script  type="text/javascript">
+        /**
+         * [start 开始日期方法]
+         * @type {Object}
+         */
+        var start = {
+           dateCell: '.start',
+           format: 'YYYY-MM-DD',
+           minDate: jeDate.now(0), //设定最小日期为当前日期
+           festival:true,
+           maxDate: '2099-06-30 23:59:59', //最大日期
+           choosefun: function(elem,datas){
+               //console.log(datas)
+               end.minDate = datas; //开始日选好后，重置结束日的最小日期
+           }
+        };
+
+        /**
+         * [end 结束日期方法]
+         * @type {Object}
+         */
+        var end = {
+           dateCell: '.end',
+           format: 'YYYY-MM-DD',
+           minDate: jeDate.now(0), //设定最小日期为当前日期
+           festival:true,
+           maxDate: '2099-06-16 23:59:59', //最大日期
+           choosefun: function(elem,datas){
+               //console.log(end.minDate)
+               start.maxDate = datas; //将结束日的初始值设定为开始日的最大日期
+           }
+        };
+        jeDate(start);
+        jeDate(end);
+    </script>
+</body>
+</html>
