@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>demo-iscroll实例</title>
+    <script>
+        var pixelRatio = 1 / window.devicePixelRatio;
+        document.write('<meta name="viewport" content="width=device-width,initial-scale='+pixelRatio+',minimum-scale='+pixelRatio+',maximum-scale='+pixelRatio+'" />');
+        function fun(){
+            var html = document.getElementsByTagName('html')[0];
+            var wid = html.getBoundingClientRect().width;
+            html.style.fontSize = wid / 6.4 + 'px';
+        }
+        fun();
+        window.onresize = function(){
+            fun();
+        }
+    </script>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        #wrapper{
+            width: 4rem;
+            height: 4rem;
+            margin: 1rem auto 0;
+            border: 1px solid #333;
+        }
+        #wrapper ul{
+            width: 20rem;
+            height: 4rem;
+            list-style: none;
+        }
+        #wrapper ul li{
+            width: 4rem;
+            height: 4rem;
+            background: #eee;
+            font-size: .3rem;
+            float: left;
+        }
+        #wrapper ul li:nth-of-type(1){
+            background: #000;
+            color: #fff;
+        }
+        #wrapper ul li:nth-of-type(2){
+            background: #333;
+            color: #fff;
+        }
+    </style>
+    <script src="script/zepto.mini.js"></script>
+    <script src="script/iscroll.js"></script>
+    <script>
+    $(function () {
+        var myscroll;
+        myScroll = new iScroll('wrapper', {
+            snap: 'li',
+            momentum: false,
+            hScrollbar: false,
+            vScrollbar: false
+        });
+    });
+    </script>
+</head>
+<body>
+    <div id="wrapper">
+        <div id="scroller">
+            <ul>
+                <li>我是好人</li>
+                <li>我是好人</li>
+                <li>我是好人</li>
+                <li>我是好人</li>
+                <li>我是好人</li>
+            </ul>
+            <ul>
+                <li>我是好人</li>
+                <li>我是好人</li>
+                <li>我是好人</li>
+                <li>我是好人</li>
+                <li>我是好人</li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
