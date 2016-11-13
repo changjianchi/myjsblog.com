@@ -10,5 +10,5 @@ var list = [
     {"title": "click点击方法", "tip": "案例","link": "list/click/index.html"},
     {"title": "localstorage缓存", "tip": "案例","link": "list/localstorage/index.html"},
     {"title": "input拖动事件", "tip": "案例","link": "list/inputrange/index.html"},
-    {"title": "iscroll", "tip": "案例","link": "list/iscroll/index.html"}
+    {"title": "iscroll", "tip": "案例2","link": "list/iscroll/index.html"}
 ]
