@@ -265,23 +265,85 @@ $(function() {
         });
     };
 
-    $(document).on('click', '.aBtn', function (event) {
-        var index = $(this).index();
-        var href = $(this).attr('href');
-        var name = $(this).attr('data-name');
-        var $ifra = addIframe(href, index);
-        var $container = $('.container');
+    $(document).on('click', function (event) {
+        var $this = $(event.target);
+        console.log($this.attr('class'));
+        if ($this.hasClass('aBtn')) {
+            var flag = $this.attr('data-flag');
+            var name = $this.attr('data-name');
+            $('.subtitle').show();
+            console.log(flag, 's');
+            if (flag == 0) {
+                var index = $this.index();
+                var href = $this.attr('href');
+                var $ifra = addIframe(href, index);
+                var $container = $('.container');
 
-        var $tabs = '<div class="tab active"><i></i>'+ name +'<em></em></div>';
-        $('.subtitle').find('.tab').removeClass('active');
-        $('.subtitle').append($tabs);
+                var $tabs = '<div class="tab active"><i></i>'+ name +'<em class="tabClose"></em></div>';
+                $('.subtitle').find('.tab').removeClass('active');
+                $('.subtitle').append($tabs);
 
-        $container.hide();
-        $iframe.hide();
-        $('.subinfo').append($ifra);
+                $container.hide();
+                $iframe.hide();
+                $('.subinfo').append($ifra);
 
-        $iframe = $('.subinfo').find('iframe');
-        resetIframe();
+                $iframe = $('.subinfo').find('iframe');
+                resetIframe();
+                $this.attr('data-flag', '1');
+            }
+            else {
+                $('.subtitle').find('.tab').removeClass('active');
+                $iframe.hide();
+                $.each($('.subtitle').find('.tab'), function (key, val) {
+                    if (name == $(val).text()) {
+                        $(val).addClass('active');
+                        $iframe.eq(key).show();
+                    }
+                });
+            }
+        }
+        else if ($this.hasClass('tab')) {
+            var index = $this.index();
+            console.log(index, 'ssss');
+            $this.addClass('active').siblings().removeClass('active');
+            $iframe.eq(index).show().siblings().hide();
+        }
+        else if ($this.hasClass('tabClose')) {
+            var tabIndex = $this.closest('.tab').index();
+            var tabName = $this.closest('.tab').text();
+            $iframe = $('.subinfo').find('iframe');
+            var index = tabIndex;
+
+            $.each($(document).find('.aBtn'), function (key, val) {
+                if (tabName == $(val).attr('data-name')) {
+                    $(val).attr('data-flag', '0')
+                }
+            });
+
+            if (tabIndex === 0) {
+                if ($this.closest('.subtitle').find('.tab').length > 1) {
+                    index = tabIndex + 1;
+                }
+                else {
+                    $('.container').show();
+                    $('.subtitle').hide();
+                }
+            }
+            else {
+                index = tabIndex - 1;
+            }
+            console.log(tabIndex, index, '哒哒哒');
+
+            $this.closest('.subtitle').find('.tab').eq(index).addClass('active').siblings().removeClass('active');
+            $iframe.eq(index).show();
+
+            $this.closest('.tab').remove();
+            $iframe.eq(tabIndex).remove();
+        }
+        else if ($this.hasClass('pf_close')) {
+            $this.closest('.pf').hide();
+        }
+        
         event.preventDefault();
     });
 
@@ -289,4 +351,25 @@ $(function() {
         var ifra = '<iframe src="' + href + '" class="iframe" data-index="' + dIndex + '" frameborder="0" scrolling="yes" marginheight="0" marginwidth="0"></iframe>';
         return ifra;
     }
+
+    var num = 0;
+    $('.edit_con').on('click', '.next', function (event) {
+        num++;
+        $('.s_p').eq(num).addClass('active');
+        console.log($('.s_p').eq(num).text(), '内容');
+        $('.s_content').eq(num).show().siblings('.s_content').hide();
+        event.preventDefault();
+    });
+
+    $('.s_info').on('click', '.s_p', function () {
+        var index = $(this).index();
+        console.log(index);
+    });
+
+    $.each($('.ck_info .s_p'), function (key, val) {
+        $(val).on('click', function () {
+            $(this).addClass('active').siblings().removeClass('active');
+            $('.s_content').eq(key).show().siblings('.s_content').hide();
+        })
+    });
 });

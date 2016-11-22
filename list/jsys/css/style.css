@@ -247,7 +247,6 @@
     width: 1024px;
     height: auto;
     margin: 2px auto 0;
-    border-top: 1px solid #dee0e2;
     background: url('../images/con_bg.jpg') no-repeat right bottom;
 }
 .list{
@@ -580,6 +579,7 @@
 }
 .s_content table{
     width: 100%;
+    margin-top: 20px;
 }
 .s_content table .td_name{
     width: 100px;
@@ -1030,6 +1030,7 @@
 .file_name span.file_sp2{
     font-size: 13px;
 }
+
 .s_content .jfys{
     margin: 0 210px;
 }
@@ -1388,6 +1389,7 @@
     position: relative;
     margin: 0 auto;
     padding: 0 30px;
+    display: none;
     overflow: hidden;
     background: url('../images/subtitle.png') repeat-x 0 bottom;
 }
@@ -1441,4 +1443,8 @@
 }
 .subtitle .active em{
     background: url('../images/tab_bg6.png') no-repeat center center;
+}
+.next_content .s_content{
+    margin-bottom: 40px;
+    display: none;
 }
