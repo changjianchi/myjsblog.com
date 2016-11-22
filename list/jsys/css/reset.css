@@ -1,0 +1,50 @@
+html,
+body{
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    line-height: 22px;
+    background: #FFF;
+    color: #656f7a;
+    overflow: hidden;
+    overflow-y: auto;
+    font-size: 14px;
+    position: relative;
+    font-family: "宋体","微软雅黑","华文细黑","Arial","黑体","\5b8b\4f53","sans-serif";
+}
+html,
+body,
+div,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+img,
+ul,
+li,
+dl,
+dt,
+dd,
+input,
+textarea,
+button,
+table,
+th,
+td,
+form{
+    margin: 0;
+    padding: 0;
+}
+input{
+    outline: 0 none;
+}
+a{
+    text-decoration: none;
+}
+ table{
+    border-collapse: collapse;
+    padding: 0;
+}

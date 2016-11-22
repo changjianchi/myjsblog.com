@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>注册-个人</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="script/jquery.js"></script>
+    <script src="script/main.js"></script>
+</head>
+<body>
+    <div class="pass_header">
+        <div class="pass_top">
+            <div class="pass_topinfo">
+                <div class="pass_topleft">
+                    <h1><a href="#"><img src="images/logo.png" alt=""></a></h1>
+                    <p>项目申报系统<span>欢迎注册，申报主体注册成功后，不可自行修改</span></p>
+                </div>
+            </div>
+        </div>
+        <div class="pass_sub pass_sub2">
+            <div class="pass_subinfo">
+                <span class="pass_sub_span active" data-index="0"><img src="images/gerenzhuce.png" alt=""><em>个人申报注册</em></span><div class="pass_subbg"></div>
+                <span  class="pass_sub_span" data-index="1"><img src="images/jigouzhuce.png" alt=""><em>个人申报注册</em></span>
+            </div>
+        </div>
+    </div>
+    <div class="pass_content">
+        <div class="pass_tab_content">
+            <form action="" class="pass_form">
+                <table>
+                    <tr class="pass_password">
+                        <td class="pass_td_left">申报人姓名：</td>
+                        <td>
+                            <input class="input" type="text"><span class="pass_sp"><em>*</em>必填，申报人姓名应与身份证号姓名保持一致</span>
+                        </td>
+                    </tr>
+                    <tr class="pass_password">
+                        <td class="pass_td_left">所属区域：</td>
+                        <td>
+                            <select class="select" name="" id="">
+                                <option value="地区一">地区一</option>
+                                <option value="地区一">地区一</option>
+                                <option value="地区一">地区一</option>
+                                <option value="地区一">地区一</option>
+                                <option value="地区一">地区一</option>
+                            </select><span class="pass_sp"><em>*</em>必填，请选常住地所属区域</span>
+                        </td>
+                    </tr>
+                    <tr class="pass_password">
+                        <td class="pass_td_left">证件类型：</td>
+                        <td>
+                            <select class="select" name="" id="">
+                                <option value="身份证">身份证</option>
+                                <option value="身份证">身份证</option>
+                                <option value="身份证">身份证</option>
+                                <option value="身份证">身份证</option>
+                                <option value="身份证">身份证</option>
+                            </select><span class="pass_sp"><em>*</em>必填，请选择证件类型</span>
+                        </td>
+                    </tr>
+                    <tr class="pass_password">
+                        <td class="pass_td_left">证件号码：</td>
+                        <td>
+                            <input class="input" type="text"><span class="pass_sp"><em>*</em>必填，请输入证件号码</span>
+                        </td>
+                    </tr>
+                    <tr class="pass_password">
+                        <td class="pass_td_left">登录帐号：</td>
+                        <td>
+                            <input class="input" type="text"><span class="pass_sp"><em>*</em>必填，由4-30位字母或数字组合而成</span>
+                        </td>
+                    </tr>
+                    <tr class="pass_password">
+                        <td class="pass_td_left">登录密码：</td>
+                        <td>
+                            <input class="input" type="password"><span class="pass_sp"><em>*</em>必填，由6-12位字母或数字组合的密码</span>
+                        </td>
+                    </tr>
+                    <tr class="pass_password">
+                        <td class="pass_td_left">确认密码：</td>
+                        <td>
+                            <input class="input" type="password"><span class="pass_sp"><em>*</em>必填，必须和所填密码一致</span>
+                        </td>
+                    </tr>
+                    <tr class="pass_password">
+                        <td class="pass_td_left">电子邮箱：</td>
+                        <td>
+                            <input class="input" type="text"><span class="pass_sp"><em>*</em>必填，用于找回密码</span>
+                        </td>
+                    </tr>
+                    <tr class="pass_password">
+                        <td class="pass_td_left">手机号码：</td>
+                        <td>
+                            <input class="input" type="text"><span class="pass_sp"><em>*</em>必填</span>
+                        </td>
+                    </tr>
+                    <tr class="pass_password">
+                    <td class="pass_td_left">验证码：</td>
+                    <td>
+                        <input class="input" type="text"><span class="pass_sp"><em>*</em><input type="submit" value="获取验证码"> 必填，请输入短信验证码</span>
+                    </td>
+                </tr>
+                    <tr class="pass_trbtn">
+                        <td>&nbsp;</td>
+                        <td><input class="pass_btn" type="submit" value="立即注册"></td>
+                    </tr>
+                </table>
+            </form>
+        </div>
+        <div class="pass_tab_content" style="display: none;">
+            <form action="" class="pass_form">
+                <table>
+                    <tr class="pass_password">
+                        <td class="pass_td_left">单位名称：</td>
+                        <td>
+                            <input class="input" type="text"><span class="pass_sp"><em>*</em>必填，单位名称应与组织机构代码证上机构名称保持一致</span>
+                        </td>
+                    </tr>
+                    <tr class="pass_password">
+                        <td class="pass_td_left">所属区域：</td>
+                        <td>
+                            <select class="select" name="" id="">
+                                <option value="地区一">地区一</option>
+                                <option value="地区一">地区一</option>
+                                <option value="地区一">地区一</option>
+                                <option value="地区一">地区一</option>
+                                <option value="地区一">地区一</option>
+                            </select><span class="pass_sp"><em>*</em>必填，请选申报主体机构注册地所在地区</span>
+                        </td>
+                    </tr>
+                    <tr class="pass_password">
+                        <td class="pass_td_left">组织机构代码(统一社会信用代码)：</td>
+                        <td>
+                            <input class="input" type="text"><span class="pass_sp"><em>*</em>必填，请输入组织机构代码或统一社会信用代码</span>
+                        </td>
+                    </tr>
+                    <tr class="pass_password">
+                        <td class="pass_td_left">登录帐号：</td>
+                        <td>
+                            <input class="input" type="text"><span class="pass_sp"><em>*</em>必填，由4-30位字母或数字组合而成</span>
+                        </td>
+                    </tr>
+                    <tr class="pass_password">
+                        <td class="pass_td_left">登录密码：</td>
+                        <td>
+                            <input class="input" type="password"><span class="pass_sp"><em>*</em>必填，由6-12位字母或数字组合的密码</span>
+                        </td>
+                    </tr>
+                    <tr class="pass_password">
+                        <td class="pass_td_left">确认密码：</td>
+                        <td>
+                            <input class="input" type="password"><span class="pass_sp"><em>*</em>必填，必须和所填密码一致</span>
+                        </td>
+                    </tr>
+                    <tr class="pass_password">
+                        <td class="pass_td_left">电子邮箱：</td>
+                        <td>
+                            <input class="input" type="text"><span class="pass_sp"><em>*</em>必填，用于找回密码</span>
+                        </td>
+                    </tr>
+                    <tr class="pass_password">
+                        <td class="pass_td_left">手机号码：</td>
+                        <td>
+                            <input class="input" type="text"><span class="pass_sp"><em>*</em>必填</span>
+                        </td>
+                    </tr>
+                    <tr class="pass_password">
+                    <td class="pass_td_left">验证码：</td>
+                    <td>
+                        <input class="input" type="text"><span class="pass_sp"><em>*</em><input type="submit" value="获取验证码"> 必填，请输入短信验证码</span>
+                    </td>
+                </tr>
+                    <tr class="pass_trbtn">
+                        <td>&nbsp;</td>
+                        <td><input class="pass_btn" type="submit" value="立即注册"></td>
+                    </tr>
+                </table>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
