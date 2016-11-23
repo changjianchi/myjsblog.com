@@ -395,4 +395,16 @@ $(function() {
             iTag = true;
         }
     });
+
+    $('.xdsq_btn').on('click', function () {
+        $.each($('input, textarea'), function (key, val) {
+            if ($(val).val() == '') {
+                $('.tips').show();
+                return false;
+            }
+            else {
+                $('.tips').hide();
+            }
+        });
+    });
 });
