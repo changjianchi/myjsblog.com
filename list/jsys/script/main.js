@@ -27,58 +27,62 @@ $(function() {
      * [$select 模拟下拉框]
      * @type {[obj]}
      */
-    var $select = $('.s_select_wrap');
-    $.each($select, function (key, val) {
-        var $this = $(val).find('.s_select');
-        var flag = false;
-        var $valueHeight = $(val).find('.s_value').height();
-        var $height = $(val).find('.s_option').height();
+    var setSelect = function () {
+        var $select = $('.s_select_wrap:visible');
+        $.each($select, function (key, val) {
+            var $this = $(val).find('.s_select');
+            var flag = false;
+            var $valueHeight = $(val).find('.s_value').height();
+            var $height = $(val).find('.s_option').height();
 
-        $(val).css('zIndex', $select.length - key);
+            $(val).css('zIndex', $select.length - key);
 
-        $this.find('.s_value').on('click', function () {
-            if (flag) {
-                $this.animate({
-                    height: $valueHeight + 'px'
-                }, 50);
-                flag = false;
-            }
-            else {
-                $this.animate({
-                    height: ($height + $valueHeight) + 'px'
-                }, 100);
-                flag = true;
+            $this.find('.s_value').on('click', function () {
+                if (flag) {
+                    $this.animate({
+                        height: $valueHeight + 'px'
+                    }, 50);
+                    flag = false;
+                }
+                else {
+                    $this.animate({
+                        height: ($height + $valueHeight) + 'px'
+                    }, 100);
+                    flag = true;
 
-                setTimeout(function () {
-                    $(document).one('click', function () {
-                        $this.animate({
-                            height: $valueHeight + 'px'
-                        }, 50);
-                        flag = false;
+                    setTimeout(function () {
+                        $(document).one('click', function () {
+                            $this.animate({
+                                height: $valueHeight + 'px'
+                            }, 50);
+                            flag = false;
+                        });
                     });
-                });
-            }
-        });
+                }
+            });
 
-        $this.find('.s_option p').on('click mouseenter mouseleave', function (event) {
-            if (event.type === 'click') {
-                $this.find('.s_value').html($(this).text());
-                $(this).addClass('active').siblings().removeClass('active');
-                $this.animate({
-                    height: $valueHeight + 'px'
-                }, 50);
-                flag = false;
-            }
-            else if (event.type === 'mouseenter') {
-                $(this).addClass('hover');
-            }
-            else {
-                $(this).removeClass('hover');
-            }
-            
-        });
+            $this.find('.s_option p').on('click mouseenter mouseleave', function (event) {
+                if (event.type === 'click') {
+                    $this.find('.s_value').html($(this).text());
+                    $(this).addClass('active').siblings().removeClass('active');
+                    $this.animate({
+                        height: $valueHeight + 'px'
+                    }, 50);
+                    flag = false;
+                }
+                else if (event.type === 'mouseenter') {
+                    $(this).addClass('hover');
+                }
+                else {
+                    $(this).removeClass('hover');
+                }
+                
+            });
 
-    });
+        });
+    };
+    
+    setSelect();
 
     /**
      * [h_tr 隔行变色]
@@ -87,6 +91,12 @@ $(function() {
     $('.h_tr:even').addClass('active');
     $('.cktable tr:even').addClass('active');
     $('.cktable_huojiang .h_tr:not(".h_tr_first")').hover(function () {
+        $(this).addClass('hover');
+    }, function () {
+        $(this).removeClass('hover');
+    });
+
+    $('.cktable_huojiang .y_tr').hover(function () {
         $(this).addClass('hover');
     }, function () {
         $(this).removeClass('hover');
@@ -209,9 +219,7 @@ $(function() {
 
     $('.s_click').on('click', function (event) {
         var target = $(event.target);
-        if (!target.hasClass('input')) {
-            $(this).closest('tr').next('.s_subinfo').show().siblings('.s_subinfo').hide();
-        }
+        $(this).closest('tr').next('.s_subinfo').show().siblings('.s_subinfo').hide();
     });
 
     $('.cktable_huojiang').on('click', '.bianji_btn', function () {
@@ -271,7 +279,7 @@ $(function() {
         if ($this.hasClass('aBtn')) {
             var flag = $this.attr('data-flag');
             var name = $this.attr('data-name');
-            $('.subtitle').show();
+            $('.sub_title').show();
             console.log(flag, 's');
             if (flag == 0) {
                 var index = $this.index();
@@ -283,6 +291,7 @@ $(function() {
                 $('.subtitle').find('.tab').removeClass('active');
                 $('.subtitle').append($tabs);
 
+                $('.subnav').hide();
                 $container.hide();
                 $iframe.hide();
                 $('.subinfo').append($ifra);
@@ -326,7 +335,8 @@ $(function() {
                 }
                 else {
                     $('.container').show();
-                    $('.subtitle').hide();
+                    $('.subnav').show();
+                    $('.sub_title').hide();
                 }
             }
             else {
@@ -358,6 +368,7 @@ $(function() {
         $('.s_p').eq(num).addClass('active');
         console.log($('.s_p').eq(num).text(), '内容');
         $('.s_content').eq(num).show().siblings('.s_content').hide();
+        setTimeout(setSelect, 500);
         event.preventDefault();
     });
 
@@ -371,5 +382,17 @@ $(function() {
             $(this).addClass('active').siblings().removeClass('active');
             $('.s_content').eq(key).show().siblings('.s_content').hide();
         })
+    });
+
+    var iTag = false;
+    $('.jzzh').on('click', function () {
+        if (iTag) {
+            $(this).find('input').attr('checked', false);
+            iTag =false;
+        }
+        else {
+            $(this).find('input').attr('checked', true);
+            iTag = true;
+        }
     });
 });

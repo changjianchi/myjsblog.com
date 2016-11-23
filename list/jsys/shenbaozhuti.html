@@ -9,33 +9,6 @@
     <script src="script/main.js"></script>
 </head>
 <body class="s_body">
-    <div class="header">
-        <div class="top">
-            <div class="top_info">
-                <h1 id="logo"><a href="#"><img src="images/logo.png" alt=""></a></h1>
-                <div class="denglu">
-                    <p class="p1"><span><a href="#">修改密码</a></span></p>
-                    <p class="p2"><span><a href="#">注销</a></span></p>
-                </div>
-            </div>
-        </div>
-        <div class="nav">
-            <div class="nav_info">
-                <a class="active" href="#">首页</a>
-                <a href="#">预算修订</a>
-                <a href="#">立项签约</a>
-            </div>
-        </div>
-        <div class="subnav">
-            <div class="subnav_info">
-                <div class="subnav_left">欢迎 XX 登录项目申报管理系统</div>
-                <div class="subnav_right">
-                    <span class="subnav_time">2012-11-06 14:58:30</span>
-                    <span class="subnav_reset"></span>
-                </div>
-            </div>
-        </div>
-    </div>
     <div class="content next_content">
         <div class="s_wrap">
             <div class="s_header">
@@ -447,7 +420,7 @@
                 </div>
                 <table>
                     <tr class="tr">
-                        <td colspan="4">申报主体艺术简介</td>
+                        <td colspan="4"><div class="sbztjj">申报主体艺术简介</div></td>
                     </tr>
                     <tr class="tr">
                         <td colspan="4">
@@ -571,7 +544,7 @@
                 <div class="s_head">项目周期</div>
                 <div class="s_box2">
                     <div class="s_box2_title"><p>第一阶段</p></div>
-                    <div class="s_box2_name"><p>首展/首演</p><span class="clickSpan">点击展开</span></div>
+                    <div class="s_box2_name"><p>首展/首演</p></div>
                     <table class="ssjh">
                         <tr class="tr">
                             <td class="td_name">实施日期</td>
@@ -700,7 +673,7 @@
                 </div>
             </div>
             <!-- 项目经费预算 -->
-            <div class="s_content edit_con">
+            <div class="s_content h_content edit_con">
                 <div class="s_head">项目经费预算</div>
                 <div class="s_box">
                     <table class="jfys">
@@ -724,15 +697,15 @@
                 </div>
                 <div class="s_box">
                     <div class="s_jfys">
-                        <table class="s_jfys_table">
-                            <tr class="tr">
+                        <table class="s_jfys_table cktable_huojiang">
+                            <tr class="tr table_first">
                                 <td align="center">开支项目</td>
                                 <td align="center">基金资助资金支出</td>
                                 <td align="center">自筹资金支出</td>
                                 <td align="center">项目总费用</td>
                                 <td align="center">备注说明</td>
                             </tr>
-                            <tr class="tr s_click">
+                            <tr class="tr s_click y_tr">
                                 <td align="center" class="td_name">一、直接费用</td>
                                 <td align="center"><input class="input s_input" type="text"></td>
                                 <td align="center"><input class="input s_input" type="text"></td>
@@ -743,35 +716,35 @@
                                 <td colspan="5">
                                     <table class="s_jfys_table_child">
                                         <tr class="tr">
-                                            <td align="center" class="td_name">(一)场馆租赁费</td>
+                                            <td align="center" class="td_name"><div class="yssub">(一)场馆租赁费</div></td>
                                             <td align="center"><input class="input s_input" type="text"></td>
                                             <td align="center"><input class="input s_input" type="text"></td>
                                             <td align="center"><input class="input s_input" type="text"></td>
                                             <td align="center"><input class="input s_input" type="text"></td>
                                         </tr>
                                         <tr class="tr">
-                                            <td align="center" class="td_name">(二)差旅费(天数/人数)</td>
+                                            <td align="center" class="td_name"><div class="yssub">(二)差旅费(天数/人数)</div></td>
                                             <td align="center"><input class="input s_input" type="text"></td>
                                             <td align="center"><input class="input s_input" type="text"></td>
                                             <td align="center"><input class="input s_input" type="text"></td>
                                             <td align="center"><input class="input s_input" type="text"></td>
                                         </tr>
                                         <tr class="tr">
-                                            <td align="center" class="td_name">1.交通费</td>
+                                            <td align="center" class="td_name"><div class="yssub">1.交通费</div></td>
                                             <td align="center"><input class="input s_input" type="text"></td>
                                             <td align="center"><input class="input s_input" type="text"></td>
                                             <td align="center"><input class="input s_input" type="text"></td>
                                             <td align="center"><input class="input s_input" type="text"></td>
                                         </tr>
                                         <tr class="tr">
-                                            <td align="center" class="td_name">2.住宿费</td>
+                                            <td align="center" class="td_name"><div class="yssub">2.住宿费</div></td>
                                             <td align="center"><input class="input s_input" type="text"></td>
                                             <td align="center"><input class="input s_input" type="text"></td>
                                             <td align="center"><input class="input s_input" type="text"></td>
                                             <td align="center"><input class="input s_input" type="text"></td>
                                         </tr>
                                         <tr class="tr">
-                                            <td align="center" class="td_name">3.伙食费</td>
+                                            <td align="center" class="td_name"><div class="yssub">3.伙食费</div></td>
                                             <td align="center"><input class="input s_input" type="text"></td>
                                             <td align="center"><input class="input s_input" type="text"></td>
                                             <td align="center"><input class="input s_input" type="text"></td>
@@ -780,7 +753,7 @@
                                     </table>
                                 </td>
                             </tr>
-                            <tr class="tr s_click">
+                            <tr class="tr s_click y_tr">
                                 <td align="center" class="td_name">二、间接费用</td>
                                 <td align="center"><input class="input s_input" type="text"></td>
                                 <td align="center"><input class="input s_input" type="text"></td>
@@ -791,35 +764,35 @@
                                 <td colspan="5">
                                     <table class="s_jfys_table_child">
                                         <tr class="tr">
-                                            <td align="center" class="td_name">(一)场馆租赁费</td>
+                                            <td align="center" class="td_name"><div class="yssub">(一)场馆租赁费</div></td>
                                             <td align="center"><input class="input s_input" type="text"></td>
                                             <td align="center"><input class="input s_input" type="text"></td>
                                             <td align="center"><input class="input s_input" type="text"></td>
                                             <td align="center"><input class="input s_input" type="text"></td>
                                         </tr>
                                         <tr class="tr">
-                                            <td align="center" class="td_name">(二)差旅费(天数/人数)</td>
+                                            <td align="center" class="td_name"><div class="yssub">(二)差旅费(天数/人数)</div></td>
                                             <td align="center"><input class="input s_input" type="text"></td>
                                             <td align="center"><input class="input s_input" type="text"></td>
                                             <td align="center"><input class="input s_input" type="text"></td>
                                             <td align="center"><input class="input s_input" type="text"></td>
                                         </tr>
                                         <tr class="tr">
-                                            <td align="center" class="td_name">1.交通费</td>
+                                            <td align="center" class="td_name"><div class="yssub">1.交通费</div></td>
                                             <td align="center"><input class="input s_input" type="text"></td>
                                             <td align="center"><input class="input s_input" type="text"></td>
                                             <td align="center"><input class="input s_input" type="text"></td>
                                             <td align="center"><input class="input s_input" type="text"></td>
                                         </tr>
                                         <tr class="tr">
-                                            <td align="center" class="td_name">2.住宿费</td>
+                                            <td align="center" class="td_name"><div class="yssub">2.住宿费</div></td>
                                             <td align="center"><input class="input s_input" type="text"></td>
                                             <td align="center"><input class="input s_input" type="text"></td>
                                             <td align="center"><input class="input s_input" type="text"></td>
                                             <td align="center"><input class="input s_input" type="text"></td>
                                         </tr>
                                         <tr class="tr">
-                                            <td align="center" class="td_name">3.伙食费</td>
+                                            <td align="center" class="td_name"><div class="yssub">3.伙食费</div></td>
                                             <td align="center"><input class="input s_input" type="text"></td>
                                             <td align="center"><input class="input s_input" type="text"></td>
                                             <td align="center"><input class="input s_input" type="text"></td>
@@ -828,7 +801,7 @@
                                     </table>
                                 </td>
                             </tr>
-                            <tr class="tr s_click">
+                            <tr class="tr s_click y_tr">
                                 <td align="center" class="td_name">三、不可预测费用</td>
                                 <td align="center"><input class="input s_input" type="text"></td>
                                 <td align="center"><input class="input s_input" type="text"></td>
@@ -839,35 +812,35 @@
                                 <td colspan="5">
                                     <table class="s_jfys_table_child">
                                         <tr class="tr">
-                                            <td align="center" class="td_name">(一)场馆租赁费</td>
+                                            <td align="center" class="td_name"><div class="yssub">(一)场馆租赁费</div></td>
                                             <td align="center"><input class="input s_input" type="text"></td>
                                             <td align="center"><input class="input s_input" type="text"></td>
                                             <td align="center"><input class="input s_input" type="text"></td>
                                             <td align="center"><input class="input s_input" type="text"></td>
                                         </tr>
                                         <tr class="tr">
-                                            <td align="center" class="td_name">(二)差旅费(天数/人数)</td>
+                                            <td align="center" class="td_name"><div class="yssub">(二)差旅费(天数/人数)</div></td>
                                             <td align="center"><input class="input s_input" type="text"></td>
                                             <td align="center"><input class="input s_input" type="text"></td>
                                             <td align="center"><input class="input s_input" type="text"></td>
                                             <td align="center"><input class="input s_input" type="text"></td>
                                         </tr>
                                         <tr class="tr">
-                                            <td align="center" class="td_name">1.交通费</td>
+                                            <td align="center" class="td_name"><div class="yssub">1.交通费</div></td>
                                             <td align="center"><input class="input s_input" type="text"></td>
                                             <td align="center"><input class="input s_input" type="text"></td>
                                             <td align="center"><input class="input s_input" type="text"></td>
                                             <td align="center"><input class="input s_input" type="text"></td>
                                         </tr>
                                         <tr class="tr">
-                                            <td align="center" class="td_name">2.住宿费</td>
+                                            <td align="center" class="td_name"><div class="yssub">2.住宿费</div></td>
                                             <td align="center"><input class="input s_input" type="text"></td>
                                             <td align="center"><input class="input s_input" type="text"></td>
                                             <td align="center"><input class="input s_input" type="text"></td>
                                             <td align="center"><input class="input s_input" type="text"></td>
                                         </tr>
                                         <tr class="tr">
-                                            <td align="center" class="td_name">3.伙食费</td>
+                                            <td align="center" class="td_name"><div class="yssub">3.伙食费</div></td>
                                             <td align="center"><input class="input s_input" type="text"></td>
                                             <td align="center"><input class="input s_input" type="text"></td>
                                             <td align="center"><input class="input s_input" type="text"></td>
@@ -999,11 +972,15 @@
                         <div class="s_tab_right">
                             <div class="file_box">
                                 <div class="file_img"><img src="images/file_img.jpg" alt=""></div>
-                                <div class="file_name"><span class="file_sp1">其他材料一</span><p class="file_sp1">文件三.jpg</p></div>
-                                <div class="file_name"><span class="file_sp2">文件格式</span><p class="file_sp1">JPEG图像</p></div>
-                                <div class="file_name"><span class="file_sp2">文件大小</span><p class="file_sp1">968KB</p></div>
-                                <div class="file_name"><span class="file_sp2">上传时间</span><p class="file_sp1">2016.11.15 14:30:09</p></div>
-                                <div class="loding"><p></p></div>
+                                <div class="file_name"><span class="file_sp1">其他材料：</span><p class="file_sp1"><b>文件三.jpg</b></p></div>
+                                <div class="file_name"><span class="file_sp2">文件格式：</span><p class="file_sp1">JPEG图像</p></div>
+                                <div class="file_name"><span class="file_sp2">文件大小：</span><p class="file_sp1">968KB</p></div>
+                                <div class="file_name"><span class="file_sp2">上传时间：</span><p class="file_sp1">2016.11.15 14:30:09</p></div>
+                                <div class="load_text">
+                                    <div class="load_left">IS uploading,please wait...</div>
+                                    <div class="load_right"><img src="images/load_bg.png" alt="">+8%</div>
+                                </div>
+                                <div class="loading"><p></p></div>
                             </div>
                         </div>
                     </div>
