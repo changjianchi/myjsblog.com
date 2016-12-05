@@ -12,5 +12,6 @@ var list = [
     {"title": "input拖动事件", "tip": "案例","link": "list/inputrange/index.html"},
     {"title": "iscroll", "tip": "案例","link": "list/iscroll/index.html"},
     {"title": "江苏艺术", "tip": "项目","link": "list/jsys/index.html"},
-    {"title": "js实现下拉", "tip": "案例","link": "list/select/index.html"}
+    {"title": "js实现下拉", "tip": "案例","link": "list/select/index.html"},
+    {"title": "联华信", "tip": "雷比项目","link": "list/lianhuaxin/index.html"}
 ]

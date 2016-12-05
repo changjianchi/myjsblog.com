@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <link rel="stylesheet" href="../../css/libs/bootstrap.min.css">
+    <link href="../../css/attr_alter.css" type="text/css" rel="stylesheet"/>
+    <link rel="stylesheet" href="../../css/attr_pop.css">
+    <script src="../../js/libs/jquery.min.js"></script>
+    <script src="../../js/attr_alter.js"></script>
+    <script src="../../js/common/common.js"></script>
+    <title></title>
+</head>
+<style>
+    .wj-same-input{ background: #f2f3f4; border: 1px solid #d1d1d1; color: #333; font: 12px/29px "Microsoft YaHei"; height: 29px; padding:0 10px; -webkit-border-radius:5px; -moz-border-radius:5px; border-radius:5px;}
+    .wj-file-upload{ width:50%; height:29px; -webkit-border-radius:5px; -moz-border-radius:5px; border-radius:5px; background:#2196f3; color:#fff; position:relative;font: 14px/29px "Microsoft YaHei"; text-align:center; cursor:pointer;}
+    .wj-file-upload input{ position:absolute; z-index:-1;}
+    
+</style>
+<script>
+    var api = frameElement.api, W = api.opener;
+</script>
+<body style="background: #ececec;padding:15px;">
+<div class="wj-steppop-wrap" style="width: 710px;">
+    <div class="wj-step-tit">
+        <span>事件批注</span>
+        <a href="javascript:void(0);" class="wj-popclose-btn"> </a>
+    </div>
+    <div class="wj-notepop-forms">
+        <dl class="wj-nform-dl clearfix">
+            <dt>快速批注选择：</dt>
+            <dd class="clearfix">
+                <div class="wj-depend-select" id="wjNoteSelect">
+                    <p class="wj-depsel-content">请选择事件等级</p>
+                    <i class="caret-self-set"></i>
+                    <!-- 下拉菜单的值放在这里 -->
+                    <input class="wj-data-ipt" type="hidden" name="" >
+                    <ul class="wj-depsel-list" id="wjNoteList" style="">
+                        <li data-id="0">批注喽</li>
+                        <li data-id="1">批。。</li>
+                        <li data-id="2">批。。。</li>
+                        <li data-id="3" class="wjOtherNote">--其它批注--</li>
+                    </ul>
+                </div>
+            </dd>
+        </dl>
+        <dl class="wj-nform-dl clearfix wjOtherNTear" style="display: none;">
+            <dt>其他批注：</dt>
+            <dd class="clearfix">
+                <textarea name="" class="textArea-self-set"></textarea>
+            </dd>
+        </dl>
+        <dl class="wj-nform-dl clearfix">
+            <dt>处理人姓名：</dt>
+            <dd class="clearfix">
+                <input type="text" name="abcd" class="wj-same-input" style="width: 50%;" value="">
+            </dd>
+        </dl>
+        <dl class="wj-nform-dl clearfix">
+            <dt>上传截图：</dt>
+            <dd class="clearfix">
+                <label class="wj-file-upload" >
+                    <input type="file" name="abcd" style="width: 50%;" value="">浏览
+                </label>
+            </dd>
+        </dl>
+    </div>
+    <div class="wj-config-btns clearfix" style="width: 100%;background: #fff;margin-top: 10px;">
+        <a class="wj-cfgbtn wj-cfg-st1" id="wjNoteReturn" href="#">返回</a>
+        <a class="wj-cfgbtn wj-cfg-st2 wj-cfg-cople" id="wjNoteComplete" href="#">完成</a>
+    </div>
+</div>
+
+
+<script>
+    $('.wj-popclose-btn,#wjNoteReturn,.wj-complete-alert .wj-combtn-confirm').click(function () {
+        api.close();        //关闭弹窗
+    });
+    new simuSelect({'selectWrap':$('#wjNoteSelect')});
+
+    //确定
+    $('#wjNoteComplete').click(function () {
+        //通过   api.data 取得选择的id
+        api.hide();
+        $.wjNotify('批注成功','',1000);
+    });
+
+    //标注选择
+    $('li','#wjNoteList').on('click', function () {
+        if($(this).hasClass('wjOtherNote')){
+            $('.wjOtherNTear').show();
+        }else{
+            $('.wjOtherNTear').hide();
+        }
+    });
+
+</script>
+</body>
+</html>

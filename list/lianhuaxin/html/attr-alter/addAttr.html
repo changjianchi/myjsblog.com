@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <link rel="stylesheet" href="../../css/libs/bootstrap.min.css">
+    <link rel="stylesheet" href="../../css/attr_pop.css">
+    <script src="../../js/libs/jquery.min.js"></script>
+    <script src="../../js/common/common.js"></script>
+    <title></title>
+</head>
+<script>
+    var api = frameElement.api, W = api.opener;
+</script>
+<body style="background: #ececec;padding:15px;width: 960px;">
+<div class="wj-addpop-info">
+    <a href="javascript:void(0);" class="wj-popclose-btn"></a>
+    <div class="wj-addpop-tit">
+        <span class="pull-left wj-addtit-txt">附加属性信息</span>
+    </div>
+    <table class="wj-popinfo-tabel">
+        <thead>
+        <tr>
+            <th width="50%">属性名称</th>
+            <th width="50%">值</th>
+        </tr>
+        </thead>
+
+    </table>
+    <div class="wj-popinfo-data" style="height:395px;overflow-y:auto;background: #fff;">
+        <table class="wj-popinfo-tabel">
+            <tbody>
+            <tr>
+                <td>额定电流</td>
+                <td><input type="text" value="200" class="wj-ip-input" name="abcd"></td>
+            </tr>
+            <tr>
+                <td>额定电流</td>
+                <td><input type="text" value="200" class="wj-ip-input" name="abcd"></td>
+            </tr>
+            <tr>
+                <td>待指机房中的图标宽度</td>
+                <td><input type="text" value="200" class="wj-ip-input" name="abcd"></td>
+            </tr>
+            <tr>
+                <td>额定电流</td>
+                <td><input type="text" value="200" class="wj-ip-input" name="abcd"></td>
+            </tr>
+            <tr>
+                <td>额定电流</td>
+                <td><input type="text" value="200" class="wj-ip-input" name="abcd"></td>
+            </tr>
+            <tr>
+                <td>额定电流</td>
+                <td><input type="text" value="200" class="wj-ip-input" name="abcd"></td>
+            </tr>
+
+            </tbody>
+        </table>
+    </div>
+</div>
+<div style="width: 100%;background: #fff;margin-top: 10px;" class="wj-config-btns clearfix">
+    <a href="#" id="wjNoteReturn" class="wj-cfgbtn wj-cfg-st1">返回</a>
+    <a href="#" id="wjNoteComplete" class="wj-cfgbtn wj-cfg-st2 wj-cfg-cople">保存属性</a>
+</div>
+<script>
+    $('#wjNoteReturn,.wj-popclose-btn').click(function () {
+        api.close();
+    });
+
+    $('#wjNoteComplete').click(function () {
+        //通过   api.data 取得选择的id
+        api.hide();
+        $.wjNotify('保存成功','',1000);
+    });
+
+</script>
+</body>
+</html>

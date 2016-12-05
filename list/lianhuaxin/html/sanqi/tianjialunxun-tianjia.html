@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no" name="viewport" >
+    <!-- 新 Bootstrap 核心 CSS 文件 -->
+    <link rel="stylesheet" href="../../css/libs/bootstrap.min.css">
+    <link rel="stylesheet" href="../../css/common/top_nav.css">
+    <link rel="stylesheet" href="../../css/configuration_index.css">
+    <link href="../../css/attr_alter.css" type="text/css" rel="stylesheet"/>
+    <!--[if IE 9]>
+        <link rel="stylesheet" type="text/css" href="../../css/common/ie9.css" />
+    <![endif]-->
+
+    <!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->
+    <script src="../../js/libs/jquery.min.js"></script>
+    <!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+    <script src="../../js/libs/bootstrap.min.js"></script>
+    <script src="../../js/libs/echarts-all.min.js"></script>
+    <script src="../../js/common/common.js"></script>
+    <script src="../../js/configuration_index.js"></script>
+    <script src="../../js/attr_alter.js"></script>
+
+    <script src="../../js/lhg/lhgdialog.js"></script>
+
+    <title>管理中心-配置步骤一</title>
+    <style>
+    
+    @media screen and (min-width:768px){
+        .col-sm-6{float: left;width: 50%;}
+    }
+    @media screen and (min-width:992px){
+        .col-md-3{float: left;width: 25%;}
+    }
+    @media screen and (min-width:1200px){
+        .col-lg-6{float: left;width: 50%;}
+    }
+    
+    </style>
+</head>
+<body>
+<!-- 配置步骤1 -->
+<div class="wj-outer">
+    <div class="container-fluid wj-msg-container">
+        <div class="row">
+            <!-- ziyuanguanli -->
+            <div class="tab-content-container has-load-show ziyuanguanli">
+                <div class="manage-list-container">
+                    <!-- 简介栏 -->
+                    <div class="col-lg-6 wj-msg-wrap wj-pr7-5">
+                        <div class="wj-msg-cont">
+                            <div class="wj-msg-tit clearfix">
+                                <h3 class="pull-left">设备基本信息</h3>
+                            </div>
+                            <div class="wj-msg-txt clearfix">
+                                <div class="col-md-3 col-sm-6">
+                                    <span class="wj-txt-tit">设备名称：</span>
+                                    <span class="wj-txt-bod">ORC1234324</span>
+                                </div>
+                                <div class="col-md-3 col-sm-6">
+                                    <span class="wj-txt-tit">设备IP：</span>
+                                    <span class="wj-txt-bod">192.168.1.1</span>
+                                </div>
+                                <div class="col-md-3 col-sm-6">
+                                    <span class="wj-txt-tit">所属业务系统：</span>
+                                    <span class="wj-txt-bod">数据库软件</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="clear"></div>
+<div class="cen-none cen2-none">
+                        <div class="wj-msg-cont">
+                            <div class="wj-msg-tit clearfix">
+                                <h3 class="pull-left">属性选择向导</h3>
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="wj-oneser-item clearfix yuzhi-text-b">
+                                <span class="wj-sear-tit pull-left">视图种类</span>
+                                <div class="wj-depend-select wj-longest-ipt" class="yuzhi-text-b">
+                                    <p class="wj-depsel-content">请选择视图种类</p>
+                                    <i class="caret-self-set"></i>
+                                    <!-- 下拉菜单的值放在这里 -->
+                                    <input class="wj-data-ipt" type="hidden" name="">
+                                    <ul class="wj-depsel-list" style="">
+                                        <li data-id="0">请选择属性过滤</li>
+                                        <li data-id="1">交换机</li>
+                                        <li data-id="2">路由器</li>
+                                        <li data-id="3">IP设备</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="wj-oneser-item clearfix yuzhi-text-b">
+                                <span class="wj-sear-tit pull-left">视图种类</span>
+                                <div class="wj-depend-select wj-longest-ipt" id="yuzhi-text-b">
+                                    <p class="wj-depsel-content">请选择视图种类</p>
+                                    <i class="caret-self-set"></i>
+                                    <!-- 下拉菜单的值放在这里 -->
+                                    <input class="wj-data-ipt" type="hidden" name="">
+                                    <ul class="wj-depsel-list" style="">
+                                        <li data-id="0">请选择属性过滤</li>
+                                        <li data-id="1">交换机</li>
+                                        <li data-id="2">路由器</li>
+                                        <li data-id="3">IP设备</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4">
+                            <div class="wj-oneser-item clearfix">
+                                <span class="wj-sear-tit pull-left">视图种类</span>
+                                <i class="tianjialunxun-biaoqianxuanze danxuan-time">
+                                    <b></b>
+                                    <em>轮询添加</em>
+                                </i>
+                                <i class="tianjialunxun-biaoqianxuanze active danxuan-time">
+                                    <b></b>
+                                    <em>轮询添加</em>
+                                </i>
+                                <i class="tianjialunxun-biaoqianxuanze activenone danxuan-time">
+                                    <b></b>
+                                    <em>轮询添加</em>
+                                </i>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 bottom-border">
+                            <div class="wj-oneser-item clearfix wj-sear-tit-2table border-none zhongleishitu2">
+                                <span class="wj-sear-tit pull-left">视图种类</span>
+                                <b class="wj-sear-tit-2">
+                                    <i class="tianjialunxun-biaoqianxuanze">
+                                        <b></b>
+                                        <em>轮询添加</em>
+                                    </i>
+                                    <i class="tianjialunxun-biaoqianxuanze active">
+                                        <b></b>
+                                        <em>轮询添加</em>
+                                    </i>
+                                    <i class="tianjialunxun-biaoqianxuanze activenone">
+                                        <b></b>
+                                        <em>轮询添加</em>
+                                    </i>
+                                    <i class="tianjialunxun-biaoqianxuanze">
+                                        <b></b>
+                                        <em>轮询添加</em>
+                                    </i>
+                                    <i class="tianjialunxun-biaoqianxuanze active">
+                                        <b></b>
+                                        <em>轮询添加</em>
+                                    </i>
+                                    <i class="tianjialunxun-biaoqianxuanze activenone">
+                                        <b></b>
+                                        <em>轮询添加</em>
+                                    </i>
+                                    <i class="tianjialunxun-biaoqianxuanze">
+                                        <b></b>
+                                        <em>轮询添加</em>
+                                    </i>
+                                    <i class="tianjialunxun-biaoqianxuanze active">
+                                        <b></b>
+                                        <em>轮询添加</em>
+                                    </i>
+                                    <i class="tianjialunxun-biaoqianxuanze activenone" title="">
+                                        <b></b>
+                                        <em>轮询添询添询添询添询添询添询添询添询添询添询添询添询添询添询添询添加</em>
+                                    </i>
+                                    <i class="tianjialunxun-biaoqianxuanze">
+                                        <b></b>
+                                        <em>轮询添加</em>
+                                    </i>
+                                    <i class="tianjialunxun-biaoqianxuanze active">
+                                        <b></b>
+                                        <em>轮询添加</em>
+                                    </i>
+                                    <i class="tianjialunxun-biaoqianxuanze activenone">
+                                        <b></b>
+                                        <em>轮询添加</em>
+                                    </i>
+                                    <i class="tianjialunxun-biaoqianxuanze">
+                                        <b></b>
+                                        <em>轮询添加</em>
+                                    </i>
+                                    <i class="tianjialunxun-biaoqianxuanze active">
+                                        <b></b>
+                                        <em>轮询添加</em>
+                                    </i>
+                                    <i class="tianjialunxun-biaoqianxuanze activenone">
+                                        <b></b>
+                                        <em>轮询添加</em>
+                                    </i>
+                                </b>
+                            </div>
+                        </div>
+                        <div class="clear"></div>
+                        <div class="tianjialunxun-x-ok">
+                            <a href="tianjialunxun.html" class="fanhui">返回</a>
+                            <a href="tianjialunxun-tianjia-x.html" class="xiayibu active">下一步</a>
+                        </div>                    
+</div><!-- cen-end -->    
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    $(document).ready(function() {
+        //  共用动画
+        commonFunction1();
+
+    });
+
+    $(function(){
+        var bomiaofenshi = $('.bomiaofenshi');
+        var wjDepselList = $('.wj-depsel-list');
+        wjDepselList.on('click','li',function(){
+            var c = Number($(this).attr('data-id'));
+            bomiaofenshi.attr('data-id',c);
+            if(c === 2){
+                var bomiaofenshiVal = $('.bomiaofenshi').val();
+                if(bomiaofenshiVal < 10){
+                    bomiaofenshi.val(10);
+                }
+            }
+        });
+        bomiaofenshi.on('input',function(){
+            var thv = $(this).val();
+            var thid = Number($(this).attr('data-id'));
+            if(thid === 2){
+                if(thv < 10){
+                    $(this).val(10);
+                }
+            }else{
+                if(thv < 0){
+                    $(this).val(0);
+                }
+            }
+            
+        });
+
+        var lunxunShezhiA = $('.lunxun-shezhi-a');
+        var shouqi = $('.shouqi');
+        var tableBoctaCellBt = $('.table-bocta-cell-bt');
+        var tableBoctaCell = $('.table-bocta-cell');
+        tableBoctaCellBt.addClass('none');
+        tableBoctaCell.addClass('none');
+        lunxunShezhiA.each(function(i){
+            $(this).attr('data-id',i);
+        });
+        shouqi.each(function(){
+            var thHtml = $(this).html();
+            $(this).click(function(){
+                if($(this).hasClass('active')){
+                    $(this).html(thHtml);
+                }else{
+                    $(this).html('收起');
+                }
+            });
+        });
+        lunxunShezhiA.on('click',function(){
+            var a = Number($(this).attr('data-id'));
+            if($(this).hasClass('active')){
+                $(this).removeClass('active');
+                tableBoctaCellBt.eq(a).addClass('none');
+                tableBoctaCell.eq(a).addClass('none');
+            }else{
+                $(this).addClass('active');
+                tableBoctaCellBt.eq(a).removeClass('none');
+                tableBoctaCell.eq(a).removeClass('none');
+            }
+        });
+        $('.cen4-cennone').hide();
+        $('.c4time-gengduoshezhi-a').on('click',function(){
+            if($(this).hasClass('active')){
+                $(this).removeClass('active');
+                $('.cen4-cennone').hide();
+            }else{
+                $(this).addClass('active');
+                $('.cen4-cennone').show();
+            }
+        });
+    });
+
+    $(function () {
+        
+        new simuSelect({'selectWrap':$('#eventLevel')});
+        new simuSelect({'selectWrap':$('#wjOrderWay')});
+        new simuSelect({'selectWrap':$('#wjViewKinds')});
+
+        var xialakuang = $('.yuzhi-text-b');
+            xialakuang.each(function(i){
+                var c = 'xialakuang'+i;
+                $(this).find('.wj-depend-select').attr('id',c);
+                return new simuSelect({'selectWrap':$('#'+c)});
+            });
+        
+        function getElementsByClassName(className,tagName){
+            var ele=[],all=document.getElementsByTagName(tagName||"*");
+            for(var i=0;i<all.length;i++){
+                if(all[i].className==className){
+                    ele[ele.length]=all[i];
+                }
+            }
+            return ele;
+        }
+
+
+
+/*        new simuSelect({'selectWrap':$('#wjViews')});*/
+
+        //帮助信息
+        $('.wj-help-ico').click(function () {
+            var id=$(this).data('id');
+            $.dialog({
+                lock:'true',
+                drag:false,
+                width:'800px',
+                title:'',
+                content:'url:./html/attr-alter/helpDoc.html',       //通过URL传id
+            });
+        });
+
+        //表格折叠
+        $('.wj-colpa-td .wj-ico-colapse').on('click', function () {
+            var clsTr=$(this).closest('tr'),
+                    curLevel=clsTr.data('level');
+            if($(this).hasClass('opend')){
+                $(this).removeClass('opend');
+                clsTr.nextAll().each(function () {
+                    var level=$(this).data('level');
+                    if(level>curLevel) {
+                        $(this).hide().find('.wj-ico-colapse').removeClass('opend');
+                    }else{
+                        return false;
+                    }
+                });
+            }else{
+                $(this).addClass('opend');
+                clsTr.nextAll().each(function () {
+                    var level=$(this).data('level');
+                    if(level==curLevel+1) {
+                        $(this).show();
+                    }else{
+                        return false;
+                    }
+                });
+            }
+        });
+        
+        //批注
+        $('.wj-seropt-note').click(function () {
+            var selIpt=$('.wj-check-single input:checked');
+            if(selIpt.length < 1){
+                $.wjNotify('请选择要批注的设备！','warn') ;
+                return false;
+            }
+            var selVal=[];
+            selIpt.each(function () {
+                selVal.push($(this).val());
+            });
+            $.dialog({
+                lock:'true',
+                drag:false,
+                width:'740px',
+                title:'',
+                content:'url:./html/attr-alter/notepop.html',
+                data:selVal                 //将值传给弹出页面  弹出页面获取值方式  api.data
+            });
+        });
+
+    });
+
+    //无限下拉
+    $(document).on('click','.wj-infinit-drop .wj-inf-colla b',function(){
+        var clsLi=$(this).closest('li'),
+                curLevel=clsLi.data('level');
+        if($(this).hasClass('opend')){
+            $(this).removeClass('opend');
+            clsLi.nextAll().each(function () {
+                var level=$(this).data('level');
+                if(level>curLevel) {
+                    $(this).hide().find('.wj-inf-colla b').removeClass('opend');
+                }else{
+                    return false;
+                }
+            });
+        }else{
+            $(this).addClass('opend');
+            clsLi.nextAll().each(function () {
+                var level=$(this).data('level');
+                if(level==curLevel+1) {
+                    $(this).show();
+                }else{
+                    return false;
+                }
+            });
+        }
+
+    });
+
+    $(document).on('click','.wj-inf-men .wj-inf-check', function () {
+        var clsLi=$(this).parent(),
+                curLevel=clsLi.data('level');
+        if($(this).hasClass('checked')){
+            $(this).removeClass('checked');
+            clsLi.nextAll().each(function () {
+                var level=$(this).data('level');
+                if(level>curLevel) {
+                    $(this).find('.wj-inf-check').removeClass('checked');
+                }else{
+                    return false;
+                }
+            });
+        }else{
+            $(this).addClass('checked');
+            clsLi.nextAll().each(function () {
+                var level=$(this).data('level');
+                if(level>curLevel) {
+                    $(this).find('.wj-inf-check').addClass('checked');
+                }else{
+                    return false;
+                }
+            });
+        }
+        setDropTxt();
+    });
+
+    $(document).on('click','.wj-inf-all .wj-inf-check', function () {
+        if($(this).hasClass('checked')){
+            $(this).removeClass('checked');
+            $(this).parent().nextAll().find('.wj-inf-check').removeClass('checked');
+        }else{
+            $(this).addClass('checked');
+            $(this).parent().nextAll().find('.wj-inf-check').addClass('checked');
+        }
+        setDropTxt();
+    });
+    
+    function setDropTxt(){
+        var txt='',dval='';
+        $('.wj-inf-men .wj-inf-check.checked').each(function () {
+            txt+=$(this).siblings('.wj-inf-txt').text()+',';
+            dval+=$(this).parent().data('id')+',';
+        });
+        txt= txt.substring(0,txt.length-1);
+        dval=dval.substring(0,dval.length-1);
+        $('.wj-infi-pointer .wj-data-ipt').val(dval);
+        if(txt==''){
+            $('.wj-infi-pointer .wj-depsel-content').text('请选择视图');
+        }else{
+            $('.wj-infi-pointer .wj-depsel-content').text(txt);
+        }
+    }
+    $('.wj-infi-pointer .wj-depsel-content').on('click', function () {
+        if($('.wj-infi-pointer .wj-infinit-drop').is(':visible')){
+            $('.wj-infi-pointer .wj-infinit-drop').hide();
+        }else{
+            $('.wj-infi-pointer .wj-infinit-drop').show();
+        }
+    });
+    $(document).click(function (evt) {
+        if($(evt.target).closest('.wj-infi-pointer').length < 1){
+            $('.wj-infi-pointer .wj-infinit-drop').hide();
+        }
+    });
+
+    
+</script>
+<script src="../../js/sanqi.js"></script>
+</body>
+</html>
