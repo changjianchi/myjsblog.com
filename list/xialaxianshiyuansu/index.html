@@ -269,9 +269,12 @@
     $(function () {
         var $container = $('.wrap');
         var $box = $container.find('.box');
+        var $hei = $box.height();
 
         var global = {};
         global.window_height = $(window).height();
+        global.scrollTop = $(document).scrollTop();
+        global.top  = global.window_height + global.scrollTop;
 
         global.box = $box.map(function (value, index) {
             var obj = {};
@@ -282,19 +285,19 @@
 
         var setClass = function (obj, height) {
             $.each(obj, function (key, val) {
-                if (val.top < height) {
+                if (val.top < height && val.top > global.scrollTop - $hei) {
                     $box.eq(key).addClass('active');
                 }
             });
         };
 
-        setClass(global.box, global.window_height);
+        setClass(global.box, global.top);
 
         $(window).on('scroll', function () {
-            var $top = $(document).scrollTop();
-            $top = $top + global.window_height;
+            global.scrollTop = $(document).scrollTop();
+            global.top = global.scrollTop + global.window_height;
 
-            setClass(global.box, $top);
+            setClass(global.box, global.top);
         })
     });
     </script>
