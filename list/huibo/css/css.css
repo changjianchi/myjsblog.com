@@ -193,16 +193,19 @@ body,html{
     float: right;
 }
 .nav2-menu a{
-    display: inline-block;
-    padding:0 4px;
-    height: 26px;
-    line-height: 26px;
+    display:block;
+    padding:0 6px;
+    height: 20px;
+    line-height: 20px;
     color: #fff;
     font-weight: bold;
     margin-top: 17px;
+    float: left;
 }
 .nav2-menu a:hover{
     background: #94d60a;
+    font-size: 12px;
+    letter-spacing: 2px;
 }
 .content-one-text{
     width: 100%;
