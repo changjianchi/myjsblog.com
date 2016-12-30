@@ -273,7 +273,9 @@
 
         var global = {};
         global.window_height = $(window).height();
-        global.scrollTop = $(document).scrollTop();
+        setTimeout(function () {
+            global.scrollTop = $(document).scrollTop();
+        }, 500)
         global.top  = global.window_height + global.scrollTop;
 
         alert(global.top);
