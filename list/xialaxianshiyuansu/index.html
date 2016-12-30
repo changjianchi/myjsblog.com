@@ -275,10 +275,9 @@
         global.window_height = $(window).height();
         setTimeout(function () {
             global.scrollTop = $(document).scrollTop();
-        }, 500)
+            alert(global.scrollTop);
+        }, 50)
         global.top  = global.window_height + global.scrollTop;
-
-        alert(global.top);
 
         global.box = $box.map(function (value, index) {
             var obj = {};
