@@ -276,6 +276,8 @@
         global.scrollTop = $(document).scrollTop();
         global.top  = global.window_height + global.scrollTop;
 
+        alert(global.top);
+
         global.box = $box.map(function (value, index) {
             var obj = {};
             obj.index = index;
