@@ -278,8 +278,9 @@ body,html{
     background: url(../img/about/about-nav4.png) no-repeat center top;
 }
 .content-cen-block{
-    width: 100%;
+    width: 1366px;
     height: 700px;
+    margin:0 auto;
     overflow: hidden;
 }
 .about-gongsijieshao-img{

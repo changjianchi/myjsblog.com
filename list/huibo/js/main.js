@@ -37,7 +37,7 @@ $(function(){
     aboutTopBjImg.animate({
         'top':'0',
         'height':'100%'
-    },1300);
+    },3800);
 
 
     //about
@@ -61,12 +61,12 @@ $(function(){
             if(winTop > thTop - winHeight){
                 setTimeout(function(){
                     Animate(This);
-                },aniC*300);
+                },aniC*400);
                 if(This.hasClass('shuzi-deijia')){
                     var ThisMr = This.find('b').html();
                     setTimeout(function(){
                         shuzidiejia(This,ThisMr,58);
-                    },(aniC+3)*300);
+                    },(aniC+3)*400);
                     This.find('b').html(0);
                 }
                 aniC++;
