@@ -1,0 +1,31 @@
+@charset "utf-8";
+/* CSS Document */
+
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,button,textarea,blockquote,th,td,p{margin:0;padding:0}
+body{font-size:14px; line-height:1.5rem; color:#333; overflow-x:hidden; background:#f5f5f5; font-family:"微软雅黑","宋体","Arial","\5b8b\4f53","sans-serif"; word-break:break-all;word-wrap:break-word;}
+input,textarea{font-size:12px; outline:none; font-family:\5b8b\4f53,Verdana,Arial}
+textarea{resize:none} /* 取消可自动拖拽功能 */
+/*点击没有虚线*/
+a{outline:none; star:expression(this.onFocus=this.blur()); text-decoration:none;}
+a:hover{text-decoration:underline;}
+a img{border:none;}
+img{border:none;}
+ul li{list-style:none;}
+dl dd{list-style:none;}
+.clear{clear:both; font-size:0; line-height:0;}
+.cls:after{content:"...";}
+
+.lb{width:540px; margin:50px auto 0; position:relative;}
+.lb_info{width:100%; height:290px; position:relative; overflow:hidden; z-index:0;}
+.lb ul{width:100%; height:290px; position:absolute; left:0; top:0;}
+.lb ul li{width:540px; height:290px; float:left; display:inline; position:relative; overflow:hidden;}
+.lb ul li img{width:100%;}		/* 使用时可以去掉这句 */
+.lb ul li p{width:100%; height:50px; line-height:50px; font-size:16px; color:#FFF; position:absolute; left:0; bottom:0; z-index:1;}
+.lb ul li p em{width:100%; height:100%; position:absolute; left:0; top:0; z-index:0; background:#000; opacity:0.6; filter:alpha(opacity=60);}
+.lb ul li p i{position:absolute; left:0; top:0; width:100%; height:100%; text-indent:14px; z-index:1; font-style:normal;}
+.prev,.next{width:36px; height:61px; cursor:pointer; position:absolute; top:50%; margin:-30px 0 0; display:none;}
+.prev{left:0;}
+.next{right:0;}
+.lb_btn{width:auto; position:absolute; right:10px; bottom:10px; text-align:right;}
+.lb_btn span{width:14px; height:14px; display:inline-block; background:#F30; -webkit-border-radius:50%; -moz-border-radius:50%; border-radius:50%; cursor:pointer; margin:0 4px;}
+.lb_btn span.active{background:#FF0;}
