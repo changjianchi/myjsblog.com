@@ -14,5 +14,6 @@ var list = [
     {"title": "江苏艺术", "tip": "项目","link": "list/jsys/index.html"},
     {"title": "js实现下拉", "tip": "案例","link": "list/select/index.html"},
     {"title": "下拉显示元素", "tip": "案例","link": "list/xialaxianshiyuansu/index.html"},
-    {"title": "幻灯片", "tip": "案例","link": "list/huandengpian/index.html"}
+    {"title": "幻灯片", "tip": "案例","link": "list/huandengpian/index.html"},
+    {"title": "Vue demo", "tip": "案例","link": "list/vuedemo/index.html"}
 ]
