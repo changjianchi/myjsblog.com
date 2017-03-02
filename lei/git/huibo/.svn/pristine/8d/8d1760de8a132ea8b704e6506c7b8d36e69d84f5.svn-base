@@ -1,0 +1,493 @@
+@charset "utf-8";
+.huibo-about .con-cen-h2 p{
+    text-align: left;
+    padding-left: 2.13rem;
+}
+.about-k4{
+    width: 100%;
+    height: 2.8rem;
+    margin-top: 1.4rem;
+}
+.about-k4-i{
+    display: inline-block;
+    width: 2.4rem;
+    height: 100%;
+    overflow: hidden;
+}
+.about-k4-i i{
+    display: block;
+    width: 2.2rem;
+    height: 2.2rem;
+    margin:0 auto;
+    border-radius: 50%;
+    background: rgba(0,0,0,0.3);
+}
+.about-k4-i i div{
+    width: 100%;
+    height: 100%;
+}
+.about-k4-i em{
+    font-size: .33rem;
+    text-align: center;
+    width: 100%;
+    display: block;
+    height: .33rem;
+    line-height: .33rem;
+    margin-top: .16rem;
+}
+.about-cen{
+    margin-top: 20px;
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    position: relative;
+}
+.about-img-bt,.about-img-bt img{
+    width: 100%;
+    height: auto;
+    display: block;
+}
+.about-logo-text{
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    padding:0 .55rem;
+    font-size: .32rem;
+    color: #8d8d8d;
+    line-height: .45rem;
+    letter-spacing: -0.039em;
+    text-align: justify;
+}
+.about-logo-text img{
+    width: auto;
+    height: auto;
+    display: block;
+    margin:.5rem 0 .15rem;
+}
+.about-logo-text em,.about-logo-text span{
+    display: block;
+    width: 100%;
+    height: auto;
+}
+.about-logo-text em a{
+    float: right;
+    display: inline-block;
+    text-decoration: underline;
+    color: #000;
+}
+.about-text-txt{
+    text-align: justify;
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    padding:0 .55rem;
+    font-size: .32rem;
+    color: #8d8d8d;
+    line-height: .45rem;
+}
+.about-text-txt h1{
+    display: block;
+    width: 100%;
+    height: .55rem;
+    line-height: .55rem;
+    font-size: .55rem;
+    margin:1.1rem 0 .2rem;
+    color: #000;
+}
+.about-text-txt .b-stop{
+    display: block;
+    width: 4.1rem;
+    height: auto;
+    margin: .1rem 0;
+}
+.about-text-txt p.c000{
+    color: #000;
+}
+.about-um{
+    width: 100%;
+    height: auto;
+    margin-top: 1.3rem;
+    padding:0 .55rem;
+}
+.about-um-top{
+    width: 100%;
+    height: 2.65rem;
+}
+.about-um-top span{
+    display: block;
+    float: left;
+    width: 45%;
+    height: 100%;
+    padding-left: 1.6rem;
+}
+.about-um-top span:first-child{
+    width: 55%;
+    border-right: 1px solid #e1e1e1;
+    padding-left: 0;
+}
+.about-um-bottom{
+    border-top: 1px solid #e1e1e1;
+    height: 3.1rem;
+}
+.about-um-bottom span{
+    padding-top: .6rem;
+}
+.about-um-top span i{
+    display: block;
+    width: 100%;
+    height: .378rem;
+    line-height: .378rem;
+    font-size: .378rem;
+    color: #8d8d8d;
+}
+.about-um-top span b{
+    display: inline-block;
+    width: auto;
+    font-family: Impact;
+    height: 1.14rem;
+    font-size: 1.14rem;
+    line-height: 1.14rem;
+    margin:.1rem 0;
+    color: #94d60a;
+    position: relative;
+}
+.about-um-top span b.act:after{
+    content: "";
+    display: block;
+    width: .37rem;
+    height: .37rem;
+    background: url(../img/about/jiahao.png) no-repeat center;
+    background-size: 100% auto;
+    position: absolute;
+    top: 0;
+    left: 100%;
+}
+.about-cen-text-p{
+    width: 100%;
+    height: auto;
+    margin-top: .6rem;
+    overflow: hidden;
+    font-size: .32rem;
+    line-height: .45rem;
+    padding:0 .55rem .3rem;
+    text-align: justify;
+    color: #8d8d8d;
+}
+.about-cen-text-p p{
+    text-indent: 2em;
+    margin:.05rem 0;
+    display: block;
+}
+.about-cen-text-p p:first-child{
+    text-indent: 0em;
+}
+.about-cen-text-p p:last-child{
+    text-align: right;
+}
+.about-cen-youshi{
+    width: 100%;
+    height: auto;
+    padding: 0 .55rem;
+    margin-top: 20px;
+}
+.about-cen-youshi span{
+    display: block;
+    width: 100%;
+    height: 3.25rem;
+    overflow: hidden;
+}
+.about-cen-youshi-img,.about-cen-youshi-cen{
+    width: 50%;
+    height: 100%;
+    float: left;
+}
+.about-cen-youshi-img em{
+    width: 2.28rem;
+    height: 1.01rem;
+    line-height: 1.1rem;
+    font-size: .36rem;
+    color: #fff;
+    background: rgba(0,0,0,0.3);
+    display: block;
+    margin:0 auto;
+}
+.about-cen-youshi-cen{
+    background: #fbfbfb;
+    font-size: .32rem;
+    line-height: .45rem;
+    letter-spacing: -0.025em;
+}
+.about-cen-youshi-cen em{
+    display: block;
+    width: 100%;
+    padding:0 .4rem;
+    text-align: justify;
+}
+.about-cen-youshi span:nth-of-type(2n) .about-cen-youshi-img{
+    float: right;
+}
+.about-yewu-p{
+    font-size: .32rem;
+    line-height: .45rem;
+    color: #8d8d8d;
+    letter-spacing: -0.025em;
+}
+.about-yewu-cen,.about-yewu-p{
+    width: 100%;
+    height: auto;
+    margin-top: 20px;
+    padding: 0 .55rem;
+}
+.about-yewu-bt{
+    width: 100%;
+    height: 2.41rem;
+    padding-top: 1.33rem;
+    overflow: hidden;
+    font-size: .4rem;
+    color: #fff;
+    font-weight: bold;
+    padding-left: .29rem;
+}
+.about-yewu-txt{
+    width: 100%;
+    height: 1.64rem;
+    padding-top: .35rem;
+    overflow: hidden;
+    line-height: .45rem;
+    font-size: .35rem;
+}
+.about-yewu-txt i{
+    display: inline-block;
+    float: left;
+    width: auto;
+    height: auto;
+    padding:0 .3rem;
+}
+.coop .huibo-6k .swiper-slide{
+    width: 8.58rem;
+}
+.coop .huibo-6k a{
+    height: 11.96rem;
+}
+.coop-3-tex{
+    width: 100%;
+    height: auto;
+    font-size: .4rem;
+    margin-top: .2rem;
+    line-height: .4rem;
+}
+.coop .huibo-coop-text{
+    width: 8.79rem;
+    height: 7.04rem;
+    background: url(../img/cooperation/bj2.png) no-repeat center;
+    background-size: cover;
+}
+.coop .huibo-coop-text b{
+    padding:0 1.06rem 0 1.24rem;
+}
+.coop .coop-t-bt{
+    font-size: .45rem;
+    color: #fff;
+    text-align: left;
+}
+.coop .coop-t-bt h2{
+    font-size: .35rem;
+    display: inline;
+    font-weight: 100;
+}
+.coop .coop-t-tex{
+    margin-top: .65rem;
+    font-size: .32rem;
+    line-height: .45rem;
+    color: #fff;
+    text-align: justify;
+}
+.coop .swiper-pagination-bullet-active{
+    background: #000;
+}
+.coop .swiper-pagination1{
+    bottom:30px;
+    position: relative;
+    text-align: center;
+}
+.coop .hezuomoshi{
+    top:1.4rem;
+    color: #fff;
+    z-index: 10;
+    font-size: .55rem;
+    position: absolute;
+    top:20px;
+    left:0;
+    margin:0;
+}
+.coop .huibo-6k{
+    height:14rem;
+    text-align: center;
+    margin-top: 20px;
+}
+.coop .mar20{
+    margin-top: 20px;
+}
+.team .team-cen-h1{
+    background: none;
+    height: auto;
+}
+.team .con-cen-h2 p{
+    padding-left: 0;
+    text-align: center;
+}
+.team-cen1{
+    margin-top: 20px;
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    padding:0 .55rem;
+}
+.team-cen1 p{
+    display: block;
+    line-height: .45rem;
+    font-size: .32rem;
+    color: #8d8d8d;
+}
+.team-loop-1.huibo-home-wai{
+    height: 12rem;
+}
+.team-loop-1.huibo-home-nei{
+    height: 13rem;
+}
+.team-loop-1 .huibo-home-hezuo-img{
+    width: 5.43rem;
+    margin-bottom: 0;
+}
+.team-loop-1 b{
+    font-weight: 100;
+    display: block;
+    width: 100%;
+    height: .35rem;
+    line-height: .35rem;
+    margin:.25rem 0 .15rem;
+}
+.team-loop-1 p{
+    line-height: .45rem;
+    text-indent: 0;
+}
+.huibo-che{
+    width: 100%;
+    height: auto;
+    margin-top: 20px;
+    padding:0 .6rem;
+}
+.huibo-che .che1{
+    width: 100%;
+    height: 4.77rem;
+    overflow: hidden;
+}
+.huibo-che .che1:nth-of-type(2n) span:first-child{
+    float: right;
+}
+.che1 span{
+    float: left;
+    width: 50%;
+    height: 100%;
+    overflow: hidden;
+}
+.che1 span b{
+    display: block;
+    width: 2.68rem;
+    height: 1.06rem;
+    line-height: 1.16rem;
+    background: rgba(0,0,0,0.25);
+    font-weight: 100;
+    margin: 0 auto;
+    color: #fff;
+    font-size: .4rem;
+}
+.che1 span em{
+    display: block;
+    width: 100%;
+    padding:0 .45rem;
+    text-align: justify;
+    font-size: .32rem;
+    line-height: .42rem;
+    letter-spacing: -0.024em;
+    color: #8d8d8d;
+}
+.new .huibo-one{
+    height: auto;
+}
+.new .huibo-kv{
+    height:7.6rem;
+}
+.new .con-cen-h1{
+    width:9.24rem;
+    height:4.54rem; 
+    margin-top:0;
+}
+.new .con-cen-h1 span{
+    font-size:.95rem; 
+    letter-spacing:-0.09em; 
+    margin-top:1.3rem;
+}
+.new .con-cen-h1 em{
+    font-size:.75rem; 
+    margin-top:.4rem;
+}
+.huibo-text{
+    width: 100%;
+    height: auto;
+    padding:0 .55rem;
+    overflow: hidden;
+    font-size: .32rem;
+}
+.huibo-text-bt{
+    width: 100%;
+    height: auto;
+    font-size: .55rem;
+    line-height: .65rem;
+    font-weight: bold;
+    margin-top: 1.1rem;
+    text-align: center;
+}
+.huibo-text-time{
+    width: 100%;
+    height: auto;
+    margin:.3rem;
+    line-height: .32rem;
+    color: #8d8d8d;
+    text-align: center;
+}
+.huibo-text-p{
+    width: 100%;
+    height: auto;
+    margin-top: .7rem;
+    overflow: hidden;
+}
+.huibo-text-p p{
+    display: block;
+    width: 100%;
+    height: auto;
+    line-height: .45rem;
+    color: #000;
+}
+.huibo-text-cen{
+    width: 1.4rem;
+    height: auto;
+    float: left;
+    line-height: 25px;
+}
+.huibo-text-fx{
+    width: 100%;
+    height: 40px;
+    overflow: hidden;
+    margin-top: .8rem;
+}
+.huibo-text-a{
+    width: 100%;
+    height: auto;
+    line-height: .6rem;
+}
+.huibo-text-a a{
+    display: block;
+    width: 100%;
+    height: auto;
+}

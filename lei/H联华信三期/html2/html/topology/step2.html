@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <link rel="stylesheet" href="../../css/libs/bootstrap.min.css">
+    <link rel="stylesheet" href="../../css/attr_pop.css">
+    <script src="../../js/libs/jquery.min.js"></script>
+    <script src="../../js/topostep.js"></script>
+    <script src="../../js/common/common.js"></script>
+    <title></title>
+
+</head>
+<script>
+    window.parent.proBarTo(1);
+</script>
+<body style="background: #ececec;height:399px;">
+
+<div class="wj-config-center">
+    <div class="wj-findway-sele">
+        <h3>发现方式选择</h3>
+        <label class="wj-findway-rad checked"><input type="radio" name="findway" checked="checked"/>种子发现</label>
+        <p class="wj-fiway-desc">是一种以种子结点的ARP等数据作为发现依据是一种以种子结点的,ARP等数据作为发现依据，进行扩展发现，发现。。</p>
+        <label class="wj-findway-rad"><input type="radio" name="findway"/>网段发现</label>
+        <p class="wj-fiway-desc">是一种以管理网络为发现依据，对被管理。。</p>
+    </div>
+</div>
+<div class="wj-config-btns">
+    <a href="javascript:;" class="wj-cfgbtn wj-cfg-st1 wj-cfgbtn-return">返回</a>
+    <a href="./step1.html" class="wj-cfgbtn wj-cfg-st1">上一步</a>
+    <a href="./step3.html" class="wj-cfgbtn wj-cfg-st1">下一步</a>
+    <a href="./step3_1.html" class="wj-cfgbtn wj-cfg-st1">下一步1</a>
+    <a href="#" class="wj-cfgbtn wj-cfg-st2">完成</a>
+</div>
+<script>
+    var thisP=window.parent.api;
+
+    $('.wj-cfgbtn-return').click(function () {
+        $.wjConfirm('确认关闭窗口？？', function () {
+            thisP.close();
+        });
+    });
+</script>
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en" style="height:100%">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="wap-font-scale" content="no">
+    <link rel="stylesheet" href="css/css.css">
+</head>
+<body style="height:100%">
+<script>
+    var winHeight = document.body.clientHeight;var Html = document.getElementsByTagName('html');Html[0].style.fontSize = winHeight / 7.5 + 'px';
+</script>
+<!-- start -->
+
+    <!-- document -->
+    <div class="cen yindao">
+        <a href="#"><img src="img/yindao-bj.jpg"></a>
+        <div class="daojishi">3</div>
+        <div class="daojishia none"><a href="index.html">跳过广告</a></div>   
+    </div>
+    
+<!-- end -->
+    <script src="js/jq.js"></script>
+    <script src="js/ind.js"></script>
+    <script>
+    setTimeout(function(){
+        window.location.href = "index.html";
+    },5000)
+    $(function(){
+        var b = 3;
+        var daojishi = $('.daojishi');
+        var daojishia = $('.daojishia');
+        var bca = setInterval(function(){
+            b--;
+            daojishi.html(b);
+            if(b === 0){
+                clearInterval(bca);
+                daojishia.removeClass('none');
+                daojishi.addClass('none');
+            }
+        },1000);
+    });
+    </script>
+</body>
+</html>

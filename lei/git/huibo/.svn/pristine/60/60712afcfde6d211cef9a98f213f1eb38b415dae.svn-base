@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>联系我们</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <link rel="stylesheet" href="css/animate.min.css">
+    <link rel="stylesheet" href="css/css.css">
+</head>
+<body>
+
+    <script>
+        var winWidth = document.body.clientWidth; var Html = document.getElementsByTagName('html'); 
+        Html[0].style.fontSize = winWidth / 10.8 + 'px';
+    </script>
+
+    <!-- start -->
+    <div id="wrapper">
+        <div id="scroller">
+            <!-- 第一屏 -->
+            <div class="huibo-one">
+                <!-- nav -->
+                <div class="huibo-nav">
+                    <b></b>
+                    <img src="img/logo.png" class="logo">
+                    <i class="table-a">
+                        <a href="tel:4006834288" class="table-cell">
+                            商务联系热线<p>4006834288</p>
+                        </a>
+                    </i>
+                </div>
+                <!-- top-bj -->
+                <div class="huibo-kv">
+                    <div class="huibo-top-bj" style="background:url(img/contact/bj.jpg) no-repeat center; background-size:cover;"></div>
+                    <div class="con-cen-top table-a">
+                        <div class="table-cell">
+                            <div class="con-cen-h1 ani-up ani-mate">
+                                <span class="ani-up ani-mate">联系我们</span>
+                                <em class="ani-up ani-mate">CONTACT US</em>
+                            </div>
+                            <div class="con-cen-h2">
+                                <span class="ani-up ani-mate">业务合作或项目咨询</span>
+                                <p class="ani-up ani-mate">欢迎随时致电我们在大中国地区的各地办公电话</p>
+                                <p class="ani-up ani-mate ani-last">专属市场专员为您提供解答与回复</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- cen -->
+            <div class="huibo-new huibo-fff">
+                <div class="huibo-home-bt ani-up ani-mate ani-last">联系我们</div>
+                <div class="contact-text">
+                    <img src="img/contact/logo1.png" style="width:2.3rem;height:.92rem;" class="ani-up ani-mate ani-last">
+                    <div class="ani-up ani-mate ani-last">
+                        <b>上海总部</b>
+                        <em>上海市徐汇区漕溪北路331号中金国际广场A楼305室</em>
+                        <em>TEL：0086 21 6428 3286</em>
+                    </div>
+                    <div class="ani-up ani-mate ani-last">
+                        <b>北京办公室</b>
+                        <em>北京市朝阳区西坝河西里28号</em>
+                        <em>TEL：0086 10 64477877  FAX：0086 10 64477828 806</em>
+                    </div>
+                    <div class="ani-up ani-mate ani-last">
+                        <b>天津办公室</b>
+                        <em>天津市南开区宾水西道奥城商业广场A4写字楼</em>
+                        <em>TEL：0086 186 1213 4706</em>
+                    </div>
+                    <div class="ani-up ani-mate ani-last">
+                        <b>成都办公室</b>
+                        <em>成都市青羊区贝森北路1号西村大院1号楼401-2室</em>
+                        <em>TEL：0086 28 6889 0060</em>
+                    </div>
+                    <div class="contact-text-px1 ani-up ani-mate ani-last"></div>
+                    <img src="img/contact/logo2.png" style="width:2.3rem;height:.92rem;" class="ani-up ani-mate ani-last">
+                    <div class="ani-up ani-mate ani-last">
+                        <b>北京总部</b>
+                        <em>北京市朝阳区西坝河西里28号阳光海天总部</em>
+                        <em>TEL：0086 10 64477877  FAX：0086 10 64477828 806</em>
+                    </div>
+                    <div class="ani-up ani-mate ani-last">
+                        <b>上海办公室</b>
+                        <em>上海市徐汇区漕溪北路331号中金国际广场A楼305室</em>
+                        <em>TEL：0086 21 6428 3286</em>
+                    </div>
+                    <div class="ani-up ani-mate ani-last">
+                        <b>天津分公司</b>
+                        <em>天津市南开区卫津路与万德庄大街交口中凯国际广场14楼1402室</em>
+                        <em>TEL：0086 18513612557</em>
+                    </div>
+                    <div class="ani-up ani-mate ani-last">
+                        <b>青岛分公司</b>
+                        <em>山东省青岛市市北区敦化路328号诺德广场2号楼606--607</em>
+                        <em>TEL：0086 18653229723</em>
+                    </div>
+                    <div class="ani-up ani-mate ani-last">
+                        <b>成都分公司 </b>
+                        <em>成都市高新区中和镇中柏大道龙祥佳苑三期1栋2单元10楼02</em>
+                        <em>TEL：0086 15575918436</em>
+                    </div>
+                    <div class="ani-up ani-mate ani-last">
+                        <b>南京分公司</b>
+                        <em>南京市建邺区江东中路313号中泰国际广场3号楼2单元2604</em>
+                        <em>TEL：0086 15005140575</em>
+                    </div>
+                    <div class="ani-up ani-mate ani-last">
+                        <b>西安分公司</b>
+                        <em>西安市高新区科技路50号金桥国际广场A座一单元1305室</em>
+                        <em>TEL：029 84508107</em>
+                    </div>
+                    <div class="ani-up ani-mate ani-last">
+                        <b>长沙分公司</b>
+                        <em>湖南省长沙市芙蓉区马王堆中路79号东方新城（东玺门）M4栋920</em>
+                        <em>TEL：0731 84131989</em>
+                    </div>
+                </div>
+            </div>
+
+            <!-- foot -->
+            <div class="foot ani-up ani-mate ani-last">
+                <div class="foot-top">
+                    <div class="foot-erweima">
+                        <div class="foot-erweima-img">
+                            <img src="img/foot-erweima.jpg">
+                            扫描上方微信<br>了解我们更多
+                        </div>
+                        <div class="foot-dianhua">
+                            <span>有任何商务、市场合作请联系：</span>
+                            <b><a href="tel:4006834288">400-683-4288</a></b>
+                            <span>或邮箱：</span>
+                            <i><a href="mailto:Marketing@huiboparking.com">Marketing@huiboparking.com</a></i>
+                        </div>
+                    </div>
+                    <div class="foot-bottom">
+                        <em><a href="#">隐私条款</a> | <a href="#">法律声明</a></em>
+                        © We Park 2014. All rights reserved. 
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- 下拉下拉菜单 -->
+    <div class="huibo-menu">
+        <div class="huibo-menu-col">
+            <em><i>x</i>关闭</em>
+        </div>
+        <div class="menu-logo"><img src="img/logo.png"></div>
+        <div class="huibo-menu-nav">
+            <a href="about.html">关于我们</a>
+            <a href="#">慧泊车</a>
+            <a href="#">智团队</a>
+            <a href="#">经典案例</a>
+            <a href="#">战略分布</a>
+            <a href="#">合作模式</a>
+            <a href="#">加入我们</a>
+            <a href="#">联系我们</a>
+            <a href="#">EN</a>
+        </div>
+        <div class="a-menu-last">
+            <a href="tel:4006834288">商务热线：<b>400 683 4288</b></a>
+            <a href="mailto:Marketing@huiboparking.com">邮箱：Marketing@huiboparking.com</a>
+        </div>>
+    </div>
+    
+    <!-- script -->
+    <script src="js/jq.js"></script>
+    <script>
+    $(function(){
+        var winHeight = $(window).height();
+        $('.huibo-one').css({'height':winHeight+'px'});
+        $('.con-cen-top').css({'height':winHeight+'px'});
+    });
+    </script>
+
+    <!-- z -->
+    <script src="js/ind.js"></script>
+
+    <!-- iscorll -->
+    <script src="js/iscroll.js"></script>
+    <script type="text/javascript">
+        var myScroll;
+        function loaded () {
+            myScroll = new IScroll('#wrapper', { 
+                scrollX: true, 
+                freeScroll: true ,
+                preventDefaultException: { tagName: /^(INPUT|TEXTAREA|BUTTON|SELECT|A)$/ },
+            });
+        }
+        document.addEventListener('touchmove', function (e) { e.preventDefault(); }, false);
+    </script>
+
+    <!-- ani-up -->
+    <script src="js/ani-up.js"></script>
+
+    <!-- loading -->
+    <script src="js/loading.js"></script>
+
+</body>
+</html>

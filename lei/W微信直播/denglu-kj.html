@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>会员登陆</title>
+    <meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <meta name="wap-font-scale" content="no">
+    <script src="js/jq.js"></script>
+    <link rel="stylesheet" href="css/css.css">
+    <script src="js/ind.js"></script>
+    <script type="text/javascript" src="http://qzonestyle.gtimg.cn/qzone/openapi/qc_loader.js" data-appid="101144598" data-redirecturi="http://www.51rexiu.com/H5/denglu-kj.html" charset="utf-8"></script>
+</head>
+<body>
+    <div class="kj-bt">请登录您的热波账号</div>
+    <div class="kj-cen">
+        <a href="tixianye.html">
+            <img src="img/weixin.png">
+            <span>当前微信账户</span>
+        </a>
+        <a href="https://github.com/iVanPan/Cordova_QQ">
+            <img src="img/qq.png">
+            <span>QQ账号</span>
+        </a>
+        <span id="qq_login_btn"></span>
+        <script type="text/javascript">
+            QC.Login({//按默认样式插入QQ登录按钮
+                btnId:"qq_login_btn"    //插入按钮的节点id
+            });
+        </script>
+        <a href="#">
+            <img src="img/sina.png">
+            <span>微博账号</span>
+        </a>
+        <a href="denglu.html">
+            <img src="img/phone.png">
+            <span>手机号</span>
+        </a>
+    </div>
+    <script type="text/javascript">
+    //从页面收集OpenAPI必要的参数。get_user_info不需要输入参数，因此paras中没有参数
+    var paras = {};
+
+    //用JS SDK调用OpenAPI
+    QC.api("get_user_info", paras)
+        //指定接口访问成功的接收函数，s为成功返回Response对象
+        .success(function(s){
+            //成功回调，通过s.data获取OpenAPI的返回数据
+            alert("获取用户信息成功！当前用户昵称为："+s.data.nickname);
+        })
+        //指定接口访问失败的接收函数，f为失败返回Response对象
+        .error(function(f){
+            //失败回调
+            alert("获取用户信息失败！");
+        })
+        //指定接口完成请求后的接收函数，c为完成请求返回Response对象
+        .complete(function(c){
+            //完成请求回调
+            alert("获取用户信息完成！");
+    });
+</script>
+</body>
+</html>

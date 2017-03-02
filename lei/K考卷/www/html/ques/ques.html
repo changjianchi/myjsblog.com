@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="../../css/jquery.cxdialog.css"/>
+		<link rel="stylesheet" type="text/css" href="../../css/all.css"/>
+		<link rel="stylesheet" type="text/css" href="../../css/comp/CVcenter.css"/>
+		<link rel="stylesheet" type="text/css" href="../../css/ques/ques.css"/>
+	</head>
+	<body>
+		<!--head-->
+		<div class="head">
+			<div class="head-bar public">
+				<div class="logo">
+					<a href="#"><img src="../../images/logo.png" /></a>
+					<p><span>企业版</span></p>
+				</div>
+				<ul class="nav">
+					<li><a href="#">首页</a></li>
+					<li><a href="#">独家考试</a></li>
+					<li><a href="#">职位管理</a></li>
+					<li class="active"><a href="#">简历管理</a></li>
+				</ul>
+				<div class="mguser">
+					<div class="mguser-box">
+						<a href="#">
+							<img src="../../images/1.jpg"  class="mguser-img"/>
+							<p>出题教师：张老师</p>
+							<i></i>
+						</a>
+					</div>
+					<ul class="mguser-cnt">
+						<li><a href="#">收藏职位</a></li>
+						<li><a href="#">职位邀请</a></li>
+						<li><a href="#">账号设置</a></li>
+						<li><a href="#">退出</a></li>
+					</ul>
+				</div>
+				
+			</div>
+		</div>
+		<!--head  end-->
+		<!--content-->
+		<div class="ques-cnt">
+			<div class="ques-left">
+				<div class="ques-lbox">
+					<div class="ques-title">
+						<span><i></i>我的独考</span>
+					</div>
+					<ul>
+						<li><a href="#" class="active">题库管理</a></li>
+						<li><a href="#">试题统计</a></li>
+					</ul>
+				</div>
+				<div class="ques-ladd">
+					<a class="quesMore" href="javascript:void(0)">
+						<i></i>
+						添加试题
+					</a>
+				</div>
+				<div class="ques-lq">
+					<a href="#">
+						<div class="ques-lqBox">
+							<p>试题不合格</p>
+							<b><span>12</span>题</b>
+						</div>
+					</a>
+				</div>
+			</div>
+			<div class="ques-right">
+				<div class="ques-rbox">
+					<div class="ques-screen">
+						<dl>
+							<dd>
+								<p class="ques-rp1">
+									<label>题干关键字：</label>
+									<input type="text" class="ques-input"  />
+								</p>
+								<p>
+									<label>试题题型：</label>
+									<!--select-->
+									<div class="selectUI">
+										<div class="selectUI-text text">
+											<div class="selectUI-val">
+												<span>请选择试题题型</span>
+												<i></i>
+											</div>
+											<ul>
+												<li><a href="#">1</a></li>
+												<li><a href="#">2</a></li>
+												<li><a href="#">3</a></li>
+											</ul>
+										</div>
+										<div class="clear"></div>
+									</div>
+									<!--select end-->
+								</p>
+								<p style="margin-left: 60px;">
+									<label>出题时间：</label>
+									<div class="ques-time">
+										<input type="text" class="ques-input"  />
+										<i></i>
+									</div>
+									<span class="ques-time-span">—</span>
+									<div class="ques-time">
+										<input type="text" class="ques-input"  />
+										<i></i>
+									</div>
+								</p>
+								<div class="clear"></div>
+							</dd>
+							<dd>
+								<p class="ques-rp1">
+									<label>知识点：</label>
+									<span class="ques-rzs">
+										<input type="text" class="ques-input"  />
+										<a href="#">清除</a>
+									</span>
+								</p>
+								<!--select-->
+								<div class="selectUI quesSelect quesmar1">
+									<div class="selectUI-text text">
+										<div class="selectUI-val">
+											<span>结算状态</span>
+											<i></i>
+										</div>
+										<ul>
+											<li><a href="#">1</a></li>
+											<li><a href="#">2</a></li>
+											<li><a href="#">3</a></li>
+										</ul>
+									</div>
+									<div class="clear"></div>
+								</div>
+								<!--select end-->
+								<!--select-->
+								<div class="selectUI quesSelect quesmar1">
+									<div class="selectUI-text text">
+										<div class="selectUI-val">
+											<span>试题状态</span>
+											<i></i>
+										</div>
+										<ul>
+											<li><a href="#">1</a></li>
+											<li><a href="#">2</a></li>
+											<li><a href="#">3</a></li>
+										</ul>
+									</div>
+									<div class="clear"></div>
+								</div>
+								<!--select end-->
+								<p>
+									<label>分值区间：</label>
+									<input type="text"  class="ques-input ques-w1"  />
+									<span class="ques-time-span">—</span>
+									<input type="text"  class="ques-input ques-w1"  />
+								</p>
+								<div class="clear"></div>
+							</dd>
+							<dd>
+								<p class="ques-rp1">
+									<label style="width: auto;">原始难度：</label>
+									<input type="text"  class="ques-input ques-w1"  />
+									<span class="ques-time-span">—</span>
+									<input type="text"  class="ques-input ques-w1"  />
+								</p>
+								<p>
+									<label>校正难度：</label>
+									<input type="text"  class="ques-input ques-w1"  />
+									<span class="ques-time-span">—</span>
+									<input type="text"  class="ques-input ques-w1"  />
+								</p>
+								<p class="ques-lmar2">
+									<label>试题编码：</label>
+									<input type="text"  class="ques-input"  />
+								</p>
+								<div class="clear"></div>
+							</dd>
+							<dd>
+								<label>标识：</label>
+								<a href="javascript:void(0)" class="ques-rtype">标识1</a>
+								<a href="javascript:void(0)" class="ques-rtype">标识1</a>
+								<a href="javascript:void(0)" class="ques-rtype">标识1</a>
+								<a href="javascript:void(0)" class="ques-rtype">标识1</a>
+								<a href="javascript:void(0)" class="ques-rtype">标识1</a>
+								<a href="javascript:void(0)" class="ques-rtype">标识1</a>
+								<a href="javascript:void(0)" class="ques-rtype">标识1</a>
+								<a href="javascript:void(0)" class="ques-rtype">标识1</a>
+								<div class="clear"></div>
+							</dd>
+							<dd>
+								<div class="ques-screen-btn">
+									<a href="#" class="btn">搜索试题</a>
+								</div>
+							</dd>
+						</dl>
+					</div>
+				</div>
+				<div class="ques-rbox ques-rt10">
+					<div class="mOperation">
+						<div class="mOperation-left">
+							<p class="mOperation-cbox"><input type="checkbox" class="mOperation-checkbox" id="checkAll"/>全选</p>
+							<div class="mOperation-btn">
+								<a href="#" class="active btn">设为终稿</a>
+								<a href="#" class="active btn">废弃试题</a>
+								<a href="#" class="active btn">查重</a>
+							</div>
+						</div>
+						<div class="mOperation-right">
+							<div class="mOperation-text">
+								共<span>1605</span>项查询结果
+							</div>
+						</div>
+						<div class="clear"></div>
+					</div>
+					<div class="ques-screenBox">
+						<ul class="ques-screenBox-ul">
+							<li >
+								<a class="active ques-down" href="javascript:void(0)">
+									默认排序
+									<i class="ques-ico-up"></i>
+									<i class="ques-ico-down"></i>
+								</a>
+							</li>
+							<li >
+								<a class="ques-down ques-up" href="javascript:void(0)">
+									作答人数
+									<i class="ques-ico-up"></i>
+									<i class="ques-ico-down"></i>
+								</a>
+							</li>
+						</ul>
+						<div class="mOperation-right">
+							<!--select-->
+							<div class="selectUI selectUI-mOperation">
+								<div class="selectUI-text text">
+									<div class="selectUI-val">
+										<span>每页20条</span>
+										<i></i>
+									</div>
+									<ul>
+										<li><a href="#">每页20条</a></li>
+									</ul>
+								</div>
+								<div class="clear"></div>
+							</div>
+							<!--select end-->
+						</div>
+					</div>
+					<!--列表-->
+					<dl class="mList quesList">
+						<dd >
+							<span class="mList-ico-active"></span>
+							<input type="checkbox"  class="mList-checked" />
+							<div class="quesList-title">
+								决定C++语言中函数的返回值类型的是（      ） ？
+							</div>
+							<div class="quesList-cnt">
+								<p class="quesList-type">单选题</p>
+								<div class="quesList-r">
+									<ul class="quesList-option">
+										<li>
+											<input type="radio"  />
+											(1) DE (2) ρ = {R1(AC), R2(ED), R3(B)}
+										</li>
+										<li>
+											<input type="radio"  />
+											(1) DE (2) ρ = {R1(AC), R2(ED), R3(B)}
+										</li>
+										<li>
+											<input type="radio"  />
+											(1) DE (2) ρ = {R1(AC), R2(ED), R3(B)}
+										</li>
+										<li>
+											<input type="radio"  />
+											(1) DE (2) ρ = {R1(AC), R2(ED), R3(B)}
+										</li>
+									</ul>
+									<div class="quesList-right">
+										<p class="quesList-txt">
+											状态：<b class="quesList-col1">新试题-终稿</b>     
+											<span>结算状态：<b>已结算</b></span>
+										</p>
+										<p class="mList-btn">
+											<a href="#">编辑</a>
+											<a href="#">删除</a>
+										</p>
+									</div>
+									<div class="clear"></div>
+									<div class="quesList-fo">
+										<div class="quesList-property">
+											<span>编程语言</span>
+											<span>C/C++</span>
+											<span>数据类型与转换</span>
+										</div>
+										<div class="quesList-val">
+											试题编号：11564164  
+											<span>|</span>  
+											分值：2  
+											<span>|</span>   
+											正确率：38.9%  
+											<span>|</span>  
+											原始难度：5  
+											<span>|</span>   
+											校正难度：4
+										</div>
+										<div class="clear"></div>
+									</div>
+								</div>
+								<div class="clear"></div>
+							</div>
+							<div class="clear"></div>
+						</dd>
+						<dd >
+							<span class="mList-ico-active"></span>
+							<input type="checkbox"  class="mList-checked" />
+							<div class="quesList-title">
+								已知关系模式R，其中R上的属性集U = {A,B,C,D,E}，R上的函数依赖集F = {A ->B, DE -> B, CB-> E, E -> A, B -> D}。
+则，(1)是关系R的候选关键字，分解(2)是无损连接，并保持函数依赖性。
+							</div>
+							<div class="quesList-cnt">
+								<p class="quesList-type">单选题</p>
+								<div class="quesList-r">
+									<ul class="quesList-option">
+										<li>
+											<input type="radio"  />
+											(1) DE (2) ρ = {R1(AC), R2(ED), R3(B)}
+										</li>
+										<li>
+											<input type="radio"  />
+											(1) DE (2) ρ = {R1(AC), R2(ED), R3(B)}
+										</li>
+										<li>
+											<input type="radio"  />
+											(1) DE (2) ρ = {R1(AC), R2(ED), R3(B)}
+										</li>
+										<li>
+											<input type="radio"  />
+											(1) DE (2) ρ = {R1(AC), R2(ED), R3(B)}
+										</li>
+									</ul>
+									<div class="quesList-right">
+										<p class="quesList-txt">
+											状态：<b class="quesList-col2">新试题-初稿</b>     
+											<span>结算状态：<b class="quesList-col2">已结算</b></span>
+										</p>
+										<p class="mList-btn">
+											<a href="#">编辑</a>
+											<a href="#">删除</a>
+										</p>
+									</div>
+									<div class="clear"></div>
+									<div class="quesList-fo">
+										<div class="quesList-property">
+											<span>编程语言</span>
+											<span>C/C++</span>
+											<span>数据类型与转换</span>
+										</div>
+										<div class="quesList-val">
+											试题编号：11564164  
+											<span>|</span>  
+											分值：2  
+											<span>|</span>   
+											正确率：38.9%  
+											<span>|</span>  
+											原始难度：5  
+											<span>|</span>   
+											校正难度：4
+										</div>
+										<div class="clear"></div>
+									</div>
+								</div>
+								<div class="clear"></div>
+							</div>
+							<div class="clear"></div>
+						</dd>
+						<dd >
+							<span class="mList-ico-active"></span>
+							<input type="checkbox"  class="mList-checked" />
+							<div class="quesList-title">
+								决定C++语言中函数的返回值类型的是（      ） ？
+							</div>
+							<div class="quesList-cnt">
+								<p class="quesList-type">单选题</p>
+								<div class="quesList-r">
+									<ul class="quesList-option">
+										<li>
+											<input type="radio"  />
+											(1) DE (2) ρ = {R1(AC), R2(ED), R3(B)}
+										</li>
+										<li>
+											<input type="radio"  />
+											(1) DE (2) ρ = {R1(AC), R2(ED), R3(B)}
+										</li>
+										<li>
+											<input type="radio"  />
+											(1) DE (2) ρ = {R1(AC), R2(ED), R3(B)}
+										</li>
+										<li>
+											<input type="radio"  />
+											(1) DE (2) ρ = {R1(AC), R2(ED), R3(B)}
+										</li>
+									</ul>
+									<div class="quesList-right">
+										<p class="quesList-txt">
+											状态：<b class="quesList-col1">新试题-终稿</b>     
+											<span>结算状态：<b>已结算</b></span>
+										</p>
+										<p class="mList-btn">
+											<a href="#">编辑</a>
+											<a href="#">删除</a>
+										</p>
+									</div>
+									<div class="clear"></div>
+									<div class="quesList-fo">
+										<div class="quesList-property">
+											<span>编程语言</span>
+											<span>C/C++</span>
+											<span>数据类型与转换</span>
+										</div>
+										<div class="quesList-val">
+											试题编号：11564164  
+											<span>|</span>  
+											分值：2  
+											<span>|</span>   
+											正确率：38.9%  
+											<span>|</span>  
+											原始难度：5  
+											<span>|</span>   
+											校正难度：4
+										</div>
+										<div class="clear"></div>
+									</div>
+								</div>
+								<div class="clear"></div>
+							</div>
+							<div class="clear"></div>
+						</dd>
+						<dd >
+							<span class="mList-ico-active"></span>
+							<input type="checkbox"  class="mList-checked" />
+							<div class="quesList-title">
+								决定C++语言中函数的返回值类型的是（      ） ？
+							</div>
+							<div class="quesList-cnt">
+								<p class="quesList-type">单选题</p>
+								<div class="quesList-r">
+									<ul class="quesList-option">
+										<li>
+											<input type="radio"  />
+											(1) DE (2) ρ = {R1(AC), R2(ED), R3(B)}
+										</li>
+										<li>
+											<input type="radio"  />
+											(1) DE (2) ρ = {R1(AC), R2(ED), R3(B)}
+										</li>
+										<li>
+											<input type="radio"  />
+											(1) DE (2) ρ = {R1(AC), R2(ED), R3(B)}
+										</li>
+										<li>
+											<input type="radio"  />
+											(1) DE (2) ρ = {R1(AC), R2(ED), R3(B)}
+										</li>
+									</ul>
+									<div class="quesList-right">
+										<p class="quesList-txt">
+											状态：<b class="quesList-col1">新试题-终稿</b>     
+											<span>结算状态：<b>已结算</b></span>
+										</p>
+										<p class="mList-btn">
+											<a href="#">编辑</a>
+											<a href="#">删除</a>
+										</p>
+									</div>
+									<div class="clear"></div>
+									<div class="quesList-fo">
+										<div class="quesList-property">
+											<span>编程语言</span>
+											<span>C/C++</span>
+											<span>数据类型与转换</span>
+										</div>
+										<div class="quesList-val">
+											试题编号：11564164  
+											<span>|</span>  
+											分值：2  
+											<span>|</span>   
+											正确率：38.9%  
+											<span>|</span>  
+											原始难度：5  
+											<span>|</span>   
+											校正难度：4
+										</div>
+										<div class="clear"></div>
+									</div>
+								</div>
+								<div class="clear"></div>
+							</div>
+							<div class="clear"></div>
+						</dd>
+					</dl>
+					<!--分页-->
+					<div class="fenye mfenye">
+						<a href="#" class="fenye-btn btn-no">上一页</a>
+						<a class="active">1</a>
+						<a href="#">2</a>
+						<a href="#">3</a>
+						<a href="#">4</a>
+						<span>...</span>
+						<a href="#">30</a>
+						<a href="#" class="fenye-btn">上一页</a>
+						<label>跳转到</label>
+						<input type="text" class="fenye-input"/>
+						页
+						<input type="button"  value="GO" class="fenye-btn"/>
+					</div>
+					<!--分页 end-->
+				</div>
+			</div>
+			<div class="clear"></div>
+		</div>
+		<!--content end-->
+		<!--右漂浮-->
+		<div class="quesfix">
+			<a href="javascript:void(0)" class="quesfix-add">
+				<i></i>
+				<p>添加试题</p>
+			</a>
+			<a href="javascript:void(0)" class="quesfix-top"><i></i>TOP</a>
+		</div>
+		<!--右漂浮 end-->
+		<!--footer-->
+		<div class="footer">
+			<div class="public">
+				<div class="footer-left">
+					<div class="footer-logo">
+						<img src="../../images/blogo.png"  />
+					</div>
+					<div class="footer-txt">
+						<a target="_blank" href="#">关于我们</a>
+						　|　
+						<a target="_blank" href="#">联系我们</a>
+						　|　
+						<a target="_blank" href="#">加入我们</a>
+						　|　
+						<a target="_blank" href="#">意见反馈</a>
+						　|　
+						<a target="_blank" href="#">免责声明</a>
+						　|　
+						<a target="_blank" href="#">企业服务</a>
+						<br>
+						Copyright © acmcoder.com
+						<br>
+						All Rights Reversed 京ICP备15012255-1
+					</div>
+				</div>
+				<div class="footer-right">
+					<img src="../../images/ewm.png" />
+					<p>
+						关注赛码微信公众号
+						<br>
+						手机查看笔试通知
+					</p>
+				</div>
+			</div>
+		</div>
+		<!--footer end-->
+		<script src="../../js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../../js/jquery.cxdialog.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../../js/all.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../../js/comp/CVcenter.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../../js/ques/ques.js" type="text/javascript" charset="utf-8"></script>
+	</body>
+</html>

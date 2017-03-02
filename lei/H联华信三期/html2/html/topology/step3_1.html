@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <link rel="stylesheet" href="../../css/libs/bootstrap.min.css">
+    <link rel="stylesheet" href="../../css/attr_pop.css">
+    <link rel="stylesheet" href="../../css/common/top_nav.css">
+    <script src="../../js/libs/jquery.min.js"></script>
+    <script src="../../js/topostep.js"></script>
+    <script src="../../js/common/common.js"></script>
+    <title></title>
+
+</head>
+<script>
+    window.parent.proBarTo(2);
+</script>
+<body style="background: #ececec;height:399px;">
+<div class="wj-config-center">
+    <div class="wj-findway-sele">
+        <h3>说明</h3>
+        <p class="wj-cfsub-tit">网段格式：起始IP-终止IP</p>
+        <div class="wj-cof-form" style="padding-top: 15px;">
+            <div class="wj-cfgform-li clearfix">
+                <span class="wj-cfgIpt-tit pull-left">起始IP</span>
+                <input type="text" name="" class="textInput-self-set pull-left w205 ip-start-ipt" />
+                <span class="wj-cfgIpt-tit pull-left" style="margin-left: 30px;">终止IP</span>
+                <input type="text" name="" class="textInput-self-set pull-left w205 ip-stop-ipt" />
+                <input type="submit" class="btn-self-set pull-left m14" id="addNewNode"  value="添加"/>
+            </div>
+        </div>
+        <div class="wj-cfg-tbWrap">
+            <table class="wj-cfbTable">
+                <thead>
+                <tr>
+                    <th width="33.3%">起始IP</th>
+                    <th width="33.3%">终止IP</th>
+                    <th width="33.3%">操作</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>
+                        <input type="text" name="" readonly class="wj-ip-input ip-start" value="192.168.1.122"/>
+                    </td>
+                    <td>
+                        <input type="text" name="" readonly class="wj-ip-input ip-stop" value="192.168.1.122"/>
+                    </td>
+                    <td>
+                        <a href="javascript:;" class="wj-ip-ope wj-ip-alter">修改</a>
+                        <a href="javascript:;" class="wj-ip-ope wj-ip-del">删除</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="text" name="" readonly class="wj-ip-input ip-start" value="192.168.1.122"/>
+                    </td>
+                    <td>
+                        <input type="text" name="" readonly class="wj-ip-input ip-stop" value="192.168.1.122"/>
+                    </td>
+                    <td>
+                        <a href="javascript:;" class="wj-ip-ope wj-ip-alter">修改</a>
+                        <a href="javascript:;" class="wj-ip-ope wj-ip-del">删除</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="text" name="" readonly class="wj-ip-input ip-start" value="192.168.1.122"/>
+                    </td>
+                    <td>
+                        <input type="text" name="" readonly class="wj-ip-input ip-stop" value="192.168.1.122"/>
+                    </td>
+                    <td>
+                        <a href="javascript:;" class="wj-ip-ope wj-ip-alter">修改</a>
+                        <a href="javascript:;" class="wj-ip-ope wj-ip-del">删除</a>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+        <label class="wj-pop-checkbox"><input type="checkbox" name="" />只管理SNMP支持的设备</label>
+    </div>
+</div>
+<div class="wj-config-btns">
+    <a href="javascript:;" class="wj-cfgbtn wj-cfg-st1 wj-cfgbtn-return">返回</a>
+    <a href="./step2.html" class="wj-cfgbtn wj-cfg-st1">上一步</a>
+    <a href="./step4.html" class="wj-cfgbtn wj-cfg-st1">下一步</a>
+    <a href="#" class="wj-cfgbtn wj-cfg-st2">完成</a>
+</div>
+
+<!--弹窗-->
+<div class="wj-complete-alert" id="alterSucc" style="width: 208px;">
+    <div class="wj-compcof-tick"><img width="53" height="53" src="../../img/attr_alter/tick_pic.png"></div>
+    <div class="wj-compcof-txt">修改成功</div>
+    <div class="wj-compcof-btn">
+        <a class="wj-combtn-confirm pull-right wj-alterSuc-Btn" href="javascript:void(0);">确定</a>
+    </div>
+</div>
+<script>
+    //新增
+    var reg=/^(\d{1,2}|1\d\d|2[0-4]\d|25[0-5])\.(\d{1,2}|1\d\d|2[0-4]\d|25[0-5])\.(\d{1,2}|1\d\d|2[0-4]\d|25[0-5])\.(\d{1,2}|1\d\d|2[0-4]\d|25[0-5])$/;
+    var newNodeRow='<tr> <td> <input type="text" name="" class="wj-ip-input ip-start" value=""/> </td> <td> <input type="text" name="" class="wj-ip-input ip-stop" value=""/> </td> <td> <a href="javascript:;" class="wj-ip-ope wj-ip-alter">修改</a> <a href="javascript:;" class="wj-ip-ope wj-ip-del">删除</a> </td> </tr>';
+    var $cfTableBd=$('.wj-cfbTable tbody');
+    $('#addNewNode').click(function () {
+        var ipStartVal=$('.ip-start-ipt').val(),
+                ipStopVal=$('.ip-stop-ipt').val();
+        if(ipStartVal==''){
+            $.wjNotify('请输入起始IP!','warn');
+            return false;
+        }
+        if(!reg.test(ipStartVal)){
+            $.wjNotify('起始IP格式不正确!');
+            return false;
+        }
+        if(ipStopVal==''){
+            $.wjNotify('请输入终止IP!');
+            return false;
+        }
+        if(!reg.test(ipStopVal)){
+            $.wjNotify('终止IP格式不正确!');
+            return false;
+        }
+        var $newNode = $(newNodeRow);
+        $newNode.find('.ip-start').val(ipStartVal);
+        $newNode.find('.ip-stop').val(ipStopVal);
+        $cfTableBd.prepend($newNode);
+    });
+
+    //修改
+    $(document).on('click','.wj-ip-alter',function () {
+        $('.wj-ip-alter').not($(this)).removeClass('ipAltering').text('修改');
+        $(this).closest('tr').siblings().find('input').prop('readonly',true);
+        if(!$(this).hasClass('ipAltering')){
+            var $iptAll=$(this).closest('tr').find('input');
+            $iptAll.prop('readonly',false);
+            var $iptone=$iptAll.eq(0),
+                    iptVal=$iptone.val();
+            $iptone.val('').focus().val(iptVal);
+            $(this).addClass('ipAltering');
+            $(this).text('确认');
+        }else{
+            $(this).removeClass('ipAltering');
+            $(this).closest('tr').find('input').prop('readonly',true);
+            $(this).text('修改');
+            var data=$(this).closest('tr').find('input').serialize();
+            $.ajax({
+                url:'abc.php',
+                type:'post',
+                data:data,
+                success:function(msg) {
+
+                },
+                error: function () {
+                    //修改成功提示 放在上面ajax里
+                    $.wjNotify('修改成功！');
+                }
+            });
+        }
+    });
+
+
+    //删除
+    $(document).on('click','.wj-ip-del', function () {
+        var clsTr=$(this).closest('tr');
+        $.wjConfirm('确认要删除吗？', function () {
+            clsTr.remove();
+        });
+    });
+
+    var thisP=window.parent.api;
+
+    $('.wj-cfgbtn-return').click(function () {
+        $.wjConfirm('确认关闭窗口？？', function () {
+            thisP.close();
+        });
+    });
+</script>
+</body>
+</html>

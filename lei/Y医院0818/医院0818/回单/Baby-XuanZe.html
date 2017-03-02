@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="wap-font-scale" content="no">
+    <link rel="stylesheet" href="css/css.css">
+    <link rel="stylesheet" href="css/mobiscroll.custom-2.16.1.min.css">
+</head>
+<body style="background:#fafbfd;">
+<script>
+    var winHeight = document.body.clientHeight;var Html = document.getElementsByTagName('html');Html[0].style.fontSize = winHeight / 6.4 + 'px';
+</script>
+<!-- start -->
+    <div class="baby-xuanze-top"></div>
+    <div class="baby-bt"><img src="img/one-1.png">我家刚出生的宝宝是</div>
+    <div class="baby-xuanze">
+        <div class="baby-baby">
+            <span>
+                <i class="active">小王子</i><i>小公主</i><i>双胞胎</i>
+            </span>
+            <em class="none">
+                <i class="active"><img src="img/one-s1.png"><b>龙凤胎</b></i>
+                <i><img src="img/one-s2.png"><b>兄弟</b></i>
+                <i><img src="img/one-s3.png"><b>姐妹</b></i>
+            </em>
+        </div>
+    </div>
+    <div class="baby-bt"><img src="img/one-2.png">宝宝生日是</div>
+    <div class="baby-bsday"><input type="text" placeholder="请输入宝宝生日" id="date"></div>
+    <div class="zhuce baogao-dengji"><a href="javascript:;" class="tijiaodengjixinxi">提交登记信息</a></div>
+
+    <div class="riqi-t">
+        <span>
+            <em>
+                <div class="chusheng-riqi">出生日期</div>
+                <div class="chushengcen-riqi">民之所望，施政所向。李克强总理在今年的政府工作报告中提出，推动简政放权、放管结合、优化服务改革向纵深发展。以敬民之心，行简政之道。今年以来，李克强总理对简政放权、放管结合、优化服务改革提了哪些要求？国务院客户端为你梳理。</div>
+                <div class="queding-riqi"><a href="#">确定</a><a href="#" class="quxiao-t">取消</a></div>
+            </em>
+        </span>
+    </div>
+
+<!-- end -->
+    <script src="js/zepto.min.js"></script>
+    <script src="js/ind.js"></script>
+    <script src="js/mobiscroll.custom-2.16.1.min.js"></script>
+    <script>
+        $(function () {
+            var d = new Date();
+            var y = d.getFullYear(),
+                m = d.getMonth(),
+                t = d.getDate();
+            $('#date').mobiscroll().date({
+                theme: 'android-holo-light',
+                lang: 'zh',
+                display: 'modal', //显示方式
+                mode: 'scroller',
+                controls: ['calendar'],
+                headerText: null,
+                dateFormat: 'mm-dd',
+                setText: '确定', 
+                cancelText: '取消',
+                dayText: '', monthText: '',
+                dateOrder: 'mmdd',
+            });
+        });
+    </script>
+</body>
+</html>

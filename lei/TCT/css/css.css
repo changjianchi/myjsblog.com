@@ -1,0 +1,568 @@
+@charset "utf-8";
+* {
+    box-sizing: border-box;
+}
+html,
+body,
+div,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+pre,
+code,
+form,
+fieldset,
+legend,
+input,
+textarea,
+p,
+blockquote,
+th,
+td,
+em,
+button {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+body {
+    font-size: 0.14rem;
+    color: #000;
+    word-break:break-all;
+}
+body,html{
+    width: 100%;
+    height: auto;
+    font-family: "微软雅黑";
+}
+a{
+    text-decoration: none;
+    -webkit-user-select:none;
+    -moz-user-select:none;
+    -ms-user-select:none;
+    user-select:none;
+}
+.clear {
+    *zoom: 1;
+}
+.clear::after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+em,i{
+    font-style: normal;
+}
+b{
+    font-weight: 100;
+}
+input,button{
+    border: none;
+    background: none;
+    outline:medium;
+}
+input[placeholder],input[value]{
+    font-family: "微软雅黑";
+}
+/*select{
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -ms-appearance: none;
+    -o-appearance: none;
+    appearance: none;
+}*/
+html body .none{
+    display: none;
+}
+html body .overflowv{
+    overflow: visible;
+}
+/*----------------------------------------------------------------*/
+html,body{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+html.active,body.active{
+    height: auto;
+    overflow: visible;
+}
+.table-a{
+    display: table;
+    width: 100%;
+    height: 100%;
+}
+.table-cell{
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+    width: 100%;
+    height: 100%;
+}
+.box {
+    margin: 0 auto;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.4);
+}
+.denglu-y{
+    background: url(../img/bj.jpg) no-repeat center;
+    background-size: cover;
+}
+.login-box {
+    width: 100%;
+    max-width:400px;
+    height: auto;
+    position: absolute;
+    top: 50%;
+
+    margin-top: -200px;
+    /*设置负值，为要定位子盒子的一半高度*/
+    
+}
+.denglu-logo{
+    width: 60%;
+}
+@media screen and (min-width:400px){
+    .login-box {
+        left: 50%;
+        /*设置负值，为要定位子盒子的一半宽度*/
+        margin-left: -200px;
+    }
+}   
+
+.form {
+    width: 100%;
+    max-width:500px;
+    height: auto;
+    margin: 25px auto 0px auto;
+}   
+.login-content {
+    height: auto;
+    width: 100%;
+    max-width:500px;
+    background-color: rgba(255, 250, 2550, .7);
+    float: left;
+}       
+    
+    
+.input-group {
+    margin: 0px 0px 10px 0px !important;
+    width: 100%;
+}
+.form-control,
+.input-group {
+    height: 40px;
+}
+.form-group .col-xs-12 .input-group input{
+    border-radius: 5px;
+    width: 80%;
+    margin-left:10%; 
+    float: none;
+}
+.form-group .col-xs-12 .input-group span{
+    display: block;
+    height: 34px;
+    width: 80%;
+    margin-left:10%;
+    line-height: 34px;
+    font-size: 17px;
+    font-weight: ;
+    font-family: "微软雅黑";
+    color: #000;
+}
+.form-group {
+    margin-bottom: 0px !important;
+}
+.login-title {
+    padding: 20px 10px 10px;
+    background-color: rgba(255, 255, 255, .7);
+}
+.login-title h1 {
+    margin-top: 10px !important;
+}
+.login-title small {
+    color: #fff;
+}
+
+.link p {
+    line-height: 20px;
+    margin-top: 30px;
+}
+.btn-sm {
+    padding: 8px 24px !important;
+    font-size: 16px !important;
+    width: 70%;
+}
+.denglu-quanli{
+    width: 100%;
+    height: auto;
+    margin: 30px 0;
+}
+.col-xs-4.col-xs-offset-4{
+    width: 100%;
+    margin-left: 0;
+    margin-top: 20px;
+}
+.col-xs-4.col-xs-offset-4 button{
+    width: 80%;
+    margin:0 auto;
+    display: block;
+}
+.jizhu-wangji{
+    width: 100%;
+    height: 30px;
+    line-height: 30px;
+    font-size: 15px;
+    margin-top: 10px;
+    padding:0 15px;
+}
+.jizhu-wangji span{
+    display: block;
+    height: 100%;
+    width: 80%;
+    margin: 0 auto;
+}
+.jizhu-wangji span a{
+    float: right;
+     font-weight: bold;
+}
+.jizhu-wangji span a:hover{
+    text-decoration: underline;
+}
+.login-box .jizhu-wangji input{
+    position: relative;
+    top:4px;
+    margin-right:2px;
+    margin-left: 2px;
+    display: block;
+    float: left;
+}
+.login-box .btn-info{
+    background: #5b9bd5;
+    border-color:#5b9bd5;
+}
+.shouye-cen{
+    width: 100%;
+    height: auto;
+    max-width: 1100px;
+    margin:0 auto;
+}
+.shouye-logo{
+    width: 100%;
+    height: 50px;
+    margin: 10px 0;
+}
+.shouye-logo img{
+    width:auto;
+    height: 100%;
+}
+.shouye-bt{
+    width: 100%;
+    height: 54px;
+    line-height: 54px;
+    background: #5b9bd5;
+    color: #fff;
+    padding-left: 20px;
+    font-size: 25px;
+}
+.shouye-con{
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+}
+.shouye-con span{
+    display: block;
+    float: left;
+    width: 50%;
+    text-align: center;
+    height: 296px;
+}
+.shouye-con span img{
+    width: auto;
+    height: 100%;
+    display: block;
+    margin:0 auto;
+}
+.shouye-nav-t,.shouye-nav,.shouye-nav1{
+    width: 100%;
+    height: 50px;
+    position: relative;
+    max-width: 1100px;
+}
+.shouye-nav,.shouye-nav1{
+    background: #999;
+    margin:0 auto;
+    line-height: 50px;
+}
+.shouye-nav a{
+    display: inline-block;
+    float: left;
+    font-size: 20px;
+    color: #fff;
+    padding:0 20px;
+}
+.shouye-nav-t1{
+    position: fixed;
+    bottom:0;
+    left:0;
+    width: 100%;
+    height: 50px;
+}
+.shouye-nav a,.shouye-nav b{
+    display: inline-block;
+    float: left;
+    font-size: 20px;
+    color: #fff;
+    padding:0 20px;
+    position: relative;
+}
+.shouye-nav a:hover,.shouye-nav b:hover{
+    background: #888;
+    text-decoration: none;
+}
+.shouye-nav1 a img,.shouye-nav1 b img{
+    display: block;
+    height: 36px;
+    width: auto;
+    /*margin:7px 14px 0 0;
+    float: right;*/
+    margin:7px auto 0;
+}
+.shouye-nav b em.none,.shouye-nav1 b em.none{
+    display: none;
+}
+.shouye-nav em,.shouye-nav1 em{
+    width: 138px;
+    display: inline-block;
+    height: auto;
+    position: absolute;
+    bottom:100%;
+    left:0;
+    background: #999;
+    font-style: normal;
+}
+.shouye-nav em a,.shouye-nav1 em a{
+    width: 100%;
+    text-align: left;
+}
+.shouye-nav1 em a{
+    padding-left: 15px;
+}
+.shouye-nav1 span{
+    display: block;
+    width: 20%;
+    height: auto;
+    position: absolute;
+    bottom:100%;
+    right:0;
+    background: #999;
+}
+.shouye-nav1 span a{
+    width: 100%;
+    text-align: center;
+}
+@media screen and (min-width:700px){
+    .shouye-con span{
+        display: block;
+        float: left;
+        width: 50%;
+        text-align: center;
+        height: 296px;
+    }
+    .shouye-nav{
+        display: block;
+    }
+    .shouye-nav1{
+        display: none;
+    }
+    
+}  
+
+.shuju-top{
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+}
+.shuju-top a,.shuju-top b{
+    display: block;
+    float: left;
+    width: 33.3%;
+    height: 100%;
+    text-align: center;
+    font-size: 20px;
+}
+.shuju-top a{
+    text-align: left;
+    padding:0 15px;
+    color: rgb(31,78,121);
+    font-size: 19px;
+    line-height: 51px;
+}
+.shuju-top .shuju-baocun{
+    text-align: right;
+}
+.shujubianji{
+    width: 100%;
+    height: auto;
+    padding-bottom: 20px;
+    /*text-align: center;*/
+}
+.shujubianji span{
+    display: inline-block;
+    width: 32%;
+    height: 40px;
+    line-height: 40px;
+    min-width: 200px;
+    margin-top: 15px;
+}
+.shujubianji span b{
+    display: block;
+    float: left;
+    width: 30%;
+    font-size: 15px;
+    text-align: right;
+}
+.shujubianji span input,.shujubianji span select{
+    width: 70%;
+    border:1px solid #ddd;
+    display: block;
+    height: 100%;
+    padding: 0 10px;
+    float: left;
+    position: relative;
+}
+.shujubianji-2 span{
+    width: 70%;
+    float: none;
+}
+.shujubianji-2 span b{
+    width: 15%;
+}
+.shangji-me b{
+    width: 100%;
+}
+.sousuo1-a,
+.shuju1-a,
+.shezhi1-a{
+    width: 50px;
+    height: 50px;
+    float: left;
+    overflow: hidden;
+}
+.sousuo1-a img,
+.shuju1-a img,
+.shezhi1-a img{
+    width: auto;
+    height: 40px;
+    margin-top: 8px;
+}
+.shuju1-a{
+    margin-left: 10%;
+}
+.shezhi1-a{
+    float: right;
+    margin-right: 3%;
+}
+.shujuchakan{
+    width: 100%;
+    height: auto;
+    padding-bottom: 20px;
+}
+.shujuchakan span{
+    display: block;
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    font-size: 17px;
+    margin-top: 10px;
+}
+.shujuchakan span b{
+    display: block;
+    float: left;
+    height: 100%;
+    width: 33.3%;
+    padding-left: 5%;
+}
+.shujuchakan span b:nth-of-type(1){
+    text-align: center;
+    padding-left: 0;
+}
+.shujuchakan span:hover{
+    background: #eee;
+}
+.daohang-c em{
+    width: 180px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width:700px){
+    .shouye-con span{
+        display: block;
+        width: 100%;
+        text-align: center;
+        height: 296px;
+    }
+    .shouye-nav{
+        display: none;
+    }
+    .shouye-nav1{
+        display: block;
+    }
+    .shouye-nav1 a,.shouye-nav1 b{
+        display: block;
+        float: left;
+        font-size: 14px;
+        color: #fff;
+        text-align: center;
+        width: 20%;
+        padding:0;
+        height: 100%;
+        position: relative;
+    }
+    .shouye-logo{
+        padding-left: 10px;
+    }
+    .shouye-nav1 em{
+        width: 120px;
+    }
+    .shujubianji span{
+        width: 48%;
+    }
+    .shujubianji-2 span{
+        width: 100%;
+        float: none;
+    }
+    .shujubianji-2 span b{
+        width: 20%;
+    }
+}
+@media screen and (max-width:400px){
+    .shujubianji span{
+        width: 90%;
+    }
+}

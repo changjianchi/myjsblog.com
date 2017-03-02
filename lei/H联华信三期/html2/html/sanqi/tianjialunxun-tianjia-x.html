@@ -1,0 +1,1809 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no" name="viewport" >
+    <!-- 新 Bootstrap 核心 CSS 文件 -->
+    <link rel="stylesheet" href="../../css/libs/bootstrap.min.css">
+    <link rel="stylesheet" href="../../css/common/top_nav.css">
+    <link rel="stylesheet" href="../../css/configuration_index.css">
+    <link href="../../css/attr_alter.css" type="text/css" rel="stylesheet"/>
+    <!--[if IE 9]>
+        <link rel="stylesheet" type="text/css" href="../../css/common/ie9.css" />
+    <![endif]-->
+
+    <!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->
+    <script src="../../js/libs/jquery.min.js"></script>
+    <!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+    <script src="../../js/libs/bootstrap.min.js"></script>
+    <script src="../../js/libs/echarts-all.min.js"></script>
+    <script src="../../js/common/common.js"></script>
+    <script src="../../js/configuration_index.js"></script>
+    <script src="../../js/attr_alter.js"></script>
+
+    <script src="../../js/lhg/lhgdialog.js"></script>
+
+    <title>管理中心-配置步骤一</title>
+    <link rel="stylesheet" href="css/weiyi-tanchuang.css">
+</head>
+<body style="overflow-x:hidden">
+<!-- 配置步骤1 -->
+<div class="wj-outer">
+    <div class="container-fluid wj-msg-container">
+        <div class="row">
+            <!-- ziyuanguanli -->
+            <div class="tab-content-container has-load-show ziyuanguanli">
+                <div class="manage-list-container">
+                    <!-- 简介栏 -->
+                    <div class="col-lg-6 wj-msg-wrap wj-pr7-5">
+                        <div class="wj-msg-cont">
+                            <div class="wj-msg-tit clearfix">
+                                <h3 class="pull-left">设备基本信息</h3>
+                            </div>
+                            <div class="wj-msg-txt clearfix">
+                                <div class="col-md-3 col-sm-6">
+                                    <span class="wj-txt-tit">设备名称：</span>
+                                    <span class="wj-txt-bod">ORC1234324</span>
+                                </div>
+                                <div class="col-md-3 col-sm-6">
+                                    <span class="wj-txt-tit">设备IP：</span>
+                                    <span class="wj-txt-bod">192.168.1.1</span>
+                                </div>
+                                <div class="col-md-3 col-sm-6">
+                                    <span class="wj-txt-tit">所属业务系统：</span>
+                                    <span class="wj-txt-bod">数据库软件</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="clear"></div>
+                    <div class="wj-msg-cont bottom-margin padding015">
+                        <div class="wj-msg-tit clearfix backgroundfff">
+                            <h3 class="pull-left">添加轮训基本参数</h3>
+                        </div>
+                    </div>
+<div class="cen-none cen3-none">
+                <div class="cen3-none1">
+                    <div class="wj-msg-cont">
+                        <div class="wj-msg-tit clearfix">
+                            <h3 class="pull-left">基本信息及设置</h3>
+                        </div>
+                        <div class="wj-msg-txt clearfix">
+                            <div class="col-md-3 col-sm-6">
+                                <span class="wj-txt-tit">设备名称：</span>
+                                <span class="wj-txt-bod">ORC1234324</span>
+                            </div>
+                            <div class="col-md-3 col-sm-6">
+                                <span class="wj-txt-tit">设备IP：</span>
+                                <span class="wj-txt-bod">192.168.1.1</span>
+                            </div>
+                            <div class="col-md-3 col-sm-6">
+                                <span class="wj-txt-tit">所属业务系统：</span>
+                                <span class="wj-txt-bod">数据库软件</span>
+                            </div>
+                        </div>
+                        <div class="fengexian-1-c"></div>
+                    
+                        <div class="wj-oneser-item clearfix xiugai-select">
+                            <span class="wj-sear-tit pull-left">视图种类</span>
+                            <div class="wj-depend-select wj-longest-ipt" id="wjViewKinds">
+                                <p class="wj-depsel-content">默认值：1号联动</p>
+                                <i class="caret-self-set"></i>
+                                <!-- 下拉菜单的值放在这里 -->
+                                <input class="wj-data-ipt" type="hidden" name="">
+                                <ul class="wj-depsel-list cen4-liandong-menu" style="">
+                                    <li data-id="0">1号联动</li>
+                                    <li data-id="1">2号联动</li>
+                                </ul>
+                            </div>
+                            <a href="#" class="wj-seropt-btn wj-renyuan-xiugai">修改策略</a>
+                            <div class="xiugaicelve-beizhu"><i class="xiugaicelve-x-x">*</i>请先选择轮询策略</div>
+                            <div class="wj-msg-txt clearfix">
+                                <div class="col-md-3 col-sm-6">
+                                    <span class="wj-txt-tit">轮询策略：</span>
+                                    <span class="wj-txt-bod cen4-liandong" data-i="0">轮询策略轮询策略轮询策略轮询策略轮询策略轮询策略</span>
+                                    <span class="wj-txt-bod cen4-liandong none" data-i="1">轮询策略轮询策略轮询策略轮询策略轮询策略轮询策略2</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="fengexian-1-c"></div>
+                        <div class="col-lg-4 bottom-border">
+                            <div class="wj-oneser-item clearfix wj-sear-tit-2table border-none">
+                                <span class="wj-sear-tit pull-left">采集值存盘策略</span>
+                                <b class="wj-sear-tit-2">
+                                    <i class="tianjialunxun-biaoqianxuanze danxuan-time">
+                                        <b></b>
+                                        记录
+                                    </i>
+                                    <i class="tianjialunxun-biaoqianxuanze active danxuan-time">
+                                        <b></b>
+                                        不记录
+                                    </i>
+                                    <i class="tianjialunxun-biaoqianxuanze activenone danxuan-time">
+                                        <b></b>
+                                        改变时记录
+                                    </i>
+                                </b>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 bottom-border zixuan-time-a">
+                            <div class="wj-oneser-item clearfix wj-sear-tit-2table border-none">
+                                <span class="wj-sear-tit pull-left strong">轮询时间设置</span>
+                                <b class="wj-sear-tit-2">
+                                    <i class="tianjialunxun-biaoqianxuanze active fenduanjishi-time-danxuan biaozhunjishi-time">
+                                        <b></b>
+                                        标准计时
+                                    </i>
+                                </b>
+                                <em class="biaozhunjishi-time-a wj-depend-select-t">
+                                    <div class="shuxian-1-x">采样间隔</div>
+                                    <input type="text" value="1" name="" class="textInput-self-set pull-left wj-sear-date bomiaofenshi">
+                                    <div class="wj-depend-select wj-longest-ipt" id="wjOrderWay">
+                                        <p class="wj-depsel-content">时</p>
+                                        <i class="caret-self-set"></i>
+                                        <!-- 下拉菜单的值放在这里 -->
+                                        <input class="wj-data-ipt" type="hidden" name="" data-id="" value="1">
+                                        <ul class="wj-depsel-list" style="">
+                                            <li data-id="0">时</li>
+                                            <li data-id="1">分</li>
+                                            <li data-id="2">秒</li>
+                                        </ul>
+                                    </div>
+                                    <div class="shuxian-1-x shuxian-1-a">恢复正常 确认次数</div>
+                                    <input type="text" value="20" name="" class="textInput-self-set pull-left wj-sear-date">
+                                </em>
+                                <b class="wj-sear-tit-2">
+                                &nbsp;&nbsp;&nbsp;
+                                    <i class="tianjialunxun-biaoqianxuanze fenduanjishi-time-danxuan">
+                                        <b></b>
+                                        分段计时
+                                    </i>
+                                </b>
+                                <em class="biaozhunjishi-time-a active">
+                                    <a href="#" class="wj-seropt-btn wj-renyuan-xiugai wj-renyuan-xiugai1">修改</a>
+                                </em>
+                            </div>
+                        </div>
+
+                        
+                    </div>
+                    <div class="clear"></div>
+            <div class="cen4-liandong" data-i="0">
+                    <div class="tanjialunxun-bt padding-left-15">
+                        <div class="pull-left">阈值设置1</div>
+                    </div>
+                    <!-- 总览表 -->
+                    <div class="tianjialunxun-zonglan-k">
+                        <div class="tianjialunxun-zonglanbiao tianjialunxun-yuzhi leftright-bor">
+                            <!-- 表格部分 -->
+                            <table class="self-set-table">
+                                <thead>
+                                    <tr>
+                                        <td>序号</td>
+                                        <td>阈值名称</td>
+                                        <td>阈值</td>
+                                        <td>阈值类型</td>
+                                    </tr>
+                                </thead>
+                                <tr>
+                                    <td>1</td>
+                                    <td>123</td>
+                                    <td><input type="text" class="cen4-x-input" value="1"></td>
+                                    <td><input type="text" class="cen4-x-input" value="1"></td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+
+                    <div class="tianjialunxun-zonglan-k margin-top-5">
+                        <div class="tanjialunxun-bt">
+                            <div class="pull-left">阈值设置</div>
+                        </div>
+                        <div class="tianjialunxun-zonglanbiao tianjialunxun-yuzhi leftright-bor">
+                            <!-- 表格部分 -->
+                            <table class="self-set-table">
+                                <thead>
+                                    <tr>
+                                        <td>序列</td>
+                                        <td>运行状态</td>
+                                        <td>告警通知匹配</td>
+                                        <td>告警恢复匹配</td>
+                                        <td class="baifenzhi3"><i class="lunxun-shezhi"></i></td>
+                                    </tr>
+                                </thead>
+                                <tr style="border-bottom-width:2px;">
+                                    <td>1</td>
+                                    <td>1</td>
+                                    <td><div class="yuzhi-text-a"><textarea rows=1 cols=40 style='overflow:scroll;overflow-y:hidden;overflow-x:hidden' onfocus="window.activeobj=this;this.clock=setInterval(function(){activeobj.style.height=activeobj.scrollHeight+'px';},0);" onblur="clearInterval(this.clock);">321</textarea></div></td>
+                                    <td><div class="yuzhi-text-a"><textarea rows=1 cols=40 style='overflow:scroll;overflow-y:hidden;overflow-x:hidden' onfocus="window.activeobj=this;this.clock=setInterval(function(){activeobj.style.height=activeobj.scrollHeight+'px';},0);" onblur="clearInterval(this.clock);">321</textarea></div></td>
+                                    <td class="baifenzhi3"><a class="lunxun-shezhi-a shouqi">更多设置</a></td>
+                                </tr>
+
+                                    <tr class="table-bocta-cell-bt">
+                                        <td colspan="5" class="bac575d63">
+                                            <a class="table-bocta-i">运行状态级别</a>
+                                            <a class="table-bocta-i">确认次数</a>
+                                            <a class="table-bocta-i">确认次数</a>
+                                        </td>
+                                    </tr>
+                                    <tr class="table-bocta-cell">
+                                        <td colspan="5">
+                                            <a class="table-bocta-i">
+                                                <div class="yuzhi-text-b">
+                                                    <div class="wj-depend-select wj-longest-ipt">
+                                                        <p class="wj-depsel-content">请选择视图种类</p>
+                                                        <i class="caret-self-set"></i>
+                                                        <!-- 下拉菜单的值放在这里 -->
+                                                        <input class="wj-data-ipt" type="hidden" name="">
+                                                        <ul class="wj-depsel-list" style="">
+                                                            <li data-id="0">请选择属性过滤</li>
+                                                            <li data-id="1">交换机</li>
+                                                            <li data-id="2">路由器</li>
+                                                            <li data-id="3">IP设备</li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                            <a class="table-bocta-i">
+                                                <div class="yuzhi-text-b">
+                                                    <input type="text" value="1" name="" class="textInput-self-set pull-left wj-sear-date bomiaofenshi">
+                                                </div>
+                                            </a>
+                                            <a class="table-bocta-i wj-depend-select-t">
+                                                <div class="table-bocta-i-5">
+                                                    <div class="yuzhi-text-b">
+                                                        <input type="text" value="1" name="" class="textInput-self-set pull-left wj-sear-date bomiaofenshi">
+                                                    </div>
+                                                </div>
+                                                <div class="table-bocta-i-5">
+                                                    <div class="yuzhi-text-b">
+                                                        <div class="wj-depend-select wj-longest-ipt">
+                                                            <p class="wj-depsel-content">时</p>
+                                                            <i class="caret-self-set"></i>
+                                                            <!-- 下拉菜单的值放在这里 -->
+                                                            <input class="wj-data-ipt" type="hidden" name="">
+                                                            <ul class="wj-depsel-list" style="display: none;">
+                                                                <li data-id="0">时</li>
+                                                                <li data-id="1">分</li>
+                                                                <li data-id="2">秒</li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </td>
+                                    </tr>
+
+                                <tr style="border-bottom-width:2px;">
+                                    <td>1</td>
+                                    <td>1</td>
+                                    <td><div class="yuzhi-text-a"><textarea rows=1 cols=40 style='overflow:scroll;overflow-y:hidden;overflow-x:hidden' onfocus="window.activeobj=this;this.clock=setInterval(function(){activeobj.style.height=activeobj.scrollHeight+'px';},0);" onblur="clearInterval(this.clock);">321</textarea></div></td>
+                                    <td><div class="yuzhi-text-a"><textarea rows=1 cols=40 style='overflow:scroll;overflow-y:hidden;overflow-x:hidden' onfocus="window.activeobj=this;this.clock=setInterval(function(){activeobj.style.height=activeobj.scrollHeight+'px';},0);" onblur="clearInterval(this.clock);">321</textarea></div></td>
+                                    <td class="baifenzhi3"><a class="lunxun-shezhi-a shouqi">更多设置</a></td>
+                                </tr>
+                                
+                                    <tr class="table-bocta-cell-bt">
+                                        <td colspan="5" class="bac575d63">
+                                            <a class="table-bocta-i">运行状态级别</a>
+                                            <a class="table-bocta-i">确认次数</a>
+                                            <a class="table-bocta-i">确认次数</a>
+                                        </td>
+                                    </tr>
+                                    <tr class="table-bocta-cell">
+                                        <td colspan="5">
+                                            <a class="table-bocta-i">
+                                                <div class="yuzhi-text-b">
+                                                    <div class="wj-depend-select wj-longest-ipt">
+                                                        <p class="wj-depsel-content">请选择视图种类</p>
+                                                        <i class="caret-self-set"></i>
+                                                        <!-- 下拉菜单的值放在这里 -->
+                                                        <input class="wj-data-ipt" type="hidden" name="">
+                                                        <ul class="wj-depsel-list" style="">
+                                                            <li data-id="0">请选择属性过滤</li>
+                                                            <li data-id="1">交换机</li>
+                                                            <li data-id="2">路由器</li>
+                                                            <li data-id="3">IP设备</li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                            <a class="table-bocta-i">
+                                                <div class="yuzhi-text-b">
+                                                    <input type="text" value="1" name="" class="textInput-self-set pull-left wj-sear-date bomiaofenshi">
+                                                </div>
+                                            </a>
+                                            <a class="table-bocta-i wj-depend-select-t">
+                                                <div class="table-bocta-i-5">
+                                                    <div class="yuzhi-text-b">
+                                                        <input type="text" value="1" name="" class="textInput-self-set pull-left wj-sear-date bomiaofenshi">
+                                                    </div>
+                                                </div>
+                                                <div class="table-bocta-i-5">
+                                                    <div class="yuzhi-text-b">
+                                                        <div class="wj-depend-select wj-longest-ipt">
+                                                            <p class="wj-depsel-content">时</p>
+                                                            <i class="caret-self-set"></i>
+                                                            <!-- 下拉菜单的值放在这里 -->
+                                                            <input class="wj-data-ipt" type="hidden" name="">
+                                                            <ul class="wj-depsel-list" style="display: none;">
+                                                                <li data-id="0">时</li>
+                                                                <li data-id="1">分</li>
+                                                                <li data-id="2">秒</li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </td>
+                                    </tr>
+
+                            </table>
+                        </div>
+                        <div class="tanjialunxun-bt">
+                            辅助检测指标
+                        </div>
+                        <div class="tianjialunxun-zonglanbiao tianjialunxun-yuzhi leftright-bor input-left-tianjialunxun">
+                            <!-- 表格部分 -->
+                            <table class="self-set-table">
+                                <thead>
+                                    <tr>
+                                        <td>序列</td>
+                                        <td>辅助检测指标名称</td>
+                                        <td>指标名称</td>
+                                        <td>子指标名称</td>
+                                        <td>行标识</td>
+                                    </tr>
+                                </thead>
+                                <tr>
+                                    <td>1</td>
+                                    <td>1</td>
+                                    <td>
+                                        <div class="yuzhi-text-b">
+                                            <div class="wj-depend-select wj-longest-ipt" class="xialakuang">
+                                                <p class="wj-depsel-content">请选择视图种类</p>
+                                                <i class="caret-self-set"></i>
+                                                <!-- 下拉菜单的值放在这里 -->
+                                                <input class="wj-data-ipt" type="hidden" name="">
+                                                <ul class="wj-depsel-list" style="">
+                                                    <li data-id="0">请选择属性过滤</li>
+                                                    <li data-id="1">交换机</li>
+                                                    <li data-id="2">路由器</li>
+                                                    <li data-id="3">IP设备</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="yuzhi-text-b">
+                                            <div class="wj-depend-select wj-longest-ipt" class="xialakuang">
+                                                <p class="wj-depsel-content">请选择视图种类</p>
+                                                <i class="caret-self-set"></i>
+                                                <!-- 下拉菜单的值放在这里 -->
+                                                <input class="wj-data-ipt" type="hidden" name="">
+                                                <ul class="wj-depsel-list" style="">
+                                                    <li data-id="0">请选择属性过滤</li>
+                                                    <li data-id="1">交换机</li>
+                                                    <li data-id="2">路由器</li>
+                                                    <li data-id="3">IP设备</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="yuzhi-text-b">
+                                            <div class="wj-depend-select wj-longest-ipt" class="xialakuang">
+                                                <p class="wj-depsel-content">请选择视图种类</p>
+                                                <i class="caret-self-set"></i>
+                                                <!-- 下拉菜单的值放在这里 -->
+                                                <input class="wj-data-ipt" type="hidden" name="">
+                                                <ul class="wj-depsel-list" style="">
+                                                    <li data-id="0">请选择属性过滤</li>
+                                                    <li data-id="1">交换机</li>
+                                                    <li data-id="2">路由器</li>
+                                                    <li data-id="3">IP设备</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+            </div>
+            <div class="cen4-liandong none" data-i="1">
+                    <div class="tanjialunxun-bt padding-left-15">
+                        <div class="pull-left">阈值设置2</div>
+                    </div>
+                    <!-- 总览表 -->
+                    <div class="tianjialunxun-zonglan-k">
+                        <div class="tianjialunxun-zonglanbiao tianjialunxun-yuzhi leftright-bor">
+                            <!-- 表格部分 -->
+                            <table class="self-set-table">
+                                <thead>
+                                    <tr>
+                                        <td>序号</td>
+                                        <td>阈值名称</td>
+                                        <td>阈值</td>
+                                        <td>阈值类型</td>
+                                    </tr>
+                                </thead>
+                                <tr>
+                                    <td>1</td>
+                                    <td>123</td>
+                                    <td><input type="text" class="cen4-x-input" value="1"></td>
+                                    <td><input type="text" class="cen4-x-input" value="1"></td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+
+                    <div class="tianjialunxun-zonglan-k margin-top-5">
+                        <div class="tanjialunxun-bt">
+                            <div class="pull-left">阈值设置</div>
+                        </div>
+                        <div class="tianjialunxun-zonglanbiao tianjialunxun-yuzhi leftright-bor">
+                            <!-- 表格部分 -->
+                            <table class="self-set-table">
+                                <thead>
+                                    <tr>
+                                        <td>序列</td>
+                                        <td>运行状态</td>
+                                        <td>告警通知匹配</td>
+                                        <td>告警恢复匹配</td>
+                                        <td class="baifenzhi3"><i class="lunxun-shezhi"></i></td>
+                                    </tr>
+                                </thead>
+                                <tr style="border-bottom-width:2px;">
+                                    <td>1</td>
+                                    <td>1</td>
+                                    <td><div class="yuzhi-text-a"><textarea rows=1 cols=40 style='overflow:scroll;overflow-y:hidden;overflow-x:hidden' onfocus="window.activeobj=this;this.clock=setInterval(function(){activeobj.style.height=activeobj.scrollHeight+'px';},0);" onblur="clearInterval(this.clock);">321</textarea></div></td>
+                                    <td><div class="yuzhi-text-a"><textarea rows=1 cols=40 style='overflow:scroll;overflow-y:hidden;overflow-x:hidden' onfocus="window.activeobj=this;this.clock=setInterval(function(){activeobj.style.height=activeobj.scrollHeight+'px';},0);" onblur="clearInterval(this.clock);">321</textarea></div></td>
+                                    <td class="baifenzhi3"><a class="lunxun-shezhi-a shouqi">更多设置</a></td>
+                                </tr>
+
+                                    <tr class="table-bocta-cell-bt">
+                                        <td colspan="5" class="bac575d63">
+                                            <a class="table-bocta-i">运行状态级别</a>
+                                            <a class="table-bocta-i">确认次数</a>
+                                            <a class="table-bocta-i">确认次数</a>
+                                        </td>
+                                    </tr>
+                                    <tr class="table-bocta-cell">
+                                        <td colspan="5">
+                                            <a class="table-bocta-i">
+                                                <div class="yuzhi-text-b">
+                                                    <div class="wj-depend-select wj-longest-ipt">
+                                                        <p class="wj-depsel-content">请选择视图种类</p>
+                                                        <i class="caret-self-set"></i>
+                                                        <!-- 下拉菜单的值放在这里 -->
+                                                        <input class="wj-data-ipt" type="hidden" name="">
+                                                        <ul class="wj-depsel-list" style="">
+                                                            <li data-id="0">请选择属性过滤</li>
+                                                            <li data-id="1">交换机</li>
+                                                            <li data-id="2">路由器</li>
+                                                            <li data-id="3">IP设备</li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                            <a class="table-bocta-i">
+                                                <div class="yuzhi-text-b">
+                                                    <input type="text" value="1" name="" class="textInput-self-set pull-left wj-sear-date bomiaofenshi">
+                                                </div>
+                                            </a>
+                                            <a class="table-bocta-i wj-depend-select-t">
+                                                <div class="table-bocta-i-5">
+                                                    <div class="yuzhi-text-b">
+                                                        <input type="text" value="1" name="" class="textInput-self-set pull-left wj-sear-date bomiaofenshi">
+                                                    </div>
+                                                </div>
+                                                <div class="table-bocta-i-5">
+                                                    <div class="yuzhi-text-b">
+                                                        <div class="wj-depend-select wj-longest-ipt">
+                                                            <p class="wj-depsel-content">时</p>
+                                                            <i class="caret-self-set"></i>
+                                                            <!-- 下拉菜单的值放在这里 -->
+                                                            <input class="wj-data-ipt" type="hidden" name="">
+                                                            <ul class="wj-depsel-list" style="display: none;">
+                                                                <li data-id="0">时</li>
+                                                                <li data-id="1">分</li>
+                                                                <li data-id="2">秒</li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </td>
+                                    </tr>
+                                                            
+                            </table>
+                        </div>
+                        <div class="tanjialunxun-bt">
+                            辅助检测指标
+                        </div>
+                        <div class="tianjialunxun-zonglanbiao tianjialunxun-yuzhi leftright-bor">
+                            <!-- 表格部分 -->
+                            <table class="self-set-table">
+                                <thead>
+                                    <tr>
+                                        <td>序列</td>
+                                        <td>辅助检测指标名称</td>
+                                        <td>指标名称</td>
+                                        <td>子指标名称</td>
+                                        <td>行标识</td>
+                                    </tr>
+                                </thead>
+                                <tr>
+                                    <td>1</td>
+                                    <td>1</td>
+                                    <td>
+                                        <div class="yuzhi-text-b">
+                                            <div class="wj-depend-select wj-longest-ipt" class="xialakuang">
+                                                <p class="wj-depsel-content">请选择视图种类</p>
+                                                <i class="caret-self-set"></i>
+                                                <!-- 下拉菜单的值放在这里 -->
+                                                <input class="wj-data-ipt" type="hidden" name="">
+                                                <ul class="wj-depsel-list" style="">
+                                                    <li data-id="0">请选择属性过滤</li>
+                                                    <li data-id="1">交换机</li>
+                                                    <li data-id="2">路由器</li>
+                                                    <li data-id="3">IP设备</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="yuzhi-text-b">
+                                            <div class="wj-depend-select wj-longest-ipt" class="xialakuang">
+                                                <p class="wj-depsel-content">请选择视图种类</p>
+                                                <i class="caret-self-set"></i>
+                                                <!-- 下拉菜单的值放在这里 -->
+                                                <input class="wj-data-ipt" type="hidden" name="">
+                                                <ul class="wj-depsel-list" style="">
+                                                    <li data-id="0">请选择属性过滤</li>
+                                                    <li data-id="1">交换机</li>
+                                                    <li data-id="2">路由器</li>
+                                                    <li data-id="3">IP设备</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="yuzhi-text-b">
+                                            <div class="wj-depend-select wj-longest-ipt" class="xialakuang">
+                                                <p class="wj-depsel-content">请选择视图种类</p>
+                                                <i class="caret-self-set"></i>
+                                                <!-- 下拉菜单的值放在这里 -->
+                                                <input class="wj-data-ipt" type="hidden" name="">
+                                                <ul class="wj-depsel-list" style="">
+                                                    <li data-id="0">请选择属性过滤</li>
+                                                    <li data-id="1">交换机</li>
+                                                    <li data-id="2">路由器</li>
+                                                    <li data-id="3">IP设备</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+            </div>
+
+                    <div class="tianjialunxun-x-ok">
+                        <a href="tianjialunxun-tianjia.html" class="fanhui">上一步</a>
+                        <a href="#" class="xiayibu active">保存</a>
+                    </div> 
+                </div>
+<div class="cen-none cen4-none">
+                    <div class="wj-msg-cont bottom-border">
+                        <div class="wj-msg-tit clearfix border-none">
+                            <h3 class="pull-left">基本信息及设置</h3>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="wj-oneser-item clearfix wj-sear-tit-2table border-none margin1">
+                                <i class="tianjialunxun-biaoqianxuanze xingqi-time active">
+                                    <b></b>
+                                    星期一
+                                </i>
+                                <i class="tianjialunxun-biaoqianxuanze xingqi-time active">
+                                    <b></b>
+                                    星期二
+                                </i>
+                                <i class="tianjialunxun-biaoqianxuanze xingqi-time active">
+                                    <b></b>
+                                    星期三
+                                </i>
+                                <i class="tianjialunxun-biaoqianxuanze xingqi-time active">
+                                    <b></b>
+                                    星期四
+                                </i>
+                                <i class="tianjialunxun-biaoqianxuanze xingqi-time active">
+                                    <b></b>
+                                    星期五
+                                </i>
+                                <i class="tianjialunxun-biaoqianxuanze xingqi-time">
+                                    <b></b>
+                                    星期六
+                                </i>
+                                <i class="tianjialunxun-biaoqianxuanze xingqi-time">
+                                    <b></b>
+                                    星期日
+                                </i>
+                            </div>
+                            <div class="wj-oneser-item clearfix wj-sear-tit-2table border-none margin0 c4time-t-s">
+                                <i class="tianjialunxun-biaoqianxuanze danxuan-time" style="margin-left:2px;">
+                                    <b></b>
+                                    全天
+                                </i>
+                                <i class="tianjialunxun-biaoqianxuanze danxuan-time active fenduanjishi-cen4-time" style="margin-left:25px;">
+                                    <b></b>
+                                    分段计时
+                                </i>
+                            </div>
+                            <div class="cen4-fenduanjishi">
+                                <div class="tianjialunxun-zonglanbiao time-cen4">
+                                    <!-- 表格部分 -->
+                                    <table class="self-set-table">
+                                        <thead>
+                                            <tr>
+                                                <td><i class="zhanweifu-c4time"></i></td>
+                                                <td>有效状态</td>
+                                                <td>起始时间</td>
+                                                <td>结束时间</td>
+                                                <td>结束时间</td>
+                                                <td>阀值设置</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                        <tr style="border-bottom-width:2px;">
+                                            <td>时段1</td>
+                                            <td><b class="youxiaozhuangtai-time active"></b><i class="zhezhao"><em></em></i></td>
+                                            <td class="xiala-shifenmiao xiala-shifenmiao-maohao">
+                                                <a class="table-bocta-i">
+                                                    <b class="zhongfen-maohao">:</b>
+                                                    <div class="table-bocta-i-5">
+                                                        <div class="yuzhi-text-b">
+                                                            <input type="text" value="1" name="" class="textInput-self-set pull-left wj-sear-date bomiaofenshi">
+                                                        </div>
+                                                    </div>
+                                                    <div class="table-bocta-i-5">
+                                                        <div class="yuzhi-text-b">
+                                                            <input type="text" value="1" name="" class="textInput-self-set pull-left wj-sear-date bomiaofenshi">
+                                                        </div>
+                                                    </div>
+                                                    
+                                                </a>
+                                            </td>
+                                            <td class="xiala-shifenmiao xiala-shifenmiao-maohao">
+                                                <a class="table-bocta-i">
+                                                    <b class="zhongfen-maohao">:</b>
+                                                    <div class="table-bocta-i-5">
+                                                        <div class="yuzhi-text-b">
+                                                            <input type="text" value="1" name="" class="textInput-self-set pull-left wj-sear-date bomiaofenshi">
+                                                        </div>
+                                                    </div>
+                                                    <div class="table-bocta-i-5">
+                                                        <div class="yuzhi-text-b">
+                                                            <input type="text" value="1" name="" class="textInput-self-set pull-left wj-sear-date bomiaofenshi">
+                                                        </div>
+                                                    </div>
+                                                    
+                                                </a>
+                                            </td>
+                                            <td class="xiala-shifenmiao" style="border-bottom-width:2px;">
+                                                <a class="table-bocta-i wj-depend-select-t">
+                                                    <div class="table-bocta-i-5">
+                                                        <div class="yuzhi-text-b">
+                                                            <input type="text" value="1" name="" class="textInput-self-set pull-left wj-sear-date bomiaofenshi" style="text-align:left;">
+                                                        </div>
+                                                    </div>
+                                                    <div class="table-bocta-i-5">
+                                                        <div class="yuzhi-text-b">
+                                                            <div class="wj-depend-select wj-longest-ipt">
+                                                                <p class="wj-depsel-content">时</p>
+                                                                <i class="caret-self-set"></i>
+                                                                <!-- 下拉菜单的值放在这里 -->
+                                                                <input class="wj-data-ipt" type="hidden" name="">
+                                                                <ul class="wj-depsel-list" style="display: none;">
+                                                                    <li data-id="0">时</li>
+                                                                    <li data-id="1">分</li>
+                                                                    <li data-id="2">秒</li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </td>
+                                            <td class="baifenzhi3"><a class="lunxun-shezhi-a" data-id="0"><b></b>使用默认阀值</a></td>
+                                        </tr>
+
+                                            <tr class="table-bocta-cell-bt none">
+                                                <td colspan="6" class="bac575d63 cen4-liandong" data-i="0">
+                                                    <a class="table-bocta-i">序列</a>
+                                                    <a class="table-bocta-i">运行状态级别</a>
+                                                    <a class="table-bocta-i">确认次数</a>
+                                                    <a class="table-bocta-i">确认次数</a>
+                                                </td>
+                                                <td colspan="6" class="bac575d63 cen4-liandong none" data-i="1">
+                                                    <a class="table-bocta-i">序列</a>
+                                                    <a class="table-bocta-i">运行状态级别</a>
+                                                    <a class="table-bocta-i">确认次数</a>
+                                                    <a class="table-bocta-i">确认次数</a>
+                                                </td>
+                                            </tr>
+                                            <tr class="table-bocta-cell none">
+                                                <td colspan="6" class="cen4-liandong" data-i="0">
+                                                    <div class="divtd">
+                                                        <a class="table-bocta-i">
+                                                            1
+                                                        </a>
+                                                        <a class="table-bocta-i">
+                                                            警告
+                                                        </a>
+                                                        <a class="table-bocta-i">
+                                                            <input type="text" class="cen4-x-input" value="1">
+                                                        </a>
+                                                        <a class="table-bocta-i">
+                                                            数值
+                                                        </a>
+                                                    </div>
+                                                    <div class="divtd">
+                                                        <a class="table-bocta-i">
+                                                            1
+                                                        </a>
+                                                        <a class="table-bocta-i">
+                                                            警告
+                                                        </a>
+                                                        <a class="table-bocta-i">
+                                                            <input type="text" class="cen4-x-input" value="1">
+                                                        </a>
+                                                        <a class="table-bocta-i">
+                                                            数值
+                                                        </a>
+                                                    </div>
+                                                </td>
+                                                <td colspan="6" class="cen4-liandong none" data-i="1">
+                                                    <div class="divtd">
+                                                        <a class="table-bocta-i">
+                                                            1
+                                                        </a>
+                                                        <a class="table-bocta-i">
+                                                            警告
+                                                        </a>
+                                                        <a class="table-bocta-i">
+                                                            <input type="text" class="cen4-x-input" value="1">
+                                                        </a>
+                                                        <a class="table-bocta-i">
+                                                            数值
+                                                        </a>
+                                                    </div>
+                                                    <div class="divtd">
+                                                        <a class="table-bocta-i">
+                                                            1
+                                                        </a>
+                                                        <a class="table-bocta-i">
+                                                            警告
+                                                        </a>
+                                                        <a class="table-bocta-i">
+                                                            <input type="text" class="cen4-x-input" value="1">
+                                                        </a>
+                                                        <a class="table-bocta-i">
+                                                            数值
+                                                        </a>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr class="active" style="border-bottom-width:2px;">
+                                            <td>时段1</td>
+                                            <td><b class="youxiaozhuangtai-time"></b><i class="zhezhao"><em></em></i></td>
+                                            <td class="xiala-shifenmiao xiala-shifenmiao-maohao">
+                                                <a class="table-bocta-i">
+                                                    <b class="zhongfen-maohao">:</b>
+                                                    <div class="table-bocta-i-5">
+                                                        <div class="yuzhi-text-b">
+                                                            <input type="text" value="1" name="" class="textInput-self-set pull-left wj-sear-date bomiaofenshi">
+                                                        </div>
+                                                    </div>
+                                                    <div class="table-bocta-i-5">
+                                                        <div class="yuzhi-text-b">
+                                                            <input type="text" value="1" name="" class="textInput-self-set pull-left wj-sear-date bomiaofenshi">
+                                                        </div>
+                                                    </div>
+                                                    
+                                                </a>
+                                            </td>
+                                            <td class="xiala-shifenmiao xiala-shifenmiao-maohao">
+                                                <a class="table-bocta-i">
+                                                    <b class="zhongfen-maohao">:</b>
+                                                    <div class="table-bocta-i-5">
+                                                        <div class="yuzhi-text-b">
+                                                            <input type="text" value="1" name="" class="textInput-self-set pull-left wj-sear-date bomiaofenshi">
+                                                        </div>
+                                                    </div>
+                                                    <div class="table-bocta-i-5">
+                                                        <div class="yuzhi-text-b">
+                                                            <input type="text" value="1" name="" class="textInput-self-set pull-left wj-sear-date bomiaofenshi">
+                                                        </div>
+                                                    </div>
+                                                    
+                                                </a>
+                                            </td>
+                                            <td class="xiala-shifenmiao">
+                                                <a class="table-bocta-i wj-depend-select-t">
+                                                    <div class="table-bocta-i-5">
+                                                        <div class="yuzhi-text-b">
+                                                            <input type="text" value="1" name="" class="textInput-self-set pull-left wj-sear-date bomiaofenshi" style="text-align:left;">
+                                                        </div>
+                                                    </div>
+                                                    <div class="table-bocta-i-5">
+                                                        <div class="yuzhi-text-b">
+                                                            <div class="wj-depend-select wj-longest-ipt">
+                                                                <p class="wj-depsel-content">时</p>
+                                                                <i class="caret-self-set"></i>
+                                                                <!-- 下拉菜单的值放在这里 -->
+                                                                <input class="wj-data-ipt" type="hidden" name="">
+                                                                <ul class="wj-depsel-list" style="display: none;">
+                                                                    <li data-id="0">时</li>
+                                                                    <li data-id="1">分</li>
+                                                                    <li data-id="2">秒</li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </td>
+                                            <td class="baifenzhi3"><a class="lunxun-shezhi-a" data-id="0"><b></b>使用默认阀值</a></td>
+                                        </tr>
+
+                                            <tr class="table-bocta-cell-bt none">
+                                                <td colspan="6" class="bac575d63 cen4-liandong" data-i="0">
+                                                    <a class="table-bocta-i">序列0</a>
+                                                    <a class="table-bocta-i">运行状态级别</a>
+                                                    <a class="table-bocta-i">确认次数</a>
+                                                    <a class="table-bocta-i">确认次数</a>
+                                                </td>
+                                                <td colspan="6" class="bac575d63 cen4-liandong none" data-i="1">
+                                                    <a class="table-bocta-i">序列1</a>
+                                                    <a class="table-bocta-i">运行状态级别</a>
+                                                    <a class="table-bocta-i">确认次数</a>
+                                                    <a class="table-bocta-i">确认次数</a>
+                                                </td>
+                                            </tr>
+                                            <tr class="table-bocta-cell none">
+                                                <td colspan="6" class="cen4-liandong3" data-i="0">
+                                                    <div class="divtd">
+                                                        <a class="table-bocta-i">
+                                                            1
+                                                        </a>
+                                                        <a class="table-bocta-i">
+                                                            警告
+                                                        </a>
+                                                        <a class="table-bocta-i">
+                                                            <input type="text" class="cen4-x-input" value="1">
+                                                        </a>
+                                                        <a class="table-bocta-i">
+                                                            数值
+                                                        </a>
+                                                    </div>
+                                                    <div class="divtd">
+                                                        <a class="table-bocta-i">
+                                                            1
+                                                        </a>
+                                                        <a class="table-bocta-i">
+                                                            警告
+                                                        </a>
+                                                        <a class="table-bocta-i">
+                                                            <input type="text" class="cen4-x-input" value="1">
+                                                        </a>
+                                                        <a class="table-bocta-i">
+                                                            数值
+                                                        </a>
+                                                    </div>
+                                                </td>
+                                                <td colspan="6" class="cen4-liandong3 none" data-i="1">
+                                                    <div class="divtd">
+                                                        <a class="table-bocta-i">
+                                                            1
+                                                        </a>
+                                                        <a class="table-bocta-i">
+                                                            警告
+                                                        </a>
+                                                        <a class="table-bocta-i">
+                                                            <input type="text" class="cen4-x-input" value="1">
+                                                        </a>
+                                                        <a class="table-bocta-i">
+                                                            数值
+                                                        </a>
+                                                    </div>
+                                                    <div class="divtd">
+                                                        <a class="table-bocta-i">
+                                                            1
+                                                        </a>
+                                                        <a class="table-bocta-i">
+                                                            警告
+                                                        </a>
+                                                        <a class="table-bocta-i">
+                                                            <input type="text" class="cen4-x-input" value="1">
+                                                        </a>
+                                                        <a class="table-bocta-i">
+                                                            数值
+                                                        </a>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                        <tr class="active" style="border-bottom-width:2px;">
+                                            <td>时段1</td>
+                                            <td><b class="youxiaozhuangtai-time"></b><i class="zhezhao"><em></em></i></td>
+                                            <td class="xiala-shifenmiao xiala-shifenmiao-maohao">
+                                                <a class="table-bocta-i">
+                                                    <b class="zhongfen-maohao">:</b>
+                                                    <div class="table-bocta-i-5">
+                                                        <div class="yuzhi-text-b">
+                                                            <input type="text" value="1" name="" class="textInput-self-set pull-left wj-sear-date bomiaofenshi">
+                                                        </div>
+                                                    </div>
+                                                    <div class="table-bocta-i-5">
+                                                        <div class="yuzhi-text-b">
+                                                            <input type="text" value="1" name="" class="textInput-self-set pull-left wj-sear-date bomiaofenshi">
+                                                        </div>
+                                                    </div>
+                                                    
+                                                </a>
+                                            </td>
+                                            <td class="xiala-shifenmiao xiala-shifenmiao-maohao">
+                                                <a class="table-bocta-i">
+                                                    <b class="zhongfen-maohao">:</b>
+                                                    <div class="table-bocta-i-5">
+                                                        <div class="yuzhi-text-b">
+                                                            <input type="text" value="1" name="" class="textInput-self-set pull-left wj-sear-date bomiaofenshi">
+                                                        </div>
+                                                    </div>
+                                                    <div class="table-bocta-i-5">
+                                                        <div class="yuzhi-text-b">
+                                                            <input type="text" value="1" name="" class="textInput-self-set pull-left wj-sear-date bomiaofenshi">
+                                                        </div>
+                                                    </div>
+                                                    
+                                                </a>
+                                            </td>
+                                            <td class="xiala-shifenmiao">
+                                                <a class="table-bocta-i wj-depend-select-t">
+                                                    <div class="table-bocta-i-5">
+                                                        <div class="yuzhi-text-b">
+                                                            <input type="text" value="1" name="" class="textInput-self-set pull-left wj-sear-date bomiaofenshi" style="text-align:left;">
+                                                        </div>
+                                                    </div>
+                                                    <div class="table-bocta-i-5">
+                                                        <div class="yuzhi-text-b">
+                                                            <div class="wj-depend-select wj-longest-ipt">
+                                                                <p class="wj-depsel-content">时</p>
+                                                                <i class="caret-self-set"></i>
+                                                                <!-- 下拉菜单的值放在这里 -->
+                                                                <input class="wj-data-ipt" type="hidden" name="">
+                                                                <ul class="wj-depsel-list" style="display: none;">
+                                                                    <li data-id="0">时</li>
+                                                                    <li data-id="1">分</li>
+                                                                    <li data-id="2">秒</li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </td>
+                                            <td class="baifenzhi3"><a class="lunxun-shezhi-a" data-id="0"><b></b>使用默认阀值</a></td>
+                                        </tr>
+
+                                            <tr class="table-bocta-cell-bt none">
+                                                <td colspan="6" class="bac575d63 cen4-liandong" data-i="0">
+                                                    <a class="table-bocta-i">序列</a>
+                                                    <a class="table-bocta-i">运行状态级别</a>
+                                                    <a class="table-bocta-i">确认次数</a>
+                                                    <a class="table-bocta-i">确认次数</a>
+                                                </td>
+                                                <td colspan="6" class="bac575d63 cen4-liandong none" data-i="1">
+                                                    <a class="table-bocta-i">序列</a>
+                                                    <a class="table-bocta-i">运行状态级别</a>
+                                                    <a class="table-bocta-i">确认次数</a>
+                                                    <a class="table-bocta-i">确认次数</a>
+                                                </td>
+                                            </tr>
+                                            <tr class="table-bocta-cell none">
+                                                <td colspan="6" class="cen4-liandong" data-i="0">
+                                                    <div class="divtd">
+                                                        <a class="table-bocta-i">
+                                                            1
+                                                        </a>
+                                                        <a class="table-bocta-i">
+                                                            警告
+                                                        </a>
+                                                        <a class="table-bocta-i">
+                                                            <input type="text" class="cen4-x-input" value="1">
+                                                        </a>
+                                                        <a class="table-bocta-i">
+                                                            数值
+                                                        </a>
+                                                    </div>
+                                                    <div class="divtd">
+                                                        <a class="table-bocta-i">
+                                                            1
+                                                        </a>
+                                                        <a class="table-bocta-i">
+                                                            警告
+                                                        </a>
+                                                        <a class="table-bocta-i">
+                                                            <input type="text" class="cen4-x-input" value="1">
+                                                        </a>
+                                                        <a class="table-bocta-i">
+                                                            数值
+                                                        </a>
+                                                    </div>
+                                                </td>
+                                                <td colspan="6" class="cen4-liandong none" data-i="1">
+                                                    <div class="divtd">
+                                                        <a class="table-bocta-i">
+                                                            1
+                                                        </a>
+                                                        <a class="table-bocta-i">
+                                                            警告
+                                                        </a>
+                                                        <a class="table-bocta-i">
+                                                            <input type="text" class="cen4-x-input" value="1">
+                                                        </a>
+                                                        <a class="table-bocta-i">
+                                                            数值
+                                                        </a>
+                                                    </div>
+                                                    <div class="divtd">
+                                                        <a class="table-bocta-i">
+                                                            1
+                                                        </a>
+                                                        <a class="table-bocta-i">
+                                                            警告
+                                                        </a>
+                                                        <a class="table-bocta-i">
+                                                            <input type="text" class="cen4-x-input" value="1">
+                                                        </a>
+                                                        <a class="table-bocta-i">
+                                                            数值
+                                                        </a>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                    </tbody></table>
+                                </div>
+                            </div>
+                            <div class="c4time-gengduoshezhi"><i class="c4time-gengduoshezhi-a shouqi">更多设置</i></div>
+                            <div class="clear"></div>
+                        </div>  
+                        <div class="clear"></div>    
+                    </div>
+                    <div class="clear"></div>
+                    <div class="cen4-cennone">
+                        <div class="cen4-liandong" data-i="0">
+                            <div class="wj-msg-tit clearfix border-none">
+                                <h3 class="pull-left">轮询设置1</h3>
+                            </div>
+                            <div class="tianjialunxun-zonglanbiao tianjialunxun-yuzhi">
+                                <!-- 表格部分 -->
+                                <table class="self-set-table">
+                                    <thead>
+                                        <tr>
+                                            <td>序列</td>
+                                            <td>运行状态</td>
+                                            <td>告警通知匹配</td>
+                                            <td>告警恢复匹配</td>
+                                            <td class="baifenzhi3"><i class="lunxun-shezhi"></i></td>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                    <tr style="border-bottom-width:2px;">
+                                        <td>1</td>
+                                        <td>1</td>
+                                        <td><div class="yuzhi-text-a"><textarea rows=1 cols=40 style='overflow:scroll;overflow-y:hidden;overflow-x:hidden' onfocus="window.activeobj=this;this.clock=setInterval(function(){activeobj.style.height=activeobj.scrollHeight+'px';},0);" onblur="clearInterval(this.clock);">321</textarea></div></td>
+                                        <td><div class="yuzhi-text-a"><textarea rows=1 cols=40 style='overflow:scroll;overflow-y:hidden;overflow-x:hidden' onfocus="window.activeobj=this;this.clock=setInterval(function(){activeobj.style.height=activeobj.scrollHeight+'px';},0);" onblur="clearInterval(this.clock);">321</textarea></div></td>
+                                        <td class="baifenzhi3"><a class="lunxun-shezhi-a shouqi" data-id="0">更多设置</a></td>
+                                    </tr>
+
+                                        <tr class="table-bocta-cell-bt none">
+                                            <td colspan="5" class="bac575d63">
+                                                <a class="table-bocta-i">运行状态级别</a>
+                                                <a class="table-bocta-i">确认次数</a>
+                                                <a class="table-bocta-i">确认次数</a>
+                                            </td>
+                                        </tr>
+                                        <tr class="table-bocta-cell none">
+                                            <td colspan="5">
+                                                <a class="table-bocta-i">
+                                                    <div class="yuzhi-text-b">
+                                                        <div class="wj-depend-select wj-longest-ipt">
+                                                            <p class="wj-depsel-content">请选择视图种类</p>
+                                                            <i class="caret-self-set"></i>
+                                                            <!-- 下拉菜单的值放在这里 -->
+                                                            <input class="wj-data-ipt" type="hidden" name="">
+                                                            <ul class="wj-depsel-list" style="">
+                                                                <li data-id="0">请选择属性过滤</li>
+                                                                <li data-id="1">交换机</li>
+                                                                <li data-id="2">路由器</li>
+                                                                <li data-id="3">IP设备</li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                                <a class="table-bocta-i">
+                                                    <div class="yuzhi-text-b">
+                                                        <input type="text" value="1" name="" class="textInput-self-set pull-left wj-sear-date bomiaofenshi">
+                                                    </div>
+                                                </a>
+                                                <a class="table-bocta-i wj-depend-select-t">
+                                                    <div class="table-bocta-i-5">
+                                                        <div class="yuzhi-text-b">
+                                                            <input type="text" value="1" name="" class="textInput-self-set pull-left wj-sear-date bomiaofenshi">
+                                                        </div>
+                                                    </div>
+                                                    <div class="table-bocta-i-5">
+                                                        <div class="yuzhi-text-b">
+                                                            <div class="wj-depend-select wj-longest-ipt">
+                                                                <p class="wj-depsel-content">时</p>
+                                                                <i class="caret-self-set"></i>
+                                                                <!-- 下拉菜单的值放在这里 -->
+                                                                <input class="wj-data-ipt" type="hidden" name="">
+                                                                <ul class="wj-depsel-list" style="display: none;">
+                                                                    <li data-id="0">时</li>
+                                                                    <li data-id="1">分</li>
+                                                                    <li data-id="2">秒</li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </td>
+                                        </tr>
+
+                                    <tr style="border-bottom-width:2px;">
+                                        <td>1</td>
+                                        <td>1</td>
+                                        <td><div class="yuzhi-text-a"><textarea rows=1 cols=40 style='overflow:scroll;overflow-y:hidden;overflow-x:hidden' onfocus="window.activeobj=this;this.clock=setInterval(function(){activeobj.style.height=activeobj.scrollHeight+'px';},0);" onblur="clearInterval(this.clock);">321</textarea></div></td>
+                                        <td><div class="yuzhi-text-a"><textarea rows=1 cols=40 style='overflow:scroll;overflow-y:hidden;overflow-x:hidden' onfocus="window.activeobj=this;this.clock=setInterval(function(){activeobj.style.height=activeobj.scrollHeight+'px';},0);" onblur="clearInterval(this.clock);">321</textarea></div></td>
+                                        <td class="baifenzhi3"><a class="lunxun-shezhi-a shouqi" data-id="1">更多设置</a></td>
+                                    </tr>
+                                    
+                                        <tr class="table-bocta-cell-bt none">
+                                            <td colspan="5" class="bac575d63">
+                                                <a class="table-bocta-i">运行状态级别</a>
+                                                <a class="table-bocta-i">确认次数</a>
+                                                <a class="table-bocta-i">确认次数</a>
+                                            </td>
+                                        </tr>
+                                        <tr class="table-bocta-cell none">
+                                            <td colspan="5">
+                                                <a class="table-bocta-i">
+                                                    <div class="yuzhi-text-b">
+                                                        <div class="wj-depend-select wj-longest-ipt">
+                                                            <p class="wj-depsel-content">请选择视图种类</p>
+                                                            <i class="caret-self-set"></i>
+                                                            <!-- 下拉菜单的值放在这里 -->
+                                                            <input class="wj-data-ipt" type="hidden" name="">
+                                                            <ul class="wj-depsel-list" style="">
+                                                                <li data-id="0">请选择属性过滤</li>
+                                                                <li data-id="1">交换机</li>
+                                                                <li data-id="2">路由器</li>
+                                                                <li data-id="3">IP设备</li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                                <a class="table-bocta-i">
+                                                    <div class="yuzhi-text-b">
+                                                        <input type="text" value="1" name="" class="textInput-self-set pull-left wj-sear-date bomiaofenshi">
+                                                    </div>
+                                                </a>
+                                                <a class="table-bocta-i wj-depend-select-t">
+                                                    <div class="table-bocta-i-5">
+                                                        <div class="yuzhi-text-b">
+                                                            <input type="text" value="1" name="" class="textInput-self-set pull-left wj-sear-date bomiaofenshi">
+                                                        </div>
+                                                    </div>
+                                                    <div class="table-bocta-i-5">
+                                                        <div class="yuzhi-text-b">
+                                                            <div class="wj-depend-select wj-longest-ipt">
+                                                                <p class="wj-depsel-content">时</p>
+                                                                <i class="caret-self-set"></i>
+                                                                <!-- 下拉菜单的值放在这里 -->
+                                                                <input class="wj-data-ipt" type="hidden" name="">
+                                                                <ul class="wj-depsel-list" style="display: none;">
+                                                                    <li data-id="0">时</li>
+                                                                    <li data-id="1">分</li>
+                                                                    <li data-id="2">秒</li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </td>
+                                        </tr>
+
+                                </tbody></table>
+                            </div>
+                            <div class="wj-msg-tit clearfix border-none">
+                                <h3 class="pull-left font-w-none">辅助检测指标</h3>
+                            </div>
+                            <div class="tianjialunxun-zonglanbiao tianjialunxun-yuzhi tianjialunxun-time-tab0">
+                                <!-- 表格部分 -->
+                                <table class="self-set-table">
+                                    <thead>
+                                        <tr>
+                                            <td>序列</td>
+                                            <td>辅助检测指标名称</td>
+                                            <td>指标名称</td>
+                                            <td>子指标名称</td>
+                                            <td>行标识</td>
+                                        </tr>
+                                    </thead>
+                                    <tbody><tr>
+                                        <td>1</td>
+                                        <td>1</td>
+                                        <td>
+                                            <div class="yuzhi-text-b">
+                                                <div class="wj-depend-select wj-longest-ipt">
+                                                    <p class="wj-depsel-content">请选择视图种类</p>
+                                                    <i class="caret-self-set"></i>
+                                                    <!-- 下拉菜单的值放在这里 -->
+                                                    <input class="wj-data-ipt" type="hidden" name="">
+                                                    <ul class="wj-depsel-list" style="">
+                                                        <li data-id="0">请选择属性过滤</li>
+                                                        <li data-id="1">交换机</li>
+                                                        <li data-id="2">路由器</li>
+                                                        <li data-id="3">IP设备</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="yuzhi-text-b">
+                                                <div class="wj-depend-select wj-longest-ipt" class="xialakuang">
+                                                    <p class="wj-depsel-content">请选择视图种类</p>
+                                                    <i class="caret-self-set"></i>
+                                                    <!-- 下拉菜单的值放在这里 -->
+                                                    <input class="wj-data-ipt" type="hidden" name="">
+                                                    <ul class="wj-depsel-list" style="">
+                                                        <li data-id="0">请选择属性过滤</li>
+                                                        <li data-id="1">交换机</li>
+                                                        <li data-id="2">路由器</li>
+                                                        <li data-id="3">IP设备</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="yuzhi-text-b">
+                                                <div class="wj-depend-select wj-longest-ipt">
+                                                    <p class="wj-depsel-content">请选择视图种类</p>
+                                                    <i class="caret-self-set"></i>
+                                                    <!-- 下拉菜单的值放在这里 -->
+                                                    <input class="wj-data-ipt" type="hidden" name="">
+                                                    <ul class="wj-depsel-list" style="">
+                                                        <li data-id="0">请选择属性过滤</li>
+                                                        <li data-id="1">交换机</li>
+                                                        <li data-id="2">路由器</li>
+                                                        <li data-id="3">IP设备</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </tbody></table>
+                            </div>
+                        </div>
+                        <div class="cen4-liandong none" data-i="1">
+                            <div class="wj-msg-tit clearfix border-none">
+                                <h3 class="pull-left">轮询设置2</h3>
+                            </div>
+                            <div class="tianjialunxun-zonglanbiao tianjialunxun-yuzhi">
+                                <!-- 表格部分 -->
+                                <table class="self-set-table">
+                                    <thead>
+                                        <tr>
+                                            <td>序列</td>
+                                            <td>运行状态</td>
+                                            <td>告警通知匹配</td>
+                                            <td>告警恢复匹配</td>
+                                            <td class="baifenzhi3"><i class="lunxun-shezhi"></i></td>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                    <tr style="border-bottom-width:2px;">
+                                        <td>1</td>
+                                        <td>1</td>
+                                        <td><div class="yuzhi-text-a"><textarea rows=1 cols=40 style='overflow:scroll;overflow-y:hidden;overflow-x:hidden' onfocus="window.activeobj=this;this.clock=setInterval(function(){activeobj.style.height=activeobj.scrollHeight+'px';},0);" onblur="clearInterval(this.clock);">321</textarea></div></td>
+                                        <td><div class="yuzhi-text-a"><textarea rows=1 cols=40 style='overflow:scroll;overflow-y:hidden;overflow-x:hidden' onfocus="window.activeobj=this;this.clock=setInterval(function(){activeobj.style.height=activeobj.scrollHeight+'px';},0);" onblur="clearInterval(this.clock);">321</textarea></div></td>
+                                        <td class="baifenzhi3"><a class="lunxun-shezhi-a shouqi" data-id="0">更多设置</a></td>
+                                    </tr>
+
+                                        <tr class="table-bocta-cell-bt none">
+                                            <td colspan="5" class="bac575d63">
+                                                <a class="table-bocta-i">运行状态级别</a>
+                                                <a class="table-bocta-i">确认次数</a>
+                                                <a class="table-bocta-i">确认次数</a>
+                                            </td>
+                                        </tr>
+                                        <tr class="table-bocta-cell none">
+                                            <td colspan="5">
+                                                <a class="table-bocta-i">
+                                                    <div class="yuzhi-text-b">
+                                                        <div class="wj-depend-select wj-longest-ipt">
+                                                            <p class="wj-depsel-content">请选择视图种类</p>
+                                                            <i class="caret-self-set"></i>
+                                                            <!-- 下拉菜单的值放在这里 -->
+                                                            <input class="wj-data-ipt" type="hidden" name="">
+                                                            <ul class="wj-depsel-list" style="">
+                                                                <li data-id="0">请选择属性过滤</li>
+                                                                <li data-id="1">交换机</li>
+                                                                <li data-id="2">路由器</li>
+                                                                <li data-id="3">IP设备</li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                                <a class="table-bocta-i">
+                                                    <div class="yuzhi-text-b">
+                                                        <input type="text" value="1" name="" class="textInput-self-set pull-left wj-sear-date bomiaofenshi">
+                                                    </div>
+                                                </a>
+                                                <a class="table-bocta-i wj-depend-select-t">
+                                                    <div class="table-bocta-i-5">
+                                                        <div class="yuzhi-text-b">
+                                                            <input type="text" value="1" name="" class="textInput-self-set pull-left wj-sear-date bomiaofenshi">
+                                                        </div>
+                                                    </div>
+                                                    <div class="table-bocta-i-5">
+                                                        <div class="yuzhi-text-b">
+                                                            <div class="wj-depend-select wj-longest-ipt">
+                                                                <p class="wj-depsel-content">时</p>
+                                                                <i class="caret-self-set"></i>
+                                                                <!-- 下拉菜单的值放在这里 -->
+                                                                <input class="wj-data-ipt" type="hidden" name="">
+                                                                <ul class="wj-depsel-list" style="display: none;">
+                                                                    <li data-id="0">时</li>
+                                                                    <li data-id="1">分</li>
+                                                                    <li data-id="2">秒</li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </td>
+                                        </tr>
+
+                                    <tr style="border-bottom-width:2px;">
+                                        <td>1</td>
+                                        <td>1</td>
+                                        <td><div class="yuzhi-text-a"><textarea rows=1 cols=40 style='overflow:scroll;overflow-y:hidden;overflow-x:hidden' onfocus="window.activeobj=this;this.clock=setInterval(function(){activeobj.style.height=activeobj.scrollHeight+'px';},0);" onblur="clearInterval(this.clock);">321</textarea></div></td>
+                                        <td><div class="yuzhi-text-a"><textarea rows=1 cols=40 style='overflow:scroll;overflow-y:hidden;overflow-x:hidden' onfocus="window.activeobj=this;this.clock=setInterval(function(){activeobj.style.height=activeobj.scrollHeight+'px';},0);" onblur="clearInterval(this.clock);">321</textarea></div></td>
+                                        <td class="baifenzhi3"><a class="lunxun-shezhi-a shouqi" data-id="1">更多设置</a></td>
+                                    </tr>
+                                    
+                                        <tr class="table-bocta-cell-bt none">
+                                            <td colspan="5" class="bac575d63">
+                                                <a class="table-bocta-i">运行状态级别</a>
+                                                <a class="table-bocta-i">确认次数</a>
+                                                <a class="table-bocta-i">确认次数</a>
+                                            </td>
+                                        </tr>
+                                        <tr class="table-bocta-cell none">
+                                            <td colspan="5">
+                                                <a class="table-bocta-i">
+                                                    <div class="yuzhi-text-b">
+                                                        <div class="wj-depend-select wj-longest-ipt">
+                                                            <p class="wj-depsel-content">请选择视图种类</p>
+                                                            <i class="caret-self-set"></i>
+                                                            <!-- 下拉菜单的值放在这里 -->
+                                                            <input class="wj-data-ipt" type="hidden" name="">
+                                                            <ul class="wj-depsel-list" style="">
+                                                                <li data-id="0">请选择属性过滤</li>
+                                                                <li data-id="1">交换机</li>
+                                                                <li data-id="2">路由器</li>
+                                                                <li data-id="3">IP设备</li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                                <a class="table-bocta-i">
+                                                    <div class="yuzhi-text-b">
+                                                        <input type="text" value="1" name="" class="textInput-self-set pull-left wj-sear-date bomiaofenshi">
+                                                    </div>
+                                                </a>
+                                                <a class="table-bocta-i wj-depend-select-t">
+                                                    <div class="table-bocta-i-5">
+                                                        <div class="yuzhi-text-b">
+                                                            <input type="text" value="1" name="" class="textInput-self-set pull-left wj-sear-date bomiaofenshi">
+                                                        </div>
+                                                    </div>
+                                                    <div class="table-bocta-i-5">
+                                                        <div class="yuzhi-text-b">
+                                                            <div class="wj-depend-select wj-longest-ipt">
+                                                                <p class="wj-depsel-content">时</p>
+                                                                <i class="caret-self-set"></i>
+                                                                <!-- 下拉菜单的值放在这里 -->
+                                                                <input class="wj-data-ipt" type="hidden" name="">
+                                                                <ul class="wj-depsel-list" style="display: none;">
+                                                                    <li data-id="0">时</li>
+                                                                    <li data-id="1">分</li>
+                                                                    <li data-id="2">秒</li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </td>
+                                        </tr>
+
+                                </tbody></table>
+                            </div>
+                            <div class="wj-msg-tit clearfix border-none">
+                                <h3 class="pull-left font-w-none">辅助检测指标</h3>
+                            </div>
+                            <div class="tianjialunxun-zonglanbiao tianjialunxun-yuzhi tianjialunxun-time-tab0">
+                                <!-- 表格部分 -->
+                                <table class="self-set-table">
+                                    <thead>
+                                        <tr>
+                                            <td>序列</td>
+                                            <td>辅助检测指标名称</td>
+                                            <td>指标名称</td>
+                                            <td>子指标名称</td>
+                                            <td>行标识</td>
+                                        </tr>
+                                    </thead>
+                                    <tbody><tr>
+                                        <td>1</td>
+                                        <td>1</td>
+                                        <td>
+                                            <div class="yuzhi-text-b">
+                                                <div class="wj-depend-select wj-longest-ipt">
+                                                    <p class="wj-depsel-content">请选择视图种类</p>
+                                                    <i class="caret-self-set"></i>
+                                                    <!-- 下拉菜单的值放在这里 -->
+                                                    <input class="wj-data-ipt" type="hidden" name="">
+                                                    <ul class="wj-depsel-list" style="">
+                                                        <li data-id="0">请选择属性过滤</li>
+                                                        <li data-id="1">交换机</li>
+                                                        <li data-id="2">路由器</li>
+                                                        <li data-id="3">IP设备</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="yuzhi-text-b">
+                                                <div class="wj-depend-select wj-longest-ipt" class="xialakuang">
+                                                    <p class="wj-depsel-content">请选择视图种类</p>
+                                                    <i class="caret-self-set"></i>
+                                                    <!-- 下拉菜单的值放在这里 -->
+                                                    <input class="wj-data-ipt" type="hidden" name="">
+                                                    <ul class="wj-depsel-list" style="">
+                                                        <li data-id="0">请选择属性过滤</li>
+                                                        <li data-id="1">交换机</li>
+                                                        <li data-id="2">路由器</li>
+                                                        <li data-id="3">IP设备</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="yuzhi-text-b">
+                                                <div class="wj-depend-select wj-longest-ipt">
+                                                    <p class="wj-depsel-content">请选择视图种类</p>
+                                                    <i class="caret-self-set"></i>
+                                                    <!-- 下拉菜单的值放在这里 -->
+                                                    <input class="wj-data-ipt" type="hidden" name="">
+                                                    <ul class="wj-depsel-list" style="">
+                                                        <li data-id="0">请选择属性过滤</li>
+                                                        <li data-id="1">交换机</li>
+                                                        <li data-id="2">路由器</li>
+                                                        <li data-id="3">IP设备</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </tbody></table>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="clear"></div>
+                    <div class="tianjialunxun-x-ok">
+                        <a href="#" class="fanhui">返回</a>
+                        <a href="#" class="xiayibu active">确定</a>
+                    </div> 
+</div> 
+<div class="clear"></div>
+</div>
+   
+
+
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    $(document).ready(function() {
+        //  共用动画
+        commonFunction1();
+
+    });
+    window.onload = function(){
+        var wind = window.top;
+        var body = wind.document.getElementById('body');
+        var bodyHeight = body.offsetHeight;
+    }
+
+    $(function(){
+        var bomiaofenshi = $('.bomiaofenshi');
+        var wjDepselList = $('.wj-depsel-list');
+        wjDepselList.on('click','li',function(){
+            var c = Number($(this).attr('data-id'));
+            var bomiaofensh1 = $(this).parents('.wj-depend-select-t').find('.bomiaofenshi');
+            bomiaofensh1.attr('data-id',c);
+            console.log(bomiaofensh1.index());
+            if(c === 2){
+                var bomiaofensh1Val = bomiaofensh1.val();
+                if(bomiaofensh1Val < 10){
+                    bomiaofensh1.val(10);
+                }else if(bomiaofensh1Val > 999){
+                    bomiaofensh1.val(999);
+                }
+                bomiaofensh1.attr('maxlength','3');
+            }else{
+                bomiaofensh1.attr('maxlength',null);
+            }
+        });
+        bomiaofenshi.on('blur',function(){
+            var thv = $(this).val();
+            var thid = Number($(this).attr('data-id'));
+            if(thid === 2){
+                if(thv < 10){
+                    $(this).val(10);
+                }
+            }else{
+                if(thv < 0){
+                    $(this).val(0);
+                }
+            }
+            
+        });
+
+        var lunxunShezhiA = $('.lunxun-shezhi-a');
+        var shouqi = $('.shouqi');
+        var tableBoctaCellBt = $('.table-bocta-cell-bt');
+        var tableBoctaCell = $('.table-bocta-cell');
+        tableBoctaCellBt.addClass('none');
+        tableBoctaCell.addClass('none');
+        lunxunShezhiA.each(function(i){
+            $(this).attr('data-id',i);
+        });
+        shouqi.each(function(){
+            var thHtml = $(this).html();
+            $(this).click(function(){
+                if($(this).hasClass('active')){
+                    $(this).html(thHtml);
+                }else{
+                    $(this).html('收起');
+                }
+            });
+        });
+        lunxunShezhiA.on('click',function(){
+            var a = Number($(this).attr('data-id'));
+            if($(this).hasClass('active')){
+                $(this).removeClass('active');
+                tableBoctaCellBt.eq(a).addClass('none');
+                tableBoctaCell.eq(a).addClass('none');
+                $(this).parents('tr').css({'border-bottom-width':'2px'});
+            }else{
+                $(this).addClass('active');
+                tableBoctaCellBt.eq(a).removeClass('none');
+                tableBoctaCell.eq(a).removeClass('none');
+                $(this).parents('tr').css({'border-bottom-width':'1px'});
+            }
+        });
+        $('.cen4-cennone').hide();
+        $('.c4time-gengduoshezhi-a').on('click',function(){
+            if($(this).hasClass('active')){
+                $(this).removeClass('active');
+                $('.cen4-cennone').hide();
+            }else{
+                $(this).addClass('active');
+                $('.cen4-cennone').show();
+            }
+        });
+
+        // yuzhi-text-a
+        var yuzhiTextATextarea = $('.yuzhi-text-a textarea');
+        yuzhiTextATextarea.each(function(){
+            var thVal = $(this).html();
+            $(this).trigger('onfocus');
+        });
+    });
+
+    $(function () {
+        
+        new simuSelect({'selectWrap':$('#eventLevel')});
+        new simuSelect({'selectWrap':$('#wjOrderWay')});
+        new simuSelect({'selectWrap':$('#wjViewKinds')});
+
+        var xialakuang = $('.yuzhi-text-b');
+            xialakuang.each(function(i){
+                var c = 'xialakuang'+i;
+                $(this).find('.wj-depend-select').attr('id',c);
+                return new simuSelect({'selectWrap':$('#'+c)});
+            });
+        
+        function getElementsByClassName(className,tagName){
+            var ele=[],all=document.getElementsByTagName(tagName||"*");
+            for(var i=0;i<all.length;i++){
+                if(all[i].className==className){
+                    ele[ele.length]=all[i];
+                }
+            }
+            return ele;
+        }
+
+        //表格折叠
+        $('.wj-colpa-td .wj-ico-colapse').on('click', function () {
+            var clsTr=$(this).closest('tr'),
+                    curLevel=clsTr.data('level');
+            if($(this).hasClass('opend')){
+                $(this).removeClass('opend');
+                clsTr.nextAll().each(function () {
+                    var level=$(this).data('level');
+                    if(level>curLevel) {
+                        $(this).hide().find('.wj-ico-colapse').removeClass('opend');
+                    }else{
+                        return false;
+                    }
+                });
+            }else{
+                $(this).addClass('opend');
+                clsTr.nextAll().each(function () {
+                    var level=$(this).data('level');
+                    if(level==curLevel+1) {
+                        $(this).show();
+                    }else{
+                        return false;
+                    }
+                });
+            }
+        });
+        
+        //批注
+        var wind = window.top;
+        var body = wind.document.getElementById('body');
+        var bodyHeight = body.offsetHeight;
+        
+        $('.lunxun-shezhi').click(function () {
+            
+            body.style.height = bodyHeight+'px';
+            body.style.overflow = 'hidden';
+
+                var selVal=[];
+                $.dialog({
+                    lock:false,
+                    drag:true,
+                    width:'958px',
+                    height:'600px',
+                    title:'',
+                    id:'weiyi',
+                    content:'url:./html/sanqi/tianjialunxun-tianjia-k.html',
+                    //content:'url:./tianjialunxun-tianjia-k.html',
+                    data:selVal,                 //将值传给弹出页面  弹出页面获取值方式  api.data
+                });
+        });
+
+    });
+
+    //无限下拉
+    $(document).on('click','.wj-infinit-drop .wj-inf-colla b',function(){
+        var clsLi=$(this).closest('li'),
+                curLevel=clsLi.data('level');
+        if($(this).hasClass('opend')){
+            $(this).removeClass('opend');
+            clsLi.nextAll().each(function () {
+                var level=$(this).data('level');
+                if(level>curLevel) {
+                    $(this).hide().find('.wj-inf-colla b').removeClass('opend');
+                }else{
+                    return false;
+                }
+            });
+        }else{
+            $(this).addClass('opend');
+            clsLi.nextAll().each(function () {
+                var level=$(this).data('level');
+                if(level==curLevel+1) {
+                    $(this).show();
+                }else{
+                    return false;
+                }
+            });
+        }
+
+    });
+
+    $(document).on('click','.wj-inf-men .wj-inf-check', function () {
+        var clsLi=$(this).parent(),
+                curLevel=clsLi.data('level');
+        if($(this).hasClass('checked')){
+            $(this).removeClass('checked');
+            clsLi.nextAll().each(function () {
+                var level=$(this).data('level');
+                if(level>curLevel) {
+                    $(this).find('.wj-inf-check').removeClass('checked');
+                }else{
+                    return false;
+                }
+            });
+        }else{
+            $(this).addClass('checked');
+            clsLi.nextAll().each(function () {
+                var level=$(this).data('level');
+                if(level>curLevel) {
+                    $(this).find('.wj-inf-check').addClass('checked');
+                }else{
+                    return false;
+                }
+            });
+        }
+        setDropTxt();
+    });
+
+    $(document).on('click','.wj-inf-all .wj-inf-check', function () {
+        if($(this).hasClass('checked')){
+            $(this).removeClass('checked');
+            $(this).parent().nextAll().find('.wj-inf-check').removeClass('checked');
+        }else{
+            $(this).addClass('checked');
+            $(this).parent().nextAll().find('.wj-inf-check').addClass('checked');
+        }
+        setDropTxt();
+    });
+    
+    function setDropTxt(){
+        var txt='',dval='';
+        $('.wj-inf-men .wj-inf-check.checked').each(function () {
+            txt+=$(this).siblings('.wj-inf-txt').text()+',';
+            dval+=$(this).parent().data('id')+',';
+        });
+        txt= txt.substring(0,txt.length-1);
+        dval=dval.substring(0,dval.length-1);
+        $('.wj-infi-pointer .wj-data-ipt').val(dval);
+        if(txt==''){
+            $('.wj-infi-pointer .wj-depsel-content').text('请选择视图');
+        }else{
+            $('.wj-infi-pointer .wj-depsel-content').text(txt);
+        }
+    }
+    $('.wj-infi-pointer .wj-depsel-content').on('click', function () {
+        if($('.wj-infi-pointer .wj-infinit-drop').is(':visible')){
+            $('.wj-infi-pointer .wj-infinit-drop').hide();
+        }else{
+            $('.wj-infi-pointer .wj-infinit-drop').show();
+        }
+    });
+    $(document).click(function (evt) {
+        if($(evt.target).closest('.wj-infi-pointer').length < 1){
+            $('.wj-infi-pointer .wj-infinit-drop').hide();
+        }
+    });
+
+    
+</script>
+<script src="../../js/sanqi.js"></script>
+</body>
+</html>

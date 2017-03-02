@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>关于汇泊</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <link rel="stylesheet" href="css/animate.min.css">
+    <link rel="stylesheet" href="css/css.css">
+    <link rel="stylesheet" href="css/css-a.css">
+</head>
+<body>
+
+    <script>
+        var winWidth = document.body.clientWidth; var Html = document.getElementsByTagName('html'); 
+        Html[0].style.fontSize = winWidth / 10.8 + 'px';
+    </script>
+
+    <!-- start -->
+    <div id="wrapper">
+        <div id="scroller" class="huibo-about">
+            <!-- 第一屏 -->
+            <div class="huibo-one">
+                <!-- nav -->
+                <div class="huibo-nav">
+                    <b></b>
+                    <img src="img/logo.png" class="logo">
+                    <i class="table-a">
+                        <a href="tel:4006834288" class="table-cell">
+                            商务联系热线<p>4006834288</p>
+                        </a>
+                    </i>
+                </div>
+                <!-- top-bj -->
+                <div class="huibo-kv">
+                    <div class="huibo-top-bj" style="background:url(img/law/bj.jpg) no-repeat center; background-size:cover;"></div>
+                    <div class="con-cen-top table-a">
+                        <div class="table-cell">
+                            <div class="con-cen-h1 ani-up ani-mate">
+                                <span class="ani-up ani-mate">关于汇泊</span>
+                                <em class="ani-up ani-mate">ABOUT US</em>
+                            </div>
+                            <div class="con-cen-h2">
+                                <span class="ani-up ani-mate" style="letter-spacing:-0.06em;">汇泊承诺</span>
+                                <p class="ani-up ani-mate" style="letter-spacing:-0.061em;">为您解决所有关于停车场的困扰</p>
+                                <p class="ani-up ani-mate" style="letter-spacing:-0.098em;">一体化停车场方案提供者</p>
+                                <p class="ani-up ani-mate" style="letter-spacing:-0.098em;">专业资产管理，提升物业价值，优化客户体验</p>
+                                <p class="ani-up ani-mate" style="letter-spacing:-0.098em;">提高城市综合实力，缓解城市“停车难”</p>
+                                <div class="about-k4">
+                                    <div class="about-k4-i ani-up ani-mate">
+                                        <i><div style="background:url(img/about/kv1.png) no-repeat center; background-size:1.13rem auto;"></div></i>
+                                        <em>公司介绍</em>
+                                    </div>
+                                    <div class="about-k4-i ani-up ani-mate">
+                                        <i><div style="background:url(img/about/kv2.png) no-repeat center; background-size:1.25rem auto;"></div></i>
+                                        <em>来自汇泊的问候</em>
+                                    </div>
+                                    <div class="about-k4-i ani-up ani-mate">
+                                        <i><div style="background:url(img/about/kv3.png) no-repeat center; background-size:0.92rem auto;"></div></i>
+                                        <em>汇泊优势</em>
+                                    </div>
+                                    <div class="about-k4-i ani-up ani-mate ani-last">
+                                        <i><div style="background:url(img/about/kv4.png) no-repeat center; background-size:0.91rem auto;"></div></i>
+                                        <em>业务范围</em>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 公司介绍 -->
+            <div class="about-cen">
+                <div class="about-img-bt"><img src="img/about/bt-1.jpg"></div>
+                <div class="about-logo-text">
+                    <img src="img/about/logo-1.png" style="width:4.23rem;">
+                    <span>
+                        楠焯资本 (LimeTree Capital) 是一家总部位于香港的私募股权投资管理公司，侧重于各类尚未获得广泛关注、其价值有待进一步发掘的资产类别。目前在整个亚太地区表现活跃，积极进行机构投资、风险管理和基础资产的前瞻性管理，以提升投资回报。
+                    </span>
+                    <em><a href="http://www.limetreecapital.com/" target="_blank">查看详情</a></em>
+                </div>
+                <div class="about-logo-text">
+                    <img src="img/about/logo-2.png" style="width:2.3rem;">
+                    <span>
+                        汇泊停车产业基金是楠焯资本 (LimeTree Capital) 旗下管理的基金，“汇泊停车”是国内停车行业至今为止规模最大，投资及资产和运营管理团队最专业，且持有停车场项目最多、分布最广的专项基金，致力于为客户提供集停车场投资、概念设计、建造和资产管理于一体的全方位服务。
+                    </span>
+                    <em><a href="www.huiboparking.com" target="_blank">查看详情</a></em>
+                </div>
+                <div class="about-logo-text">
+                    <img src="img/about/logo-3.png" style="width:2.32rem;">
+                    <span>
+                        阳光海天停车产业集团创立于2006年8月8日，总部设立在北京，致力于提供完善的停车资产管理整体解决方案。2015年，汇泊携手阳光海天停车产业集团，共同打造规模最大的停车产业金融平台。
+                    </span>
+                    <em><a href="http://www.sunsea.net/" target="_blank">查看详情</a></em>
+                </div>
+                <div class="about-logo-text">
+                    <img src="img/about/logo-4.png" style="width:2.38rem;">
+                    <span>
+                        中国停车规划设计研究院有限公司（PDI）成立于2012年，隶属于阳光海天停车产业集团，形成政策、规划、设计、技术开发等多元业务协同发展的产业链优势。
+                    </span>
+                    <em><a href="http://www.chnparking.net/" target="_blank">查看详情</a></em>
+                </div>
+                <div class="about-text-txt">
+                    <h1>汇泊停车</h1>
+                    <p>中国停车产业投资及资产管理先锋，一体化停车方案提供专家。</p>
+                    <p>公司总部位于上海，目前持有及受托管理200多个停车场，与TOP20的开发商建立长期合作关系。</p>
+                    <p class="c000">致力于为客户提供集停车场投资、概念设计、建造和资产管理于一体的全方位增值服务。</p>
+                    <p>每个项目因地制宜，引入国际一流的停车理念，提升行业整体收益、提供品质卓越的停车服务和增值服务。</p>
+                    <p>打造规模最大、结构最完整的停车产业金融平台，为中国停车产业资产管理前进的方向领航。</p>
+
+                    <h1>汇泊停车产业基金</h1>
+                    <p>国内首屈一指的“一体化”全方位停车场方案提供者</p>
+                    <p>中国第一家停车行业机构投资产业基金</p>
+                    <p class="c000">拥有一流的投资及资产管理团队精菁，基金着眼于可持续性长线投资，专注于整体持有，追求稳健回报，长远发展。</p>
+                    <p class="c000">中国目前最大的高端商业停车位持有者与收购机构</p>
+                    <p class="c000">先进的技术、现代化的管理方法与运营渠道，形成独有的中国停车行业标准与规范。</p>
+                    <p class="c000">汇泊在中国乃至亚洲首次引入绿色停车库概念，绿色停车库认证由美国绿色停车协会颁发，该机构附属于美国绿色建筑协会，国际高度认可的绿色建筑LEED标准的认证机构。</p>
+                    <img src="img/about/B-stop.jpg" class="b-stop">
+                    <p>国内停车行业至今为止规模最大、投资及资产和运营管理团队最专业、持有停车场项目最多分布最广的专项基金。</p>
+                </div>
+                <div class="about-um">
+                    <div class="about-um-top">
+                        <span class="shuzi-deijia ani-up ani-mate">
+                            <i>持有并受托管理</i>
+                            <b class="act">200</b>
+                            <i>停车场</i>
+                        </span>
+                        <span class="shuzi-deijia ani-up ani-mate">
+                            <i>遍布</i>
+                            <b class="act">30</b>
+                            <i>城市</i>
+                        </span>
+                    </div>
+                    <div class="about-um-top about-um-bottom">
+                        <span class="shuzi-deijia ani-up ani-mate">
+                            <i>超过</i>
+                            <b class="act">200000</b>
+                            <i>停车位</i>
+                        </span>
+                        <span class="shuzi-deijia ani-up ani-mate ani-last">
+                            <i>与TOP</i>
+                            <b>20</b>
+                            <i style="font-size:.227rem;">开发商长期合作关系</i>
+                        </span>
+                    </div>
+                </div>
+            </div>   
+
+            <!-- 来自汇伯的问候 -->
+            <div class="about-cen">
+                <div class="about-img-bt"><img src="img/about/bt-2.jpg" alt=""></div>
+            </div>
+
+            <!-- 汇伯优势 -->
+            <div class="huibo-new huibo-fff">
+                <div class="huibo-home-bt ani-up ani-mate ani-last">汇伯优势</div>
+            </div>
+
+            <!-- 业务范围 -->
+            <div class="huibo-new huibo-fff">
+                <div class="huibo-home-bt ani-up ani-mate ani-last">业务范围</div>
+            </div>
+
+            <!-- foot -->
+            <div class="foot ani-up ani-mate ani-last">
+                <div class="foot-top">
+                    <div class="foot-erweima">
+                        <div class="foot-erweima-img">
+                            <img src="img/foot-erweima.jpg">
+                            扫描上方微信<br>了解我们更多
+                        </div>
+                        <div class="foot-dianhua">
+                            <span>有任何商务、市场合作请联系：</span>
+                            <b><a href="tel:4006834288">400-683-4288</a></b>
+                            <span>或邮箱：</span>
+                            <i><a href="mailto:Marketing@huiboparking.com">Marketing@huiboparking.com</a></i>
+                        </div>
+                    </div>
+                    <div class="foot-bottom">
+                        <em><a href="#">隐私条款</a> | <a href="#">法律声明</a></em>
+                        © We Park 2014. All rights reserved. 
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- 分布图 -->
+    <div class="market-fenbutu">
+        <div class="pinch-zoom table-a">
+            <div class="table-cell">
+                <img src="img/market/cn_map.jpg"/>
+            </div>
+        </div>
+        <div class="market-fenbutu-col"><em><img src="img/close.png" alt=""></em></div>
+    </div>
+
+    <!-- 下拉下拉菜单 -->
+    <div class="huibo-menu">
+        <div class="huibo-menu-col">
+            <em><i>x</i>关闭</em>
+        </div>
+        <div class="menu-logo"><img src="img/logo.png"></div>
+        <div class="huibo-menu-nav">
+            <a href="about.html">关于我们</a>
+            <a href="#">慧泊车</a>
+            <a href="#">智团队</a>
+            <a href="#">经典案例</a>
+            <a href="#">战略分布</a>
+            <a href="#">合作模式</a>
+            <a href="#">加入我们</a>
+            <a href="#">联系我们</a>
+            <a href="#">EN</a>
+        </div>
+        <div class="a-menu-last">
+            <a href="tel:4006834288">商务热线：<b>400 683 4288</b></a>
+            <a href="mailto:Marketing@huiboparking.com">邮箱：Marketing@huiboparking.com</a>
+        </div>>
+    </div>
+    
+    <!-- script -->
+    <script src="js/jq.js"></script>
+    <script>
+        var winHeight = $(window).height();
+        $('.huibo-one').css({'height':winHeight+'px'});
+        $('.con-cen-top').css({'height':winHeight+'px'});
+    </script>
+
+    <!-- pinchzoom requires: jquery -->
+    <script src="js/pinchzoom.js"></script>
+    <script>
+        $('div.pinch-zoom').css({
+            'height':$(window).height()+'px',
+        });
+        $(function () {
+            var marMapImg = $('.mar-map img');
+            var marketFenbutu = $('.market-fenbutu');
+            var marketFenbutuCol = $('.market-fenbutu-col');
+
+            marMapImg.on('click',function(){
+                marketFenbutu.addClass('active');
+            });
+            marketFenbutuCol.on('click',function(){
+                marketFenbutu.removeClass('active');
+            });
+
+            $('div.pinch-zoom').each(function () {
+                new RTP.PinchZoom($(this), {});
+            });
+        })
+    </script>
+
+    <!-- z -->
+    <script src="js/ind.js"></script>
+
+    <!-- iscorll -->
+    <script src="js/iscroll.js"></script>
+    <script type="text/javascript">
+        var myScroll;
+        function loaded () {
+            myScroll = new IScroll('#wrapper', { 
+                scrollX: true, 
+                freeScroll: true,
+                preventDefaultException: { tagName: /^(INPUT|TEXTAREA|BUTTON|SELECT|A)$/ },
+                click: true,
+            });
+        }
+        document.addEventListener('touchmove', function (e) { e.preventDefault(); }, false);
+    </script>
+
+    <!-- ani-up -->
+    <script src="js/ani-up.js"></script>
+
+    <!-- loading -->
+    <script src="js/loading.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,254 @@
+@charset "utf-8";
+*{
+	box-sizing: border-box;
+}
+html,
+body,
+div,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+pre,
+code,
+form,
+fieldset,
+legend,
+input,
+textarea,
+p,
+blockquote,
+th,
+td,
+em,
+button{
+	margin: 0;
+	padding: 0;
+}
+li,dd{
+	list-style: none;
+}
+html,body{
+	width: 100%;
+}
+i,em{
+	font-style: normal;
+}
+body{
+	font-family: "微软雅黑";
+	color: #333333;
+	background-color: #fff;
+	font-size: 0.12rem;
+}
+.clear {
+	*zoom: 1;
+}
+.clear:after {
+	content: ".";
+	display: block;
+	height: 0;
+	clear: both;
+	visibility: hidden;
+}
+.none{
+	display: none;
+}
+/*----------------------------------------------------------------start*/
+body{
+	background: url(../images/bj.jpg) no-repeat;
+	background-size: 100% auto;
+}
+.top-bt::before{
+	content: "";
+	position: absolute;
+	top:8.57rem;
+	width: 6.475rem;
+	height: 22.15rem;
+	background: #8bbcf8;
+	position: absolute;
+	left:-1.1rem;
+	top:8.42rem;
+	z-index: -1;
+}
+.top-bt{
+	width: 4.35rem;
+	height: 2.72rem;
+	margin: 0.15rem auto 0;
+	position: relative;
+}
+.top-bt img{
+	width: 4.21rem;
+	height: 2.72rem;
+}
+.c-gap-left:nth-of-type(2){
+	margin-left:0.1rem;
+	margin-right:0.1rem;
+}
+.c-gap-left{
+	display: block;
+	float: left;
+	width: 0.78rem;
+	height: 0.62rem;
+	background: url(../images/time-b.png) repeat-x;
+	background-size: auto 100%;
+	color: #fff;
+	margin-top: 0.06rem;
+	padding-left: 0.035rem;
+	letter-spacing: 0.075rem;
+	line-height: 0;
+	padding-top: 0.32rem;
+	position: relative;
+	font-family: "微软雅黑";
+}
+
+.time{
+	height: 1.1rem;
+	width: 100%;
+	font-size: 0.55rem;
+	margin-top: 0.52rem;
+	padding-left: 0.35rem;
+	z-index: 2;
+}
+.time img{
+	width: 1.73rem;
+	height: auto;
+	float: left;
+	position: relative;
+	top:0.1rem;
+}
+.time .time-ing{
+	background: #fff;
+	float: left;
+	width: 2.70rem;
+	height: 0.74rem;
+	position: relative;
+	padding-left: 0.075rem;
+	margin:0 0.12rem;
+}
+.time-ing::before{
+	content: "";
+	position: absolute;
+	top: -0.02rem;
+	left: -0.02rem;
+	background: url(../images/time-k.png) no-repeat;
+	background-size: 100% auto;
+	width: 2.74rem;
+	height: 0.78rem;
+}
+.time-ing::after{
+	content: "";
+	position: absolute;
+	top: 0.37rem;
+	left: 0.07rem;
+	background: url(../images/time-f.png) no-repeat;
+	background-size: 100% auto;
+	width: 2.53rem;
+	height: 0.04rem;
+}
+.time a{
+	width: 1.19rem;
+	height: 0.39rem;
+	display: block;
+	float: left;
+	margin: 0 0 0 0.1rem;
+}
+.time a img{
+	width: 100%;
+	height: 100%;
+	position: relative;
+	top:0.17rem;
+	left: -0.06rem;
+}
+.buy-banner{
+	margin: 0.3rem auto 0;
+	width: 6.04rem;
+	height: 1.58rem;
+	z-index: 2;
+}
+.buy-banner img{
+	width: 100%;
+	height: auto;
+}
+.buy-1px{
+	width: 6.04rem;
+	height: 6.71rem;
+	margin: 0.08rem auto 0;
+	padding:1px;
+	background: #fff;
+	z-index: 2;
+}
+.buy-cen{
+	width: 100%;
+	height: 100%;
+	background: #d8fff7;
+	padding-top: 0.03rem;
+}
+.buy-cen li{
+	float: left;
+	height: 3.12rem;
+	padding: 1px;
+	background: url(../images/cen-k.png) repeat-x;
+	background-size: auto 100%;
+	margin:0.14rem 0 0 0.13rem;
+	position: relative;
+	width: 2.48rem;
+}
+.buyli{
+	width: 100%;
+	height: 100%;
+	background: #fff;
+}
+.buyli img{
+	width: 100%;
+	height:auto;
+}
+.buy-sm{
+	display: block;
+	position: absolute;
+	top:2.46rem;
+	left: 0.05rem;
+	width: calc(100% - 0.1rem);
+	height: 0.61rem;
+	line-height: 0.2rem;
+	color: #fff;
+	background: #321487;
+}
+.buy-sm span{
+	width: calc(100% - 1.07rem);
+	display:block;
+	height: 100%;
+	padding:0.11rem 0.18rem 0 0.13rem;
+	float: left;
+	font-size: 0.14rem;
+}
+.buy-sm em{
+	display: block;
+	float: right;
+	width: 1.07rem;
+	height: 100%;
+	font-size: 0.13rem;
+	background: #9012e8;
+	text-align: right;
+	padding: 0.11rem 0.13rem 0 0;
+}
+.buy-sm i{
+	display: block;
+	color: #ffea00;
+	font-size: 0.18rem;
+}
+.buy-sm strong{
+	font-size: 0.33rem;
+	font-weight: 100;
+	margin-right: 0.01rem;
+}
+.buy-cen li:nth-of-type(2),.buy-cen li:nth-of-type(3){
+	width:3.14rem;
+}

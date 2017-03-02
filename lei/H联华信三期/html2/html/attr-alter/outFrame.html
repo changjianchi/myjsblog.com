@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no" name="viewport" >
+    <!-- 新 Bootstrap 核心 CSS 文件 -->
+    <link rel="stylesheet" href="../../css/libs/bootstrap.min.css">
+    <link rel="stylesheet" href="../../css/common/top_nav.css">
+    <link rel="stylesheet" href="../../css/configuration_index.css">
+    <link href="../../css/attr_alter.css" type="text/css" rel="stylesheet"/>
+    <!--[if IE 9]>
+        <link rel="stylesheet" type="text/css" href="../../css/common/ie9.css" />
+    <![endif]-->
+
+    <!--[if lt ITE 9]>
+    <script src="../../js/html5shiv.min.js"></script>
+    <script src="../../js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->
+    <script src="../../js/libs/jquery.min.js"></script>
+    <!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+    <script src="../../js/libs/bootstrap.min.js"></script>
+    <script src="../../js/libs/echarts-all.min.js"></script>
+    <script src="../../js/common/common.js"></script>
+    <script src="../../js/configuration_index.js"></script>
+    <script src="../../js/attr_alter.js"></script>
+    <script src="../../js/lhg/lhgdialog.js"></script>
+    
+    <title>管理中心-配置步骤一</title>
+    <style>
+    
+    @media screen and (min-width:768px){
+        .col-sm-6{float: left;width: 50%;}
+    }
+    @media screen and (min-width:992px){
+        .col-md-3{float: left;width: 25%;}
+    }
+    @media screen and (min-width:1200px){
+        .col-lg-6{float: left;width: 50%;}
+    }
+    
+    </style>
+</head>
+<body>
+<!-- 配置步骤1 -->
+<div class="wj-outer">
+    <div class="container-fluid wj-msg-container">
+        <div class="row">
+            <div class="col-lg-6 wj-msg-wrap wj-pr7-5">
+                <div class="wj-msg-cont">
+                    <div class="wj-msg-tit clearfix">
+                        <h3 class="pull-left">设备基本信息</h3>
+                        <a href="javascript:void(0);" class="wj-add-msg pull-right wj-link-col wj-addPopMsg">附加属性</a>
+                        <a href="#" class="wj-add-msg pull-right wj-link-col">指标检查</a>
+                        <a href="#" class="wj-add-msg pull-right wj-link-col">设置轮询</a>
+                    </div>
+                    <div class="wj-msg-txt clearfix">
+                        <div class="col-md-3 col-sm-6">
+                            <span class="wj-txt-tit">设备名称：</span>
+                            <span class="wj-txt-bod">ORC1234324</span>
+                        </div>
+                        <div class="col-md-3 col-sm-6">
+                            <span class="wj-txt-tit">IP地址：</span>
+                            <span class="wj-txt-bod">192.168.1.1</span>
+                        </div>
+                        <div class="col-md-3 col-sm-6">
+                            <span class="wj-txt-tit">连接状态：</span>
+                            <span class="wj-txt-bod wj-hang-col">挂起状态</span>
+                            <span class="wj-txt-bod wj-skin-orange">黄</span>
+                            <span class="wj-txt-bod wj-skin-red">红</span>
+                        </div>
+                        <div class="col-md-3 col-sm-6">
+                            <span class="wj-txt-tit">设备类型：</span>
+                            <span class="wj-txt-bod">数据库软件</span>
+                        </div>
+                    </div>
+                    <div class="wj-msg-txt clearfix">
+                        <div class="col-md-3 col-sm-6">
+                            <span class="wj-txt-tit">设备接口名称：</span>
+                            <span class="wj-txt-bod">ORC1234324</span>
+                        </div>
+                        <div class="col-md-3 col-sm-6">
+                            <span class="wj-txt-tit">属性组个数：</span>
+                            <span class="wj-txt-bod">14</span>
+                        </div>
+                        <div class="col-md-3 col-sm-6">
+                            <span class="wj-txt-tit">告警个数：</span>
+                            <span class="wj-txt-bod wj-warn-col">1</span>
+                        </div>
+                        <div class="col-md-3 col-sm-6">
+                            <span class="wj-txt-tit">&nbsp;</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 wj-msg-wrap wj-pl7-5">
+                <div class="wj-msg-cont">
+                    <div class="wj-msg-tit clearfix">
+                        <h3 class="pull-left">设备基本信息</h3>
+                        <a href="javascript:window.top.goToTab('currentWarning');" class="wj-add-msg pull-right wj-link-col">查看更多</a>
+                    </div>
+                    <div class="wj-msg-txt clearfix">
+                        <div class="col-md-3 col-sm-6"  data-toggle="tooltip" data-placement="bottom" title="CUP使用指标">
+                            <span class="wj-txt-tit">设备属性：</span>
+                            <span class="wj-txt-bod wj-txt-cup" >CUP使用指标（cpu指标指标)</span>
+                        </div>
+                        <div class="col-md-3 col-sm-6">
+                            <span class="wj-txt-tit">时间：</span>
+                            <span class="wj-txt-bod">4.25-10:47:50</span>
+                        </div>
+                        <div class="col-md-3 col-sm-6"  data-toggle="tooltip" data-placement="bottom" title="设备回复连接失败连接失败">
+                            <span class="wj-txt-tit">事件消息：</span>
+                            <span class="wj-txt-bod wj-txt-evt">设备回复连接失败连接失败</span>
+                        </div>
+                        <div class="col-md-3 col-sm-6">
+                            <span class="wj-txt-tit">事件等级：</span>
+                            <span class="wj-txt-bod wj-warn-col">严重警告</span>
+                        </div>
+                    </div>
+                    <div class="wj-msg-txt clearfix">
+                        <div class="col-md-3 col-sm-6">
+                            <span class="wj-txt-tit">设备属性：</span>
+                            <span class="wj-txt-bod wj-txt-cup">CUP使用指标（cpu)</span>
+                        </div>
+                        <div class="col-md-3 col-sm-6">
+                            <span class="wj-txt-tit">时间：</span>
+                            <span class="wj-txt-bod">4.25-10:47:50</span>
+                        </div>
+                        <div class="col-md-3 col-sm-6">
+                            <span class="wj-txt-tit">事件消息：</span>
+                            <span class="wj-txt-bod wj-txt-evt">设备回复连接失败</span>
+                        </div>
+                        <div class="col-md-3 col-sm-6">
+                            <span class="wj-txt-tit">事件等级：</span>
+                            <span class="wj-txt-bod wj-warn-col">严重警告</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div class="wjSub-nav-conta">
+            <a href="javascript:;" class="wjscrll-btn wjscrl-btn-left pull-left"> </a>
+            <a href="javascript:;" class="wjscrll-btn wjscrl-btn-right pull-right"> </a>
+            <div class="wj-navcont-conta">
+                <div class="wj-subnav-list">
+                    <ul class="wjSub-nav-ul">
+                        <li class="current" title="概览" data-href="./oracle.html">
+                            <div class="wj-snav-inner">
+                                <span>概览</span><i>&nbsp;</i>
+                            </div>
+                        </li>
+                        <li title="weblogic" data-href="./weblogic.html">
+                            <div class="wj-snav-inner">
+                                <span>weblogic</span><i>&nbsp;</i>
+                            </div>
+                        </li>
+                        <li class="wj-not-luxun" title="主要监控信息" data-href="./mainmonitor.html">
+                            <div class="wj-snav-inner">
+                                <span>主要监控信息</span><i>&nbsp;</i>
+                            </div>
+                        </li>
+                        <li class="wj-not-luxun" title="磁盘IO信息" data-href="./diskIoInfo.html">
+                            <div class="wj-snav-inner">
+                                <span>磁盘IO信息</span><i>&nbsp;</i>
+                            </div>
+                        </li>
+                        <li class="wj-not-luxun" title="磁盘IO信息无轮询" data-href="./diskIoInfo_no.html">
+                            <div class="wj-snav-inner">
+                                <span>磁盘IO信息无轮询</span><i>&nbsp;</i>
+                            </div>
+                        </li>
+                        <li class="wj-not-luxun" title="磁盘IO信息无轮询" data-href="./diskIoInfo_no.html">
+                            <div class="wj-snav-inner">
+                                <span>磁盘IO信息无轮询</span><i>&nbsp;</i>
+                            </div>
+                        </li>
+                        <li class="wj-not-luxun" title="磁盘IO信息无轮询" data-href="./diskIoInfo_no.html">
+                            <div class="wj-snav-inner">
+                                <span>磁盘IO信息无轮询</span><i>&nbsp;</i>
+                            </div>
+                        </li>
+                        <li class="wj-not-luxun" title="磁盘IO信息无轮询" data-href="./diskIoInfo_no.html">
+                            <div class="wj-snav-inner">
+                                <span>磁盘IO信息无轮询</span><i>&nbsp;</i>
+                            </div>
+                        </li>
+                        <li class="wj-not-luxun" title="磁盘IO信息无轮询" data-href="./diskIoInfo_no.html">
+                            <div class="wj-snav-inner">
+                                <span>磁盘IO信息无轮询</span><i>&nbsp;</i>
+                            </div>
+                        </li>
+                        <li class="wj-not-luxun" title="磁盘IO信息无轮询" data-href="./diskIoInfo_no.html">
+                            <div class="wj-snav-inner">
+                                <span>磁盘IO信息无轮询</span><i>&nbsp;</i>
+                            </div>
+                        </li>
+                        <li class="wj-not-luxun" title="磁盘IO信息无轮询" data-href="./diskIoInfo_no.html">
+                            <div class="wj-snav-inner">
+                                <span>磁盘IO信息无轮询</span><i>&nbsp;</i>
+                            </div>
+                        </li>
+                        <li class="wj-not-luxun" title="磁盘IO信息无轮询" data-href="./diskIoInfo_no.html">
+                            <div class="wj-snav-inner">
+                                <span>磁盘IO信息无轮询</span><i>&nbsp;</i>
+                            </div>
+                        </li>
+                        <li class="wj-not-luxun" title="磁盘IO信息无轮询" data-href="./diskIoInfo_no.html">
+                            <div class="wj-snav-inner">
+                                <span>磁盘IO信息无轮询</span><i>&nbsp;</i>
+                            </div>
+                        </li>
+                        <li class="wj-not-luxun" title="磁盘IO信息无轮询" data-href="./diskIoInfo_no.html">
+                            <div class="wj-snav-inner">
+                                <span>磁盘IO信息无轮询</span><i>&nbsp;</i>
+                            </div>
+                        </li>
+                        <li class="wj-not-luxun" title="磁盘IO信息无轮询" data-href="./diskIoInfo_no.html">
+                            <div class="wj-snav-inner">
+                                <span>磁盘IO信息无轮询</span><i>&nbsp;</i>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div class="wjSub-content-wrap">
+            <iframe src="./oracle.html" id="resourceFrm" width="100%" height="100%" frameborder="0"></iframe>
+        </div>
+    </div>
+</div>
+
+<script>
+    $(document).ready(function() {
+        //  共用动画
+        commonFunction1();
+        $('[data-toggle="tooltip"]').tooltip();
+    });
+
+    /*附加属性*/
+    $(function () {
+        $('.wj-addPopMsg').click(function () {
+            $.dialog({
+                lock:'true',
+                drag:false,
+                width:'960px',
+                height:'600px',
+                title:'',
+                content:'url:./html/attr-alter/addAttr.html',
+            });
+        });
+    });
+
+
+
+    $(function () {
+        //选项卡
+        new WjTabChange({'tabOuter':$('.wjSub-nav-conta'),'resourceFrm':document.getElementById('resourceFrm')});
+    });
+
+</script>
+</body>
+</html>

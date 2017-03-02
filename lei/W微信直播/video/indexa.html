@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title></title>
+    <link href="css/video-js-cdn.css" type="text/css" rel="stylesheet"/>
+    <script src="js/video.js"></script>
+    <script src="js/videojs-contrib-hls.js"></script>
+</head>
+<body>
+<video id="my_video_1" class="video-js vjs-default-skin" controls preload="auto" width="640" height="268">
+    <source src="http://leplay.51rebo.cn/live/1000000101/desc.m3u8" type="application/x-mpegURL">
+</video>
+
+<!--<source src="http://solutions.brightcove.com/jwhisenant/hls/apple/bipbop/bipbopall.m3u8" type="application/x-mpegURL">-->
+<script>
+    var player = videojs('my_video_1');
+
+    player.play();
+</script>
+</body>
+</html>

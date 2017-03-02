@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>摇一摇-摇出好运道</title>
+    <meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <meta name="wap-font-scale" content="no">
+    <link rel="stylesheet" href="css/css.css">
+</head>
+<body>
+<script>
+     var winWidth = document.body.clientWidth;
+     var Html = document.getElementsByTagName('html');
+     Html[0].style.fontSize = winWidth / 6.4 + 'px';
+ </script>
+<!-- start -->
+
+    <div class="s-s">
+        <div class="s-s-bj">
+            <div class="s-s-s" id="s-s-s"></div>
+            <div class="s-s-h"></div>
+        </div>
+        <div class="s-s-bottom" style="min-height:100px;"></div>
+    </div>
+    <audio src="video/s-s.mp3" class="s-s-audio" id="myaudio" preload="auto"></audio>
+    
+<!-- script -->
+    <script src="js/zepto.min.js"></script>
+    <script src="js/ind.js"></script>
+    <script>
+        // var ssAudio = $('.s-s-audio').get(0);
+        function ssAudio(){
+             document.addEventListener("WeixinJSBridgeReady", function () {  
+                ssAudioa();
+            }, true);
+        }
+
+        function ssAudioa(){  
+            document.getElementById("myaudio").setAttribute("src", null); 
+            document.getElementById("myaudio").setAttribute("src", "video/s-s.mp3");  
+            document.getElementById("myaudio").play();
+            document.getElementById("myaudio").pause();
+        } 
+        ssAudio();
+        
+        var SHAKE_THRESHOLD = 800;
+        var last_update = 0;
+        var x = y = z = last_x = last_y = last_z = 0;
+        // var urlName = Number(getQueryString('xunhuan'));
+
+        if (window.DeviceMotionEvent) {
+            window.addEventListener('devicemotion', deviceMotionHandler, false);
+        } else {
+            alert('本设备不支持摇一摇');
+        }
+
+        function deviceMotionHandler(eventData) {
+            var acceleration = eventData.accelerationIncludingGravity;
+            var curTime = new Date().getTime();
+
+            if ((curTime - last_update) > 100) {
+                var diffTime = curTime - last_update;
+                last_update = curTime;
+                x = acceleration.x;
+                y = acceleration.y;
+                z = acceleration.z;
+                var speed = Math.abs(x + y + z - last_x - last_y - last_z) / diffTime * 10000;
+                var status = document.getElementById("s-s-s");
+
+                if (speed > SHAKE_THRESHOLD) {
+                    document.getElementById("myaudio").play();
+                    doResult();
+                }else{
+                    doResults();
+                }
+                last_x = x;
+                last_y = y;
+                last_z = z;
+            }
+        }
+
+        function doResult() {
+            document.getElementById("s-s-s").className = "s-s-s active";
+
+            setTimeout(function(){
+                var sJs = parseInt(Math.random()*4+1)
+                window.location.href = 'cen'+sJs+'.html'
+            }, 2000);
+            
+        }
+
+        function doResults() {
+            document.getElementById("s-s-s").className = "s-s-s";
+        }
+
+        
+
+        // function getQueryString(name) { 
+        //     var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)", "i"); 
+        //     var r = window.location.search.substr(1).match(reg); 
+        //     if (r != null) return unescape(r[2]); return null; 
+        // } 
+    </script>
+</body>
+</html>

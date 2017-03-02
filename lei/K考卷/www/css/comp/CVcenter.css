@@ -1,0 +1,505 @@
+.menu-icoIndex-01{
+	background: url(../../images/icon.png) no-repeat -27px -27px;
+}
+.active .menu-icoIndex-01{
+	background: url(../../images/icon.png) no-repeat 0px -27px;
+}
+.menu-icoIndex-02{
+	background: url(../../images/icon.png) no-repeat -27px 0px;
+}
+.active .menu-icoIndex-02{
+	background: url(../../images/icon.png) no-repeat 0px 0px;
+}
+.mSearch{
+	margin-top: 6px;
+	padding: 8px 8px 13px;
+	border: 1px solid #eceef4;
+	background: #fafbfc;
+}
+.mSearch-label{
+	padding-left: 17px;
+	display: inline-block;
+	height: 30px;
+	line-height: 30px;
+	font-size: 14px;
+	float: left;
+}
+.mSearch-type{
+	float: left;
+}
+.mSearch-type a{
+	float: left;
+	margin-left: 17px;
+	display: inline-block;
+	padding: 0px 10px;
+	height: 30px;
+	line-height: 30px;
+	text-align: center;
+	font-size: 14px;
+}
+.mSearch-type a.active,.mSearch-type a:hover{
+	color: #FFFFFF;
+	background: #29bdb9;
+	border-radius: 3px;
+}
+.mSearch-checkbox a{
+	float: right;
+	height: 30px;
+	padding: 0px 6px;
+	background: #c8cfd6;
+	line-height: 30px;
+	border-radius: 3px;
+	color: #ffffff;
+}
+.mSearch-checkbox a i{
+	display: inline-block;
+	width: 16px;
+	height: 16px;
+	float: left;
+	background: url(../../images/icon.png) no-repeat -59px 0px;
+	margin-top: 8px;
+	margin-right: 5px;
+}
+.mSearch-checkbox a.active{
+	background: #29bdb9;
+}
+.mSearch-checkbox a.active i{
+	background: url(../../images/icon.png) no-repeat -59px -27px;
+}
+.mSearch-selList{
+	padding-top: 13px;
+}
+.mSearch-selList dd{
+	float: left;
+	margin-right: 9px;
+}
+.isearchBox{
+	width: 183px;
+	border: 1px solid #92dcdb;
+	border-right:0px;
+	position: relative;
+	height: 28px;
+	background: #FFFFFF;
+}
+.isearchBox-text {
+	height: 26px;
+	padding-left: 16px;
+	width: 100%;
+	color: #000;
+	padding-right: 30px;
+}
+.isearchBox-btn{
+	width: 26px;
+	height: 26px;
+	background:#29bdb9 url(../../images/icon.png) no-repeat 0px -59px;
+	border: none;
+	cursor: pointer;
+	position: absolute;
+	right: 0px;
+	top: 0px;
+}
+
+.mSearch-selList dd.isearchBox-reset{
+	margin-left: 36px;
+	margin-top: 5px;
+}
+.mSearch-selList dd.isearchBox-reset a i{
+	width: 14px;
+	height: 14px;
+	display: inline-block;
+	float: left;
+	background:url(../../images/icon.png) no-repeat -59px -59px;
+	margin-top: 2px;
+	margin-right: 5px;
+}
+.mOperation{
+	padding-top: 14px;
+	padding-left: 10px;
+	padding-bottom: 13px;
+}
+.mOperation-left{
+	float: left;
+}
+.mOperation-cbox{
+	float: left;
+	width: 81px;
+	padding-top: 6px;
+}
+.mOperation-cbox .mOperation-checkbox{
+	margin-right: 5px;
+}
+.mOperation-btn{
+	float: left;
+	white-space: nowrap;
+}
+.mOperation-btn a{
+	display: inline-block;
+	width: 98px;
+	height: 32px;
+	font-size: 14px;
+	border: 1px solid #29bdb9;
+	text-align: center;
+	line-height: 32px;
+	color: #29bdb9;
+	background: #FFFFFF;
+	margin-right: 5px;
+	border-radius: 3px;
+}
+.mOperation-btn a.active,.mOperation-btn a:hover{
+	background: #29bdb9;
+	color: #FFFFFF;
+}
+.mOperation-right{
+	float: right;
+	width: 317px;
+}
+.mOperation-text{
+	height: 30px;
+	line-height: 30px;
+	width: 199px;
+	text-align: right;
+	color: #666666;
+	float: left;
+}
+.mOperation-text span{
+	color: #29bdb9;
+	margin: 0px 3px;
+}
+.selectUI-mOperation{
+	float: right;
+}
+.selectUI-mOperation .text{
+	width: 90px;
+}
+.mList dd{
+	height: 120px;
+	border: 1px solid #eceef4;
+	background: #f8f9fb;
+	padding: 2px;
+	position: relative;
+	margin-bottom: 10px;
+	
+}
+.mList-img{
+	width: 131px;
+	background:#FFFFFF;
+	float: left;
+	position: relative;
+	text-align: center;
+	padding-top: 4px;
+	height: 114px;
+}
+.mList-checked{
+	position: absolute;
+	top: 8px;
+	left: 8px;
+}
+.mList-img img{
+	width: 75px;
+	height: 75px;
+	border: 1px solid #e1e3e6;
+	border-radius: 75px;
+}
+.mList-img p{
+	padding-top: 10px;
+	font-size: 14px;
+}
+.mList-right{
+	height: 114px;
+	overflow: hidden;
+	background: #FFFFFF;
+}
+.mList-head{
+	height: 34px;
+	line-height: 34px;
+	padding-left: 19px;
+	background: #f8f9fb;
+}
+.mList-head-p1{
+	font-size: 14px;
+	display:inline-block;
+	width: 366px;
+}
+.mList-head-p1 span{
+	color: #999999;
+	margin-left: 13px;
+	font-size: 12px;
+}
+.mList-head-p2{
+	width: 382px;
+	text-align: center;
+	display: inline-block;
+	font-size: 14px;
+}
+.mList-cl{
+	float: left;
+	width: 745px;
+	padding-left: 20px;
+}
+.mList-cl-box1{
+	height: 38px;
+	line-height: 38px;
+}
+.mList-cl-p1{
+	width: 279px;
+	display: inline-block;
+	font-size: 14px;
+}
+.mList-cl-p2{
+	color: #999999;
+	width: 203px;
+	display: inline-block;
+}
+.mList-cl-p3{
+	text-align: center;
+	display: inline-block;
+	width: 155px;
+	font-size: 14px;
+}
+.mList-cl-p3 i{
+	display: inline-block;
+	position: relative;
+	top: 3px;
+	margin-right: 4px;
+}
+.mList-ico-noDispose{
+	width: 15px;
+	height: 15px;
+	background:url(../../images/icon.png) no-repeat -87px -27px;
+}
+.mList-cl-p4{
+	color: #999999;
+	padding-top: 5px;
+	float: left;
+}
+.mList-cl-p4 span{
+	color: #333333;
+}
+.mList-cl-p4 b{
+	font-weight: normal;
+	margin: 0px 5px;
+}
+.mList-btn{
+	float: right;
+	display: none;
+}
+.mList-btn a{
+	height: 27px;
+	width: 78px;
+	text-align: center;
+	border: 1px solid #29bdb9;
+	line-height: 27px;
+	color: #29bdb9;
+	display: inline-block;
+	border-radius: 4px;
+}
+.mList-btn a:hover{
+	background: #29bdb9;
+	color: #FFFFFF;
+}
+.mList-head-p3{
+	display: inline-block;
+}
+.mList-head-p3 span{
+	margin: 0px 5px;
+}
+.mList-cr{
+	float: left;
+	padding-left: 26px;
+	padding-top: 5px;
+}
+.mList-cr li{
+	width: 68px;
+	height: 68px;
+	border: 1px solid #ffb931;
+	padding-top: 16px;
+	text-align: center;
+	color: #666666;
+	float: left;
+	border-radius: 68px;
+	margin-right: 13px;
+}
+.mList-cr li p{
+	padding-top: 0px;
+	font-weight: bold;
+	font-size: 12px;
+	color: #ffa800;
+}
+.mList-cr li p b{
+	font-size: 15px;
+}
+.mList-cr li.mList-cr-sty{
+	border: 1px solid #29bdb9;
+}
+.mList-cr li.mList-cr-sty p{
+	font-size: 15px;
+	color: #29bdb9;
+}
+.mList-ico-active{
+	width: 18px;
+	display: block;
+	height: 18px;
+	background:url(../../images/icon.png) no-repeat -87px -59px;
+	position: absolute;
+	right: 0px;
+	top: 0px;
+	display: none;
+}
+.mList .active .mList-btn{
+	display: block;
+}
+.mList dd.active{
+	border: 1px solid  #94dedc;
+}
+.mList .mList-ddChecked .mList-ico-active{
+	display: block;
+}
+.mList dd.mList-ddChecked{
+	border: 1px solid  #94dedc;
+} 
+.mfenye{
+	padding:12px 0px 20px 0px;
+}
+.none{
+	display: none;
+}
+.downResume{
+	padding-left: 10px;
+}
+.downResume p{
+	padding: 15px 0px;
+	font-size: 14px;
+}
+.downResume li{
+	display: inline-block;
+	height: 40px;
+	line-height: 38px;
+	width: 178px;
+	border: 1px solid #e4e6e9;
+	background: #f8f9fb;
+	color: #999999;
+	text-align: center;
+	cursor: pointer;
+	margin: 0px 5px;
+	font-size: 14px;
+	position: relative;
+}
+.downResume li span{
+	font-size: 12px;
+}
+.downResume li i{
+	width: 16px;
+	height: 16px;
+	position: absolute;
+	background:url(../../images/icon.png) no-repeat -110px -59px;
+	right: 0px;
+	top: 0px;
+	display: none;
+}
+.downResume li.active{
+	border: 2px solid #29bdb9;
+	color: #29bdb9;
+	line-height: 36px;
+	background: #FFFFFF;
+}
+.downResume li.active i{
+	display: block;
+}
+.downResume-btn{
+	padding-top: 25px;
+	text-align: center;
+}
+.downResume-btn a{
+	height: 38px;
+	line-height: 38px;
+	display: inline-block;
+	text-align: center;
+	width: 119px;
+	font-size: 16px;
+	color: #FFFFFF;
+	background: #29bdb9;
+	border-radius: 0px;
+}
+.signResume-box{
+	background: #f8f9fb;
+	padding: 15px;
+}
+.signResume-box p{
+	font-size: 14px;
+	color: #999999;
+	padding-bottom: 13px;
+}
+.signResume-tag li{
+	display: inline-block;
+	height: 30px;
+	line-height: 30px;
+	position: relative;
+	background: #ff8a00;
+	padding: 0px 20px;
+	color: #FFFFFF;
+	margin-right: 10px;
+	margin-bottom: 10px;
+}
+.signResume-tag li a{
+	color:#FFFFFF;
+	display: inline-block;
+}
+.signResume-tag li i{
+	display: inline-block;
+	width: 7px;
+	height: 7px;
+	background:url(../../images/icon.png) no-repeat -135px -59px;
+	position: absolute;
+	right: 9px;
+	top: 13px;
+}
+.signResume-add{
+	width: 235px;
+	height: 29px;
+	position: relative;
+	background: #FFFFFF;
+}
+.signResume-text{
+	height: 29px;
+	border: 1px solid #c3c7d1;
+	width: 100%;
+	padding: 0px 75px 0px 10px;
+	border-right: none;
+}
+.signResume-btn{
+	display: inline-block;
+	width: 68px;
+	height: 29px;
+	line-height: 27px;
+	text-align: center;
+	border: 1px solid #29bdb9;
+	color: #29bdb9;
+	position: absolute;
+	right: 0px;
+	top: 0px;
+}
+.signResume-btn:hover{
+	background: #29bdb9;
+	color: #FFFFFF;
+}
+.signResume-ul{
+	padding-top: 14px;
+	padding-left: 20px;
+}
+.signResume-ul li{
+	width: 78px;
+	height: 28px;
+	line-height: 26px;
+	border: 1px solid #c7cbd3;
+	cursor: pointer;
+	display: inline-block;
+	margin: 0px 12px 12px 0px;
+	text-align: center;
+}
+.signResume-ul li:hover{
+	border: 1px solid #29bdb9;
+	color: #29bdb9;
+}
+.signResume{
+	padding-top: 10px;
+}

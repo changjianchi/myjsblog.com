@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>关于汇泊</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <link rel="stylesheet" href="css/animate.min.css">
+    <link rel="stylesheet" href="css/css.css">
+    <link rel="stylesheet" href="css/css-a.css">
+</head>
+<body>
+
+    <script>
+        var winWidth = document.body.clientWidth; var Html = document.getElementsByTagName('html'); 
+        Html[0].style.fontSize = winWidth / 10.8 + 'px';
+    </script>
+
+    <!-- start -->
+    <div id="wrapper">
+        <div id="scroller" class="huibo-about team scroller">
+            <!-- 第一屏 -->
+            <div class="huibo-one">
+                <!-- nav -->
+                <div class="huibo-nav"></div>
+                <!-- top-bj -->
+                <div class="huibo-kv">
+                    <div class="huibo-top-bj" style="background:url(img/team/bj.jpg) no-repeat center top; background-size:cover;margin-top:0;"></div>
+                    <div class="con-cen-top table-a">
+                        <div class="table-cell">
+                            <div class="con-cen-h1 team-cen-h1" style="margin-top:1.5rem;">
+                                <span class="ani-up ani-mate">智团队</span>
+                                <em class="ani-up ani-mate" style="line-height:.75rem; height:auto; letter-spacing:-0.07em">WE PARK<br>MANAGEMENT TEAM</em>
+                            </div>
+                            <div class="con-cen-h2">
+                                <span class="ani-up ani-mate" style="letter-spacing:-0.061em;">一流的投资运营管理团队</span>
+                                <p class="ani-up ani-mate" style="letter-spacing:-0.061em;">团队核心成员毕业于国内外著名学府，</p>
+                                <p class="ani-up ani-mate" style="letter-spacing:-0.061em;">拥有多年投资银行、基金和</p>
+                                <p class="ani-up ani-mate" style="letter-spacing:-0.061em;">房地产投资领域的从业经验，</p>
+                                <p class="ani-up ani-mate" style="letter-spacing:-0.061em;">曾在德意志银行、瑞银、凯雷、高盛等</p>
+                                <p class="ani-up ani-mate" style="letter-spacing:-0.061em;">国内外顶级机构担任高管。</p>
+                                <div class="about-k4">
+                                    <div class="about-k4-i ani-up ani-mate">
+                                        <i><div style="background:url(img/team/kv-1.png) no-repeat center; background-size:1.32rem auto;"></div></i>
+                                        <em>汇泊停车</em>
+                                    </div>
+                                    <div class="about-k4-i ani-up ani-mate">
+                                        <i><div style="background:url(img/team/kv-2.png) no-repeat center; background-size:0.79rem auto;"></div></i>
+                                        <em>阳光海天</em>
+                                    </div>
+                                    <div class="about-k4-i ani-up ani-mate">
+                                        <i><div style="background:url(img/team/kv-3.png) no-repeat center; background-size:0.75rem auto;"></div></i>
+                                        <em>专家团队</em>
+                                    </div>
+                                    <div class="about-k4-i ani-up ani-mate ani-last">
+                                        <i><div style="background:url(img/team/kv-4.png) no-repeat center; background-size:0.55rem auto;"></div></i>
+                                        <em>团队风釆</em>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 公司介绍 -->
+            <div class="about-cen about-k4-1 huibo-fff" style="margin-top:0;">
+                <div class="huibo-home-bt ani-up ani-mate ani-last" style="margin-top:0;">汇泊停车</div>
+                <div class="about-img-bt ani-up ani-mate ani-last" style="margin-top:20px; padding:0 .55rem;"><img src="img/team/bt-2.jpg"></div>
+                <div class="team-cen1 ani-up ani-mate ani-last">
+                    <p>汇泊拥有一流的投资及资产管理团队。团队核心成员毕业于哈佛大学、宾夕法利亚大学、芝加哥大学、新加坡国立大学、香港大学、中欧商学院、北京大学、清华大学、复旦大学和对外经济贸易大学等国内外知名学府，并拥有多年投资银行、基金、房地产投资和停车场运营管理等领域的从业经验，曾在德意志银行、瑞银、凯雷、高盛、仲量联行、高力国际、普华永道、凯德置地、中信产业基金、宝龙地产、GIC、PWC、KPMG等国内外著名企业担任要职。核心成员曾主导完成了总计超过百亿美元的房地产项目交易和资产管理业务。</p>
+                    <p>&nbsp;</p>
+                    <p>我们的首席投资官曾担任凯雷集团Carlyle Group房地产投资部中国区董事；之后又担任瑞银集团全球资产管理（香港）有限公司 UBS Global Asset Management (Hong Kong) Ltd. 环球房地产部门大中国区主管，先后主持完成总额超过6亿美元的房地产投资交易。</p>
+                    <p>&nbsp;</p>
+                    <p>我们的投资总监先后供职于美国知名私募基金CarVal Investors及国内著名私募基金中信产业基金CITICPE。 负责和参与超过人民币50亿元的投资和资产管理业务，代表项目包括恒大地产Pre-IPO投资、上海城隍庙豫园时尚、北京嘉盛中心、万科沈阳万科蓝山开发投资、上海虹桥1号项目整体夹层融资等。</p>
+                    <p>&nbsp;</p>
+                    <p>我们的资产管理总监拥有超过20年房地产各个类型，包括办公、商业、服务式公寓、住宅、物流、酒店等资产管理、物业管理及酒店管理的经验。 加入楠焯资本前，曾担任悦榕中国基金的投资总监，SK中国的资产管理总监，并曾在高盛集团担任高级资产管理经理。</p>
+                    <p>&nbsp;</p>
+                    <p>我们的运营总经理在停车行业拥有逾20年的从业经历，曾主导建造一座含有5,500余个停车位的停车楼，为业主提供一体化全方位停车服务。</p>
+                </div>
+                <div class="about-img-bt ani-up ani-mate ani-last" style="margin-top:20px; padding:0 .55rem;"><img src="img/team/bt-2bottom.jpg"></div>
+            </div>   
+
+            <!-- 来自汇伯的问候 -->
+            <div class="about-cen about-k4-2 huibo-fff">
+                <div class="huibo-home-bt ani-up ani-mate ani-last">阳光海天</div>
+                <div class="huibo-home-wai team-loop-1 ani-up ani-mate ani-last">
+                    <div class="swiper-wrapper">
+
+                        <div class="swiper-slide">
+                            <div class="huibo-home-hezuo table-a">
+                                <span class="table-cell">
+                                    <img src="img/team/haitian-1.jpg" class="huibo-home-hezuo-img">
+                                    <b>蔡超 - 运营总裁</b>
+                                    <p>● 清华大学工商管理硕士（MBA）学位；2004年毕业于对外经济贸易大学。 </p>
+                                    <p>● 阳光海天的创始人之一，曾任职阳光海天首席财务官、副总运营经理和首席运营官。</p>
+                                    <p>● 拥有丰富的项目管理经历，掌舵全公司百余个项目的整体运营管理。</p>
+                                </span>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div class="huibo-home-hezuo table-a">
+                                <span class="table-cell">
+                                    <img src="img/team/haitian-2.jpg" class="huibo-home-hezuo-img">
+                                    <b>闫亮 - 首席执行官</b>
+                                    <p>● 中欧工商管理学院工商管理硕士(EMBA)学位，2004年毕业于对外经济贸易大学。</p> 
+                                    <p>● 凭借丰富的企业管理经验和对停车行业前景的预判，于2006年8月8日创立北京阳光海天停车管理有限公司。 </p>
+                                    <p>● 中国停车产业链深化、创新的推动者。2010年创立汽车服务品牌EasyCarLife。2012年，成立中国停车规划设计研究院。</p>
+                                </span>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+
+            </div>
+
+            <!-- 汇伯优势 -->
+            <div class="huibo-new huibo-fff about-k4-3">
+                <div class="huibo-home-bt ani-up ani-mate ani-last">专家团队</div>
+                <div class="huibo-home-nei team-loop-1 ani-up ani-mate ani-last">
+
+                    <div class="huibo-home-hezuo table-a">
+                        <span class="table-cell">
+                            <img src="img/team/zhuanjia-1.jpg" class="huibo-home-hezuo-img">
+                            <b>徐道睦 - 香港科协技术有限公司 董事长</b>
+                            <p>● 主要社会职务：浙江省政协委员(港区)、全国道路停车行业联盟主席、香港杭州政协之友联谊会会长、杭州旅港同乡会会长。</p>
+                            <p>● 停车行业方面主要工作：参与国家领导国内调研，向中央提关于停车产业化的建议报告，并得到两位中央常委支持。提交数十份与停车相关的提案给各级政府。与各个自中央至地方相关部门保持联系，沟通和提出建议。</p>
+                            <p>● 相关经历：自1993年从事停车行业以来，已累集了二十多年的相关方面的经验。2007年在发改委中小企业协会的帮助下，创立了全国道路停车行业联盟，目前已是中国停车行业内最主要的协会组织。每年举办各种活动吸引各政府部门与行业内外企业积极参与。</p>
+                        </span>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- 业务范围 -->
+            <div class="huibo-new huibo-fff about-k4-4">
+                <div class="huibo-home-bt ani-up ani-mate ani-last">团队风采</div>
+                <div class="about-img-bt ani-up ani-mate ani-last" style="margin-top:20px; padding:0 .55rem;"><img src="img/team/y-1.jpg"></div>
+                <div class="about-img-bt ani-up ani-mate ani-last" style="margin-top:20px; padding:0 .55rem;"><img src="img/team/y-2.jpg"></div>
+                <div class="about-img-bt ani-up ani-mate ani-last" style="margin-top:20px; padding:0 .55rem;"><img src="img/team/y-3.jpg"></div>
+                <div class="about-img-bt ani-up ani-mate ani-last" style="margin-top:20px; padding:0 .55rem;"><img src="img/team/y-4.jpg"></div>
+                <div class="about-img-bt ani-up ani-mate ani-last" style="margin-top:20px; padding:0 .55rem;"><img src="img/team/y-5.jpg"></div>
+                <div class="about-img-bt ani-up ani-mate ani-last" style="margin-top:20px; padding:0 .55rem;"><img src="img/team/y-6.jpg"></div>
+                <div class="about-img-bt ani-up ani-mate ani-last" style="margin-top:20px; padding:0 .55rem;"><img src="img/team/y-7.jpg"></div>
+            </div>
+
+            <!-- foot -->
+            <div class="foot ani-up ani-mate ani-last"></div>
+
+        </div>
+    </div>
+
+    <!-- 分布图 -->
+    <div class="market-fenbutu">
+        <div class="pinch-zoom table-a">
+            <div class="table-cell">
+                <img src="img/market/cn_map.jpg"/>
+            </div>
+        </div>
+        <div class="market-fenbutu-col"><em><img src="img/close.png" alt=""></em></div>
+    </div>
+
+    <!-- 下拉下拉菜单 -->
+    <div class="huibo-menu">
+        <div class="huibo-menu-col">
+            <em><i>x</i>关闭</em>
+        </div>
+        <div class="menu-logo"><img src="img/logo.png"></div>
+        <div class="huibo-menu-nav">
+            <a href="about.html">关于我们</a>
+            <a href="#">慧泊车</a>
+            <a href="#">智团队</a>
+            <a href="#">经典案例</a>
+            <a href="#">战略分布</a>
+            <a href="#">合作模式</a>
+            <a href="#">加入我们</a>
+            <a href="#">联系我们</a>
+            <a href="#">EN</a>
+        </div>
+        <div class="a-menu-last">
+            <a href="tel:4006834288">商务热线：<b>400 683 4288</b></a>
+            <a href="mailto:Marketing@huiboparking.com">邮箱：Marketing@huiboparking.com</a>
+        </div>>
+    </div>
+    
+    <!-- script -->
+    <script src="js/jq.js"></script>
+    <script src="js/top-foot-menu.js"></script>
+    <script>
+        var winHeight = $(window).height();
+        $('.huibo-one').css({'height':winHeight+'px'});
+        $('.con-cen-top').css({'height':winHeight+'px'});
+    </script>
+
+    <!-- Swiper JS -->
+    <script src="js/swiper.min.js"></script> 
+    <script src="js/swiper.animate1.0.2.min.js"></script>
+    <script>
+        var swiper4 = new Swiper('.huibo-home-wai', {
+            pagination: '.swiper-pagination',
+            paginationClickable: true,
+            // nextButton: '.swiper-button-next',
+            // prevButton: '.swiper-button-prev',
+            spaceBetween: 0,
+            autoplay: false,
+            speed: 600,
+            loop : true,
+        });
+    </script>
+
+    <!-- pinchzoom requires: jquery -->
+    <script src="js/pinchzoom.js"></script>
+    <script>
+        $('div.pinch-zoom').css({
+            'height':$(window).height()+'px',
+        });
+        $(function () {
+            var marMapImg = $('.mar-map img');
+            var marketFenbutu = $('.market-fenbutu');
+            var marketFenbutuCol = $('.market-fenbutu-col');
+
+            marMapImg.on('click',function(){
+                marketFenbutu.addClass('active');
+            });
+            marketFenbutuCol.on('click',function(){
+                marketFenbutu.removeClass('active');
+            });
+
+            $('div.pinch-zoom').each(function () {
+                new RTP.PinchZoom($(this), {});
+            });
+
+        })
+    </script>
+
+    <!-- z -->
+    <script src="js/ind.js"></script>
+
+    <!-- iscorll -->
+    <script src="js/iscroll.js"></script>
+    <script type="text/javascript">
+        var myScroll;
+        function loaded () {
+            myScroll = new IScroll('#wrapper', { 
+                scrollX: true, 
+                freeScroll: true,
+                preventDefaultException: { tagName: /^(INPUT|TEXTAREA|BUTTON|SELECT|A)$/ },
+                click: true,
+
+            });
+        }
+
+        var aboutK4I = $('.about-k4-i');
+        var aboutK4A = $('.about-k4-a');
+        aboutK4I.each(function(i){
+            // var Down_i = aboutK4A.eq(i).offset().top;
+            $(this).on('click',function(){
+                i++;
+                myScroll.scrollToElement('.about-k4-'+i,300);
+            });
+        });
+
+        document.addEventListener('touchmove', function (e) { e.preventDefault(); }, false);
+    </script>
+
+    <!-- ani-up -->
+    <script src="js/ani-up.js"></script>
+
+    <!-- loading -->
+    <script src="js/loading.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,154 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>法律声明</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <link rel="stylesheet" href="css/animate.min.css">
+    <link rel="stylesheet" href="css/css.css">
+</head>
+<body>
+
+    <script>
+        var winWidth = document.body.clientWidth; var Html = document.getElementsByTagName('html'); 
+        Html[0].style.fontSize = winWidth / 10.8 + 'px';
+    </script>
+
+    <!-- start -->
+    <div id="wrapper">
+        <div id="scroller" class="scroller">
+            <!-- 第一屏 -->
+            <div class="huibo-one">
+                <!-- nav -->
+                <div class="huibo-nav">
+                    <b></b>
+                    <img src="img/logo.png" class="logo">
+                    <i class="table-a">
+                        <a href="tel:4006834288" class="table-cell">
+                            商务联系热线<p>4006834288</p>
+                        </a>
+                    </i>
+                </div>
+                <!-- top-bj -->
+                <div class="huibo-kv">
+                    <div class="huibo-top-bj" style="background:url(img/law/bj.jpg) no-repeat center; background-size:cover;"></div>
+                    <div class="con-cen-top table-a">
+                        <div class="table-cell">
+                            <div class="con-cen-h1 ani-up ani-mate">
+                                <span class="ani-up ani-mate">法律声明</span>
+                                <em class="ani-up ani-mate ani-last">LEGAL NOTICES</em>
+                            </div>
+                            <div class="con-cen-h2">&nbsp;</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- cen -->
+            <div class="huibo-new huibo-fff">
+                <div class="huibo-home-bt ani-up ani-mate ani-last">法律声明</div>
+                <div class="law-cen ani-up ani-mate ani-last">
+                    <p>以下规则适用于所有访问本网站的用户或浏览者，汇泊保留随时修改这些规则的权利。访问本网站的权利由汇泊根据下列条款授予。如果您不同意下列任何条款、请停止使用本网址。对于违反这些规则的行为，汇泊有权采取法律和公平的补救措施。</p>
+                    
+                    <b>不承诺责任声明</b>
+                    <p>本网站所载的材料和信息，包括但不限于文本、图片、数据、观点、建议、网页或链路，虽然汇泊力图在网站上提供准确的材料和信息，但华为并不保证这些材料和内容的准确、完整、充分和可靠性，并且明确声明不对这些材料和内容的错误或遗漏承担责任，也不对这些材料和内容作出任何明示或默示的、包括但不限于有关所有权担保、没有侵犯第三方权利、质量和没有计算机病毒的保证。</p>
+                    <p>汇泊可以在没有任何通知或提示的情况下随时对本网站上的内容进行修改，为了得到最新版本的信息，请定时访问本网站。 汇泊在本网站上所提及的非汇泊产品或服务仅仅是为了提供相关信息，并不构成对这些产品、服务的认可或推荐。 汇泊并不就网址上提供的任何产品、服务或信息做出任何声明、保证或认可，所有销售的产品和服务应受本公司的销售合同和条款的约束。</p>
+
+                    <b>著作权说明</b>
+                    <p>本网站所载的所有材料或内容受版权法的保护，所有版权由汇泊拥有，但注明引用其他方的内容除外。未经汇泊或其他方事先书面许可，任何人不得将本网站上的任何内容以任何方式进行复制、经销、翻印、播放、以超级链路连接或传送、以"镜像法"载入其他服务器上、存储于信息检索系统或者其他任何商业目的的使用，但对于非商业目的的、个人使用的下载或打印（条件是不得修改，且须保留该材料中的版权说明或其他所有权的说明）除外。</p>
+
+                    <b>商标</b>
+                    <p>汇泊网站上使用和显示的所有商标、标志皆属汇泊所有，但注明属于其他方拥有的商标、标志、商号除外。汇泊网站所载的任何内容不应被视作未经汇泊或其他方书面许可，以暗示、不反对或其他形式授予使用前述任何商标、标志的许可或权利。未经事先书面许可，任何人不得以任何方式使用汇泊名称及汇泊的商标、标记。</p>
+
+                    <b>提供的产品或服务</b>
+                    <p>由于互联网的国际性或无国界性，因此通过本网站所提供信息的亦具有国际性，所以不是所有的在本网站上所提到的产品或服务在您的国家或地区都提供，请联系当地的销售代表或代理商了解在您的国家或地区所提供的产品或服务。</p>
+
+                    <b>第三方链接</b>
+                    <p>本网站可能保留有与第三方网站或网址的链接，访问这些链接将由用户自己作出决定，汇泊并不保证这些链接上所提供的任何信息、数据、观点、图片、陈述或建议的准确性、完整性、充分性和可靠性。汇泊提供这些链接仅仅在于提供方便，并不表示汇泊对这些信息的认可和推荐，也不是用于宣传或广告目的。</p>
+                </div>
+            </div>
+
+            <!-- foot -->
+            <div class="foot ani-up ani-mate ani-last">
+                <div class="foot-top">
+                    <div class="foot-erweima">
+                        <div class="foot-erweima-img">
+                            <img src="img/foot-erweima.jpg">
+                            扫描上方微信<br>了解我们更多
+                        </div>
+                        <div class="foot-dianhua">
+                            <span>有任何商务、市场合作请联系：</span>
+                            <b><a href="tel:4006834288">400-683-4288</a></b>
+                            <span>或邮箱：</span>
+                            <i><a href="mailto:Marketing@huiboparking.com">Marketing@huiboparking.com</a></i>
+                        </div>
+                    </div>
+                    <div class="foot-bottom">
+                        <em><a href="#">隐私条款</a> | <a href="#">法律声明</a></em>
+                        © We Park 2014. All rights reserved. 
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- 下拉下拉菜单 -->
+    <div class="huibo-menu">
+        <div class="huibo-menu-col">
+            <em><i>x</i>关闭</em>
+        </div>
+        <div class="menu-logo"><img src="img/logo.png"></div>
+        <div class="huibo-menu-nav">
+            <a href="about.html">关于我们</a>
+            <a href="#">慧泊车</a>
+            <a href="#">智团队</a>
+            <a href="#">经典案例</a>
+            <a href="#">战略分布</a>
+            <a href="#">合作模式</a>
+            <a href="#">加入我们</a>
+            <a href="#">联系我们</a>
+            <a href="#">EN</a>
+        </div>
+        <div class="a-menu-last">
+            <a href="tel:4006834288">商务热线：<b>400 683 4288</b></a>
+            <a href="mailto:Marketing@huiboparking.com">邮箱：Marketing@huiboparking.com</a>
+        </div>>
+    </div>
+    
+    <!-- script -->
+    <script src="js/jq.js"></script>
+    <script>
+    $(function(){
+        var winHeight = $(window).height();
+        $('.huibo-one').css({'height':winHeight+'px'});
+        $('.con-cen-top').css({'height':winHeight+'px'});
+    });
+    </script>
+
+    <!-- z -->
+    <script src="js/ind.js"></script>
+
+    <!-- iscorll -->
+    <script src="js/iscroll.js"></script>
+    <script type="text/javascript">
+        var myScroll;
+        function loaded () {
+            myScroll = new IScroll('#wrapper', { 
+                scrollX: true, 
+                freeScroll: true ,
+                preventDefaultException: { tagName: /^(INPUT|TEXTAREA|BUTTON|SELECT|A)$/ },
+            });
+        }
+        document.addEventListener('touchmove', function (e) { e.preventDefault(); }, false);
+    </script>
+
+    <!-- ani-up -->
+    <script src="js/ani-up.js"></script>
+
+    <!-- loading -->
+    <script src="js/loading.js"></script>
+
+</body>
+</html>

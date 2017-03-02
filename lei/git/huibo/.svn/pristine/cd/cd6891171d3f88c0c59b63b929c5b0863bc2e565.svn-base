@@ -1,0 +1,362 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>合作模式</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <link rel="stylesheet" href="css/animate.min.css">
+    <link rel="stylesheet" href="css/css.css">
+    <link rel="stylesheet" href="css/css-a.css">
+</head>
+<body background="#cccccc" class="coop">
+
+    <script>
+        var winWidth = document.body.clientWidth; var Html = document.getElementsByTagName('html'); 
+        Html[0].style.fontSize = winWidth / 10.8 + 'px';
+    </script>
+
+    <!-- start -->
+    <div class="swiper-3">
+        <div class="swiper-wrapper">
+
+            <div class="swiper-slide">
+                <!-- 第一屏 -->
+                <div class="huibo-one" style="height:100.2%">
+                    <!-- nav -->
+                    <div class="huibo-nav">
+                        <b></b>
+                        <img src="img/logo.png" class="logo">
+                        <i class="table-a">
+                            <a href="tel:4006834288" class="table-cell">
+                                商务联系热线<p>4006834288</p>
+                            </a>
+                        </i>
+                    </div>
+                    <!-- top-bj -->
+                    <div class="huibo-kv">
+                        <div class="scroller" style="height:100%;">
+                            <div class="huibo-top-bj" style="background:url(img/cooperation/bj.jpg) no-repeat center; background-size:cover;"></div>
+                            <div class="con-cen-top table-a">
+                                <div class="table-cell">
+                                    <div class="con-cen-h1 ani-up ani-mate" style="height:3.8rem; width:8.1rem;">
+                                        <span class="ani-up ani-mate">合作模式</span>
+                                        <em class="ani-up ani-mate" style="line-height:.75rem; height:auto; letter-spacing:-0.07em">OUR COLLABORATION
+                                        <br>MODELS</em>
+                                    </div>
+                                    <div class="con-cen-h2">
+                                        <span class="ani-up ani-mate">开疆拓土佳绩频传，<br>中国市场步入全面开花时代</span>
+                                        <p class="ani-up ani-mate">截止2016年底，</p>
+                                        <p class="ani-up ani-mate">汇泊停车已持有及受托管理全中国200多个停车场，</p>
+                                        <p class="ani-up ani-mate">项目遍布30多个城市，管理超过200,000以上停车位。</p>
+                                    </div>
+                                    <div class="about-k4" style="margin-top: .6rem;">
+                                        <div class="about-k4-i ani-up ani-mate">
+                                            <i><div style="background:url(img/cooperation/coop-1.png) no-repeat center; background-size:1.27rem auto;"></div></i>
+                                            <em>合作模式</em>
+                                        </div>
+                                        <div class="about-k4-i ani-up ani-mate ani-last" style="margin-left:1.5rem;">
+                                            <i><div style="background:url(img/cooperation/coop-2.png) no-repeat center; background-size:1.05rem auto;"></div></i>
+                                            <em>目标项目</em>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="swiper-slide">
+                <div class="huibo-home-bt hezuomoshi">合作模式</div>
+                <div class="huibo-kv" style="background:url(img/cooperation/bj2.jpg) no-repeat center;background-size:cover;">
+                    <div class="swiper-wrapper">
+
+                        <div class="swiper-slide">
+                            <a href="#" class="huibo-kv-cen table-a">
+                                <span class="table-cell">
+                                    <em class="table-a huibo-coop-text huibo-kv-text">
+                                        <b class="table-cell">
+                                            <div class="coop-t-bt">
+                                                产权收购<h2>（资产及股权方式）</h2>
+                                            </div>
+                                            <div class="coop-t-tex">
+                                                通过收购资产或者项目公司股权的方式取得停车场物业的产权。<br>
+                                                以产权或者股权方式，收购单个停车场项目或包含多个项目的投资组合。
+                                            </div>
+                                        </b>
+                                    </em>
+                                </span>
+                            </a>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <a href="#" class="huibo-kv-cen table-a">
+                                <span class="table-cell">
+                                    <em class="table-a huibo-coop-text huibo-kv-text">
+                                        <b class="table-cell">
+                                            <div class="coop-t-bt">
+                                                PPP<h2>（政府和社会资本合作）</h2>
+                                            </div>
+                                            <div class="coop-t-tex">
+                                                政府通过特许经营、购买服务、股权合作等方式，与社会资本建立利益共享、风险分担的长期合作关系。
+                                            </div>
+                                        </b>
+                                    </em>
+                                </span>
+                            </a>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <a href="#" class="huibo-kv-cen table-a">
+                                <span class="table-cell">
+                                    <em class="table-a huibo-coop-text huibo-kv-text">
+                                        <b class="table-cell">
+                                            <div class="coop-t-bt">
+                                                TOT<h2>（移交-运营-移交）</h2>
+                                            </div>
+                                            <div class="coop-t-tex">
+                                                项目竣工交付后，我方接管并同时获得停车场项目30-40年的经营权，经营期限结束后项目移交回业主方。
+                                            </div>
+                                        </b>
+                                    </em>
+                                </span>
+                            </a>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <a href="#" class="huibo-kv-cen table-a">
+                                <span class="table-cell">
+                                    <em class="table-a huibo-coop-text huibo-kv-text">
+                                        <b class="table-cell">
+                                            <div class="coop-t-bt">
+                                                长期租赁<h2>（10 年以上）</h2>
+                                            </div>
+                                            <div class="coop-t-tex">
+                                                期限：10 - 40 年<br>
+                                                模式：我方通过租赁获得长期经营权，投入资金对停车场进行改造升级，包括灯光、墙面、智能停车引导系统、自动收费系统等，并对地下停车场进行专业化的经营和物业管理。<br>
+                                                租金收益：<br>
+                                                1）固定租金模式，每年或者几年一付；<br>
+                                                2）收益分成模式；<br>
+                                                3）固定租金+收益分成模式。
+                                            </div>
+                                        </b>
+                                    </em>
+                                </span>
+                            </a>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <a href="#" class="huibo-kv-cen table-a">
+                                <span class="table-cell">
+                                    <em class="table-a huibo-coop-text huibo-kv-text">
+                                        <b class="table-cell">
+                                            <div class="coop-t-bt">
+                                                中短租赁<h2>（3-5年）</h2>
+                                            </div>
+                                            <div class="coop-t-tex">
+                                                期限：3 - 5 年<br>
+                                                模式：我方通过租赁获得停车长3-5年经营权，派驻团队对停车场进行经营和物业管理到期移交给业主。期间根据约定，可以配合业主为地上商业消费的客户提供停车优惠服务。
+                                            </div>
+                                        </b>
+                                    </em>
+                                </span>
+                            </a>
+                        </div>
+
+                        
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+
+            </div>
+
+            <div class="swiper-slide stop-swiping huibo-fff">
+                <div id="wrapper">
+                    <div id="scroller">
+
+                        <div class="huibo-home-bt mar20">目标项目</div>
+                        <!-- 6k -->
+                        <div class="huibo-6k">
+                            <div class="swiper-wrapper">
+
+                                <div class="swiper-slide table-a">
+                                    
+                                        <a href="#" class="huibo-kv-cen table-a" style="background:url(img/cooperation/te-1.jpg) no-repeat top right;background-size:cover;"></a>
+                                        <div class="coop-3-tex">机场及火车站等交通枢纽</div>
+                                    
+                                </div>
+
+                                <div class="swiper-slide table-a">
+                                    
+                                        <a href="#" class="huibo-kv-cen table-a" style="background:url(img/cooperation/te-2.jpg) no-repeat top right;background-size:cover;"></a>
+                                        <div class="coop-3-tex">学校和医院等公共机构或组织</div>
+                                    
+                                </div>
+
+                                <div class="swiper-slide table-a">
+                                    
+                                        <a href="#" class="huibo-kv-cen table-a" style="background:url(img/cooperation/te-3.jpg) no-repeat top right;background-size:cover;"></a>
+                                        <div class="coop-3-tex">商场及酒店</div>
+                                    
+                                </div>
+
+                                <div class="swiper-slide table-a">
+                                    
+                                        <a href="#" class="huibo-kv-cen table-a" style="background:url(img/cooperation/te-4.jpg) no-repeat top right;background-size:cover;"></a>
+                                        <div class="coop-3-tex">CBD、商务楼及综合体</div>
+                                    
+                                </div>
+
+                            </div>
+                            <div class="swiper-pagination1"></div>
+                        </div>
+                    
+
+                        <!-- foot -->
+                        <div class="foot">
+                            <div class="foot-top">
+                                <div class="foot-erweima">
+                                    <div class="foot-erweima-img">
+                                        <img src="img/foot-erweima.jpg">
+                                        扫描上方微信<br>了解我们更多
+                                    </div>
+                                    <div class="foot-dianhua">
+                                        <span>有任何商务、市场合作请联系：</span>
+                                        <b><a href="tel:4006834288">400-683-4288</a></b>
+                                        <span>或邮箱：</span>
+                                        <i><a href="mailto:Marketing@huiboparking.com">Marketing@huiboparking.com</a></i>
+                                    </div>
+                                </div>
+                                <div class="foot-bottom">
+                                    <em><a href="#">隐私条款</a> | <a href="#">法律声明</a></em>
+                                    © We Park 2014. All rights reserved. 
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            
+
+        </div>
+        <!-- Add Pagination -->
+        <div class="swiper-cobe none"></div>
+    </div>
+    
+    <!-- 下拉下拉菜单 -->
+    <div class="huibo-menu">
+        <div class="huibo-menu-col">
+            <em><i>x</i>关闭</em>
+        </div>
+        <div class="menu-logo"><img src="img/logo.png"></div>
+        <div class="huibo-menu-nav">
+            <a href="about.html">关于我们</a>
+            <a href="#">慧泊车</a>
+            <a href="#">智团队</a>
+            <a href="#">经典案例</a>
+            <a href="#">战略分布</a>
+            <a href="#">合作模式</a>
+            <a href="#">加入我们</a>
+            <a href="#">联系我们</a>
+            <a href="#">EN</a>
+        </div>
+        <div class="a-menu-last">
+            <a href="tel:4006834288">商务热线：<b>400 683 4288</b></a>
+            <a href="mailto:Marketing@huiboparking.com">邮箱：Marketing@huiboparking.com</a>
+        </div>>
+    </div>
+
+    <!-- script -->
+    <script src="js/jq.js"></script>
+    <script src="js/ind.js"></script>
+    <script>
+    $(function(){
+        var aboutK4I = $('.about-k4-i');
+        var swiperPaginationBullet = $('.swiper-cobe .swiper-pagination-bullet');
+        aboutK4I.each(function(i){
+            // var Down_i = aboutK4A.eq(i).offset().top;
+            $(this).on('click',function(){
+                swiperPaginationBullet.eq(i+1).trigger('click');;
+            });
+        });
+    });
+    </script>
+
+    <!-- Swiper JS -->
+    <script src="js/swiper.min.js"></script> 
+    <script src="js/swiper.animate1.0.2.min.js"></script>
+    <script>
+        var swiperf = new Swiper('.swiper-3', {
+            pagination: '.swiper-cobe',
+            direction: 'vertical',
+            slidesPerView: 'auto',
+            slidesPerView: 1,
+            paginationClickable: true,
+            noSwiping : true,
+            noSwipingClass : 'stop-swiping',
+        });
+
+        var swiper2 = new Swiper('.huibo-6k', {
+            pagination: '.swiper-pagination1',
+            slidesPerView: 'auto',
+            centeredSlides: true,
+            paginationClickable: true,
+            spaceBetween: 20,
+            loop: true,
+            autoplay: 6000,
+        });
+
+        var swiper1 = new Swiper('.huibo-kv', {
+            pagination: '.swiper-pagination',
+            paginationClickable: true,
+            // nextButton: '.swiper-button-next',
+            // prevButton: '.swiper-button-prev',
+            spaceBetween: 0,
+            autoplay: 6000,
+            speed: 600,
+            loop : true,
+            onSlideChangeStart: function(swiper){ 
+                var cd = swiper.activeIndex;
+                $('.huibo-kv-text').removeClass('ani-b');
+                $('.huibo-kv-text').eq(cd).addClass('ani-b');
+            },
+        });
+
+    </script>
+
+    <!-- iscorll -->
+    <script src="js/iscroll.js"></script>
+    <script type="text/javascript">
+        var myScroll;
+        function loaded () {
+            myScroll = new IScroll('#wrapper', { 
+                scrollX: true, 
+                freeScroll: true ,
+                preventDefaultException: { tagName: /^(INPUT|TEXTAREA|BUTTON|SELECT|A)$/ },
+                click: true,
+            });
+
+            var scroller = $('#scroller');
+            var swiperPaginationBullet = $('.swiper-cobe .swiper-pagination-bullet')
+            scroller.on('touchend mouseup',function(){
+                var thTop = $(this).offset().top;
+                console.log(thTop)
+                if(thTop>0){
+                    swiperPaginationBullet.eq(1).trigger('click');
+                }
+                
+            });
+        }
+        document.addEventListener('touchmove', function (e) { e.preventDefault(); }, false);
+    </script>
+
+    <!-- ani-up -->
+    <script src="js/ani-up.js"></script>
+
+    <!-- loading -->
+    <script src="js/loading.js"></script>
+
+</body>
+</html>

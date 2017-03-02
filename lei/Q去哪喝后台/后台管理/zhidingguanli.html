@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>商户管理-置顶管理</title>
+    <meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="wap-font-scale" content="no">
+    <link rel="stylesheet" href="css/css.css">
+    <link rel="stylesheet" href="css/scorll.css">
+    <link rel="stylesheet" href="css/easyui.css">  
+    <link rel="stylesheet" href="css/mobile.css">
+</head>
+<body>
+<script>
+var winWidth = document.body.clientWidth;var Html = document.getElementsByTagName('html');Html[0].style.fontSize = winWidth / 19.2 + 'px';
+</script>
+    
+    <!-- top -->
+    <div class="centop">
+        <!-- logo标签 -->
+        <div class="centop-title table-a"><span class="table-cell">商户管理</span></div>
+        <!-- 城市选择 -->
+        <div class="centop-city table-a"><em class="table-cell"><i>苏州</i><span>[城市切换]</span></em></div>
+        <!-- 频道选择 -->
+        <div class="centop-menu"><i></i></div>
+    </div>
+    
+    <!-- content -->
+    <div class="cencon">
+        <!-- con-nav -->
+        <div class="nav">
+            <a href="shangjiazhongxin.html">商家中心</a>
+            <a href="lunboguanli.html">轮播管理</a>
+            <a href="zhidingguanli.html" class="active">置顶管理</a>
+            <a href="sousuojianyi.html">搜索建议</a>
+        </div>
+        <!-- con-cen -->
+        <div class="context">
+            <!-- con-导航 -->
+            <div class="sousuo-nav">
+                <span><a href="javascript:;" class="active">首页置顶维护</a></span>
+                <span><a href="javascript:;">KTV类别置顶维护</a></span>
+                <span><a href="javascript:;">酒吧类别置顶维护</a></span>
+                <span><a href="javascript:;">餐饮类别置顶维护</a></span>
+                <span><a href="javascript:;">酒店类别置顶维护</a></span>
+            </div>
+            <!-- 置顶管理内容 -->
+            <div class="sousuo-cen">
+                <div class="sousuo-cen-c">
+                    <div class="shanchu-yichu table-a zhiding-gongneng">
+                        <b class="table-cell">
+                            <i class="shangjia-xinzeng">新增</i>
+                            <i class="shangjia-yichu">移除</i>
+                        </b>
+                    </div>
+                    <div class="zhiding-baioge">
+                        <!-- esayUi -->
+                        <table id="dg" data-options="singleSelect:true,border:false,fit:true,fitColumns:true,scrollbarSize:0,singleSelect: false"> 
+                            <thead>  
+                                <tr>  
+                                    <th data-options="field:'number',width:0.3,align:'center'">NO.</th>
+                                    <th data-options="field:'checkbox',width:0.3,align:'center'"><input type="checkbox" class="inputone"/></th>
+                                    <th data-options="field:'name',width:1">ID</th>  
+                                    <th data-options="field:'information',width:1">商家名称</th>  
+                                    <th data-options="field:'type',width:1">商家类型</th>
+                                    <th data-options="field:'city',width:1">城市</th>
+                                    <th data-options="field:'region',width:1">区域</th>
+                                    <th data-options="field:'contacts',width:1">联系人</th>
+                                    <th data-options="field:'phone',width:1">联系电话</th>
+                                    <th data-options="field:'toptime',width:2">置顶创建时间</th>
+                                </tr>
+                            </thead>  
+                        </table>
+                        <div class="clear"></div>
+                    </div>
+                    
+                    <!-- <a href="javascript:;" class="baocun-fabu">保存并发布</a> -->
+                </div>
+                <div class="sousuo-cen-c">
+                    <div class="shanchu-yichu table-a zhiding-gongneng">
+                        <b class="table-cell">
+                            <i class="shangjia-xinzeng">新增</i>
+                            <i class="shangjia-yichu">移除</i>
+                        </b>
+                    </div>
+                    <div class="zhiding-baioge">
+                        <!-- esayUi -->
+                        <table id="dg1" data-options="singleSelect:true,border:false,fit:true,fitColumns:true,scrollbarSize:0,singleSelect: false"> 
+                            <thead>  
+                                <tr>  
+                                    <th data-options="field:'number',width:0.3,align:'center'">NO.</th>
+                                    <th data-options="field:'checkbox',width:0.3,align:'center'"><input type="checkbox" class="inputone"/></th> 
+                                    <th data-options="field:'name',width:1">ID</th>  
+                                    <th data-options="field:'information',width:1">商家名称</th>  
+                                    <th data-options="field:'type',width:1">商家类型</th>
+                                    <th data-options="field:'city',width:1">城市</th>
+                                    <th data-options="field:'region',width:1">区域</th>
+                                    <th data-options="field:'contacts',width:1">联系人</th>
+                                    <th data-options="field:'phone',width:1">联系电话</th>
+                                    <th data-options="field:'toptime',width:2">置顶创建时间</th>
+                                </tr>
+                            </thead>  
+                        </table>
+                        <div class="clear"></div>
+                    </div>
+                    
+                    <!-- <a href="javascript:;" class="baocun-fabu">保存并发布</a> -->
+                </div>
+                <div class="sousuo-cen-c">
+                    <div class="shanchu-yichu table-a zhiding-gongneng">
+                        <b class="table-cell">
+                            <i class="shangjia-xinzeng">新增</i>
+                            <i class="shangjia-yichu">移除</i>
+                        </b>
+                    </div>
+                    <div class="zhiding-baioge">
+                        <!-- esayUi -->
+                        <table id="dg2" data-options="singleSelect:true,border:false,fit:true,fitColumns:true,scrollbarSize:0,singleSelect: false"> 
+                            <thead>  
+                                <tr>  
+                                    <th data-options="field:'number',width:0.3,align:'center'">NO.</th>
+                                    <th data-options="field:'checkbox',width:0.3,align:'center'"><input type="checkbox" class="inputone"/></th>
+                                    <th data-options="field:'name',width:1">ID</th>  
+                                    <th data-options="field:'information',width:1">商家名称</th>  
+                                    <th data-options="field:'type',width:1">商家类型</th>
+                                    <th data-options="field:'city',width:1">城市</th>
+                                    <th data-options="field:'region',width:1">区域</th>
+                                    <th data-options="field:'contacts',width:1">联系人</th>
+                                    <th data-options="field:'phone',width:1">联系电话</th>
+                                    <th data-options="field:'toptime',width:2">置顶创建时间</th>
+                                </tr>
+                            </thead>  
+                        </table>
+                        <div class="clear"></div>
+                    </div>
+                    
+                    <!-- <a href="javascript:;" class="baocun-fabu">保存并发布</a> -->
+                </div>
+                <div class="sousuo-cen-c">
+                    <div class="shanchu-yichu table-a zhiding-gongneng">
+                        <b class="table-cell">
+                            <i class="shangjia-xinzeng">新增</i>
+                            <i class="shangjia-yichu">移除</i>
+                        </b>
+                    </div>
+                    <div class="zhiding-baioge">
+                        <!-- esayUi -->
+                        <table id="dg3" data-options="singleSelect:true,border:false,fit:true,fitColumns:true,scrollbarSize:0,singleSelect: false"> 
+                            <thead>  
+                                <tr>  
+                                    <th data-options="field:'number',width:0.3,align:'center'">NO.</th>
+                                    <th data-options="field:'checkbox',width:0.3,align:'center'"><input type="checkbox" class="inputone"/></th>
+                                    <th data-options="field:'name',width:1">ID</th>  
+                                    <th data-options="field:'information',width:1">商家名称</th>  
+                                    <th data-options="field:'type',width:1">商家类型</th>
+                                    <th data-options="field:'city',width:1">城市</th>
+                                    <th data-options="field:'region',width:1">区域</th>
+                                    <th data-options="field:'contacts',width:1">联系人</th>
+                                    <th data-options="field:'phone',width:1">联系电话</th>
+                                    <th data-options="field:'toptime',width:2">置顶创建时间</th>
+                                </tr>
+                            </thead>  
+                        </table>
+                        <div class="clear"></div>
+                    </div>
+                    
+                    <!-- <a href="javascript:;" class="baocun-fabu">保存并发布</a> -->
+                </div>
+                <div class="sousuo-cen-c">
+                    <div class="shanchu-yichu table-a zhiding-gongneng">
+                        <b class="table-cell">
+                            <i class="shangjia-xinzeng">新增</i>
+                            <i class="shangjia-yichu">移除</i>
+                        </b>
+                    </div>
+                    <div class="zhiding-baioge">
+                        <!-- esayUi -->
+                        <table id="dg4" data-options="singleSelect:true,border:false,fit:true,fitColumns:true,scrollbarSize:0,singleSelect: false"> 
+                            <thead>  
+                                <tr>  
+                                    <th data-options="field:'number',width:0.3,align:'center'">NO.</th>
+                                    <th data-options="field:'checkbox',width:0.3,align:'center'"><input type="checkbox" class="inputone"/></th> 
+                                    <th data-options="field:'name',width:1">ID</th>  
+                                    <th data-options="field:'information',width:1">商家名称</th>  
+                                    <th data-options="field:'type',width:1">商家类型</th>
+                                    <th data-options="field:'city',width:1">城市</th>
+                                    <th data-options="field:'region',width:1">区域</th>
+                                    <th data-options="field:'contacts',width:1">联系人</th>
+                                    <th data-options="field:'phone',width:1">联系电话</th>
+                                    <th data-options="field:'toptime',width:2">置顶创建时间</th>
+                                </tr>
+                            </thead>  
+                        </table>
+                        <div class="clear"></div>
+                    </div>
+                    
+                    <!-- <a href="javascript:;" class="baocun-fabu">保存并发布</a> -->
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+
+    <!-- menu -->
+    <div class="tanceng menu none">
+        <!-- 频道切换 -->
+        <div class="pindaoxuanze table-a">
+            <div class="table-cell">
+                <div class="xuanzequ yuding-x"><a href="yudingguanli.html"></a></div>
+                <div class="xuanzequ shanghu-x"><a href="shangjiazhongxin.html"></a></div>
+                <div class="xuanzequ shuju-x"><a href="shujushouji.html"></a></div>
+            </div>
+        </div>
+        <!-- 关闭 menu -->
+        <div class="guanbi-menu"><span><i></i></span></div>
+        <!-- 退出系统 -->
+        <div class="col-menu"><a href="index.html"><img src="img/col-adm.png">退出系统</a></div>
+    </div>
+
+    <!-- 城市切换 -->
+    <div class="tanceng city-xuanze none">
+        <!-- 关闭 menu -->
+        <div class="guanbi-menu"><span><i></i></span></div>
+        <!-- 城市选择 -->
+        <div class="city-cen-x">
+            <div class="city-cen-y">
+                <div class="cen-hidd-y">
+                    <span><em>全部</em></span>
+                    <span><em>湖南</em></span>
+                    <span><em>北京</em></span>
+                    <span><em>上海</em></span>
+                    <span class="active"><em>苏州</em></span>
+                    <span><em>湖南</em></span>
+                    <span><em>北京</em></span>
+                    <span><em>上海</em></span>
+                    <span><em>苏州</em></span>
+                    <span><em>湖南</em></span>
+                    <span><em>北京</em></span>
+                    <span><em>上海</em></span>
+                    <span><em>苏州</em></span>
+                    <span><em>湖南</em></span>
+                    <span><em>北京</em></span>
+                    <span><em>上海</em></span>
+                    <span><em>苏州</em></span>
+                    <span><em>湖南</em></span>
+                    <span><em>北京</em></span>
+                    <span><em>上海</em></span>
+                    <span><em>苏州</em></span>
+                    <span><em>湖南</em></span>
+                    <span><em>北京</em></span>
+                    <span><em>上海</em></span>
+                    <span><em>苏州</em></span>
+                    <span><em>湖南</em></span>
+                    <span><em>北京</em></span>
+                    <span><em>上海</em></span>
+                    <span><em>苏州</em></span>
+                    <span><em>湖南</em></span>
+                    <span><em>北京</em></span>
+                    <span><em>上海</em></span>
+                    <span><em>苏州</em></span>
+                </div>
+            </div>
+        </div>
+        <!-- 退出系统 -->
+        <div class="col-menu"><a href="index.html"><img src="img/col-adm.png">退出系统</a></div>
+    </div>
+    
+    <!-- 新增置顶 -->
+    <div class="lunbotc hei-t tc-zhixingx tc-zhixingx-a none">
+        <div class="table-a tc-cen">
+            <div class="table-cell">
+            <div class="tc-cen-te tc-cen-yuding">
+                <div class="tc-cen-col"><i></i></div>
+                <span>新增置顶商户</span>
+                <input type="text" class="xialakuang-xz-input" placeholder="此处输入商家名称或ID"> 
+                <em class="xialakuang-xz-e">查找</em>
+                <div class="clear"></div>
+                <div class="xialakuang-xz none">
+                    <b><i>选取</i><h3><i>皇冠</i>会所</h3><h2>上海</h2></b>
+                    <b><i>选取</i><h3><i>皇冠</i>会所</h3><h2>上海</h2></b>
+                    <b><i>选取</i><h3><i>皇冠</i>会所</h3><h2>上海</h2></b>
+                    <b><i>选取</i><h3><i>皇冠</i>会所</h3><h2>上海</h2></b>
+                    <b><i>选取</i><h3><i>皇冠</i>会所</h3><h2>上海</h2></b>
+                    <b><i>选取</i><h3><i>皇冠</i>会所</h3><h2>上海</h2></b>
+
+                </div>
+                <span class="margin-top-50">置顶位置</span>
+                <div class="clear"></div>
+                <select class="zhidingweizhi-1">
+                    <option value="">1</option>
+                    <option value="">2</option>
+                    <option value="">3</option>
+                </select>
+                <div class="hei-a">
+                    <a href="#" class="guanbi-hei">关闭</a>
+                    <a href="#" class="hei-ok">确定</a>
+                </div>
+            </div>
+            </div>
+        </div>
+    </div>
+    <div class="lunbotc hei-t shanchu-tc none">
+        <div class="table-a tc-cen">
+            <div class="table-cell">
+            <div class="tc-cen-te tc-cen-yuding">
+                <div class="tc-cen-col"><i></i></div>
+
+                <div class="tishiyu">
+                    <div class="hei-a">
+                        <a href="#" class="guanbi-hei">关闭</a>
+                        <a href="#" class="hei-ok">确认删除</a>
+                    </div>
+                    <span>提示</span>
+                    <em>是否从<i>数据库</i>删除该商家？？</em>
+                    <p>删除后不可恢复，请谨慎操作！</p>
+                </div>
+            </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- //弹窗 -->
+    <div class="lunbotc hei-t yichu-tc none">
+        <div class="table-a tc-cen">
+            <div class="table-cell">
+            <div class="tc-cen-te tc-cen-yuding">
+                <div class="tc-cen-col"><i></i></div>
+
+                <div class="tishiyu">
+                    <div class="hei-a">
+                        <a href="#" class="guanbi-hei">关闭</a>
+                        <a href="#" class="hei-ok">确认移除</a>
+                    </div>
+                    <span>提示</span>
+                    <em>是否从<i>显示中列表</i>移除该商家？</em>
+                </div>
+            </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="lunbotc hei-t baocun-ok1 none">
+        <div class="table-a tc-cen">
+            <div class="table-cell">
+            <div class="tc-cen-te tc-cen-yuding">
+                <div class="tc-cen-col"><i></i></div>
+
+                <div class="tishiyu tijiao-ok">
+                    <div class="hei-a">
+                        <a href="#" class="guanbi-hei">关闭</a>
+                    </div>
+                    <em>发布成功</em>
+                </div>
+                
+            </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- script -->
+    <script src="js/jquery-1.11.1.min.js"></script>
+
+    <!-- esayUi -->
+    <script src="js/jquery.easyui.min.js"></script>
+    <script src="js/jquery.easyui.mobile.js"></script>
+    <script>
+        var data =  [
+            {"number":"01","operation":"<a class="+"xinzeng-ce"+">新增</a><a>移除</a>","name":"szjb1","information":"MUSE酒吧","type":"酒吧","city":"苏州","region":"吴中区","contacts":"李先生","phone":"15962117985","toptime":"2016-09-30 16:40:09","checkbox":null},
+            {"number":"01","operation":"<a class="+"xinzeng-ce"+">新增</a><a>移除</a>","name":"szjb1","information":"MUSE酒吧","type":"酒吧","city":"苏州","region":"吴中区","contacts":"李先生","phone":"15962117985","toptime":"2016-09-30 16:40:09","checkbox":null},
+            {"number":"01","operation":"<a class="+"xinzeng-ce"+">新增</a><a>移除</a>","name":"szjb1","information":"MUSE酒吧","type":"酒吧","city":"苏州","region":"吴中区","contacts":"李先生","phone":"15962117985","toptime":"2016-09-30 16:40:09","checkbox":null},
+            {"number":"01","operation":"<a class="+"xinzeng-ce"+">新增</a><a>移除</a>","name":"szjb1","information":"MUSE酒吧","type":"酒吧","city":"苏州","region":"吴中区","contacts":"李先生","phone":"15962117985","toptime":"2016-09-30 16:40:09","checkbox":null},
+            {"number":"01","operation":"<a class="+"xinzeng-ce"+">新增</a><a>移除</a>","name":"szjb1","information":"MUSE酒吧","type":"酒吧","city":"苏州","region":"吴中区","contacts":"李先生","phone":"15962117985","toptime":"2016-09-30 16:40:09","checkbox":null},{"number":"01","operation":"<a class="+"xinzeng-ce"+">新增</a><a>移除</a>","name":"szjb1","information":"MUSE酒吧","type":"酒吧","city":"苏州","region":"吴中区","contacts":"李先生","phone":"15962117985","toptime":"2016-09-30 16:40:09","checkbox":null},{"number":"01","operation":"<a class="+"xinzeng-ce"+">新增</a><a>移除</a>","name":"szjb1","information":"MUSE酒吧","type":"酒吧","city":"苏州","region":"吴中区","contacts":"李先生","phone":"15962117985","toptime":"2016-09-30 16:40:09","checkbox":null},{"number":"01","operation":"<a class="+"xinzeng-ce"+">新增</a><a>移除</a>","name":"szjb1","information":"MUSE酒吧","type":"酒吧","city":"苏州","region":"吴中区","contacts":"李先生","phone":"15962117985","toptime":"2016-09-30 16:40:09","checkbox":null},{"number":"01","operation":"<a class="+"xinzeng-ce"+">新增</a><a>移除</a>","name":"szjb1","information":"MUSE酒吧","type":"酒吧","city":"苏州","region":"吴中区","contacts":"李先生","phone":"15962117985","toptime":"2016-09-30 16:40:09","checkbox":null},{"number":"01","operation":"<a class="+"xinzeng-ce"+">新增</a><a>移除</a>","name":"szjb1","information":"MUSE酒吧","type":"酒吧","city":"苏州","region":"吴中区","contacts":"李先生","phone":"15962117985","toptime":"2016-09-30 16:40:09","checkbox":null},{"number":"01","operation":"<a class="+"xinzeng-ce"+">新增</a><a>移除</a>","name":"szjb1","information":"MUSE酒吧","type":"酒吧","city":"苏州","region":"吴中区","contacts":"李先生","phone":"15962117985","toptime":"2016-09-30 16:40:09","checkbox":null},{"number":"01","operation":"<a class="+"xinzeng-ce"+">新增</a><a>移除</a>","name":"szjb1","information":"MUSE酒吧","type":"酒吧","city":"苏州","region":"吴中区","contacts":"李先生","phone":"15962117985","toptime":"2016-09-30 16:40:09","checkbox":null},{"number":"01","operation":"<a class="+"xinzeng-ce"+">新增</a><a>移除</a>","name":"szjb1","information":"MUSE酒吧","type":"酒吧","city":"苏州","region":"吴中区","contacts":"李先生","phone":"15962117985","toptime":"2016-09-30 16:40:09","checkbox":null},{"number":"01","operation":"<a class="+"xinzeng-ce"+">新增</a><a>移除</a>","name":"szjb1","information":"MUSE酒吧","type":"酒吧","city":"苏州","region":"吴中区","contacts":"李先生","phone":"15962117985","toptime":"2016-09-30 16:40:09","checkbox":null},{"number":"01","operation":"<a class="+"xinzeng-ce"+">新增</a><a>移除</a>","name":"szjb1","information":"MUSE酒吧","type":"酒吧","city":"苏州","region":"吴中区","contacts":"李先生","phone":"15962117985","toptime":"2016-09-30 16:40:09","checkbox":null},{"number":"01","operation":"<a class="+"xinzeng-ce"+">新增</a><a>移除</a>","name":"szjb1","information":"MUSE酒吧","type":"酒吧","city":"苏州","region":"吴中区","contacts":"李先生","phone":"15962117985","toptime":"2016-09-30 16:40:09","checkbox":null},{"number":"01","operation":"<a class="+"xinzeng-ce"+">新增</a><a>移除</a>","name":"szjb1","information":"MUSE酒吧","type":"酒吧","city":"苏州","region":"吴中区","contacts":"李先生","phone":"15962117985","toptime":"2016-09-30 16:40:09","checkbox":null},{"number":"01","operation":"<a class="+"xinzeng-ce"+">新增</a><a>移除</a>","name":"szjb1","information":"MUSE酒吧","type":"酒吧","city":"苏州","region":"吴中区","contacts":"李先生","phone":"15962117985","toptime":"2016-09-30 16:40:09","checkbox":null},{"number":"01","operation":"<a class="+"xinzeng-ce"+">新增</a><a>移除</a>","name":"szjb1","information":"MUSE酒吧","type":"酒吧","city":"苏州","region":"吴中区","contacts":"李先生","phone":"15962117985","toptime":"2016-09-30 16:40:09","checkbox":null},{"number":"01","operation":"<a class="+"xinzeng-ce"+">新增</a><a>移除</a>","name":"szjb1","information":"MUSE酒吧","type":"酒吧","city":"苏州","region":"吴中区","contacts":"李先生","phone":"15962117985","toptime":"2016-09-30 16:40:09","checkbox":null},
+            
+        ];
+        $(function(){
+            for(var i=0;i<data.length;i++){
+                data[i].checkbox = '<input type="checkbox"/>';
+            }
+
+            $('#dg').datagrid({
+                data: data
+            });
+
+        });
+    </script>
+    <script>
+        var data1 =  [
+            {"number":"01","name":"szjb1","information":"MUSE酒吧","type":"酒吧","city":"苏州","region":"吴中区","contacts":"李先生","phone":"15962117985","toptime":"2016-09-30 16:40:09","checkbox":null}
+            
+        ];
+        $(function(){
+            for(var i=0;i<data1.length;i++){
+                data1[i].checkbox = '<input type="checkbox"/>';
+            }
+            $('#dg1').datagrid({
+                data: data1
+            });
+
+        });
+    </script>
+    <script>
+        var data2 =  [
+            {"number":"01","name":"szjb1","information":"MUSE酒吧","type":"酒吧","city":"苏州","region":"吴中区","contacts":"李先生","phone":"15962117985","toptime":"2016-09-30 16:40:09","checkbox":null}
+            
+        ];
+        $(function(){
+            for(var i=0;i<data2.length;i++){
+                data2[i].checkbox = '<input type="checkbox"/>';
+            }
+            $('#dg2').datagrid({
+                data: data2
+            });
+
+        });
+    </script>
+    <script>
+        var data3 =  [
+            {"number":"01","name":"szjb1","information":"MUSE酒吧","type":"酒吧","city":"苏州","region":"吴中区","contacts":"李先生","phone":"15962117985","toptime":"2016-09-30 16:40:09","checkbox":null}
+            
+        ];
+        $(function(){
+            for(var i=0;i<data3.length;i++){
+                data3[i].checkbox = '<input type="checkbox"/>';
+            }
+            $('#dg3').datagrid({
+                data: data3
+            });
+
+        });
+    </script>
+    <script>
+        var data4 =  [
+            {"number":"01","name":"szjb1","information":"MUSE酒吧","type":"酒吧","city":"苏州","region":"吴中区","contacts":"李先生","phone":"15962117985","toptime":"2016-09-30 16:40:09","checkbox":null}
+            
+        ];
+        $(function(){
+            for(var i=0;i<data4.length;i++){
+                data4[i].checkbox = '<input type="checkbox"/>';
+            }
+            $('#dg4').datagrid({
+                data: data4
+            });
+
+        });
+    </script>
+
+    <!-- 其他 -->
+     <script src="js/ind.js"></script>
+
+     <!-- scorll -->
+    <script src="js/easyscroll.js"></script>
+    <script src="js/mousewheel.js"></script>
+    <script>
+        $(function(){
+            $('.centop-city').click(function(){
+                $('.cen-hidd-y').scroll_absolute({arrows:true});
+            }); 
+        });
+    </script>
+
+    <!-- 缓冲加载 -->
+    <script>
+    $(function(){
+        var sousuoCenC = $('.sousuo-cen-c');
+        setTimeout(function(){
+            sousuoCenC.addClass('none');
+            sousuoCenC.eq(0).removeClass('none');
+        },100);
+    });
+    </script>
+</body>
+</html>

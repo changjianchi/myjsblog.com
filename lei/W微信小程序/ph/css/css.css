@@ -1,0 +1,327 @@
+@charset "utf-8";
+* {
+    box-sizing: border-box;
+}
+html,
+body,
+div,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+pre,
+code,
+form,
+fieldset,
+legend,
+input,
+textarea,
+p,
+blockquote,
+th,
+td,
+em,
+button {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+body {
+    font-size: 14px;
+    color: #000;
+    font-family: Arial,"微软雅黑";
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+.clear {
+    clear:both;
+}
+em,i{
+    font-style: normal;
+}
+a img{
+    border:none;
+}
+/*----------------------------------------------------*/
+.w-banner{
+    width: 100%;
+    height: 6rem;
+    overflow: hidden;
+    color: #fff;
+    position: relative;
+    text-align: center;
+}
+.w-banner div{
+    position: relative;
+    z-index: 2;
+}
+.w-banner .w-banner-bj{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url(../img/banner-bj.jpg) no-repeat;
+    background-size: cover;
+    z-index: 1;
+    -webkit-animation:bjBig 30s linear infinite;
+    animation:bjBig 30s linear infinite;
+}
+@-webkit-keyframes bjBig{
+    0%{transform:scale(1,1);}
+    50%{transform:scale(1.5,1.5);}
+}
+@keyframes bjBig{
+    0%{transform:scale(1,1);}
+    50%{transform:scale(1.5,1.5);}
+}
+.w-banner-bj i{
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.85);
+}
+.w-banner-bt{
+    width: 100%;
+    height: .6rem;
+    font-size: .6rem;
+    line-height: .6rem;
+    margin-top: .7rem;
+    font-weight: bold;
+}
+.w-banner-tx{
+    width: 100%;
+    height: .28rem;
+    font-size: .28rem;
+    line-height: .28rem;
+    margin-top: .44rem;
+}
+.w-banner-ps{
+    width: 100%;
+    height: auto;
+    margin-top: .42rem;
+}
+.w-banner-ps p{
+    display: block;
+    width: 100%;
+    height: .24rem;
+    line-height: .24rem;
+    font-size: .24rem;
+    margin-top: .18rem;
+}
+.w-banner-ps p:first-child{
+    margin-top: 0;
+}
+.w-banner-hx{
+    width: 100%;
+    height: 5px;
+    background: url(../img/w-banner-h.png) no-repeat center;
+    margin-top: .42rem;
+}
+.w-banner-ph{
+    width: 100%;
+    height: .6rem;
+    font-size: .2rem;
+    line-height: .55rem;
+    background: url(../img/w-banner-ph.png) no-repeat center;
+    background-size: auto 100%;
+    margin-top: .42rem;
+}
+.w-banner-phone{
+    width: 100%;
+    height: .43rem;
+    line-height: .43rem;
+    font-size: .43rem;
+    margin-top: .15rem;
+}
+.x-appl{
+    width: 100%;
+    height: 15.2rem;
+    overflow: hidden;
+    background: url(../img/x-bj.jpg) no-repeat center;
+    background-size: cover;
+    color: #fff;
+    text-align: center;
+}
+.x-appl-bt{
+    width: 100%;
+    height: .36rem;
+    line-height: .36rem;
+    font-size: .36rem;
+    font-weight: bold;
+    margin-top: 1rem;
+}
+.x-appl-hx{
+    width: 100%;
+    height: 3px;
+    background: url(../img/x-h.png) no-repeat center;
+    margin-top: .38rem;
+}
+.x-appl-text{
+    margin-top: .38rem;
+}
+.x-appl-k4{
+    width: 7.1rem;
+    height: 9.62rem;
+    margin: .84rem auto 0;
+}
+.x-appl-k4-k{
+    width: 50%;
+    height: 50%;
+    float: left;
+}
+.x-appl-k4-k span{
+    width: 1.65rem;
+    height: 1.65rem;
+    position: relative;
+    margin:0 auto;
+    display: block;
+}
+.x-appl-k4-k span img{
+    width: 100%;
+    height: auto;
+    display: block;
+    position: relative;
+    z-index: 3;
+}
+.x-appl-k4-k span i{
+    position: absolute;
+    z-index: 1;
+    display: block;
+    top:0;
+    left:0;
+    border-radius: 50%;
+    border:.05rem solid #fff;
+    width: 100%;
+    height: 100%;
+    -webkit-animation:ksI 2s ease infinite;
+    animation:ksI 2s ease infinite;
+}
+@-webkit-keyframes ksI{
+    0%{transform:scale(0.2,0.2);opacity: 1;}
+    80%{transform:scale(1.15,1.15);opacity: 0.2;}
+    100%{transform:scale(1.15,1.15);opacity: 0;}
+}
+@keyframes ksI{
+    0%{transform:scale(0.2,0.2);opacity: 1;}
+    80%{transform:scale(1.15,1.15);opacity: 0.2;}
+    100%{transform:scale(1.15,1.15);opacity: 0;}
+}
+.x-appl-k4-k b{
+    width: 2rem;
+    height: .5rem;
+    line-height: .48rem;
+    font-size: .24rem;
+    border: .03rem solid #fff;
+    border-radius: .25rem;
+    font-weight: 100;
+    display: block;
+    margin: .24rem auto 0;
+}
+.x-appl-k4-k p{
+    display: block;
+    width: 100%;
+    padding: 0 .24rem;
+    margin-top: .4rem;
+    font-size: .24rem;
+    text-align: justify;
+    line-height: .42rem;
+}
+.x-appl-k4-k:nth-of-type(1),.x-appl-k4-k:nth-of-type(3){
+    border-right:1px solid #fff;
+}
+.x-appl-k4-k:nth-of-type(3),.x-appl-k4-k:nth-of-type(4){
+    border-top:1px solid #fff;
+    padding-top: .44rem;
+}
+.cases-bt{
+    color: #1c1c1c;
+    text-align: center;
+}
+.cases-img{
+    width: 100%;
+    height: auto;
+    margin-top: 1rem;
+    padding-bottom: 1rem;
+    overflow: hidden;
+}
+.cases-img img{
+    display: block;
+    width: 3.45rem;
+    height: 2.4rem;
+    margin: 0 0 .2rem .2rem;
+    float: left;
+}
+.cases-k{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    background: rgba(0,0,0,0.5);
+    top: 0;
+    left: 0;
+    z-index: 10;
+    opacity: 0;
+    display: block;
+    -webkit-transform:translate3d(100%,0,0);
+    transform:translate3d(100%,0,0);
+    -webkit-transition:all 0.5s ease;
+    transition:all 0.5s ease;
+    overflow: hidden;
+}
+.cases-k.act{
+    opacity: 1;
+    -webkit-transform:translate3d(0,0,0);
+    transform:translate3d(0,0,0);
+}
+.table-a{
+    display: table;
+    width: 100%;
+    height: 100%;
+}
+.table-cell{
+    display: table-cell;
+    width: 100%;
+    height: 100%;
+    vertical-align: middle;
+    text-align: center;
+}
+.cases-k .table-cell img{
+    display: block;
+    width: 100%;
+    height: auto;
+}
+.cases-k .swiper-pagination-bullet-active{
+    background: #000;
+}
+.cases-k-col{
+    width: 100%;
+    height: .55rem;
+    position: absolute;
+    top:10px;
+    left:0;
+    z-index: 2000;
+}
+.cases-k-col img{
+    display: block;
+    float: right;
+    margin-right: 10px;
+    height: 100%;
+    width: auto;
+}
+.cases-k .table-cell em{
+    width: 100%;
+    color: #fff;
+    font-size: .26rem;
+    display: block;
+    margin-top: .2rem;
+}

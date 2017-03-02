@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>热波-拒绝平凡</title>
+    <meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <meta name="wap-font-scale" content="no">
+    <script src="js/jq.js?v=1"></script>
+    <link rel="stylesheet" href="css/css.css?v=1">
+    <script src="js/ind.js?v=1"></script>
+    <link href="css/video-js-cdn.css?v=1" type="text/css" rel="stylesheet"/>
+    <script type="text/javascript" src="ckplayer/ckplayer.js" charset="utf-8"></script>
+        <script>
+	var siteUrl = "http://bs.51rebo.cn/";
+        var Uid = GetQueryString('uid');
+        var osType = GetQueryString('osType');
+function GetQueryString(name){
+        var reg = new RegExp("(^|&)"+ name +"=([^&]*)(&|$)");
+        var r = window.location.search.substr(1).match(reg);
+        if(r!=null)return  unescape(r[2]); return null;
+}
+        </script>
+    <script src="js/zb.js"></script>  <!-- User.SearchArea -->
+    <style>
+    html,body{height:100%;}
+    </style>
+</head>
+<body onload="">
+  <div class="banner" style="height:100%; overflow:hidden;">
+	<div id="a1"></div>
+	<script type="text/javascript">
+        var liveurl = "http://leplay.51rebo.cn/live/"+ Uid +"/desc.m3u8";
+	var flashvars={
+                f:"m3u8.swf",//视频地址
+                a:liveurl,
+                s:'4',//调用方式，0=普通方法（f=视频地址），1=网址形式,2=xml形式，3=swf形式(s>0时f=网址，配合a来完成对地址的组装)
+                c:'0',//是否读取文本配置,0不是，1是
+                t:'10',//视频开始前播放swf/图片时的时间，多个用竖线隔开
+                e:'1',//视频结束后的动作，0是调用js函数，1是循环播放，2是暂停播放并且不调用广告，3是调用视频推荐列表的插件，4是清除视频流并调用js功能和1差不多，5是暂停播放并且调用暂停广告
+                v:'100',//默认音量，0-100之间
+                p:'1',//视频默认0是暂停，1是播放，2是不加载视频
+                h:'3',//播放http视频流时采用何种拖动方法，=0不使用任意拖动，=1是使用按关键帧，=2是按时间点，=3是自动判断按什么(如果视频格式是.mp4就按关键帧，.flv就按关键时间)，=4也是自动判断(只要包含字符mp4就按mp4来，只要包含字符flv就按flv来)
+                q:'',//视频流拖动时参考函数，默认是start
+                k:'30|60',//提示点时间，如 30|60鼠标经过进度栏30秒，60秒会提示n指定的相应的文字
+                n:'这是提示点的功能，如果不需要删除k和n的值|提示点测试60秒',//提示点文字，跟k配合使用，如 提示点1|提示点2
+                wh:'4:3',//宽高比，可以自己定义视频的宽高或宽高比如：wh:'4:3',或wh:'1080:720'
+                lv:'1',//是否是直播流，=1则锁定进度栏
+                //loaded:'loadedHandler',//当播放器加载完成后发送该js函数loaded
+                };
+        var params={bgcolor:'#FFF',allowFullScreen:true,allowScriptAccess:'always'};//这里定义播放器的其它参数如背景色（跟flashvars中的b不同），是否支持全屏，是否支持交互
+        //下面三行是调用html5播放器用到的
+        var video=[liveurl];
+	var support=['all'];
+	CKobject.embedHTML5('a1','ckplayer_a1','100%','100%',video,flashvars,support);
+	
+</script>
+	<div class="guanzhu toOtherUrl">
+      		<img src="img/shuaige2.jpg">
+		<span>
+		<p>用户昵称</p>
+		<em>在线<i>0</i></em>
+		</span>
+		<a href="javascript:;">关注</a>
+	</div>
+	<div class="bantext">
+		<span>
+		<p style="color:#fff;"></p>
+		<p></p>
+		</span>
+		热波号：
+	</div>
+	<div class="banbo toOtherUrl">
+	<a href="javascript:;"><img src="img/dakaibj.png">打开热波app，欣赏更多精彩内容</a>
+	</div>
+	<div class="banjiazai" id="video_jzz">
+		<!-- banner加载中 -->
+		<div class="bjjiazai">
+		<img src="img/shuaige.jpg">
+		</div>
+		<div class="banjzcen">
+		<img src="img/lian2.png">
+		<span>拼命加载中</span>
+		</div>
+	</div>
+	<div class="banjiazai zbjs none">
+		<!-- 直播结束 -->
+		<div class="bjjiazai">
+		<img src="img/shuaige.jpg">
+		</div>
+		<div class="banjzcen2">
+			<div class="bjz-bt2">直播已经结束</div>
+			<div class="touxiang2"><img src="img/moren.png"></div>
+			<div class="bjz-txname">用户昵称</div>
+			<div class="bjz-cen">
+				<span>
+				<img src="img/renxiang.png">
+				<p class='shu'>0</p>
+				<p>观众</p>
+				</span>
+				<span class="douzi">
+				<img src="img/douzi.png">
+				<p class='shu'>0</p>
+				<p>热豆</p>
+				</span>
+				<span>
+				<img src="img/aixin.png">
+				<p class='shu'>0</p>
+				<p>点赞</p>
+				</span>
+			</div>
+		</div>
+	</div>
+	
+</div>
+
+
+  <div class="genduoguanzhu">
+    <a href="#">更多潮人主播</a>
+  </div>
+  <div class="home-cen">
+    <div class="cenbuju">
+    </div>
+    <div class="cenbo">
+      一大波潮人正在热波app，立即下载吧！
+    </div>
+  </div>
+
+
+  <div class="toOtherUrl topadd"><!-- 立即下载 -->
+    <img src="img/logonew.png">
+    <span>
+      <p>热波</p>
+      <em>拒绝平凡</em>
+    </span>
+    <a href="javascript:;">立即下载</a>
+  </div>
+
+  <div class="apptanchuang none"><!-- 弹窗 -->
+    <div class="tanchuangcen">
+      <span>通过热波app打开，体验更流畅哦！</span>
+      <a href="#" class="queding">确定</a>
+      <a href="javascript:;" class="quxiao">取消</a>
+    </div>
+  </div>
+
+    <div class="div_mc">&nbsp;</div>
+    <img class="div_mc_img" src="img/arrow1.png" >
+<style>
+.div_mc{
+        position:fixed;
+        top: 0px;
+        right:0px;
+        bottom:0px;
+        filter: alpha(opacity=70);
+        background-color: #000;
+        z-index: 1002;
+        left: 0px;
+        opacity:0.5; -moz-opacity:0.5;
+        display:none;
+}       
+.div_mc_img{
+        position:fixed;
+	width:200px;
+	height:70px;
+        top:0;
+        right:20px;
+        z-index:9999;
+        display:none;
+}
+	.guanzhu p{ overflow:hidden}
+</style>
+
+
+<script>
+$(function(){
+	var newDataDown = null;
+	$("#video_jzz").addClass("none");
+	getUserInfo(Uid);
+	getNewInfo(Uid,osType);
+        $(".toOtherUrl a").click(function(){
+                toOtherUrl();
+        });
+});
+function toOtherUrl(){
+	if(browerInfo() === true){
+		var ua = navigator.userAgent.toLowerCase();//获取判断用的对象
+		if (ua.match(/WeiBo/i) == "weibo") {
+			$("body").css("overflow","hidden");		
+			$(".div_mc").show();			
+			$(".div_mc_img").show();			
+			return ;
+		}
+	}
+	var url = "http://a.app.qq.com/o/simple.jsp?pkgname=com.reshow.rebo";
+	window.location.href = url;
+}
+</script>
+</body>
+</html>

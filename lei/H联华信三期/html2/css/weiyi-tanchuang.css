@@ -1,0 +1,67 @@
+#tanchuang-weiyi .ui_title_bar{
+    display: block;
+}
+#tanchuang-weiyi .ui_title_bar{
+    position: relative;
+    border:none;
+    top:65px;
+    -moz-user-select:none;/*火狐*/
+    -webkit-user-select:none;/*webkit浏览器*/
+    -ms-user-select:none;/*IE10*/
+    -khtml-user-select:none;/*早期浏览器*/
+    user-select:none;
+    opacity: 0;
+    filter:alpha(opacity=0);
+}
+#tanchuang-weiyi .ui_title,#tanchuang-weiyi .ui_title_bar{
+    width: 878px;
+    margin:0 auto;
+    height: 50px;
+    left:-25px;
+}
+#tanchuang-weiyi{
+    background: none;
+    border-bottom:none;
+}
+#tanchuang-weiyi .ui_title_bar .ui_min,#tanchuang-weiyi .ui_max{
+    display: none;
+}
+#tanchuang-weiyi .ui_state_drag .ui_title { border-bottom:none;text-shadow: none;background: none;}
+#tanchuang-weiyi .ui_title_buttons,#tanchuang-weiyi .ui_close{top:0;right:0;width: 50px;height:50px;}
+#tanchuang-weiyi .ui_title_bar .ui_close{position: absolute; color: #fff;}
+#tanchuang-weiyi tr{
+    position: relative;
+    z-index: 1;
+}
+#tanchuang-weiyi tr:first-child,#tanchuang-weiyi tr:first-child td{
+    z-index: 99;
+}
+#tanchuang-weiyi .ui_title_buttons{
+    display: none;
+}
+/*
+.ui_title_bar{
+    display: block;
+    position: relative;
+    border:none;
+    top:65px;
+    opacity: 0;
+}
+
+.ui_title,.ui_title_bar{
+    width: 878px;
+    margin:0 auto;
+    height: 50px;
+    left:-25px;
+}
+.ui_title,.ui_dialog{
+    background: none;
+    border-bottom:none;
+}
+.ui_min,.ui_max{
+    display: none;
+}
+.ui_state_drag .ui_title { border-bottom:none;text-shadow: none;background: none;}
+.ui_title_buttons,.ui_close{top:0;right:0;width: 50px;height:50px;}
+.ui_title_bar .ui_close{position: absolute; color: #fff;}
+*/

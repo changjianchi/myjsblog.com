@@ -1,0 +1,652 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="../../css/jquery.cxdialog.css"/>
+		<link rel="stylesheet" type="text/css" href="../../css/report/common.css"/>
+		<link rel="stylesheet" type="text/css" href="../../css/report/report.css"/>
+	</head>
+	<body>
+		<div class="head">
+			<div class="public">
+				<div class="logo">
+					<a href="#"><img src="../../images/report-logo.jpg" /></a>
+				</div>
+				<div class="head-txt">
+					<p>欢迎你，石浩宏</p>
+					<a href="#">退出</a>
+				</div>
+				<div class="clear"></div>
+			</div>
+		</div>
+		<div class="cnt">
+			<div class="public reportCnt">
+				<div class="reportTop">
+					<div class="reportTop-left">
+						360 2016校招 服务端开发工程师-java
+						<span>在线考试测试报告</span>
+					</div>
+					<div class="reportTop-right">
+					<a href="#">待评阅：14题</a> <span>|</span>  已评阅：10题
+					</div>
+					<div class="clear"></div>
+				</div>
+				<ul class="reportNav">
+					<li class="active">
+						<a href="#">报告概述</a>
+					</li>
+					<li>
+						<a href="#">逻辑题</a>
+					</li>
+					<li>
+						<a href="#">专业技术知识题</a>
+					</li>
+					<li>
+						<a href="#">系统问答题</a>
+					</li>
+					<li>
+						<a href="#">在线编程题</a>
+					</li>
+					<li>
+						<a href="#">人格特质与偏好</a>
+					</li>
+					<a href="#" class="reportNav-btn btn"><i></i>我要改卷</a>
+				</ul>
+				<h2 class="report-title"><i></i>考生信息</h2>
+				<!--考生信息-->
+				<!--头像弹出-->
+				<div id="reportImg">
+					<div class="report-imglayer">
+						<ul>
+							<li><img src="../../images/4.jpg" /></li>
+							<li><img src="../../images/4.jpg" /></li>
+							<li><img src="../../images/4.jpg" /></li>
+							<li><img src="../../images/4.jpg" /></li>
+							<li><img src="../../images/4.jpg" /></li>
+						</ul>
+					</div>
+				</div>
+				<!--头像弹出 end-->
+				<div class="report-stu">
+					<div class="report-stu-left">
+						<div class="report-stu-img">
+							<a href="#"><img src="../../images/report-01.png" /></a>
+						</div>
+						<div class="report-stu-text">
+							<p class="report-stu-name"><span>吴小凡</span>男</p>
+							<p class="report-stu-tag">
+								中国科学技术大学  <span>|</span>  计算机科学技术  <span>|</span>  硕士
+							</p>
+							<p class="report-stu-info">
+								<span class="report-w215">身份证号： 13035438923799283</span>
+								<span>考生编号：00234FGSFG44R4</span>
+							</p>
+							<p class="report-stu-info">
+								<span class="report-w215">手 机  号： 18601995932</span>
+								<span>邮　　箱：yinghuaren@163.com</span>
+							</p>
+						</div>
+					</div>
+					<div class="report-stu-right">
+						<ul>
+							<li>
+								<label>分数：</label><b class="report-stu-b">69</b><span>/</span>120分
+							</li>
+							<li>
+								<label>总人数：</label><b class="report-stu-b2">333</b><span>/</span>4444人
+							</li> 
+							<li>
+								<label>成绩可信度：</label><b class="report-stu-b2">正常</b>
+								<span class="report-prompt">
+									<i></i>
+									<!--弹窗-->
+									<div class="report-promptBox">
+										<div class="report-promptBox-table">
+											<table border="0" cellspacing="0" cellpadding="0">
+												<thead>
+													<tr>
+														<th>公司</th>
+														<th>考试日期</th>
+														<th>考试类型</th>
+														<th>职位类别</th>
+														<th>成绩排名</th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr>
+														<td>互联网公司A</td>
+														<td>2016-10-23</td>
+														<td>2016校园招聘</td>
+														<td>前端类</td>
+														<td><span>93.80 %</span></td>
+													</tr>
+													<tr>
+														<td>互联网公司A</td>
+														<td>2016-10-23</td>
+														<td>2016校园招聘</td>
+														<td>前端类</td>
+														<td><span>93.80 %</span></td>
+													</tr>
+													<tr>
+														<td>互联网公司A</td>
+														<td>2016-10-23</td>
+														<td>2016校园招聘</td>
+														<td>前端类</td>
+														<td><span>93.80 %</span></td>
+													</tr>
+												</tbody>
+											</table>
+										</div>
+									</div>
+									<!--弹窗 end-->
+								</span>
+							</li> 
+						</ul>
+						<div class="report-stu-score">
+							<b>56%</b>
+							<p>成绩排名</p>
+							<div>该考生在本批次考生中的成绩排名</div>
+						</div>
+					</div>
+					<div class="clear"></div>
+				</div> 
+				<!--考生信息 end-->
+				<h2 class="report-title"><i></i>考试信息</h2>
+				<!--考试信息-->
+				<table class="report-exam report-table" border="0" cellspacing="0" cellpadding="0">
+					<thead>
+						<tr>
+							<th><p>科目</p></th>
+							<th>已评阅/待评阅</th>
+							<th>正确题数/总数</th>
+							<th>得分/总分 </th>
+							<th>跳出次数 </th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td><p>企业文化认知测评题</p></td>
+							<td><b>12</b><span>/</span>15</td>
+							<td><b>12</b><span>/</span>15</td>
+							<td><b>12</b><span>/</span>15</td>
+							<td>0</td>
+						</tr>
+						<tr>
+							<td><p>企业文化认知测评题</p></td>
+							<td><b>12</b><span>/</span>15</td>
+							<td><b>12</b><span>/</span>15</td>
+							<td><b>12</b><span>/</span>15</td>
+							<td>0</td>
+						</tr>
+						<tr>
+							<td><p>企业文化认知测评题</p></td>
+							<td><b>12</b><span>/</span>15</td>
+							<td><b>12</b><span>/</span>15</td>
+							<td><b>12</b><span>/</span>15</td>
+							<td>0</td>
+						</tr>
+						<tr>
+							<td><p>企业文化认知测评题</p></td>
+							<td><b>12</b><span>/</span>15</td>
+							<td><b>12</b><span>/</span>15</td>
+							<td><b>12</b><span>/</span>15</td>
+							<td>0</td>
+						</tr>
+					</tbody>
+				</table>
+				<div class="report-exam-left">
+					<table border="0" cellspacing="0" cellpadding="0">
+						<tr>
+							<td width="237"><span>开考时间：</span>2016-09-17 19:02</td>
+							<td width="188"><span>登录次数：</span>1次 </td>
+							<td><span>考生IP：</span>安徽省合肥市</td>
+						</tr>
+						<tr>
+							<td><span>考试用时：</span>127分钟</td>
+							<td colspan="2"><span>跳出次数：</span>9次</td>
+						</tr>
+					</table>
+				</div>
+				<div class="report-exam-right">
+					<div class="report-exam-box">
+						<span class="report-col2">在线编程作弊：</span>
+						<span class="report-prompt">
+							<p class="report-stycol">存在作弊行为<i></i></p>
+							<!--弹窗-->
+							<div class="report-promptBox">
+								<div class="report-promptBox-table">
+									<h1>考生涉嫌编程题代码作弊详情</h1>
+									<div class="report-promptBox-pad20">
+										<p class="report-promptBox-title">第一题</p>
+										<table border="0" cellspacing="0" cellpadding="0">
+											<thead>
+												<tr>
+													<th>试题名称</th>
+													<th>考生编号</th>
+													<th>考生姓名</th>
+													<th>学校</th>
+													<th>代码详情</th>
+													<th>代码相似度</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td rowspan="2"><span class="report-col1">裁剪网格纸</span></td>
+													<td>0030b9a9i0d0u6</td>
+													<td><span class="report-col1">吴小凡</span></td>
+													<td>北京邮电大学</td>
+													<td>原始代码</td>
+													<td rowspan="2"><span>93.80 %</span></td>
+												</tr>
+												<tr>
+													<td>0030b9a9i0d0u6</td>
+													<td><span class="report-col1">吴小凡</span></td>
+													<td>北京邮电大学</td>
+													<td>原始代码</td>
+												</tr>
+											</tbody>
+										</table>
+										<p class="report-promptBox-title">第一题</p>
+										<table border="0" cellspacing="0" cellpadding="0">
+											<thead>
+												<tr>
+													<th>试题名称</th>
+													<th>考生编号</th>
+													<th>考生姓名</th>
+													<th>学校</th>
+													<th>代码详情</th>
+													<th>代码相似度</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td rowspan="2"><span class="report-col1">裁剪网格纸</span></td>
+													<td>0030b9a9i0d0u6</td>
+													<td><span class="report-col1">吴小凡</span></td>
+													<td>北京邮电大学</td>
+													<td>原始代码</td>
+													<td rowspan="2"><span>93.80 %</span></td>
+												</tr>
+												<tr>
+													<td>0030b9a9i0d0u6</td>
+													<td><span class="report-col1">吴小凡</span></td>
+													<td>北京邮电大学</td>
+													<td>原始代码</td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+								</div>
+							</div>
+							<!--弹窗 end-->
+						</span>
+					</div>
+					<div class="report-exam-box">
+						<span class="report-col2">赛码作弊黑名单：</span>
+						<span class="report-prompt">
+							<p class="report-stycol">其他公司考试存在作弊<i></i></p>
+							<!--弹窗-->
+							<div class="report-promptBox">
+								<div class="report-promptBox-table">
+									<h1>考生涉嫌编程题代码作弊详情</h1>
+									<div class="report-promptBox-pad20">
+										<p class="report-promptBox-title">第一题</p>
+										<table border="0" cellspacing="0" cellpadding="0">
+											<thead>
+												<tr>
+													<th>试题名称</th>
+													<th>考生编号</th>
+													<th>考生姓名</th>
+													<th>学校</th>
+													<th>代码详情</th>
+													<th>代码相似度</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td rowspan="2"><span class="report-col1">裁剪网格纸</span></td>
+													<td>0030b9a9i0d0u6</td>
+													<td><span class="report-col1">吴小凡</span></td>
+													<td>北京邮电大学</td>
+													<td>原始代码</td>
+													<td rowspan="2"><span>93.80 %</span></td>
+												</tr>
+												<tr>
+													<td>0030b9a9i0d0u6</td>
+													<td><span class="report-col1">吴小凡</span></td>
+													<td>北京邮电大学</td>
+													<td>原始代码</td>
+												</tr>
+											</tbody>
+										</table>
+										<p class="report-promptBox-title">第一题</p>
+										<table border="0" cellspacing="0" cellpadding="0">
+											<thead>
+												<tr>
+													<th>试题名称</th>
+													<th>考生编号</th>
+													<th>考生姓名</th>
+													<th>学校</th>
+													<th>代码详情</th>
+													<th>代码相似度</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td rowspan="2"><span class="report-col1">裁剪网格纸</span></td>
+													<td>0030b9a9i0d0u6</td>
+													<td><span class="report-col1">吴小凡</span></td>
+													<td>北京邮电大学</td>
+													<td>原始代码</td>
+													<td rowspan="2"><span>93.80 %</span></td>
+												</tr>
+												<tr>
+													<td>0030b9a9i0d0u6</td>
+													<td><span class="report-col1">吴小凡</span></td>
+													<td>北京邮电大学</td>
+													<td>原始代码</td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+								</div>
+							</div>
+							<!--弹窗 end-->
+						</span>
+					</div>
+				</div>
+				<div class="clear"></div>
+				<!--考试信息 end-->
+				<h2 class="report-title"><i></i>分析报告</h2>
+				<!--分析报告-->
+				<ul class="reportNav report-analysisNav">
+					<li class="active">
+						<a href="#">算法</a>
+					</li>
+					<li>
+						<a href="#">PHP</a>
+					</li>
+					<li>
+						<a href="#">MySql</a>
+					</li>
+					<li>
+						<a href="#">前端</a>
+					</li>
+					<li>
+						<a href="#">JAVA</a>
+					</li>
+					<li>
+						<a href="#">C++</a>
+					</li>
+					<li>
+						<a href="#">C运维+</a>
+					</li>
+				</ul>
+				<!--知识点在本次考试中的排名-->
+				<div class="report-analysisCnt">
+					<h1 class="report-analysisCnt-title"><i class="report-ico1"></i>知识点在本次考试中的排名</h1>
+					<ul class="report-ranking">
+						<li>
+							<p>综合能力测试</p>
+							<img src="../../images/report-02.png"  />
+						</li>
+						<li>
+							<p>专业技术测试</p>
+							<img src="../../images/report-03.png"  />
+						</li>
+					</ul>
+					<p class="report-ranking-text">总分：5分</p>
+				</div>
+				<!--知识点在本次考试中的排名 end-->
+				<!--在线编程-->
+				<div class="report-analysisCnt">
+					<h1 class="report-analysisCnt-title"><i class="report-ico2"></i>在线编程</h1>
+					<div class="report-onlineLeft">
+						<ul class="report-typebox">
+							<li>
+								<p>编程总分数</p>
+								<b><span>68</span>分</b>
+							</li>
+							<li class="report-online-sty">
+								<p>成绩排名</p>
+								<b><span>85%</span></b>
+							</li>
+						</ul>
+					</div>
+					<div class="report-onlineRight">
+						<div class="report-pos1">
+							<span class="report-type">
+								准确性
+								<div>此能力值反应该学生在编程中的准确度与熟练程度</div>
+							</span>
+						</div>
+						<div class="report-pos2">
+							<span class="report-type">
+								内存占用
+								<div>此能力值反应该学生代码运行时占用内存的评分</div>
+							</span>
+						</div>
+						<div class="report-pos1 report-pos3">
+							<span class="report-type">
+								编程规范
+								<div>此能力值反应该学生代码编写规范评分</div>
+							</span>
+						</div>
+						<div class="report-pos2 report-pos4">
+							<span class="report-type">
+								编程速度
+								<div>此能力值反应该学生答题时的编程速度</div>
+							</span>
+						</div>
+						<img src="../../images/report-04.png"  />
+					</div>
+					<div class="clear"></div>
+					<div class="report-onlinetable report-table">
+						<table border="0" cellspacing="0" cellpadding="0">
+							<tr>
+								<td width="290"><p>试题裁剪网络纸裁剪网络纸裁络纸裁络</p></td>
+								<td>评分：<b>30分</b>/<span class="report-col3">100分</span></td>
+								<td>内存：1162KB </td>
+								<td>耗时：15ms</td>
+								<td><a href="#" class="report-sty1">代码规范：3.5分</a></td>
+								<td>
+									<a href="#" class="report-sty1">编程思路详解</a>
+									<span class="report-sty2">|</span>
+									<a href="#" class="report-sty1">测试数据详情</a>
+									<span class="report-sty2">|</span>
+									<a href="#" class="report-sty1">代码详情</a>
+								</td>
+							</tr>
+							<tr>
+								<td><p>试题裁剪网络纸裁剪网络纸裁络纸裁络</p></td>
+								<td>评分：<b>30分</b>/<span class="report-col3">100分</span></td>
+								<td>内存：1162KB </td>
+								<td>耗时：15ms</td>
+								<td><a href="#" class="report-sty1">代码规范：3.5分</a></td>
+								<td>
+									<a href="#" class="report-sty1">编程思路详解</a>
+									<span class="report-sty2">|</span>
+									<a href="#" class="report-sty1">测试数据详情</a>
+									<span class="report-sty2">|</span>
+									<a href="#" class="report-sty1">代码详情</a>
+								</td>
+							</tr>
+							<tr>
+								<td><p>试题裁剪网络纸裁剪网络纸裁络纸裁络</p></td>
+								<td>评分：<b>30分</b>/<span class="report-col3">100分</span></td>
+								<td>内存：1162KB </td>
+								<td>耗时：15ms</td>
+								<td><a href="#" class="report-sty1">代码规范：3.5分</a></td>
+								<td>
+									<a href="#" class="report-sty1">编程思路详解</a>
+									<span class="report-sty2">|</span>
+									<a href="#" class="report-sty1">测试数据详情</a>
+									<span class="report-sty2">|</span>
+									<a href="#" class="report-sty1">代码详情</a>
+								</td>
+							</tr>
+						</table>
+					</div>
+				</div>
+				<!--在线编程 end-->
+				<!--赛码训练成绩-->
+				<div class="report-analysisCnt">
+					<h1 class="report-analysisCnt-title"><i class="report-ico3"></i>赛码训练成绩</h1>
+					<div class="report-score">
+						<div class="report-scoreleft">
+							<table border="0" cellspacing="0" cellpadding="0">
+								<tr>
+									<td><span class="report-sty1">专项练习</span></td>
+									<td>共刷题：258题 </td>
+									<td>作对题目：29题 </td>
+									<td>排名：2345  </td>
+								</tr>
+								<tr class="report-trbg">
+									<td><span class="report-sty1">在线编程</span></td>
+									<td>已挑战：24题</td>
+									<td>通过：2题 </td>
+									<td>通过率35%  </td>
+								</tr>
+							</table>
+						</div>
+						<div class="report-scoreright">
+							<ul class="report-typebox">
+								<li>
+									<p>编程总分数</p>
+									<b><span>68</span>分</b>
+								</li>
+								<li class="report-online-sty">
+									<p>成绩排名</p>
+									<b><span>85%</span></b>
+								</li>
+							</ul>
+							<h2>参加联考次数：3 次</h2>
+						</div>
+						<div class="clear"></div>
+					</div>
+				</div>
+				<!--赛码训练成绩 end-->
+				<!--人格特征与偏好-->
+				<div class="report-analysisCnt" style="border-bottom: none;">
+					<h1 class="report-analysisCnt-title"><i class="report-ico4"></i>人格特征与偏好</h1>
+					<div class="report-score">
+						<div class="report-hobby">
+							<div class="report-hobby-left">
+								<img src="../../images/report-05.png"  />
+							</div>
+							<div class="report-hobby-right">
+								<img src="../../images/report-06.png"  />
+							</div>
+							<div class="clear"></div>
+						</div>
+						<div class="report-hobby-table">
+							<table border="0" cellspacing="0" cellpadding="0">
+								<thead>
+									<tr>
+										<th width="71"><label>团队角色</label></th>
+										<th>完善者</th>          
+										<th>实干者</th>          
+										<th>协调者</th>          
+										<th>创新者</th>          
+										<th>信息者</th>          
+										<th>监督者</th>          
+										<th>凝聚者</th>          
+										<th>推进者</th>          
+										<th>专家型</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td><label>分值</label></td>
+										<td>19</td>
+										<td>3</td>
+										<td>4</td>
+										<td>4</td>
+										<td>4</td>
+										<td>4</td>
+										<td><b>4</b></td>
+										<td><span>4</span></td>
+										<td><span>4</span></td>
+									</tr>
+								</tbody>
+								<tfoot>
+									<tr>
+										<td><label>评估结果</label></td>
+										<td colspan="9">团队角色评估：凝聚者</td>
+									</tr>
+								</tfoot>
+							</table>
+						</div>
+					</div>
+				</div>
+				<!--人格特征与偏好 end-->
+				<!--分析报告 end-->
+				<h2 class="report-title"><i></i>给予评价</h2>
+				<!--给予评价-->
+				<div class="report-evaluate">
+					<textarea class="input"></textarea>
+					<input type="button" class="report-evaluate-btn btn" value="提交评价"/>
+					<div class="clear"></div>
+				</div>
+				<!--给予评价 end-->
+				<h2 class="report-title"><i></i>操作记录</h2>
+				<!--操作记录-->
+				<div class="report-operate">
+					<table border="0" cellspacing="0" cellpadding="0">
+						<thead>
+							<tr>
+								<th width="700"><p>时间</p></th>
+								<th>操作记录</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td><p>2014-12-12 12:22</p></td>
+								<td>赛码网登录</td>
+							</tr>
+							<tr>
+								<td><p>2014-12-12 12:22</p></td>
+								<td>赛码网登录</td>
+							</tr>
+							<tr>
+								<td><p>2014-12-12 12:22</p></td>
+								<td>赛码网登录</td>
+							</tr>
+						</tbody>
+					</table>
+					<div class="report-operate-more"><a href="#">查看更多<i></i></a></div>
+				</div>
+				<!--操作记录 end-->
+			</div>
+		</div>
+		<!--右侧-->
+		<ul class="rightmnu">
+			<li class="rightmnu-sty1 btn">
+				<a class="rightmnu-a" href="#">提交审阅</a>
+			</li>
+			<li  class="rightmnu-sty2 report-result">
+				<a class="rightmnu-a" href="javascript:void(0)">评审结果</a>
+				<div class="report-resultBox">
+					<span class="active">通过评审<i></i></span>
+					<span>不通过<i></i></span>
+					<span>待定<i></i></span>
+				</div>
+			</li>
+			<li class="rightmnu-sty3 report-gotop btn">
+				<a class="rightmnu-a" href="javascript:void(0)">
+					<i></i>
+					<span>TOP</span>
+				</a>
+			</li>
+		</ul>
+		<!--右侧 end-->
+		<div class="foot">
+			acmcoder.com © 2016 All rights reserved.    本考试系统由 赛码网 提供技术支持    京ICP备15012255号-1
+		</div>
+		<script src="../../js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../../js/jquery.cxdialog.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../../js/report/common.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../../js/report/report.js" type="text/javascript" charset="utf-8"></script>
+	</body>
+</html>

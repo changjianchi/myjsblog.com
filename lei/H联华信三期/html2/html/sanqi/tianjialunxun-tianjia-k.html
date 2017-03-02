@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no" name="viewport" >
+    <!-- 新 Bootstrap 核心 CSS 文件 -->
+    <link rel="stylesheet" href="../../css/libs/bootstrap.min.css">
+    <link rel="stylesheet" href="../../css/common/top_nav.css">
+    <link rel="stylesheet" href="../../css/configuration_index.css">
+    <link href="../../css/attr_alter.css" type="text/css" rel="stylesheet"/>
+    <!--[if IE 9]>
+        <link rel="stylesheet" type="text/css" href="../../css/common/ie9.css" />
+    <![endif]-->
+
+    <!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->
+    <script src="../../js/libs/jquery.min.js"></script>
+    <!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+    <script src="../../js/libs/bootstrap.min.js"></script>
+    <script src="../../js/libs/echarts-all.min.js"></script>
+    <script src="../../js/common/common.js"></script>
+    <script src="../../js/configuration_index.js"></script>
+    <script src="../../js/attr_alter.js"></script>
+    <link rel="stylesheet" href="css/weiyi-tanchuang.css">
+</head>
+<body style="background:none">
+<!-- 弹窗 -->
+<div class="cen3-tanchuang table-a">
+    <div class="table-cell">
+        <div class="cen3-bangzhutanchuang bottom-border">
+            <div class="ketuodongtanchuang cen3-bangzhutanchuang-bt">
+                <div class="tanchuang3-col"></div>
+                帮助
+            </div>
+            <div class="cen3-bangzhutanchuang-table">
+                <div class="cen3-bangzhutanchuang-table-bt">
+                    啊啊啊啊啊啊啊啊啊啊啊啊啊
+                </div>
+                <div class="cen3-bangzhutanchuang-table-tab">
+                    <table class="cen3-bangzhutanchuang-table-table">
+                        <tr>
+                            <td>检测指标</td>
+                            <td>检测子指标</td>
+                            <td>行标识</td>
+                        </tr>
+                        <tr>
+                            <td>检测指标</td>
+                            <td>检测子指标</td>
+                            <td>行标识</td>
+                        </tr>
+                        <tr>
+                            <td>检测指标</td>
+                            <td>检测子指标</td>
+                            <td>行标识</td>
+                        </tr>
+                        <tr>
+                            <td>检测指标</td>
+                            <td>检测子指标</td>
+                            <td>行标识</td>
+                        </tr>
+                        <tr>
+                            <td>检测指标</td>
+                            <td>检测子指标</td>
+                            <td>行标识</td>
+                        </tr>
+                        <tr>
+                            <td>检测指标</td>
+                            <td>检测子指标</td>
+                            <td>行标识</td>
+                        </tr>
+                        <tr>
+                            <td>检测指标</td>
+                            <td>检测子指标</td>
+                            <td>行标识</td>
+                        </tr>
+
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="../../js/sanqi.js"></script>
+<script>
+    $(function(){
+        var api = frameElement.api, W = api.opener;
+        var wind = window.top;
+        var body = wind.document.getElementById('body');
+        var bodyHeight = body.offsetHeight;
+        var winsdiv = getElementsClass('ui_dialog');
+        winsdiv[0].id = 'tanchuang-weiyi';
+        function getElementsClass(classnames){ 
+            var classobj= new Array();//定义数组 
+            var classint=0;//定义数组的下标 
+            var tags=wind.document.getElementsByTagName("*");//获取HTML的所有标签 
+            for(var i in tags){//对标签进行遍历 
+                if(tags[i].nodeType==1){//判断节点类型 
+                    if(tags[i].getAttribute("class") == classnames)//判断和需要CLASS名字相同的，并组成一个数组
+                    {                        
+                        classobj[classint]=tags[i];
+                        classint++;
+                    }  
+                } 
+            } 
+            return classobj;//返回组成的数组 
+        }
+
+        $('.tanchuang3-col').on('click',function(){
+            body.style.height = 'auto';
+            body.style.overflow = 'none';
+            api.close();
+        });
+    });
+</script>
+
+<style>
+        #tanchuang-weiyi{
+            display: block;
+            position: relative;
+            border:none;
+            top:65px;
+            -moz-user-select:none;/*火狐*/
+            -webkit-user-select:none;/*webkit浏览器*/
+            -ms-user-select:none;/*IE10*/
+            -khtml-user-select:none;/*早期浏览器*/
+            user-select:none;
+            opacity: 0;
+        }
+        #tanchuang-weiyi .ui_title,#tanchuang-weiyi{
+            width: 878px;
+            margin:0 auto;
+            height: 50px;
+            left:-25px;
+        }
+        #tanchuang-weiyi .ui_title,.ui_dialog{
+            background: none;
+            border-bottom:none;
+        }
+        #tanchuang-weiyi .ui_min,.ui_max{
+            display: none;
+        }
+        #tanchuang-weiyi .ui_state_drag .ui_title { border-bottom:none;text-shadow: none;background: none;}
+        #tanchuang-weiyi .ui_title_buttons,.ui_close{top:0;right:0;width: 50px;height:50px;}
+        #tanchuang-weiyi .ui_title_bar .ui_close{position: absolute; color: #fff;}
+    </style>
+</body>
+</html>

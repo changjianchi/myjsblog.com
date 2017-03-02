@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>慧泊车平台</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <link rel="stylesheet" href="css/animate.min.css">
+    <link rel="stylesheet" href="css/css.css">
+    <link rel="stylesheet" href="css/css-a.css">
+</head>
+<body>
+
+    <script>
+        var winWidth = document.body.clientWidth; var Html = document.getElementsByTagName('html'); 
+        Html[0].style.fontSize = winWidth / 10.8 + 'px';
+    </script>
+
+    <!-- start -->
+    <div id="wrapper">
+        <div id="scroller" class="scroller">
+            <!-- 第一屏 -->
+            <div class="huibo-one">
+                <!-- nav -->
+                <div class="huibo-nav"></div>
+                <!-- top-bj -->
+                <div class="huibo-kv">
+                    <div class="huibo-top-bj" style="background:url(img/hui/bj.jpg) no-repeat center; background-size:cover;"></div>
+                    <div class="con-cen-top table-a">
+                        <div class="table-cell">
+                            <div class="con-cen-h1 ani-up ani-mate" style="height:3.7rem; width:8.1rem;">
+                                <span class="ani-up ani-mate">慧泊车平台</span>
+                                <em class="ani-up ani-mate">WE PARK<br>PARKING PLATFORM</em>
+                            </div>
+                            <div class="con-cen-h2">
+                                <span class="ani-up ani-mate" style="font-size:.65rem;">智慧停车产业投资及<br>运营管理的综合平台</span>
+                                <p class="ani-up ani-mate">秉持中长期持有的产业投资理念，</p>
+                                <p class="ani-up ani-mate">通过品牌化经营和智能化管理，</p>
+                                <p class="ani-up ani-mate ani-last">实现资产价值的最大化</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- cen -->
+            <div class="huibo-new huibo-fff">
+                <div class="huibo-home-bt ani-up ani-mate ani-last" style="margin-top:0;">慧泊车</div>
+                <div class="huibo-che">
+
+                    <div class="che1 ani-up ani-mate ani-last">
+                        <span class="table-a" style="background:url(img/hui/cen1.jpg) no-repeat center right; background-size:cover;">
+                            <div class="table-cell">
+                                <b>产业化投资</b>
+                            </div>
+                        </span>
+                        <span class="table-a">
+                            <div class="table-cell">
+                                <em>基于国际顶级投资人的信赖，秉持稳健的、长期的产业化投资理念，通过产权、经营权收购，或中长期租赁，与战略伙伴长期合作，提升资产价值，实现共赢目标。</em>
+                            </div>
+                        </span>
+                    </div>
+
+                    <div class="che1 ani-up ani-mate ani-last">
+                        <span class="table-a" style="background:url(img/hui/cen2.jpg) no-repeat center left; background-size:cover;">
+                            <div class="table-cell">
+                                <b>品牌化经营</b>
+                            </div>
+                        </span>
+                        <span class="table-a">
+                            <div class="table-cell">
+                                <em>停车库是自驾客户到访目的地的第一站，汇泊通过引进国际化的先进设备和服务理念，从而提升客户体验和楼宇品质。品牌化经营停车场，是汇泊停车资产管理的重要内容之一，深受合作伙伴重视和不断好评！</em>
+                            </div>
+                        </span>
+                    </div>
+
+                    <div class="che1 ani-up ani-mate ani-last">
+                        <span class="table-a" style="background:url(img/hui/cen3.jpg) no-repeat center right; background-size:cover;">
+                            <div class="table-cell">
+                                <b>智能化管理</b>
+                            </div>
+                        </span>
+                        <span class="table-a">
+                            <div class="table-cell">
+                                <em>依托于先进技术和设备，汇泊停车的所有项目都与总部中控中心互联互通，实现了智能化管理。在满足安全管理、收费管理、通行管理和其他运营需求的基础上，汇泊停车通过深度数据挖掘，不断优化流程，提高停车场效率，同时，为客户提供相应的创新服务和产品。</em>
+                            </div>
+                        </span>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- foot -->
+            <div class="foot ani-up ani-mate ani-last"></div>
+
+        </div>
+    </div>
+
+    <!-- 下拉下拉菜单 -->
+    <div class="huibo-menu"></div>
+    
+    <!-- script -->
+    <script src="js/jq.js"></script>
+    <script src="js/top-foot-menu.js"></script>
+    <script>
+    $(function(){
+        var winHeight = $(window).height();
+        $('.huibo-one').css({'height':winHeight+'px'});
+        $('.con-cen-top').css({'height':winHeight+'px'});
+    });
+    </script>
+
+    <!-- z -->
+    <script src="js/ind.js"></script>
+
+    <!-- iscorll -->
+    <script src="js/iscroll.js"></script>
+    <script type="text/javascript">
+        var myScroll;
+        function loaded () {
+            myScroll = new IScroll('#wrapper', { 
+                scrollX: true, 
+                freeScroll: true ,
+                preventDefaultException: { tagName: /^(INPUT|TEXTAREA|BUTTON|SELECT|A)$/ },
+                click: true,
+            });
+        }
+        document.addEventListener('touchmove', function (e) { e.preventDefault(); }, false);
+    </script>
+
+    <!-- ani-up -->
+    <script src="js/ani-up.js"></script>
+
+    <!-- loading -->
+    <script src="js/loading.js"></script>
+
+</body>
+</html>

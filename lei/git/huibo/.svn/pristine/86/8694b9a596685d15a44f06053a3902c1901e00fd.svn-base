@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>关于汇泊</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <link rel="stylesheet" href="css/animate.min.css">
+    <link rel="stylesheet" href="css/css.css">
+    <link rel="stylesheet" href="css/css-a.css">
+</head>
+<body>
+
+    <script>
+        var winWidth = document.body.clientWidth; var Html = document.getElementsByTagName('html'); 
+        Html[0].style.fontSize = winWidth / 10.8 + 'px';
+    </script>
+
+    <!-- start -->
+    <div id="wrapper">
+        <div id="scroller" class="huibo-about scroller">
+            <!-- 第一屏 -->
+            <div class="huibo-one">
+                <!-- nav -->
+                <div class="huibo-nav"></div>
+                <!-- top-bj -->
+                <div class="huibo-kv">
+                    <div class="huibo-top-bj" style="background:url(img/law/bj.jpg) no-repeat center; background-size:cover;"></div>
+                    <div class="con-cen-top table-a">
+                        <div class="table-cell">
+                            <div class="con-cen-h1 ani-up ani-mate">
+                                <span class="ani-up ani-mate">关于汇泊</span>
+                                <em class="ani-up ani-mate">ABOUT US</em>
+                            </div>
+                            <div class="con-cen-h2">
+                                <span class="ani-up ani-mate">汇泊承诺</span>
+                                <p class="ani-up ani-mate">为您解决所有关于停车场的困扰</p>
+                                <p class="ani-up ani-mate">一体化停车场方案提供者</p>
+                                <p class="ani-up ani-mate">专业资产管理，提升物业价值，优化客户体验</p>
+                                <p class="ani-up ani-mate">提高城市综合实力，缓解城市“停车难”</p>
+                                <div class="about-k4">
+                                    <div class="about-k4-i ani-up ani-mate">
+                                        <i><div style="background:url(img/about/kv1.png) no-repeat center; background-size:1.13rem auto;"></div></i>
+                                        <em>公司介绍</em>
+                                    </div>
+                                    <div class="about-k4-i ani-up ani-mate">
+                                        <i><div style="background:url(img/about/kv2.png) no-repeat center; background-size:1.25rem auto;"></div></i>
+                                        <em>来自汇泊的问候</em>
+                                    </div>
+                                    <div class="about-k4-i ani-up ani-mate">
+                                        <i><div style="background:url(img/about/kv3.png) no-repeat center; background-size:0.92rem auto;"></div></i>
+                                        <em>汇泊优势</em>
+                                    </div>
+                                    <div class="about-k4-i ani-up ani-mate ani-last">
+                                        <i><div style="background:url(img/about/kv4.png) no-repeat center; background-size:0.91rem auto;"></div></i>
+                                        <em>业务范围</em>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 公司介绍 -->
+            <div class="about-cen about-k4-1" style="margin-top:0;">
+                <div class="about-img-bt ani-up ani-mate ani-last"><img src="img/about/bt-1.jpg"></div>
+                <div class="about-logo-text ani-up ani-mate ani-last">
+                    <img src="img/about/logo-1.png" style="width:4.23rem;">
+                    <span>
+                        楠焯资本 (LimeTree Capital) 是一家总部位于香港的私募股权投资管理公司，侧重于各类尚未获得广泛关注、其价值有待进一步发掘的资产类别。目前在整个亚太地区表现活跃，积极进行机构投资、风险管理和基础资产的前瞻性管理，以提升投资回报。
+                    </span>
+                    <em><a href="http://www.limetreecapital.com/" target="_blank">查看详情</a></em>
+                </div>
+                <div class="about-logo-text ani-up ani-mate ani-last">
+                    <a href="www.huiboparking.com" target="_blank"><img src="img/about/logo-2.png" style="width:2.3rem;"></a>
+                    <span>
+                        汇泊停车产业基金是楠焯资本 (LimeTree Capital) 旗下管理的基金，“汇泊停车”是国内停车行业至今为止规模最大，投资及资产和运营管理团队最专业，且持有停车场项目最多、分布最广的专项基金，致力于为客户提供集停车场投资、概念设计、建造和资产管理于一体的全方位服务。
+                    </span>
+                </div>
+                <div class="about-logo-text ani-up ani-mate ani-last">
+                    <a href="http://www.sunsea.net/" target="_blank"><img src="img/about/logo-3.png" style="width:2.32rem;"></a>
+                    <span>
+                        阳光海天停车产业集团创立于2006年8月8日，总部设立在北京，致力于提供完善的停车资产管理整体解决方案。2015年，汇泊携手阳光海天停车产业集团，共同打造规模最大的停车产业金融平台。
+                    </span>
+                </div>
+                <div class="about-logo-text ani-up ani-mate ani-last">
+                    <a href="http://www.chnparking.net/" target="_blank"><img src="img/about/logo-4.png" style="width:2.38rem;"></a>
+                    <span>
+                        中国停车规划设计研究院有限公司（PDI）成立于2012年，隶属于阳光海天停车产业集团，形成政策、规划、设计、技术开发等多元业务协同发展的产业链优势。
+                    </span>
+                </div>
+                <div class="about-text-txt ani-up ani-mate ani-last">
+                    <h1>汇泊停车</h1>
+                    <p>中国停车产业投资及资产管理先锋，一体化停车方案提供专家。</p>
+                    <p>公司总部位于上海，目前持有及受托管理200多个停车场，与TOP20的开发商建立长期合作关系。</p>
+                    <p class="c000">致力于为客户提供集停车场投资、概念设计、建造和资产管理于一体的全方位增值服务。</p>
+                    <p>每个项目因地制宜，引入国际一流的停车理念，提升行业整体收益、提供品质卓越的停车服务和增值服务。</p>
+                    <p>打造规模最大、结构最完整的停车产业金融平台，为中国停车产业资产管理前进的方向领航。</p>
+
+                    <h1>汇泊停车产业基金</h1>
+                    <p>国内首屈一指的“一体化”全方位停车场方案提供者</p>
+                    <p>中国第一家停车行业机构投资产业基金</p>
+                    <p class="c000">拥有一流的投资及资产管理团队精菁，基金着眼于可持续性长线投资，专注于整体持有，追求稳健回报，长远发展。</p>
+                    <p class="c000">中国目前最大的高端商业停车位持有者与收购机构</p>
+                    <p class="c000">先进的技术、现代化的管理方法与运营渠道，形成独有的中国停车行业标准与规范。</p>
+                    <p class="c000">汇泊在中国乃至亚洲首次引入绿色停车库概念，绿色停车库认证由美国绿色停车协会颁发，该机构附属于美国绿色建筑协会，国际高度认可的绿色建筑LEED标准的认证机构。</p>
+                    <img src="img/about/B-stop.jpg" class="b-stop">
+                    <p>国内停车行业至今为止规模最大、投资及资产和运营管理团队最专业、持有停车场项目最多分布最广的专项基金。</p>
+                </div>
+                <div class="about-um ani-up ani-mate">
+                    <div class="about-um-top">
+                        <span class="shuzi-deijia ani-up ani-mate">
+                            <i>持有并受托管理</i>
+                            <b class="act">200</b>
+                            <i>停车场</i>
+                        </span>
+                        <span class="shuzi-deijia ani-up ani-mate">
+                            <i>遍布</i>
+                            <b class="act">30</b>
+                            <i>城市</i>
+                        </span>
+                    </div>
+                    <div class="about-um-top about-um-bottom">
+                        <span class="shuzi-deijia ani-up ani-mate">
+                            <i>超过</i>
+                            <b class="act">200000</b>
+                            <i>停车位</i>
+                        </span>
+                        <span class="shuzi-deijia ani-up ani-mate ani-last">
+                            <i>与TOP</i>
+                            <b>20</b>
+                            <i style="font-size:.227rem;">开发商长期合作关系</i>
+                        </span>
+                    </div>
+                </div>
+            </div>   
+
+            <!-- 来自汇伯的问候 -->
+            <div class="about-cen about-k4-2">
+                <div class="about-img-bt ani-up ani-mate ani-last"><img src="img/about/bt-2.jpg" alt=""></div>
+                <div class="about-cen-text-p ani-up ani-mate ani-last">
+                    <p>尊敬的阁下/女士：您好！</p><br>
+                    <p>作为汇泊停车产业基金的首席执行官，首先，请允许我代表公司感谢您对汇泊停车的关注。</p><br>
+                    <p>随着社会经济的不断发展，中国汽车保有量逐年攀升，但与之相配套的停车设施却远远无法满足日益增长的停车需求。“停车难”已经成为城市发展的瓶颈，亟需解决。传统停车行业在设备、技术、管理和运营理念等方面都存在严重的局限性。汇泊停车作为中国停车行业的投资先锋和整体方案制定与实施的专业机构，旨在开创一条符合国际先进标准的、具有中国特色的停车行业发展之路，不断推动中国停车行业实现产业化的快速发展。</p><br>
+                    <p>我们通过产权收购、经营权收购、中长期租赁、共同投资、PPP、承包运营和管理输出等方式，与各类业主、开发商、政府机构和其他合作伙伴建立战略合作关系；我们通过改造、翻新、技术升级和精细化管理等，有效地帮助合作伙伴优化停车场的客户体验，在减轻物业管理负担的同时，提升地面楼宇的品牌形象和资产价值。</p><br>
+                    <p>汇泊停车21亿人民币的一期投资基金,同时已经与国内外知名地产开发商合作,在北京、上海、广州、天津、南京、成都和重庆等城市的核心区域直接投资了近30个停车场项目，合计持有及受托管理约1.5万个停车位，项目类型涵盖了办公楼、商业综合体、商场、医院和机场等。在此基础上，汇泊停车约35亿人民币的二期投资基金，将加快业务布局，充分发挥行业引领者的先发优势。</p><br>
+                    <p>除了直接投资停车场资产，汇泊停车注资中国停车场管理的领航者——阳光海天停车产业集团，整合业务资源和管理团队，从而实现了停车场规划、设计、建造、翻新、运营和投资于一体的全产业链发展，构筑了一个规模最大、业务最多元的停车产业投资平台。截至2016年底，阳光海天管理着近20万个停车位。 </p><br>
+                    <p>近年来，中国政府密集出台鼓励和扶持政策，将解决“停车难”问题列为一项重要工作。汇泊停车作为中国停车行业的领头羊，定当义不容辞，全力以赴，协助政府优化城市停车，帮助业主提升资产价值，为汇泊停车的合作伙伴及投资人创造价值。</p><br>
+                    <p>再次感谢您对汇泊停车的关心和支持！</p><br>
+                    <p>顺祝商祺，</p><br>
+                    <p>汇泊停车产业基金 首席执行官 曹文伟</p>
+                </div>
+            </div>
+
+            <!-- 汇伯优势 -->
+            <div class="huibo-new huibo-fff about-k4-3">
+                <div class="huibo-home-bt ani-up ani-mate ani-last">汇泊优势</div>
+                <div class="about-cen-youshi">
+
+                    <span class="ani-up ani-mate ani-last">
+                        <div class="about-cen-youshi-img table-a" style="background:url(img/about/te-1.jpg) no-repeat center; background-size:cover;">
+                            <div class="table-cell">
+                                <em>资金保障</em>
+                            </div>
+                        </div>
+                        <div class="about-cen-youshi-cen table-a">
+                            <div class="table-cell">
+                                <em>汇泊停车产业基金，一期21亿人民币，二期35亿人民币，两者相加，将构成中国乃至世界最大的、专注于停车产业的投资基金。</em>
+                            </div>
+                        </div>
+                    </span>
+
+                    <span class="ani-up ani-mate ani-last">
+                        <div class="about-cen-youshi-img table-a" style="background:url(img/about/te-2.jpg) no-repeat center; background-size:cover;">
+                            <div class="table-cell">
+                                <em>专业性</em>
+                            </div>
+                        </div>
+                        <div class="about-cen-youshi-cen table-a">
+                            <div class="table-cell">
+                                <em>国际化的停车场设计、施工标准及智能停车方案，优化物业品质及停车体验。</em>
+                            </div>
+                        </div>
+                    </span>
+
+                    <span class="ani-up ani-mate ani-last">
+                        <div class="about-cen-youshi-img table-a" style="background:url(img/about/te-3.jpg) no-repeat center; background-size:cover;">
+                            <div class="table-cell">
+                                <em>一站式</em>
+                            </div>
+                        </div>
+                        <div class="about-cen-youshi-cen table-a">
+                            <div class="table-cell">
+                                <em>从投资、设计、施工到资产管实现停车产业链全覆盖，各业务板块无缝对接，项目高效落地。</em>
+                            </div>
+                        </div>
+                    </span>
+
+                    <span class="ani-up ani-mate ani-last">
+                        <div class="about-cen-youshi-img table-a" style="background:url(img/about/te-4.jpg) no-repeat center; background-size:cover;">
+                            <div class="table-cell">
+                                <em>先进性</em>
+                            </div>
+                        </div>
+                        <div class="about-cen-youshi-cen table-a">
+                            <div class="table-cell">
+                                <em>先进的技术支持，提供包括但不限于自动付费系统/LED照明/自动导航系统/中央控制室等。</em>
+                            </div>
+                        </div>
+                    </span>
+
+                    <span class="ani-up ani-mate ani-last">
+                        <div class="about-cen-youshi-img table-a" style="background:url(img/about/te-5.jpg) no-repeat center; background-size:cover;">
+                            <div class="table-cell">
+                                <em>创新性</em>
+                            </div>
+                        </div>
+                        <div class="about-cen-youshi-cen table-a">
+                            <div class="table-cell">
+                                <em style="font-size:.28rem;letter-spacing:-0.05em;line-height:.4rem;">引进国际先进的理念、技术与设备，从终端用户体验角度出发，不断优化，为合作伙伴提供最优质的停车解决方案，并实现双赢，如：二维码付费系统 / 智能导航系统 / 车位预约系统 / 电动车充电桩。</em>
+                            </div>
+                        </div>
+                    </span>
+
+                    <span class="ani-up ani-mate ani-last">
+                        <div class="about-cen-youshi-img table-a" style="background:url(img/about/te-6.jpg) no-repeat center; background-size:cover;">
+                            <div class="table-cell">
+                                <em>精英团队</em>
+                            </div>
+                        </div>
+                        <div class="about-cen-youshi-cen table-a">
+                            <div class="table-cell">
+                                <em style="font-size:.28rem;line-height:.4rem;">投资和运营团队具有多个行业的从业经验，具备投资及资产管理的复合背景。核心成员均为投资银行、投资基金、商业地产、停车运营管理和停车场设计规划等领域的领军人物。</em>
+                            </div>
+                        </div>
+                    </span>
+
+                </div>
+            </div>
+
+            <!-- 业务范围 -->
+            <div class="huibo-new huibo-fff about-k4-4">
+                <div class="huibo-home-bt ani-up ani-mate ani-last">业务范围</div>
+                <div class="about-yewu-p ani-up ani-mate ani-last">
+                    国内停车行业至今为止规模最大、投资及资产和运营管理团队最专业、持有停车场项目最多分布最广的专项基金。国内首屈一指的“一体化”全方位停车场方案提供者。基金着眼于可持续性长线投资，专注于整体持有，追求稳健回报，长远发展。
+                </div>
+                <div class="about-yewu-cen">
+                    <div class="ani-up ani-mate ani-last">
+                        <div class="about-yewu-bt" style="background:url(img/about/yw-1.jpg) no-repeat left bottom; background-size:cover;">投资</div>
+                        <div class="about-yewu-txt">
+                            <i>价值评估</i>
+                            <i>产权收购</i>
+                            <i>经营权收购</i>
+                            <i>中短、长期租赁</i>
+                            <i>停车地产开发</i>
+                        </div>
+                    </div>
+                    <div class="ani-up ani-mate ani-last">
+                        <div class="about-yewu-bt" style="background:url(img/about/yw-6.jpg) no-repeat left bottom; background-size:cover;">建设&改造</div>
+                        <div class="about-yewu-txt">
+                            <i>工程承包</i>
+                            <i>翻新改造</i>
+                            <i>智能设备</i>
+                            <i>机械停车场</i>
+                            <i>地面停车场</i>
+                        </div>
+                    </div>
+                    <div class="ani-up ani-mate ani-last">
+                        <div class="about-yewu-bt" style="background:url(img/about/yw-2.jpg) no-repeat left bottom; background-size:cover;">互联网＋</div>
+                        <div class="about-yewu-txt">
+                            <i>停车O2O</i>
+                            <i>精准实时车位查询</i>
+                            <i>电子支付</i>
+                            <i>定位服务</i>
+                            <i>信息发布</i>
+                            <i>大数据分析</i>
+                            <i>停车位预订</i>
+                        </div>
+                    </div>
+                    <div class="ani-up ani-mate ani-last">
+                        <div class="about-yewu-bt" style="background:url(img/about/yw-3.jpg) no-repeat left bottom; background-size:cover;">规划设计</div>
+                        <div class="about-yewu-txt">
+                            <i>咨询顾问</i>
+                            <i>交通设计</i>
+                            <i>环境设计</i>
+                            <i>动线优化</i>
+                            <i>智慧停车</i>
+                        </div>
+                    </div>
+                    <div class="ani-up ani-mate ani-last">
+                        <div class="about-yewu-bt" style="background:url(img/about/yw-4.jpg) no-repeat left bottom; background-size:cover;">资产管理&运营</div>
+                        <div class="about-yewu-txt">
+                            <i>劳务输出</i>
+                            <i>人员培训</i>
+                            <i>服务管理体系</i>
+                            <i>现场服务管控</i>
+                        </div>
+                    </div>
+                    <div class="ani-up ani-mate ani-last">
+                        <div class="about-yewu-bt" style="background:url(img/about/yw-5.jpg) no-repeat left bottom; background-size:cover;">增值服务</div>
+                        <div class="about-yewu-txt">
+                            <i>汽车美容</i>
+                            <i>汽修养护</i>
+                            <i>汽车分时租赁</i>
+                            <i>新能源汽车充电服务</i>
+                            <i>客户激励计划</i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- foot -->
+            <div class="foot ani-up ani-mate ani-last"></div>
+
+        </div>
+    </div>
+
+    <!-- 分布图 -->
+    <div class="market-fenbutu">
+        <div class="pinch-zoom table-a">
+            <div class="table-cell">
+                <img src="img/market/cn_map.jpg"/>
+            </div>
+        </div>
+        <div class="market-fenbutu-col"><em><img src="img/close.png" alt=""></em></div>
+    </div>
+
+    <!-- 下拉下拉菜单 -->
+    <div class="huibo-menu"></div>
+    
+    <!-- script -->
+    <script src="js/jq.js"></script>
+    <script src="js/top-foot-menu.js"></script>
+    <script>
+        var winHeight = $(window).height();
+        $('.huibo-one').css({'height':winHeight+'px'});
+        $('.con-cen-top').css({'height':winHeight+'px'});
+    </script>
+
+    <!-- pinchzoom requires: jquery -->
+    <script src="js/pinchzoom.js"></script>
+    <script>
+        $('div.pinch-zoom').css({
+            'height':$(window).height()+'px',
+        });
+        $(function () {
+            var marMapImg = $('.mar-map img');
+            var marketFenbutu = $('.market-fenbutu');
+            var marketFenbutuCol = $('.market-fenbutu-col');
+
+            marMapImg.on('click',function(){
+                marketFenbutu.addClass('active');
+            });
+            marketFenbutuCol.on('click',function(){
+                marketFenbutu.removeClass('active');
+            });
+
+            $('div.pinch-zoom').each(function () {
+                new RTP.PinchZoom($(this), {});
+            });
+
+        })
+    </script>
+
+    <!-- z -->
+    <script src="js/ind.js"></script>
+
+    <!-- iscorll -->
+    <script src="js/iscroll.js"></script>
+    <script type="text/javascript">
+        var myScroll;
+        function loaded () {
+            myScroll = new IScroll('#wrapper', { 
+                scrollX: true, 
+                freeScroll: true,
+                preventDefaultException: { tagName: /^(INPUT|TEXTAREA|BUTTON|SELECT|A)$/ },
+                click: true,
+
+            });
+        }
+
+        var aboutK4I = $('.about-k4-i');
+        var aboutK4A = $('.about-k4-a');
+        aboutK4I.each(function(i){
+            // var Down_i = aboutK4A.eq(i).offset().top;
+            $(this).on('click',function(){
+                i++;
+                myScroll.scrollToElement('.about-k4-'+i,300);
+            });
+        });
+
+        document.addEventListener('touchmove', function (e) { e.preventDefault(); }, false);
+    </script>
+
+    <!-- ani-up -->
+    <script src="js/ani-up.js"></script>
+
+    <!-- loading -->
+    <script src="js/loading.js"></script>
+
+</body>
+</html>

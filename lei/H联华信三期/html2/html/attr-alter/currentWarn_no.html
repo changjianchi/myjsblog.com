@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no" name="viewport" >
+    <!-- 新 Bootstrap 核心 CSS 文件 -->
+    <link rel="stylesheet" href="../../css/libs/bootstrap.min.css">
+    <link rel="stylesheet" href="../../css/common/top_nav.css">
+    <link rel="stylesheet" href="../../css/configuration_index.css">
+    <link href="../../css/attr_alter.css" type="text/css" rel="stylesheet"/>
+    <!--[if IE 9]>
+        <link rel="stylesheet" type="text/css" href="../../css/common/ie9.css" />
+    <![endif]-->
+
+    <!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->
+    <script src="../../js/libs/jquery.min.js"></script>
+    <!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+    <script src="../../js/libs/bootstrap.min.js"></script>
+    <script src="../../js/libs/echarts-all.min.js"></script>
+    <script src="../../js/common/common.js"></script>
+    <script src="../../js/configuration_index.js"></script>
+    <script src="../../js/attr_alter.js"></script>
+
+    <title>管理中心-配置步骤一</title>
+
+</head>
+<body>
+<!-- 配置步骤1 -->
+<style>
+    .wj-sear-open:hover{ background-image:url('../../img/attr_alter/ser_hover.png') !important; color:#096fc4 !important;}
+    .wj-sear-close:hover{ background-image:url('../../img/attr_alter/close_hover.png') !important; color:#096fc4 !important;}
+    .wj-seatop-ope a:hover{ color:#096fc4 !important;}
+</style>
+<script>
+    $(function () {
+        var $serPlaceholder=$('.to-sear-place');
+        var $serInputBox=$('.wj-seainput-box');
+        $('.wj-sear-open').click(function () {
+            $(this).hide();
+            $('.wj-sear-close').show();
+            $serInputBox.show();
+            $serPlaceholder.height($serInputBox.innerHeight()+44);
+        });
+        $('.wj-sear-close').click(function () {
+            $(this).hide();
+            $('.wj-sear-open').show();
+            $serInputBox.hide();
+            $serPlaceholder.height(44);
+        });
+    });
+</script>
+<div class="wj-outer">
+    <div class="container-fluid">
+        <div class="wj-search-pane" style="position: fixed;top: 0;left: 0;right: 0;margin: 0 15px;">
+            <div class="wj-seatop-ope">
+                <a href="#" class="wj-seropt-btn wj-seropt-confirm">确认事情</a>
+                <a href="#" class="wj-seropt-btn wj-seropt-note">批注</a>
+                <a href="#" class="wj-seropt-btn wj-seropt-export">导出Excel</a>
+                <a href="javascript:;" style="float: right;background: url('../../img/attr_alter/ser_normal.png') no-repeat left center;padding-left: 25px;color: #2196f3;font:15px/44px 'Microsoft Yahei';margin-right: 10px;" class="wj-sear-open">查询</a>
+                <a href="javascript:;" style="float: right;background: url('../../img/attr_alter/close_normal.png') no-repeat left center;padding-left: 25px;color: #2196f3;font:15px/44px 'Microsoft Yahei';margin-right: 10px;display: none;" class="wj-sear-close">收起</a>
+            </div>
+            <div class="wj-seainput-box clearfix" style="display: none;">
+                <form action="">
+                    <div class="col-lg-4">
+                        <div class="wj-oneser-item clearfix">
+                            <span class="wj-sear-tit pull-left">开始时间</span>
+                            <input type="text"  value="" name="" class="textInput-self-set pull-left wj-sear-date">
+                            <input type="text" name="" class="textInput-self-set pull-left wj-sear-time">
+                            <span class="wj-sear-unit pull-left">分</span>
+                            <input type="text" name="" class="textInput-self-set pull-left wj-sear-time wj-sear-second">
+                            <span class="wj-sear-unit pull-left">秒</span>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="wj-oneser-item clearfix">
+                            <span class="wj-sear-tit pull-left">截止时间</span>
+                            <input type="text" value="2016-04-25" name="" class="textInput-self-set pull-left wj-sear-date">
+                            <input type="text" name="" class="textInput-self-set pull-left wj-sear-time">
+                            <span class="wj-sear-unit pull-left">分</span>
+                            <input type="text" name="" class="textInput-self-set pull-left wj-sear-time wj-sear-second">
+                            <span class="wj-sear-unit pull-left">秒</span>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="wj-oneser-item clearfix">
+                            <span class="wj-sear-tit pull-left">事件等级</span>
+                            <div class="wj-depend-select wj-longest-ipt" id="eventLevel">
+                                <p class="wj-depsel-content">请选择事件等级</p>
+                                <i class="caret-self-set"></i>
+                                <!-- 下拉菜单的值放在这里 -->
+                                <input class="wj-data-ipt" type="hidden" name="" >
+                                <ul class="wj-depsel-list" style="">
+                                    <li data-id="0">请选择属性过滤</li>
+                                    <li data-id="1">交换机</li>
+                                    <li data-id="2">路由器</li>
+                                    <li data-id="3">IP设备</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="wj-oneser-item clearfix">
+                            <span class="wj-sear-tit pull-left">设备名称</span>
+                            <input type="text" onblur="wjPromptShow(this);" onfocus="wjPromptHide(this);" value="请输入设备名称" name="" class="textInput-self-set pull-left wj-longest-ipt">
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="wj-oneser-item clearfix">
+                            <span class="wj-sear-tit pull-left">排序方式</span>
+                            <div class="wj-depend-select wj-longest-ipt" id="wjOrderWay">
+                                <p class="wj-depsel-content">请选择排序方式</p>
+                                <i class="caret-self-set"></i>
+                                <!-- 下拉菜单的值放在这里 -->
+                                <input class="wj-data-ipt" type="hidden" name="" >
+                                <ul class="wj-depsel-list" style="">
+                                    <li data-id="0">请选择属性过滤</li>
+                                    <li data-id="1">交换机</li>
+                                    <li data-id="2">路由器</li>
+                                    <li data-id="3">IP设备</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="wj-oneser-item clearfix">
+                            <span class="wj-sear-tit pull-left">视图种类</span>
+                            <div class="wj-depend-select wj-longest-ipt" id="wjViewKinds">
+                                <p class="wj-depsel-content">请选择视图种类</p>
+                                <i class="caret-self-set"></i>
+                                <!-- 下拉菜单的值放在这里 -->
+                                <input class="wj-data-ipt" type="hidden" name="" >
+                                <ul class="wj-depsel-list" style="">
+                                    <li data-id="0">请选择属性过滤</li>
+                                    <li data-id="1">交换机</li>
+                                    <li data-id="2">路由器</li>
+                                    <li data-id="3">IP设备</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="wj-oneser-item clearfix">
+                            <span class="wj-sear-tit pull-left">视图</span>
+                            <div class="wj-depend-select wj-longest-ipt" id="wjViews">
+                                <p class="wj-depsel-content">请选择视图</p>
+                                <i class="caret-self-set"></i>
+                                <!-- 下拉菜单的值放在这里 -->
+                                <input class="wj-data-ipt" type="hidden" name="" >
+                                <ul class="wj-depsel-list" style="">
+                                    <li data-id="0">请选择属性过滤</li>
+                                    <li data-id="1">交换机</li>
+                                    <li data-id="2">路由器</li>
+                                    <li data-id="3">IP设备</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="wj-oneser-item clearfix">
+                            <span class="wj-sear-tit pull-left">IP地址</span>
+                            <input type="text" onblur="wjPromptShow(this);" onfocus="wjPromptHide(this);" value="请输入IP地址" name="" class="textInput-self-set pull-left wj-longest-ipt">
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="wj-oneser-item clearfix">
+                            <input class="wj-sear-submit wj-sear-supos" type="submit" value="查询"/>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div style="width: 100%;height: 44px;" class="to-sear-place"></div>
+    </div>
+    <div class="container-fluid">
+        <div class="wj-warntable-wrap">
+            <div class="wj-warntb-hd">
+                <table class="wj-curwarn-table">
+                    <thead>
+                    <tr>
+                        <td width="9.9%">&nbsp;</td>
+                        <td width="2.3%" class="wj-check-td"><label class="wj-check-box wj-check-all"><input type="checkbox" name="" /></label></td>
+                        <td width="10.3%">设备名称</td>
+                        <td width="10.3%">IP地址</td>
+                        <td width="10.3%">事件时间</td>
+                        <td width="21.7%">设备属性</td>
+                        <td width="18.5%">事件消息</td>
+                        <td width="6.1%">事件等级</td>
+                        <td width="6.1%">确认状态</td>
+                        <td width="3.4%">帮助</td>
+                    </tr>
+                    </thead>
+                </table>
+            </div>
+            <div class="wj-warntb-bd" style="height: 689px;">
+                <div class="wj-safe-ico"><img src="../../img/attr_alter/devi_safe_ico.png" width="154" height="175"/></div>
+                <div class="wj-safe-desc">您的设备目前很安全噢~</div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    $(document).ready(function() {
+        //  共用动画
+        commonFunction1();
+
+    });
+
+    $(function () {
+        //下拉 select
+        new simuSelect({'selectWrap':$('#eventLevel')});
+        new simuSelect({'selectWrap':$('#wjOrderWay')});
+        new simuSelect({'selectWrap':$('#wjViewKinds')});
+        new simuSelect({'selectWrap':$('#wjViews')});
+    });
+</script>
+</body>
+</html>

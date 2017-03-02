@@ -1,0 +1,263 @@
+@charset "utf-8";
+.cases .huibo-kv{
+    background: #fff;
+}
+.wrapper {
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: #ccc;
+    overflow: hidden;
+}
+.cases-nav{
+    width: 100%;
+    height: .69rem;
+    position: absolute;
+    top:1.87rem;
+    left:0;
+    color: #fff;
+}
+.cases-nav a{
+    font-size: .32rem;
+    display: inline-block;
+    float: left;
+    line-height: .7rem;
+    position: relative;
+}
+.cases-nav a em{
+    padding:0 .265rem;
+    height: 100%;
+    display: block;
+}
+.cases-nav a .cases-nav-k.active{
+    background: #ff6b00;
+}
+.cases-nav a span{
+    position: absolute;
+    top:100%;
+    left:0;
+    width: 2.50rem;
+    z-index: 11;
+    display: none;
+}
+.cases-nav a span.act{
+    display: block;
+}
+.cases-nav a span em{
+    display: block;
+    width: 100%;
+    height: .69rem;
+    line-height: .72rem;
+    text-align: left;
+    background: #ff6b00;
+    margin-bottom: 1px;
+}
+#wrapper.cases-top,.cases-top,.cases-bottom{
+    width: 100%;
+    height: 57%;
+    overflow: hidden;
+    position: relative;
+}
+.cases-top #scroller{
+    min-height: 100%;
+}
+.cases-bottom{
+    height: 38%;
+}
+.cases-top-right{
+    width: 100%;
+    height: auto;
+    color: #787878;
+    text-align: left;
+    padding:.6rem 0 .6rem 2.23rem;
+}
+.cases-top-left{
+    position: absolute;
+    width: 1.2rem;
+    height: auto;
+    color: #787878;
+    left: -1.54rem;
+    top:0;
+}
+.cases-bottom-cen{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+}
+.cases-top-left span,.cases-top-left i{
+    width: 100%;
+    display: block;
+    font-weight: bold;
+    font-size: .8rem;
+    line-height: .8rem;
+    text-align: center;
+    height: .95rem;
+}
+.cases-top-left span{
+    border-bottom: .13rem solid #787878;
+}
+.cases-top-left i{
+    padding-top: .04rem;
+}
+.cases-right-b{
+    width: 100%;
+    height: auto;
+    padding-right: .75rem;
+    position: relative;
+    text-align: left;
+}
+.cases-right-b b{
+    width: 100%;
+    display: block;
+    font-size: .5rem;
+    height: auto;
+}
+.cases-right-b b img{
+    width: auto;
+    height: .51rem;
+    position: relative;
+    top:.06rem;
+    margin-left: .25rem;
+}
+.cases-right-span{
+    display: block;
+    width: 100%;
+    padding-right: .75rem;
+    text-align: justify;
+    font-size: .32rem;
+    line-height: .45rem;
+    height: 2.6rem;
+    overflow: hidden;
+    margin-top: .1rem;
+}
+.cases-right-span.active{
+    height: auto;
+}
+.ca-ck{
+    width: 100%;
+    height: .32rem;
+    margin-top: .12rem;
+    line-height: .32rem;
+    font-size: .32rem;
+    text-align: left;
+}
+.ca-ck em{
+    display: inline-block;
+    width: auto;
+    text-decoration: underline;
+}
+.ca-icon{
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    margin-top: .05rem;
+}
+.ca-icon i{
+    display: block;
+    width: 3.49rem;
+    float: left;
+    height: .52rem;
+    line-height: .56rem;
+    margin-top: .19rem;
+    font-size: .32rem;
+    padding-left: .75rem;
+    text-align: left;
+}
+.ca-icon i:nth-of-type(2n){
+    width: 5rem;
+}
+.ca-icon i.chechang{
+    background: url(../img/cases/icon/chechang.png) no-repeat;
+    background-size: auto 100%;
+}
+.ca-icon i.chepai{
+    background: url(../img/cases/icon/chepai.png) no-repeat;
+    background-size: auto 100%;
+}
+.ca-icon i.dashu{
+    background: url(../img/cases/icon/dashu.png) no-repeat;
+    background-size: auto 100%;
+}
+.ca-icon i.dimian{
+    background: url(../img/cases/icon/dimian.png) no-repeat;
+    background-size: auto 100%;
+}
+.ca-icon i.erwei{
+    background: url(../img/cases/icon/erwei.png) no-repeat;
+    background-size: auto 100%;
+}
+.ca-icon i.fanxiang{
+    background: url(../img/cases/icon/fanxiang.png) no-repeat;
+    background-size: auto 100%;
+}
+.ca-icon i.kuaisu{
+    background: url(../img/cases/icon/kuaisu.png) no-repeat;
+    background-size: auto 100%;
+}
+.ca-icon i.lvse{
+    background: url(../img/cases/icon/lvse.png) no-repeat;
+    background-size: auto 100%;
+}
+.ca-icon i.nvshi{
+    background: url(../img/cases/icon/nvshi.png) no-repeat;
+    background-size: auto 100%;
+}
+.ca-icon i.tuiguang{
+    background: url(../img/cases/icon/tuiguang.png) no-repeat;
+    background-size: auto 100%;
+}
+.ca-icon i.xinneng{
+    background: url(../img/cases/icon/xinneng.png) no-repeat;
+    background-size: auto 100%;
+}
+.ca-icon i.yejian{
+    background: url(../img/cases/icon/yejian.png) no-repeat;
+    background-size: auto 100%;
+}
+.ca-icon i.yuezu{
+    background: url(../img/cases/icon/yuezu.png) no-repeat;
+    background-size: auto 100%;
+}
+.ca-icon i.zadao{
+    background: url(../img/cases/icon/zadao.png) no-repeat;
+    background-size: auto 100%;
+}
+.ca-icon i.zaixian{
+    background: url(../img/cases/icon/zaixian.png) no-repeat;
+    background-size: auto 100%;
+}
+.ca-icon i.zizhu{
+    background: url(../img/cases/icon/zizhu.png) no-repeat;
+    background-size: auto 100%;
+}
+.ca-icon i.zhaoming{
+    background: url(../img/cases/icon/zhaoming.png) no-repeat;
+    background-size: auto 100%;
+}
+.cases-bottom i{
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top:0;
+    left:0;
+    overflow: hidden;
+}
+.cases-bottom i{
+    opacity: 1;
+    -webkit-transition:opacity 1s ease;
+    transition:opacity 1s ease;
+}
+.cases-bottom i.act{
+    opacity: 0;
+}
+#wrapper.cases-top-right{
+    text-align: left;
+}
+.cases .swiper-pagination{
+    bottom:.2rem;
+}

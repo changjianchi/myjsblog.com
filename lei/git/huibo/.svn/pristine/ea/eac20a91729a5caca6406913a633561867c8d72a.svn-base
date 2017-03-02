@@ -1,0 +1,198 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>招贤纳士</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <link rel="stylesheet" href="css/animate.min.css">
+    <link rel="stylesheet" href="css/css.css">
+</head>
+<body>
+
+    <script>
+        var winWidth = document.body.clientWidth; var Html = document.getElementsByTagName('html'); 
+        Html[0].style.fontSize = winWidth / 10.8 + 'px';
+    </script>
+
+    <!-- start -->
+    <div id="wrapper">
+        <div id="scroller" class="scroller">
+            <!-- 第一屏 -->
+            <div class="huibo-one">
+                <!-- nav -->
+                <div class="huibo-nav">
+                    <b></b>
+                    <img src="img/logo.png" class="logo">
+                    <i class="table-a">
+                        <a href="tel:4006834288" class="table-cell">
+                            商务联系热线<p>4006834288</p>
+                        </a>
+                    </i>
+                </div>
+                <!-- top-bj -->
+                <div class="huibo-kv">
+                    <div class="huibo-top-bj" style="background:url(img/careers/bj.jpg) no-repeat center; background-size:cover;"></div>
+                    <div class="con-cen-top table-a">
+                        <div class="table-cell">
+                            <div class="con-cen-h1 ani-up ani-mate" style="width:7.7rem;">
+                                <span class="ani-up ani-mate">招贤纳士</span>
+                                <em class="ani-up ani-mate" style="letter-spacing:-0.06em;">WE PARK CAREERS</em>
+                            </div>
+                            <div class="con-cen-h2">
+                                <span class="ani-up ani-mate">求贤若渴，专席为你而候</span>
+                                <p class="ani-up ani-mate">我们建立完善的人才培养机制及人才发展通道</p>
+                                <p class="ani-up ani-mate">扬长避短，提升团队合作精神，</p>
+                                <p class="ani-up ani-mate">关爱平等，缔造员工集体归属感。</p>
+                                <p class="ani-up ani-mate ani-last">智在今日，自在未来！</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- cen -->
+            <div class="huibo-new huibo-fff">
+                <div class="huibo-home-bt ani-up ani-mate ani-last" style="margin-top:0;">招贤纳士</div>
+                <div class="careers-cen">
+                    <div class="careers-cen-p ani-up ani-mate ani-last">
+                        <div class="careers-cen-bt">业务拓展经理 / 资深投资经理</div>
+                        <div class="careers-cen-te">
+                            <em>工作地点：</em>上海/北京/天津/成都 &nbsp;&nbsp;&nbsp;
+                            <em>招聘人数：</em>若干</div>
+                        <div class="careers-cen-ms">职位描述：</div>
+                        <div class="careers-cen-ps">
+                            <p>本岗位对汇泊停车场（上海）有限公司在中国成功的业务发展活动负责。</p> 
+                            <p>本岗位的主要目标是与新客户和现有客户确认、回应并发展持续的新的业务机会。新业务包括停车运营（租赁和管理），提供与停车相关的服务，以及停车场相关设备的销售和维护。 </p>
+                            <p>本岗位的主要目标是与新客户和现有客户确认、回应并发展持续的新的业务机会。新业务包括停车运营（租赁和管理），提供与停车相关的服务，以及停车场相关设备的销售和维护。 </p>
+                        </div>
+                        <div class="careers-cen-up">
+                            <em>查看更多</em>
+                            <em class="none">收起</em>
+                        </div>
+                        <a href="#" class="careers-cen-a">我要应聘</a>
+                    </div>
+                    <div class="contact-text-px1 ani-up ani-mate ani-last"></div>
+                    <div class="careers-cen-p ani-up ani-mate ani-last">
+                        <div class="careers-cen-bt">停车场管理员</div>
+                        <div class="careers-cen-te">
+                            <em>工作地点：</em>上海/北京/天津/成都 &nbsp;&nbsp;&nbsp;
+                            <em>招聘人数：</em>若干</div>
+                        <div class="careers-cen-ms">职位描述：</div>
+                        <div class="careers-cen-ps">
+                            <p>要求： </p> 
+                            <p>• 22-35岁，初中以上学历 </p>
+                            <p>• 身体健康，沟通力强，性格平和。</p>
+                            <p>• 22-35岁，初中以上学历 </p>
+                            <p>• 身体健康，沟通力强，性格平和。</p>
+                            <p>• 22-35岁，初中以上学历 </p>
+                            <p>• 身体健康，沟通力强，性格平和。</p>
+                            <p>• 22-35岁，初中以上学历 </p>
+                            <p>• 身体健康，沟通力强，性格平和。</p>
+                            <p>• 22-35岁，初中以上学历 </p>
+                            <p>• 身体健康，沟通力强，性格平和。</p>
+                        </div>
+                        <div class="careers-cen-up">
+                            <em>查看更多</em>
+                            <em class="none">收起</em>
+                        </div>
+                        <a href="#" class="careers-cen-a">我要应聘</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- foot -->
+            <div class="foot ani-up ani-mate ani-last">
+                <div class="foot-top">
+                    <div class="foot-erweima">
+                        <div class="foot-erweima-img">
+                            <img src="img/foot-erweima.jpg">
+                            扫描上方微信<br>了解我们更多
+                        </div>
+                        <div class="foot-dianhua">
+                            <span>有任何商务、市场合作请联系：</span>
+                            <b><a href="tel:4006834288">400-683-4288</a></b>
+                            <span>或邮箱：</span>
+                            <i><a href="mailto:Marketing@huiboparking.com">Marketing@huiboparking.com</a></i>
+                        </div>
+                    </div>
+                    <div class="foot-bottom">
+                        <em><a href="#">隐私条款</a> | <a href="#">法律声明</a></em>
+                        © We Park 2014. All rights reserved. 
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- 下拉下拉菜单 -->
+    <div class="huibo-menu">
+        <div class="huibo-menu-col">
+            <em><i>x</i>关闭</em>
+        </div>
+        <div class="menu-logo"><img src="img/logo.png"></div>
+        <div class="huibo-menu-nav">
+            <a href="about.html">关于我们</a>
+            <a href="#">慧泊车</a>
+            <a href="#">智团队</a>
+            <a href="#">经典案例</a>
+            <a href="#">战略分布</a>
+            <a href="#">合作模式</a>
+            <a href="#">加入我们</a>
+            <a href="#">联系我们</a>
+            <a href="#">EN</a>
+        </div>
+        <div class="a-menu-last">
+            <a href="tel:4006834288">商务热线：<b>400 683 4288</b></a>
+            <a href="mailto:Marketing@huiboparking.com">邮箱：Marketing@huiboparking.com</a>
+        </div>>
+    </div>
+    
+    <!-- script -->
+    <script src="js/jq.js"></script>
+    <script src="js/ind.js"></script>
+    <script>
+        var winHeight = $(window).height();
+        $('.huibo-one').css({'height':winHeight+'px'});
+    $(function(){
+    
+        //展开
+        var careersCenUp = $('.careers-cen-up em');
+        careersCenUp.on('click',function(){
+            $(this).parent().find('em').removeClass('none');
+            $(this).addClass('none');
+            var ind = $(this).index();
+            if(ind===0){
+                $(this).parents('.careers-cen-p').find('.careers-cen-ps').addClass('active');
+            }else{
+                $(this).parents('.careers-cen-p').find('.careers-cen-ps').removeClass('active');
+            }
+        });
+
+    });
+    </script>
+
+    <!-- iscorll -->
+    <script src="js/iscroll.js"></script>
+    <script type="text/javascript">
+        var myScroll;
+        function loaded () {
+            myScroll = new IScroll('#wrapper', { 
+                scrollX: true, 
+                freeScroll: true,
+                preventDefaultException: { tagName: /^(INPUT|TEXTAREA|BUTTON|SELECT|A)$/ },
+                click: true,
+            });
+        }
+        document.addEventListener('touchmove', function (e) { e.preventDefault(); }, false);
+    </script>
+
+    <!-- ani-up -->
+    <script src="js/ani-up.js"></script>
+
+    <!-- loading -->
+    <script src="js/loading.js"></script>
+
+</body>
+</html>

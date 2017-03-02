@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no" name="viewport"
+          name="viewport">
+    <!-- 新 Bootstrap 核心 CSS 文件 -->
+    <link rel="stylesheet" href="../css/libs/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/common/top_nav.css">
+    <link rel="stylesheet" href="../css/configuration_index.css">
+    <!--[if IE 9]>
+        <link rel="stylesheet" type="text/css" href="../css/common/ie9.css" />
+    <![endif]-->
+
+    <!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->
+    <script src="../js/libs/jquery.min.js"></script>
+    <!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+    <script src="../js/libs/bootstrap.min.js"></script>
+    <script src="../js/common/common.js"></script>
+    <script src="../js/configuration_index.js"></script>
+    <title>管理中心-配置步骤一</title>
+
+</head>
+<body>
+<!-- 配置步骤1 -->
+<div class="content-container self-set-style-black">
+    <!-- 主页放置配置视图区域 -->
+    <div class="tab-content-container has-load-hide"></div>
+    <!-- 仪表板管理 -->
+    <div class="tab-content-container has-load-show">
+        <div class="manage-list-container">
+            <!-- 查询栏 -->
+            <div class="top-toolbar-container">
+                <form class="top-search-form" action="">
+                    <div class="select-contain">
+                        <h5 class="drop-down-label">是否自定义:</h5>
+                        <div class="dropDown-self-set">
+                            <p class="select-content">请选择属性过滤</p><i class="caret-self-set"></i>
+                            <!-- 下拉菜单的值放在这里 -->
+                            <input id="ShuXingGuoLv" name="ShuXingGuoLv" type="text">
+                            <ul class="select-list" >
+                                <li>请选择属性过滤</li>
+                                <li>交换机</li>
+                                <li>路由器</li>
+                                <li>IP设备</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <input class="textInput-self-set" id="SelectSearchInput" name="SelectSearchInput" type="text"
+                           value="请输入查询条件" onfocus="wjPromptHide(this);" onblur="wjPromptShow(this);" />
+                    <button class="btn-self-set" type="button">查询</button>
+                </form>
+                <div class="right-contain">
+                    <button class="btnIcon-self-set" id="addNewSetPage" type="button"><i
+                            class="icon icon-addBtn"></i><span class="text">新增</span></button>
+                </div>
+            </div>
+            <div class="method-manage-table-container mt-15">
+                <!-- 表格部分 -->
+                <table class="self-set-table">
+                    <thead>
+                    <tr>
+                        <td>方案名称</td>
+                        <td>描述信息</td>
+                        <td>所属角色</td>
+                        <td>创建日期</td>
+                        <td>是否生效</td>
+                        <td>是否自定义</td>
+                        <td colspan="3">操作</td>
+                    </tr>
+                    </thead>
+                    <tbody id="caseTalbeBody">
+                    <tr>
+                        <td>王老板</td>
+                        <td>老王私有</td>
+                        <td>领导</td>
+                        <td>2016-02-24</td>
+                        <td>是</td>
+                        <td>自定义</td>
+                        <td colspan="3"><span>更换角色</span>  &nbsp; <span>修改</span>  &nbsp; <a class="method-list-delete-btn" href="javascript:;">删除</a></td>
+                    </tr>
+                   
+                    </tbody>
+                </table>
+                <!-- 页码部分 -->
+                <div class="self-set-page-container">
+                    <!-- 所有记录数目 -->
+                    <div class="all-record-num">
+                        共<span>2057</span>条记录
+                    </div>
+                    <!--跳转按钮-->
+                    <a href="#" class="wj-jump-page">跳转</a>
+                    <!-- 想每页显示多少数目 -->
+                    <div class="page-show-num">
+                        <span class="left">每页</span>
+                        <div class="dropDown-self-set">
+                            <p class="select-content" id="PerPageBox">10</p><i class="caret-self-set"></i>
+                            <ul class="select-list page-list">
+                                <li>14</li>
+                                <li>13</li>
+                                <li>12</li>
+                                <li>11</li>
+                                <li>10</li>
+                                <li>4</li>
+                                <li>3</li>
+                                <li>2</li>
+                                <li>1</li>
+                            </ul>
+                        </div>
+                        <span class="right">条</span>
+                    </div>
+                    <!-- 输入页码刷新表 -->
+                    <div class="page-input">
+                        <span class="left">第</span><input type="text" value=""><span class="right">页</span>
+                    </div>
+                    <!-- 页码点击部分 -->
+                    <div class="page-contain">
+                        <div class="pagination">
+                            <ul>
+                                <li><a href="#">«</a></li>
+                                <li class="active"><a href="index.html">1</a></li>
+                                <li><a href="index2.html">2</a></li>
+                                <li><a href="#">3</a></li>
+                                <li><a href="#">4</a></li>
+                                <li><a href="#">5</a></li>
+                                <li><a href="#">»</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--角色选择弹出层-->
+<div class="wj-roleselect-pop">
+    <h4>请选择角色</h4>
+    <div class="dropDown-self-set">
+        <p class="select-content">请选择角色</p><i class="caret-self-set"></i>
+        <!-- 下拉菜单的值放在这里 -->
+        <input type="hidden" name="roloId" vlaue="">
+        <ul class="select-list">
+            <li data-id="1">角色1</li>
+            <li data-id="2">角色2</li>
+            <li data-id="3">角色3</li>
+            <li data-id="3">角色3</li>
+            <li data-id="3">角色3</li>
+            <li data-id="3">角色3</li>
+            <li data-id="3">角色3</li>
+            <li data-id="3">角色3</li>
+        </ul>
+    </div>
+    <div class="wj-role-optbtn clearfix">
+        <input type="button" class="btn-self-set cj-role-cof" value="确定"/>
+        <input type="button" class="btn-self-set cj-role-cancle" value="取消"/>
+    </div>
+</div>
+<!--角色选择弹出层结束-->
+<script>
+    $(document).ready(function() {
+    addNewSetPage();
+        //  共用动画
+        commonFunction1();
+        //  布局选择相关
+        aboutLayout();
+        //  跳转到配置界面2
+        turnToSetPage2();
+        //  返回到配置界面1
+        backToSetPage1();
+        //  添加URL相关
+        aboutAddURL();
+        //  配置展示内容相关
+        YiBiaoBanChoose();
+        //更换角色
+        $('.method-list-alter-role').on('click', function () {
+           var $parent=$(window.parent.document),
+                   roleSele=$('.wj-roleselect-pop');
+
+            $parent.find('body').append(roleSele.clone(true));
+            var pareRolSe=$parent.find('.wj-roleselect-pop');
+            pareRolSe.show();
+            $(window.parent.document).find('.wj-popup-mask').show();
+
+
+            $parent.on('click', function () {
+                pareRolSe.find(".caret-self-set").removeClass("active");
+                pareRolSe.removeClass("border-color");
+                pareRolSe.find(".select-list").stop(false,true).slideUp(200);
+            });
+
+            pareRolSe.on('click','.cj-role-cancle', function () {
+                pareRolSe.remove();
+                $(window.parent.document).find('.wj-popup-mask').hide();
+            }).on('click','.cj-role-cof',function () {
+                /*
+                 *   $.wjNotify()  提示信息  第一参数是提示文字   第二参数是状态  第三参数消失时间
+                 */
+                $.wjNotify('修改成功');
+//            $.wjNotify('修改失败啦啦啦','error');
+//            $.wjNotify('修改警告','warn',3000);
+
+
+                pareRolSe.remove();
+                $(window.parent.document).find('.wj-popup-mask').hide();
+
+            });
+        });
+
+        //删除调用确认框
+        $('.method-list-delete-btn').on('click', function () {
+            /*
+             *       $.wjConfimr() 第一个参数是提示文字  第二人参数是一个函数  用于确认时 回调操作
+             */
+            $.wjConfirm('确认要删除吗？', function () {
+                $.wjNotify('你点击了删除');
+            });
+        });
+
+    });
+</script>
+</body>
+</html>

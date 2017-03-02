@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Swiper demo</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <link rel="stylesheet" href="css/css.css">
+    <link rel="stylesheet" href="css/ani.css">
+    <!-- Demo styles -->
+    <style>
+    html, body {
+        position: relative;
+        height: 100%;
+    }
+    body {
+        background: #eee;
+        font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+        font-size: 14px;
+        color:#000;
+        margin: 0;
+        padding: 0;
+    }
+    .swiper-container {
+        width: 100%;
+        height: 100%;
+    }
+    .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background: #fff;
+
+        /* Center slide text vertically */
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+    }
+    </style>
+</head>
+<body>
+<script>
+     var winHeight = document.body.clientHeight;
+     var Html = document.getElementsByTagName('html');
+     Html[0].style.fontSize = winHeight / 12.8 + 'px';
+ </script>
+    <!-- Swiper -->
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+
+                <div class="zhonge cen1">
+                    <div class="one-top"><div class="cen1bt opacity"></div></div>
+                    <div class="cen1z"><div class="cen1t opacity"></div><div class="j1-1"></div></div>
+                    <div class="one-xiazai opacity"><a href="#"><img src="img/1/add-mf.png"></a></div>
+                    <div class="one-jieshao opacity"><a href="javascript:;"><img src="img/1/video-js.png"></a></div>
+                </div>
+
+            </div>
+            <div class="swiper-slide">
+
+                <div class="zhonge cen2">
+                    <div class="cen2bt opacity"></div>
+                    <div class="cen2-1">
+                        <div class="j2-1"></div>
+                        <div class="j2-2"></div>
+                        <div class="j2-3"></div>
+                        <div class="j2-ph opacity"></div>
+                        <div class="j2-ak opacity"></div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="swiper-slide">
+
+                <div class="zhonge cen3">
+                    <div class="cen3bt opacity"></div>
+                    <div class="cen3-1">
+                        <div class="chaoren opacity"></div>
+                        <div class="weiqi"><div class="weimu"></div></div>
+                        <div class="j3-ph"></div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="swiper-slide">
+                
+                <div class="zhonge cen4">
+                    <div class="cen4bt opacity"></div>
+                    <div class="cen4-1">
+                        <div class="j4-1 opacity"></div>
+                        <div class="j4-2 opacity"></div>
+                        <div class="j4-3 opacity"></div>
+                        <div class="j4-zhujiao opacity"></div>
+                        <div class="j4-beijing"></div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="swiper-slide">
+                
+               <div class="zhonge cen5">
+                    <div class="erweima opacity"><img src="img/5/erweima.jpg"></div>
+                    <div class="erweis opacity"><img src="img/5/sao.png" alt=""></div>
+                    <div class="one-xiazai opacity"><a href="#"><img src="img/1/add-mf.png"></a></div>
+                    <div class="one-jieshao opacity"><a href="javascript:;"><img src="img/1/video-js.png"></a></div>
+                    <div class="linxiand">
+                        <b class="qqhao opacity"></b>
+                        <b class="weixinhao opacity"></b>
+                        <b class="youxiang opacity"></b>
+                        <div class="lianxi-hover opacity">
+                            <div class="lianxi-span-hover">
+                                <i>1231231</i>
+                                <i>321</i>
+                                <i>123123</i>
+                            </div>
+                            <div class="lianxi-span-di"><div class="jtop"></div></div>
+                            <div class="lianxi-span-ding"></div>
+                        </div>
+                    </div>
+                    <div class="dibu-bo">百度科技股份有限公司</div>
+                </div>
+
+            </div>
+        </div>
+        <!-- Add Pagination -->
+        <div class="swiper-pagination"></div>
+    </div>
+    <div class="up-mos"><img src="img/up.png" class="opacity"></div>
+    <!-- video -->
+    <div class="video none">
+        <div class="video-cell">
+            <div class="video-bj">
+                <div class="vidcolimg"></div>
+                <div class="vidcol">
+                    <video src="http://101.227.211.138/youku/676C11A4A23883249818D38D0/030020010057AC5F8F9966330D0C90EB4EB9C3-CDD4-7615-1F73-CC3023962A72.mp4" controls="controls" class=""></video>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Swiper JS -->
+    <script src="js/zepto.min.js"></script>
+    <script src="js/swiper.min.js"></script>
+    <script src="js/ind.js"></script>
+    <!-- Initialize Swiper -->
+    <script>
+    var swiper = new Swiper('.swiper-container', {
+        pagination: '.swiper-pagination',
+        paginationClickable: true,
+        direction: 'vertical'
+    });
+    </script>
+</body>
+</html>

@@ -1,0 +1,169 @@
+@media screen and (min-width:770px){
+    .per_sidenav dd{width: 136px;}
+    .per_main{padding-bottom: 30px;}
+    .tujieul{display:block;margin-top: 5px;}
+    .tujieul li{position: relative;padding-left: 40px;}
+    .tujieul li a{font-size: 12px;line-height: 20px;color: #646464;text-indent:0;margin-left: 0px;background: none; width: 100px;}
+    .tujieul li a:hover{background-color:#fff;background-image: none;color: #0099ff;text-decoration: underline;}
+    .tujieul li:before{content: '';width: 4px;height: 4px;border-radius: 50%;position:absolute;border:1px solid #949494;top:7px;left:24px;}
+    .tujieul li:after{content: '';width: 2px;height: 15px;position:absolute;background: url(../img/lb/ul_li_bg.png) repeat-y;top:13px;left:26px;}
+    .tujieul li:last-child:after{display: none;}
+
+    .main_one,.main_two,.main_head{width: 710px;margin: 0 auto;}
+
+    .main_top{margin-top: 55px;height:38px;padding-left: 57px;line-height: 38px;width: 221px;font-size: 17px;font-weight: bold; color: #646464;}
+    .one_top{background: url(../img/lb/one_top_bg.png) no-repeat;background-size: 100% auto;}
+    .mainone_con{font-size: 12px;line-height: 24px;margin-top: 30px;color: #646464;font-family: '微软雅黑';}
+    .mainone_con img{width: 100%;height: auto;margin-top: 55px;}
+    .mainone_con span{display: block;margin-bottom: 15px;}
+    .mainone_con span:last-child{margin-bottom: 0;}
+    .mainone_con span i{color: #0099ff;font-style: normal;}
+    .mainone_con span i img{width: 9px;margin-top: -2px;margin-right: 12px;vertical-align: middle;}
+    .two_top{background: url(../img/lb/two_top_bg.png) no-repeat;background-size: 100% auto;}
+    .three_top{background: url(../img/lb/three_top_bg.png) no-repeat;background-size: 100% auto;}
+    .four_top{background: url(../img/lb/four_top_bg.png) no-repeat;background-size: 100% auto;}
+    /*2*/
+    .mainhead_top{font-size: 20px;font-weight: bold;color: #0099ff;margin: 54px 0 25px 0;}
+    .mainhead_top img{ width:15px; height:15px; position:relative; top:-2px;}
+    .mainhead_nr{font-size: 12px;line-height: 24px;}
+    /*raiders3*/
+    .raiders3{width: 668px;margin: 65px auto 0 auto;}
+    .raiders3 img{width: 100%;height: auto;}
+    .raiders3 p{margin-top: 55px;font-size:12px;color: #646464; }
+    /*raiders4*/
+    .raidersfour{width: 729px;margin: 0 auto;}
+    .raidersfour_top{margin: 59px 0 25px 53px;border:1px dashed #0099ff;border-left: 0;line-height: 52px;font-size: 18px;font-weight: bold;color: #646464;position: relative;padding-left: 28px;}
+    .raidersfour_top:nth-child(1):before{content: '';background: url('../img/lb/four_img1.png') no-repeat;position: absolute;width: 60px;height: 54px;background-size: 60px 54px;left:-53px;top:-1px;}
+    .raidersfour_top:nth-child(3):before{content: '';background: url('../img/lb/four_img2.png') no-repeat;position: absolute;width: 60px;height: 54px;background-size: 60px 54px;left:-53px;top:-1px;}
+    .raidersfour_top:nth-child(5):before{content: '';background: url('../img/lb/four_img3.png') no-repeat;position: absolute;width: 60px;height: 54px;background-size: 60px 54px;left:-53px;top:-1px;}
+    .raidersfour_nr li{font-size: 12px;line-height: 17px;margin:6px 0 7px 3px; padding-left: 37px; position: relative; }
+    .raidersfour_nr li:nth-child(1):before{ content: ''; background: url(../img/lb/four_li_bg.png) no-repeat 0 0;background-size: 18px auto;width: 18px;height: 18px;position: absolute;left:0px; }
+    .raidersfour_nr li:nth-child(2):before{ content: ''; background: url(../img/lb/four_li_bg.png) no-repeat 0 -33px;background-size: 18px auto;width: 18px;height: 18px;position: absolute;left:0px; }
+    .raidersfour_nr li:nth-child(3):before{ content: ''; background: url(../img/lb/four_li_bg.png) no-repeat 0 -61px;background-size: 18px auto;width: 18px;height: 18px;position: absolute;left:0px; }
+    .raidersfour_nr li:nth-child(4):before{ content: ''; background: url(../img/lb/four_li_bg.png) no-repeat 0 -91px;background-size: 18px auto;width: 18px;height: 18px;position: absolute;left:0px; }
+    .raidersfour_nr li:nth-child(5):before{ content: ''; background: url(../img/lb/four_li_bg.png) no-repeat 0 -121px;background-size: 18px auto;width: 18px;height: 18px;position: absolute;left:0px; }
+    .raidersfour_nr li:nth-child(6):before{ content: ''; background: url(../img/lb/four_li_bg.png) no-repeat 0 -151px;background-size: 18px auto;width: 18px;height: 18px;position: absolute;left:0px; }
+    .raidersfour_nr li:nth-child(7):before{ content: ''; background: url(../img/lb/four_li_bg.png) no-repeat 0 -182px;background-size: 18px auto;width: 18px;height: 18px;position: absolute;left:0px; }
+    .raidersfour_nr li:nth-child(8):before{ content: ''; background: url(../img/lb/four_li_bg.png) no-repeat 0 -210px;background-size: 18px auto;width: 18px;height: 18px;position: absolute;left:0px; }
+    .raidersfour_nr li:nth-child(9):before{ content: ''; background: url(../img/lb/four_li_bg.png) no-repeat 0 -258px;background-size: 18px auto;width: 18px;height: 18px;position: absolute;left:0px; }
+
+
+    /*
+    .raidersfour_nr li:nth-child(2){background: url(../img/lb/four_li_bg.png) no-repeat 0 -33px; background-size: 18px auto;}
+    .raidersfour_nr li:nth-child(3){background: url(../img/lb/four_li_bg.png) no-repeat 0 -61px;background-size: 18px auto; }
+    .raidersfour_nr li:nth-child(4){background: url(../img/lb/four_li_bg.png) no-repeat 0 -91px; background-size: 18px auto;}
+    .raidersfour_nr li:nth-child(5){background: url(../img/lb/four_li_bg.png) no-repeat 0 -121px;background-size: 18px auto; }
+    .raidersfour_nr li:nth-child(6){background: url(../img/lb/four_li_bg.png) no-repeat 0 -151px; background-size: 18px auto;}
+    .raidersfour_nr li:nth-child(7){background: url(../img/lb/four_li_bg.png) no-repeat 0 -182px;background-size: 18px auto; }
+    .raidersfour_nr li:nth-child(8){background: url(../img/lb/four_li_bg.png) no-repeat 0 -210px; background-size: 18px auto;}
+    .raidersfour_nr li:nth-child(9){background: url(../img/lb/four_li_bg.png) no-repeat 0 -258px;background-size: 18px auto; }*/
+
+    /*raiders5*/
+    .raidersfive{width: 740px;margin: 0 auto;}
+    .raidersfive_top{font-size: 18px;font-weight: bold;color: #0099ff;background: url(../img/lb/xiajiantou.png) no-repeat 72px 10px;background-size: 9px auto;margin:53px 0 11px 0;}
+    .raidersfive_nr ul li{position: relative;height: 34px;line-height: 34px;}
+    .raidersfive_nr ul li i{padding-left: 7px;font-size: 13px;color: #969696;font-style: normal; display:inline-block; width:60px;}
+    .raidersfive_nr ul li a{padding-left: 20px;font-size: 16px;color: #646464;margin-left:30px;width: 610px;display: inline-block;}
+    .raidersfive_nr ul li a:hover{border:1px solid #0099ff;border-radius: 10px;line-height: 32px;height: 32px;padding-left: 19px;color: #0099ff;cursor: pointer;background: url(../img/lb/five_more.png) no-repeat 609px 7px; background-size: 19px auto;}
+    .raidersfive_nr ul li:before{content: '';background: url(../img/lb/five_yuan.png) no-repeat;width: 17px;height: 17px;position: absolute;left: 70px;top: 9px;background-size: 17px auto;}
+    .raidersfive_nr ul li:after{content: '';width: 1px;height: 24px;background: #d4d4d4;position: absolute;left: 78px;top: 26px;}
+    .raidersfive_nr ul li:last-child:after{width: 0;}
+    .raidersfive_nr ul li.last:after{width: 0;}
+
+    .digg{height: 24px;}
+    .pagination-digg{margin-left: 30%;margin-top: 30px;}
+    .pagination-digg li { border:0; margin:0; padding:0; font-size:11px; list-style:none; /* savers */ float:left; }
+    .pagination-digg a { border:solid 1px #0099ff; margin-right:5px; color: #0099ff; }
+    .pagination-digg .previous-off,#pagination-digg .next-off  { border:solid 1px #0099ff; color:#888888; display:block; float:left; font-weight:bold; margin-right:5px; padding:3px 7px; }
+    .pagination-digg .next a,#pagination-digg .previous a { font-weight:bold; color: #0099ff; } 
+    .pagination-digg .active { background:#0099ff; color:#FFFFFF; font-weight:bold; display:block; float:left; padding:4px 8px; /* savers */ margin-right:5px; }
+    .pagination-digg a:link,#pagination-digg a:visited { color:#0099ff; display:block; float:left; padding:3px 7px; text-decoration:none; }
+    .pagination-digg a:hover { border:solid 1px #0099ff; background:#0099ff; color:#FFFFFF; font-weight:bold; }
+
+
+    .wj-time{ font:12px/13px "Microsoft Yahei"; color:#aaaaaa; padding-left:16px; background:url(../img/wj_art_ico.png) no-repeat left center; -webkit-background-size:13px 13px; background-size:13px 13px;}
+    .wj-main-title{ height:32px; font:bold 18px/32px "Microsoft Yahei"; color:#646464; padding-left:50px; border:2px dashed #ffbe00; -webkit-border-radius:16px; -moz-border-radius:16px; border-radius:16px; position:relative; margin-top:40px;}
+    .wj-main-title .wj-tit-ord{ font:bold 18px/40px "Microsoft Yahei"; text-align:center; width:40px; height:40px; background:url('../img/wj_tit_bg.png') no-repeat center center; display:block; position:absolute; top:-4px; left:-3px; color:#ffbe00; -webkit-background-size:40px 40px; background-size:40px 40px;}
+
+    /*radi2*/
+    .wj-radi2-pics{ padding:55px 7.4% 110px;}
+    .wj-radi2-pics img{ width:100%;}
+
+}
+@media screen and (max-width:770px){
+    .per_main{padding-bottom: 15px!important;}
+    .ph_main_top{color: #11a0ff;font-weight: bold;font-size: 12px;margin-top: 15px;}
+    .main_one,.main_two{width: 100%;margin: 0 auto;}
+    .main_top{margin-top: 25px;height:24px;padding-left: 29px;line-height: 24px;width: 150px;font-size: 10px;font-size:10px;-webkit-transform-origin-x: 0;font-weight: bold;}
+    .one_top{background: url(../img/lb/one_top_bg.png) no-repeat;background-size: 100% auto;}
+    .mainone_con{font-size: 8px;line-height: 24px;margin-top: 15px;color: #646464;font-family: '微软雅黑';}
+    .mainone_con img{width: 100%;height: auto;margin-top: 28px;}
+    .mainone_con span{display: block;margin-bottom: 10px;}
+    .mainone_con span:last-child{margin-bottom: 0;}
+    .mainone_con span i{color: #0099ff;font-style: normal;}
+    .mainone_con span i img{width: 9px;margin-top: -2px;margin-right: 12px;vertical-align: middle;}
+    .two_top{background: url(../img/lb/two_top_bg.png) no-repeat;background-size: 100% auto;}
+    .three_top{background: url(../img/lb/three_top_bg.png) no-repeat;background-size: 100% auto;}
+    .four_top{background: url(../img/lb/four_top_bg.png) no-repeat;background-size: 100% auto;}
+    .ph_main_bottom{}
+    .ph_main_bottom a{color: #11a0ff;text-decoration: underline;}
+    .ph_main_bottom img{vertical-align: middle;margin: 0 5px;}
+
+    /*2*/
+    .mainhead_top{font-size: 12px;font-weight: bold;color: #0099ff;margin: 15px 0 15px 0;}
+    .mainhead_top img{ width:8px; height:8px; position:relative; top:-1px;}
+    .mainhead_nr{font-size: 8px;line-height: 24px;}
+    .mainone_con span i img{width: 9px;margin-top: -2px;margin-right: 12px;vertical-align: middle;}
+    /*raiders3*/
+    .raiders3{width: 100%;margin: 33px auto 10px auto;}
+    .raiders3 img{width: 100%;height: auto;}
+    .raiders3 p{margin-top: 28px;font-size:8px;color: #646464; }
+
+    /*raiders4*/
+    .raidersfour{width:100%;margin: 0 auto;}
+    .raidersfour_top{margin: 15px 0 15px 30px;border:1px dashed #0099ff;border-left: 0;line-height: 25px;font-size: 10px;font-weight: bold;color: #646464;position: relative;padding-left: 14px;}
+    .raidersfour_top:nth-child(1):before{content: '';background: url('../img/lb/four_img1.png') no-repeat;position: absolute;width: 30px;height: 27px;background-size: 30px 27px;left:-27px;top:-1px;}
+    .raidersfour_top:nth-child(3):before{content: '';background: url('../img/lb/four_img2.png') no-repeat;position: absolute;width: 30px;height: 27px;background-size: 30px 27px;left:-27px;top:-1px;}
+    .raidersfour_top:nth-child(5):before{content: '';background: url('../img/lb/four_img3.png') no-repeat;position: absolute;width: 30px;height: 27px;background-size: 30px 27px;left:-27px;top:-1px;}
+    .raidersfour_nr li{font-size: 8px;line-height: 17px;margin:6px 0 7px 3px; padding-left: 37px; position: relative; }
+    .raidersfour_nr li:nth-child(1):before{ content: ''; background: url(../img/lb/four_li_bg.png) no-repeat 0 0;background-size: 18px auto;width: 18px;height: 18px;position: absolute;left:0px; }
+    .raidersfour_nr li:nth-child(2):before{ content: ''; background: url(../img/lb/four_li_bg.png) no-repeat 0 -33px;background-size: 18px auto;width: 18px;height: 18px;position: absolute;left:0px; }
+    .raidersfour_nr li:nth-child(3):before{ content: ''; background: url(../img/lb/four_li_bg.png) no-repeat 0 -61px;background-size: 18px auto;width: 18px;height: 18px;position: absolute;left:0px; }
+    .raidersfour_nr li:nth-child(4):before{ content: ''; background: url(../img/lb/four_li_bg.png) no-repeat 0 -91px;background-size: 18px auto;width: 18px;height: 18px;position: absolute;left:0px; }
+    .raidersfour_nr li:nth-child(5):before{ content: ''; background: url(../img/lb/four_li_bg.png) no-repeat 0 -121px;background-size: 18px auto;width: 18px;height: 18px;position: absolute;left:0px; }
+    .raidersfour_nr li:nth-child(6):before{ content: ''; background: url(../img/lb/four_li_bg.png) no-repeat 0 -151px;background-size: 18px auto;width: 18px;height: 18px;position: absolute;left:0px; }
+    .raidersfour_nr li:nth-child(7):before{ content: ''; background: url(../img/lb/four_li_bg.png) no-repeat 0 -182px;background-size: 18px auto;width: 18px;height: 18px;position: absolute;left:0px; }
+    .raidersfour_nr li:nth-child(8):before{ content: ''; background: url(../img/lb/four_li_bg.png) no-repeat 0 -210px;background-size: 18px auto;width: 18px;height: 18px;position: absolute;left:0px; }
+    .raidersfour_nr li:nth-child(9):before{ content: ''; background: url(../img/lb/four_li_bg.png) no-repeat 0 -258px;background-size: 18px auto;width: 18px;height: 18px;position: absolute;left:0px; }
+
+    /*raiders5*/
+    .raidersfive{width: 100%;margin: 0 auto;}
+    .raidersfive_top{font-size: 12px;font-weight: bold;color: #0099ff;background: url(../img/lb/xiajiantou.png) no-repeat 50px 8px;background-size: 4.5px auto;margin:15px 0 15px 0;}
+    .raidersfive_nr{padding-top: 15px;}
+    .raidersfive_nr ul li{position: relative;height: 33px;line-height: 33px;}
+    .raidersfive_nr ul li i{display: none;}
+    .raidersfive_nr ul li a{padding-left: 10%;font-size: 9px;color: #646464;display: block;}
+    .raidersfive_nr ul li:before{content: '';background: url(../img/lb/five_yuan.png) no-repeat;width: 9px;height: 9px;position: absolute;left: 5%;top: 11px;background-size: 9px auto;}
+    .raidersfive_nr ul li:after{content: '';width: 1px;height: 24px;background: #d4d4d4;position: absolute;left: 5%;top: 20px;margin-left: 4px;}
+    .raidersfive_nr ul li:last-child:after{width: 0;}
+
+    .digg{height: 24px;}
+    .pagination-digg{margin-left: 10%;margin-top: 30px;}
+    .pagination-digg li { border:0; margin:0; padding:0; font-size:11px; list-style:none; /* savers */ float:left; }
+    .pagination-digg a { border:solid 1px #0099ff; margin-right:5px; color: #0099ff; }
+    .pagination-digg .previous-off,#pagination-digg .next-off  { border:solid 1px #0099ff; color:#888888; display:block; float:left; font-weight:bold; margin-right:5px; padding:3px 7px; }
+    .pagination-digg .next a,#pagination-digg .previous a { font-weight:bold; color: #0099ff; } 
+    .pagination-digg .active { background:#0099ff; color:#FFFFFF; font-weight:bold; display:block; float:left; padding:4px 8px; /* savers */ margin-right:5px; }
+    .pagination-digg a:link,#pagination-digg a:visited { color:#0099ff; display:block; float:left; padding:3px 7px; text-decoration:none; }
+    .pagination-digg a:hover { border:solid 1px #0099ff; background:#0099ff; color:#FFFFFF; font-weight:bold; }
+
+
+    .wj-time{ font:9px/10px "Microsoft Yahei"; color:#aaa; padding-left:14px;background:url(../img/wj_art_ico.png) no-repeat left center; -webkit-background-size:10px 10px; background-size:10px 10px;}
+    .wj-main-title{ height:18px; font:bold 10px/18px "Microsoft Yahei"; color:#646464; padding-left:30px; border:2px dashed #ffbe00; -webkit-border-radius:9px; -moz-border-radius:9px; border-radius:9px; position:relative; margin-top:20px;}
+    .wj-main-title .wj-tit-ord{ font:bold 11px/23px "Microsoft Yahei"; text-align:center; width:23px; height:23px; background:url('../img/wj_tit_bg.png') no-repeat center center; display:block; position:absolute; top:-2px; left:-2px; color:#ffbe00; -webkit-background-size:23px 23px; background-size:23px 23px;}
+
+    /*radi2*/
+    .wj-radi2-pics{ padding:20px 0 15px;}
+    .wj-radi2-pics img{ width:100%;}
+}
+

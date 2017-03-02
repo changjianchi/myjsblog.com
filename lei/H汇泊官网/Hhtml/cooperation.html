@@ -1,0 +1,120 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>合作模式</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+    <link rel="stylesheet" href="css/css.css">
+</head>
+<body>
+    <!-- 背景图 -->
+    <div class="about-top">
+        <div class="about-top-bj-img cooperation-top-bj-img"></div>
+    </div>
+    <!-- 第一版 -->
+    <div class="content-one">
+        <!-- 导航栏 -->
+        <div class="nav2">
+            <!-- logo -->
+            <a href="index_n.html"> <img src="img/logo.png" class="nav2-logo"></a>
+            <!-- 导航 -->
+            <div class="nav2-menu">
+            </div>
+        </div>
+        <!-- 第一版内容 -->
+        <div class="content-one-text table-a">
+            <div class="table-cell">
+                <div class="content-one-bt careers-one-bt animate-a top-op">合作模式</div>
+                <div class="content-one-bt-en animate-a top-op">OUR COLLABORATION MODELS</div>
+                <div class="content-one-b2 careers-one-b2 animate-a top-op">重视每一位合作伙伴的需求与商业收益</div>
+                <div class="content-one-b2-text animate-a top-op">
+                    为持有不同物业类型的停车场客户提供灵活多变的合作模式<br>
+                    <div class="clear"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="clear"></div>
+    <!-- 合作模式 -->
+    <div class="content-cen2-block animate-a top-op ani-x">
+        <div class="content-cen2-block-k"></div>
+        <div class="animate-a top-op ani-last scoa">
+            <div class="cooperation-bt1">合作模式</div>
+        <img src="img/cooperation/cen1.jpg" class="cooperation-img1 animate-a top-op ani-last">
+        </div>
+         <div class="clear"></div>
+    </div>
+    <!-- 目标项目 -->
+    <div class="about-chanye-bj scoa" style="margin-top:28px;">
+        <div class="content-cen-block">
+            <div class="cooperation-mubiao-bt animate-a top-op ani-last">目标项目</div>
+            <div class="content-cen2-block">
+                <div class="cooperation-mubiao-cen">
+                    <span class="animate-a top-op">
+                        <img src="img/cooperation/mubiao1.jpg"><p>机场及火车站等交通枢纽</p>
+                    </span>
+                    <span class="animate-a top-op">
+                        <img src="img/cooperation/mubiao2.jpg"><p>学校和医院等公共机构或组织</p>
+                    </span>
+                    <span class="animate-a top-op">
+                        <img src="img/cooperation/mubiao3.jpg"><p>商场及酒店</p>
+                    </span>
+                    <span class="animate-a top-op ani-last">
+                        <img src="img/cooperation/mubiao4.jpg"><p>CBD、商务楼及综合体</p>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- right-Phone-Email -->
+    <div class="right-phone-email table-a">
+        <div class="table-cell">
+            <span class="phone">
+                <em>
+                    <i>
+                        <p>
+                            商务热线：<br>
+                            <a>400-683-4288</a>
+                        </p>
+                    </i>
+                </em>
+            </span>
+            <span class="email">
+                <em>
+                    <i>
+                        <p>
+                            市场合作邮箱：<br>
+                            Marketing@huiboparking.com
+                        </p>
+                    </i>
+                </em>
+            </span>
+        </div>
+    </div>
+    <!-- foot -->
+    <div class="foot-html animate-a top-op ani-last"></div>
+
+    <!-- script -->
+    <script src="js/jq.js"></script>
+    <script src="js/jquery.easing.min.js"></script>
+    
+    <script>
+        function fun(){
+            var winHeight = $(window).height();
+            if(winHeight<600){
+                $('.about-top').css({'height':'600px'});
+                $('.content-one').css({'height':'600px'});
+            }else{
+                $('.about-top').css({'height':winHeight+'px'});
+                $('.content-one').css({'height':winHeight-144+'px'});
+            }
+        }
+        fun();
+        $(window).on('resize',function(){
+            fun();
+        });
+    </script>
+    <script src="js/main.js"></script>
+    <script src="js/nav-foot.js"></script>
+</body>
+</html>

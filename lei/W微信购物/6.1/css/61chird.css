@@ -1,0 +1,212 @@
+@charset "utf-8";
+*{
+	box-sizing: border-box;
+}
+html,
+body,
+div,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+pre,
+code,
+form,
+fieldset,
+legend,
+input,
+textarea,
+p,
+blockquote,
+th,
+td,
+em,
+button{
+	margin: 0;
+	padding: 0;
+}
+li,dd{
+	list-style: none;
+}
+html,body{
+	width: 100%;
+}
+i,em{
+	font-style: normal;
+}
+a{
+	text-decoration: none;
+	color: #333;
+}
+body{
+	font-family: "微软雅黑";
+	color: #333333;
+	background-color: #fff;
+	font-size: 0.12rem;
+}
+.clear {
+	*zoom: 1;
+}
+.clear:after {
+	content: ".";
+	display: block;
+	height: 0;
+	clear: both;
+	visibility: hidden;
+}
+.none{
+	display: none;
+}
+/*----------------------------------------------------------------start*/
+body{
+	background: #8edde0;
+}
+.top{
+	width: 100%;
+	height: 6.41rem;
+	background: url(../img/topbj.jpg) no-repeat;
+	background-size: 100% auto;
+	position: relative;
+}
+.top-hot{
+	position: absolute;
+	top:0;
+	width: 0.81rem;
+	height: 1.05rem;
+	background: url(../img/topbt.png) no-repeat;
+	background-size: 100% auto;
+	left: 0.2rem;
+}
+.top-text{
+	position: absolute;
+	top:0.56rem;
+	width: 4.72rem;
+	height: 3.39rem;
+	background: url(../img/topbz.png) no-repeat;
+	background-size: 100% auto;
+	left: 1.70rem;
+}
+.conone{
+	width: 6.08rem;
+	height: 8.11rem;
+	background: url(../img/cen-bj.png) no-repeat;
+	background-size: 100% auto;
+	margin:0 auto 0.27rem;
+}
+.conone a,.contwo a{
+	display: block;
+}
+.conone-top{
+	width: 100%;
+	height: 2.07rem;
+	background: url(../img/cen-top-one.png) no-repeat;
+	background-size: 100% auto;
+}
+.conone-top2{
+	width: 100%;
+	height: 2.07rem;
+	background: url(../img/cen-top-two.png) no-repeat;
+	background-size: 100% auto;
+}
+.cononeul{
+	width: 6rem;
+	height: 5.7rem;
+	overflow: hidden;
+	margin:0 auto;
+}
+.cononeul ul{
+	width: 100%;
+	padding-left: 4%;
+	margin-left: 0.05rem;
+}
+.cononeul ul li{
+	width: 48%;
+	float: left;
+	height: 2.77rem;
+	overflow: hidden;
+	text-align: center;
+}
+.cononeul li img{
+	width: 2.53rem;
+	height: 1.93rem;
+}
+.cononeul li p{
+	display: block;
+	width: 100%;
+	height: 0.38rem;
+	line-height: 0.38rem;
+	font-size: 0.2rem;
+}
+.cononeul li em{
+	display: block;
+	width: 1.7rem;
+	height: 0.35rem;
+	background: #f64747;
+	color: #fff;
+	font-size: 0.2rem;
+	margin:0 auto;
+	line-height: 0.35rem;
+	border-radius: 0.07rem;
+	font-weight: bold;
+	padding-right: 0.03rem;
+}
+.cononeul em i{
+	font-weight: 100;
+	font-size: 0.18rem;
+	position: relative;
+	top:0.04rem;
+	margin:0 0.1rem 0 0.01rem;
+	display: inline-block;
+}
+.cononeul em span{
+	font-size: 0.30rem;
+	position: relative;
+	top:0.04rem;
+	display: inline-block;
+}
+.contwo{
+	width: 6.18rem;
+	height: 8.33rem;
+	background: url(../img/cen-ybj.png) no-repeat;
+	background-size: 100% auto;
+	margin:0 auto;
+	padding-top: 1rem;
+}
+.contwo .cononeul{
+	height: 100%;
+}
+.contwo ul{
+	padding-left: 0%;
+}
+.contwo ul li{
+	height: 3.45rem;
+	width: 50%;
+}
+.contwo ul li:nth-of-type(1),.contwo ul li:nth-of-type(3){
+	width: 46.5%;
+}
+.contwo li img{
+	width: 2.64rem;
+	height: 2.42rem;
+}
+.bota{
+	width: 3.92rem;
+	height: 0.62rem;
+	background: #f64747;
+	margin:0.37rem auto;
+	text-align: center;
+	border-radius: 0.07rem;
+	padding-top: 0.13rem;
+}
+.bota img{
+	width: 1.45rem;
+	height: auto;
+}

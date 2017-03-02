@@ -1,0 +1,352 @@
+.cvCnt{
+	width: 521px;
+	margin: 0px auto;
+}
+.cvCnt h2{
+	font-size: 18px;
+	text-align: center;
+	color: #c1c4ca;
+	font-weight: normal;
+}
+.cvTop {
+    height: 84px;
+    background: #29bdb9;
+    text-align: center;
+    margin-top: 40px;
+    
+}
+.cvTop .cvTopBox{
+	display: inline-block;
+	height: 124px;
+    width: 124px;
+    position: relative;
+    top: -20px;
+    cursor: pointer;
+    border-radius: 120px;
+    border: 2px solid #4fc9c5;
+}
+.cvTop .cvTopBox:hover .cv-upimg{
+	display: block;
+}
+.cv-upimg{
+	height: 120px;
+    width: 120px;
+    border-radius: 120px;
+    display: block;
+    text-align: center;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    background: rgba(0,0,0,0.4);
+    padding-top: 46px;
+    display: none;
+}
+.cv-upimg i{
+	display: inline-block;
+	width: 31px;
+	height: 25px;
+	background: url(../../images/icon.png) -186px -27px no-repeat;
+}
+.cvTop img {
+    height: 120px;
+    width: 120px;
+    border-radius: 120px;
+}
+.cvBox{
+	background: #FFFFFF;
+	box-shadow: 0px 0px 5px rgba(0,0,0,0.4);
+}
+.cvBox-ovef{
+	overflow: hidden;
+}
+.cvDiv{
+	width: 300%;
+	position: relative;
+	transition: all 1s;
+}
+.cvlist{
+	width: 520px;
+	padding: 0px 50px;
+	color: #999999;
+	float: left;
+	position: relative;
+	min-height: 490px;
+}
+.cvtitle{
+	text-align: center;
+	font-size: 18px;
+	text-align: center;
+	padding: 40px 0px 35px 0px;
+	color: #333333;
+}
+.cvtable{
+	width: 100%;
+}
+.cvtable tr td{
+	padding-bottom: 15px;
+}
+.cvinput{
+	width: 100%;
+	border: 1px solid #e4e6e9;
+	background: #f8f9fb;
+	padding: 0px 12px;
+	height: 40px;
+	font-size: 14px;
+}
+.cvtype li{
+	width: 73px;
+	display: inline-block;
+	margin-right: 7px;
+	height: 40px;
+	border: 1px solid #e4e6e9;
+	text-align: center;
+	line-height: 38px;
+	font-size: 14px;
+	cursor: pointer;
+	position: relative;
+	background: #f8f9fb;
+}
+.cvtype li.active{
+	border: 2px solid #29bdb9;
+	line-height: 36px;
+	color: #29bdb9;
+	background: #FFFFFF;
+}
+.cvtype li i{
+	background: url(../../images/icon.png) -87px -60px no-repeat;
+	width: 18px;
+	height: 18px;
+	display: inline-block;
+	position: absolute;
+	right: 0px;
+	top: 0px;
+	display: none;
+}
+.cvtype li.active i{
+	display: block;
+}
+.cv-w173{
+	width: 173px;
+}
+.cvSelect{
+	height: 40px;
+}
+.cvSelect .text{
+	height: 40px;
+	line-height: 38px;
+	background: #f8f9fb;
+	width: 200px;
+	font-size: 14px;
+}
+.cvSelect .selectUI-val:hover{
+	border: 1px solid #e4e6e9;
+}
+.cvSelect .selectUI-val{
+	height: 40px;
+	padding-left: 12px;
+}
+.cvSelect .selectUI-text i{
+	top: 15px;
+}
+.cvSelect .text ul{
+	top: 39px;
+}
+.cvSelect .text ul li a{
+	height: 33px;
+	line-height: 33px;
+	padding-left: 12px;
+	color: #999999;
+}
+.cvSelect.active .selectUI-val,.selectUI.active ul{
+	border: 1px solid #e4e6e9;
+}
+.cvSelect .text ul li a:hover{
+	background: #eff1f4;
+}
+.cv1-btnCox{
+	text-align: center;
+	padding-top: 30px;
+	
+}
+.cv-btn{
+	font-size: 16px;
+	color: #FFFFFF;
+	text-align: center;
+	display: inline-block;
+	height: 47px;
+	line-height: 47px;
+	width: 313px;
+	background: #29bdb9;
+}
+.cvdian {
+	text-align: center;
+	padding: 20px;
+}
+.cvdian li{
+	display: inline-block;
+	width: 10px;
+	height: 10px;
+	border-radius: 10px;
+	margin: 0px 6px;
+	background: #d5d9e1;
+}
+.cvdian li.active{
+	background: #29bdb9;
+}
+.cv-img{
+	text-align: center;
+}
+.cv2table tr td{
+	padding-bottom: 26px;
+}
+.cv1Select .text{
+	width: 173px;
+}
+
+.cv1-box {
+	position: relative;
+	width: 389px;
+}
+.cv1-box i{
+	display: inline-block;
+	width: 12px;
+	height: 12px;
+	background: url(../../images/icon.png) -224px -27px no-repeat;
+	position: absolute;
+	top: 13px;
+	right: 10px;
+}
+.cvmore{
+	font-size: 14px;
+	color: #29bdb9;
+}
+.cvmore i{
+	display: inline-block;
+	width: 28px;
+	height: 28px;
+	background: url(../../images/icon.png) -257px -27px no-repeat;
+	position: relative;
+	top: 8px;
+	margin-right: 10px;
+}
+.cv2-btnCox{
+	padding-top: 20px;
+}
+.cv2-btnCox .cvprev{
+	float: left;
+	font-size: 16px;
+	color: #999999;
+	margin-top: 10px;
+}
+.cv2-btnCox .cv-btn{
+	float: right;
+	width: 200px;
+}
+.cvcBox{
+	height: 55px;
+	line-height: 53px;
+	background: #f8f9fb;
+	position: relative;
+	text-align: center;
+	font-size: 16px;
+	border: 1px solid #e4e6e9;
+}
+.cvcBox-rioc1{
+	display: inline-block;
+	width: 19px;
+	height: 20px;
+	background: url(../../images/icon.png) no-repeat -186px 0px;
+	margin-right: 12px;
+	position: relative;
+	top: 3px;
+	font-size: 14px;
+}
+.cvcBox-rioc2{
+	display: inline-block;
+	width: 16px;
+	height: 20px;
+	background: url(../../images/icon.png) no-repeat -215px 0px;
+	margin-right: 26px;
+	position: relative;
+	top: 3px;
+}
+.cvcBox-rioc3{
+	display: inline-block;
+	width: 20px;
+	height: 11px;
+	background: url(../../images/icon.png) no-repeat -257px 0px;
+	margin-right: 33px;
+	position: relative;
+	top: 0px;
+}
+.cvfont{
+	font-size: 14px;
+}
+.cvcBox-resume{
+	background: #FFFFFF;
+}
+.cvcBox-resume .cvcBox{
+	border: 1px dashed #ace3e2;
+	background: #eeffff;
+	margin-bottom: 0px;
+}
+.cvcBox-rclose{
+	display: inline-block;
+	width: 10px;
+	height: 10px;
+	background: url(../../images/icon.png) no-repeat -238px 0px;
+	position: absolute;
+	right: 20px;
+	top: 22px;
+}
+.cvtextarea{
+	border: 1px solid #e4e6e9;
+	background: #f8f9fb;
+	padding: 11px;
+	height: 80px;
+	resize: none;
+	width: 100%;
+}
+.cvview{
+	font-size: 14px;
+	color: #999999;
+}
+.cvview a{
+	float: left;
+	color: #999999;
+}
+.cvview a i{
+	display: inline-block;
+	width: 19px;
+	height: 20px;
+	background: url(../../images/icon.png) no-repeat -257px -85px;
+	position: relative;
+	top: 4px;
+	margin-right: 5px;
+}
+.cvview p{
+	float: right;
+	padding-top: 4px;
+}
+.cvview p span{
+	color: #ff8a00;
+}
+
+.cv3table tr td{
+	padding-bottom: 10px;
+}
+.cv3-foot{
+	font-size: 12px;
+	color: #999999;
+	text-align: center;
+	height: 40px;
+	line-height: 40px;
+	background: #f8f9fb;
+	position: absolute;
+	bottom: 0px;
+	left: 0px;
+	width: 100%;
+}
+.cv3-btnCox{
+	margin-bottom: 50px;
+}
