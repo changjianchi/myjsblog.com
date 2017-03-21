@@ -276,6 +276,10 @@
 }
 .left .list dt ul.list_ul li a{
     color: #999;
+    font-weight: normal;
+    height: 32px;
+    line-height: 32px;
+    text-indent: 36px;
 }
 .news_box dl dd a:hover,
 .left .list dt ul.list_ul li a:hover{
@@ -365,7 +369,6 @@
     font-size: 15px;
 }
 .beizhu{
-    display: inline-block;
     font-size: 14px;
     color: #666;
     font-weight: normal;
@@ -459,10 +462,11 @@
     background: #ee9601;
 }
 .library_dl_title{
-    height: 40px;
-    line-height: 40px;
+    height: auto;
     font-size: 20px;
     margin-top: 20px;
+    padding-bottom: 30px;
+    border-bottom: 1px dashed #d1d1d1;
 }
 .library_info dl{
     padding: 15px;
@@ -484,7 +488,9 @@
 .scxx_edit{
     width: 1000px;
 }
-
+.zhaishi_info dl dd{
+    margin: 0;
+}
 
 
 

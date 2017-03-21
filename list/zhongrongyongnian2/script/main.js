@@ -100,8 +100,15 @@ $(function () {
         });
 
         function marginTop() {
+            var $windowHeight = $(window).height();
             var $height = $login_wrap.find('.login_info').height();
-            $login_wrap.find('.login_info').css('marginTop', '-' + $height/2 + 'px');
+            if ($height > $windowHeight) {
+                $height = $windowHeight;
+            }
+            $login_wrap.find('.login_info').css({
+                'height': $height + 'px',
+                'marginTop': '-' + $height/2 + 'px'
+            });
         }
 
         $close.on('click', function () {
@@ -122,18 +129,18 @@ $(function () {
             flag = false;
         }
 
-        $('.left .list').on('click', 'dt', function () {
-            var $ul = $(this).find('ul.list_ul');
+        $('.left .list').on('click', '.list_title', function () {
+            var $ul = $(this).closest('dt').find('ul.list_ul');
             if ($ul.length) {
                 show();
                 // 可以在这里判断登录是否成功，如果成功继续往下执行
                 flag = true;
                 marginTop();
-                if ($(this).hasClass('setdown')) {
-                    $(this).removeClass('setdown');
+                if ($(this).closest('dt').hasClass('setdown')) {
+                    $(this).closest('dt').removeClass('setdown');
                 }
                 else {
-                    $(this).addClass('setdown');
+                    $(this).closest('dt').addClass('setdown');
                 }
                 return false;
             }
@@ -207,5 +214,13 @@ $(function () {
         };
         
         setSelect();
+    })(jQuery);
+
+    (function($) {
+        var $headHeight = $('.yl_head').height();
+        var height = $(window).height();
+        console.log(height, 's');
+        $('.yl_content').css('height', height - $headHeight + 'px');
+        $('.iframe').css('height', height - $headHeight + 'px');
     })(jQuery);
 });

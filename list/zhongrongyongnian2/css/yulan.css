@@ -1,0 +1,26 @@
+html,
+body{
+    background: #808080;
+    overflow: hidden;
+}
+.yl_head{
+    width: auto;
+    height: 50px;
+    line-height: 50px;
+    background: #fff;
+}
+.yl_head h1{
+    font-size: 22px;
+    margin: 0 0 0 15px;
+}
+.yl_content iframe{
+    padding: 10px;
+}
+.yl_article{
+    width: 50%;
+    position: relative;
+    left: 0;
+    right: 0;
+    margin: auto;
+    background: #fff;
+}

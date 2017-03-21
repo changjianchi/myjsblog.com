@@ -267,6 +267,7 @@ dl{
     right: 0;
     z-index: 1;
     overflow: hidden;
+    overflow-y: auto;
     margin: auto;
     background: #182738;
     color: #fff;
@@ -321,6 +322,7 @@ dl{
     width: 100%;
     height: 36px;
     padding: 6px 12px;
+    font-size: 12px;
     line-height: 1.42857143;
     color: #bbb;
     vertical-align: middle;
@@ -402,9 +404,6 @@ dl{
 .login_active{
     display: block;
 }
-.library_wrap{
-    display: block;
-}
 .library_wrap .login_info{
     width: 450px;
 }
@@ -431,7 +430,7 @@ dl{
     right: 6px;
     top: 6px;
     display: block;
-    width: 76px;
+    width: 80px;
     line-height: 24px;
     text-align: center;
     font-weight: bold;
