@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>计算时间差</title>
+    <link href="css/default.min.css" rel="stylesheet">
+    <script src="script/jquery.js"></script>
+    <script src="script/highlight.min.js"></script>
+    <script src="script/time.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        .title,
+        .demo {
+            font-family: Arial,Helvetica,sans-serif, "微软雅黑", "宋体";
+        }
+        .title {
+            font-size: 20px;
+            text-indent: 1em;
+            padding: 20px 0;
+        }
+        .demo {
+            width: auto;
+            height: auto;
+            line-height: 40px;
+            font-size: 14px;
+            background: #eee;
+            text-indent: 1em;
+            margin: 0 3em;
+        }
+        pre {
+            padding: 8px;
+        }
+    </style>
+</head>
+<body>
+<pre><code class="javascript">
+    /**
+     * [setTime 计算过去时间到现在的时间差]
+     * @param {[string]} time [日期，会计算出该日期到当前日期的时间差]
+     */
+    function setTime(time) {
+        var nowTime = new Date().getTime(); /* 获取当前时间戳，这里最好改成获取服务器时间 */
+        var date = new Date(time);
+        var second = date.getTime();  /* 得到日期参数的时间戳 */
+        var newTime = (nowTime - second) / 1000;    /* 秒数 */
+        var value;
+        
+        if (newTime < 60) {
+            value = '刚刚';
+        }
+        else {
+            var minute = Math.round(newTime / 60);
+            if (minute < 60) {
+                value = minute + '分钟前';
+            }
+            else if (minute >= 60) {
+                var hours = Math.floor(minute / 60);
+                if (hours < 24) {
+                    value = hours + '小时前';
+                }
+                else if (hours < 240) {
+                    var days = Math.ceil(hours / 24);
+                    value = days + '天前';
+                }
+                else {
+                    var year = date.getFullYear();
+                    var month = date.getMonth() + 1;
+                    month = month < 10 ? '0' + month : month;
+                    var day = date.getDate();
+                    day = day < 10 ? '0' + day : day;
+                    value = year + '-' + month + '-' + day;
+                }
+            }
+        }
+        return value;
+    }
+    var time = setTime('2017/03/15/ 13:15:30');
+    console.log(time);
+
+</code></pre>
+<h3 class="title">使用demo</h3>
+<div class="demo demo1">发布时间：<span></span></div>
+<div class="demo demo2">发布时间：<span></span></div>
+<script>
+    $(function () {
+        var time = setTime('2017/03/23/ 13:15:30');
+        $('.demo1').find('span').html(time);
+
+        var time = setTime('2017/03/22/ 13:15:30');
+        $('.demo2').find('span').html(time);
+    });
+</script>
+</body>
+</html>
