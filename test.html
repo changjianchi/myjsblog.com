@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script src="http://www.febaidu.com/script/jquery.js"></script>
+    <script>
+    $(function () {
+        $(window).on('message', function (event) {
+            console.log('message', event);
+        });
+    });
+    </script>
+</head>
+<body>
+    <h1>我是iframe内容</h1>
+</body>
+</html>
