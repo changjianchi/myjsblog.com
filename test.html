@@ -5,13 +5,11 @@
     <title>Document</title>
     <script src="http://www.febaidu.com/script/jquery.js"></script>
     <script>
-    $(window).on('load', function () {
-        $(this).on('message', function (event) {
+        window.addEventListener('message', function (event) {
             var msg2 = {};
             msg2 = event.data;
-            $(this).frames['iframe2'].postMessage(msg2, 'http://www.febaidu.com/');
+            window.frames['iframe2'].postMessage(msg2, 'http://www.febaidu.com/');
         });
-    });
     </script>
 </head>
 <body>
