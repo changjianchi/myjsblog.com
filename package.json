@@ -16,6 +16,13 @@
     "url": "https://github.com/changjianchi/myjsblog.com/issues"
   },
   "homepage": "https://github.com/changjianchi/myjsblog.com#readme",
+  "dependencies": {
+    "art-template": "^3.1.3",
+    "body-parser": "^1.17.1",
+    "cookie-parser": "^1.4.3",
+    "express": "^4.15.2",
+    "multer": "^1.3.0"
+  },
   "devDependencies": {
     "node-docx": "^1.4.7"
   }
