@@ -31,6 +31,9 @@
             position: relative;
             z-index: 1;
         }
+        video{
+            display : none;
+        }
     </style>
 </head>
 <body>
@@ -39,5 +42,10 @@
     <video playsinline -webkit-playsinline class="videoBlock" style="object-fit: fill; height: 232.875px;" id="videoBlock" src="http://hls6.kascend.com/chushou_live/b13014267cc54a1495d7568a2b455d92.m3u8?sign=1498563022-5709a00c40640b55c3320c22e04d10d2&amp;" x-webkit-airplay="true" playsinline="" webkit-playsinline="true" controls="controls" preload="auto" poster="http://sc-live.kascend.com/jellyfish/0/10328992/1498548430940.jpg">
                 您的手机不支持html5标签
             </video>
+    <script>
+        setInterval(function(){
+            canvas.getContext('2d').drawImage(video,0,0);
+        },16);
+    </script>
 </body>
 </html>
