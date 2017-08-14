@@ -18,5 +18,6 @@ var list = [
     {"title": "Vue demo", "tip": "案例","link": "list/vuedemo/index.html"},
     {"title": "中融永年改版", "tip": "项目","link": "list/zhongrongyongnian2/login.html"},
     {"title": "时间差", "tip": "案例","link": "list/time/index.html"},
-    {"title": "房产专题页", "tip": "项目","link": "list/house/index.html"}
+    {"title": "房产专题页", "tip": "项目","link": "list/house/index.html"},
+    {"title": "轮播效果", "tip": "案例","link": "list/leftloop/index.html"}
 ]
