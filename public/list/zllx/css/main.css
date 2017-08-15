@@ -64,6 +64,7 @@ body {
 }
 .list_info h3 {
     font-size: 30px;
+    font-family: Helvetica;
 }
 .list_info .list_con {
     color: #b3b0b0;
@@ -87,7 +88,7 @@ body {
     z-index: 1;
     text-align: center;
     overflow: hidden;
-    font-family: Arial '微软雅黑';
+    font-family: Helvetica;
 }
 .page span,
 .page span a{
@@ -109,9 +110,6 @@ body {
 }
 .page span.active a{
     color: #fff;
-}
-.footer {
-    background: #182026;
 }
 .zlgs_content {
     width: 100%;
@@ -262,4 +260,106 @@ body {
     cursor: pointer;
     background: #ffe228;
     border-radius: 4px;
+}
+.qqdr_ban {
+    width: auto;
+    height: auto;
+    overflow: hidden;
+}
+.qqdr_ban_title {
+    text-align: center;
+    margin-top: 86px;
+}
+.qqdr_ban_title img {
+    display: inline-block;
+    vertical-align: top;
+}
+.qqdr_ban_info {
+    margin-top: 43px;
+}
+.qqdr_ban_info .swiper-slide {
+    border-radius: 4px;
+    overflow: hidden;
+}
+.qqdr_ul {
+    width: auto;
+    overflow: hidden;
+}
+.qqdr_ul li {
+    width: 200px;
+    height: 140px;
+    float: left;
+    overflow: hidden;
+}
+.qqdr_ul li img {
+    width: 100%;
+}
+.qqdr_ban_foot {
+    overflow: hidden;
+    text-align: right;
+    margin-top: 25px;
+    color: #fff;
+}
+.qqdr_ban_foot .swiper-button-next, .qqdr_ban_foot .swiper-button-prev {
+    position: static;
+    display: inline-block;
+    width: 7px;
+    height: 11px;
+    margin: 5px 10px 0;
+    background-size: auto auto;
+}
+.qqdr_ban_foot .swiper-pagination {
+    position: static;
+    width: auto;
+    display: inline-block;
+    margin-left: 10px;
+    font-size: 13px;
+}
+.drzm {
+    width: auto;
+    height: auto;
+    background-color: #fff;
+    border-radius: 4px;
+    overflow: hidden;
+    padding: 0 170px;
+    margin-top: 52px;
+    margin-bottom: 95px;
+    font-size: 16px;
+    line-height: 26px;
+}
+.drzm .title {
+    text-align: center;
+    margin-top: 30px;
+}
+.drzm .title img {
+    display: inline-block;
+    vertical-align: top;
+}
+.drzm_info {
+    width: auto;
+    text-align: center;
+    margin-top: 50px;
+}
+.drzm_foot {
+    width: auto;
+    overflow: hidden;
+    margin-top: 50px;
+    font-weight: bold;
+    padding: 30px 5px;
+    font-family: Helvetica;
+    border-top: 1px solid #e0dddd;
+}
+.drzm_foot a {
+    color: #717071;
+}
+.drzm_foot a:hover {
+    color: #ffe228;
+}
+.drzm_foot .drzm_foot_left {
+    float: left;
+}
+.drzm_foot .drzm_foot_right {
+    float: right;
+    padding-right: 24px;
+    background: url(../images/xzs.png) no-repeat right 4px;
 }

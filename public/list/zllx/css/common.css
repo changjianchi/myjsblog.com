@@ -7,7 +7,7 @@
 html,
 body {
     font-size: 14px;
-    color: #717071;
+    color: #424244;
     line-height: 1.42857143;
     background: #fff;
     overflow-x: hidden;
@@ -63,8 +63,8 @@ input:-ms-input-placeholder{
     float: left;
     font-weight: bold;
     display: inline-block;
-    margin-left: 65px;
-    font-size: 19px;
+    margin-left: 83px;
+    font-size: 18px;
 }
 .header .nav li a{
     color: #000;
@@ -72,6 +72,8 @@ input:-ms-input-placeholder{
 }
 .header .nav li a p {
     color: #717071;
+    font-size: 17px;
+    font-family: Helvetica;
 }
 .header .nav li.active a,
 .header .nav li.active a p {
@@ -79,7 +81,7 @@ input:-ms-input-placeholder{
 }
 .footer {
     width: 100%;
-    background-color: #000;
+    background-color: #182026;
 }
 .foot {
     position: relative;
@@ -108,4 +110,38 @@ input:-ms-input-placeholder{
 .setWidth {
     width: 1200px;
     margin: 0 auto;
+}
+.ewm {
+    width: auto;
+    height: auto;
+    position: fixed;
+    right: 0;
+    z-index: 99;
+    bottom: 200px;
+    height: 200px;
+}
+.ewm_title {
+    position: absolute;
+    top: 0;
+    left: -44px;
+    width: 44px;
+    text-align: center;
+    color: #fff;
+    height: auto;
+    padding: 10px 0;
+    border-radius: 4px 0 0 4px;
+    background: rgba(0, 0, 0, .6);
+ }
+.ewm_info {
+    display: none;
+    background: #fff;
+    border: 1px solid rgba(0, 0, 0, .6);
+    padding: 10px;
+}
+.ewm_info img {
+    width: 100px;
+    height: auto;
+}
+.ewm_info img:not(:last-child) {
+    margin-bottom: 10px;
 }

@@ -41,4 +41,10 @@ $(function () {
             }
         }
     });
+
+    $('.ewm').hover(function () {
+        $(this).find('.ewm_info').show();
+    }, function () {
+        $(this).find('.ewm_info').hide();
+    });
 });
