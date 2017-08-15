@@ -10,7 +10,7 @@ $(function () {
 
     $banImg.height(winHei - $header.height());
 
-    $('.img_info').css('marginTop', (winHei - 425 - 160) / 2 + 'px');
+    $('.img_info').css('marginTop', (winHei - 425 - 116) / 2 + 'px');
 
     var $theme = $('.theme ul li');
     $.each($theme, function (key, val) {
