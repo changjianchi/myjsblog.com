@@ -85,7 +85,7 @@
     display: inline-block;
 }
 .travel .box .list .list_box .inp {
-    width: 210px;
+    width: 190px;
     height: 32px;
     line-height: 32px;
     font-size: 15px;
@@ -181,9 +181,15 @@
 }
 .qydz {
     text-align: center;
+    margin-top: 90px;
 }
 .qydz img {
     width: 100%;
+}
+.ban_foot_wrap {
+    width: 100%;
+    overflow: hidden;
+    background: #ebeff3;
 }
 .lists {
     padding: 50px 0;
@@ -207,11 +213,6 @@
 }
 .lists ul li a:hover {
     color: #ffe228;
-}
-.theme_wrap {
-    width: 100%;
-    background: #ebeff3;
-    padding-bottom: 90px;
 }
 .theme .title {
     text-align: center;

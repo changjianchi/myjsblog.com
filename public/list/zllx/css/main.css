@@ -290,8 +290,7 @@ body {
 }
 .qqdr_ul li {
     position: relative;
-    width: 200px;
-    height: 140px;
+    width: 180px;
     float: left;
     overflow: hidden;
 }
@@ -386,4 +385,7 @@ body {
     float: right;
     padding-right: 24px;
     background: url(../images/xzs.png) no-repeat right 3px;
+}
+.qqdr {
+    width: 1080px;
 }
