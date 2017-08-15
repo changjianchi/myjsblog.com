@@ -1,0 +1,265 @@
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+body {
+    background: url(../images/theme_bg.jpg);
+    background-size: cover;
+}
+.top {
+    width: 100%;
+    background: url(../images/theme_navbg.png) repeat-x center bottom;
+}
+.top .header {
+    height: 166px;
+}
+.header .nav li a {
+    color: #fff;
+}
+.theme .list {
+    position: relative;
+    width: 100%;
+    height: 270px;
+    background: #fff;
+    overflow: hidden;
+    border-radius: 4px;
+}
+.theme {
+    padding: 20px 0 30px;
+}
+.theme_lista {
+    display: block;
+    position: relative;
+    margin-top: 30px;
+}
+.theme_lista::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    z-index: 3;
+    background: rgba(0, 0, 0, .1);
+}
+.theme_lista:hover::after {
+    display: none;
+}
+.list_img {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 303px;
+    height: 270px;
+}
+.list_img img {
+    width: 100%;
+}
+.list_info {
+    width: auto;
+    font-size: 16px;
+    color: #181818;
+    padding: 30px 330px 15px 30px;
+}
+.list_info h3 {
+    font-size: 30px;
+}
+.list_info .list_con {
+    color: #b3b0b0;
+    height: 110px;
+    margin-top: 20px;
+}
+.list_info .list_btn {
+    height: 22px;
+    padding-left: 30px;
+    margin-top: 10px;
+    background: url(../images/write.png) no-repeat 0 1px;
+}
+.pagelist{
+    width: auto;
+    height: auto;
+    padding: 60px 0 30px;
+}
+.page{
+    width: auto;
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    overflow: hidden;
+    font-family: Arial '微软雅黑';
+}
+.page span,
+.page span a{
+    color: #777;
+    padding: 4px 10px;
+}
+.page span{
+    display: inline-block;
+    font-size: 18px;
+}
+.page span i{
+    font-style: normal;
+    font-family: 'Comic Sans MS';
+}
+.page span.hover,
+.page span.active{
+    border-radius: 18px;
+    background: rgba(255, 255, 255, .2);
+}
+.page span.active a{
+    color: #fff;
+}
+.footer {
+    background: #182026;
+}
+.zlgs_content {
+    width: 100%;
+    height: auto;
+    background: #fff;
+    overflow: hidden;
+    border-radius: 4px;
+    margin: 100px 0 120px;
+}
+.zlgs_title {
+    text-align: center;
+    margin-top: 50px;
+    border-bottom: 1px solid #dbdbdb;
+}
+.zlgs_title img {
+    display: inline-block;
+    vertical-align: top;
+}
+.zlgs_info {
+    padding: 50px 180px;
+    color: #181818;
+    font-size: 18px;
+}
+.zlgs_info p {
+    line-height: 36px;
+}
+.qydz_info {
+    padding: 50px 300px;
+}
+.qydz_info .list {
+    position: relative;
+    width: 100%;
+    background: #e9edf0;
+    margin-top: 20px;
+    border-radius: 4px;
+}
+.qydz_info .list .inp {
+    width: auto;
+    padding-left: 90px;
+}
+.qydz_info .list .name,
+.qydz_info .list .xx {
+    position: absolute;
+    top: 0;
+    height: 50px;
+    line-height: 50px;
+    font-size: 16px;
+    font-weight: bold;
+}
+.qydz_info .list .name {
+    left: 15px;
+}
+.qydz_info .list .xx {
+    right: -20px;
+    color: #f00;
+    font-style: normal;
+}
+.qydz_info .list .inp input {
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    border: none;
+    outline: none;
+    background: none;
+    font-size: 16px;
+}
+.qydz_info .list .inp input::-webkit-input-placeholder{
+    color: #cbcfd2;
+}
+.qydz_info .list .inp input:-moz-placeholder{
+    color: #cbcfd2;
+}
+.qydz_info .list .inp input::-moz-placeholder{
+    color: #cbcfd2;
+}
+.qydz_info .list .inp input:-ms-input-placeholder{
+    color: #cbcfd2;
+}
+.select_wrap{
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    position: relative;
+}
+.select{
+    width: 100%;
+    height: 100%;
+    font-size: 16px;
+    position: absolute;
+    text-align: left;
+    overflow: hidden;
+}
+.value{
+    margin-left: 5px;
+}
+.option{
+    position: absolute;
+    left: 0;
+    top: 50px;
+    z-index: 0;
+    width: 100%;
+    height: auto;
+    background: #fff;
+}
+.option p{
+    padding: 0 5px;
+    cursor: default;
+    height: 40px;
+    line-height: 40px;
+}
+.option p.hover,
+.option p.active{
+    background: #0f85e0;
+    color: #fff;
+}
+.select_bg{
+    position: absolute;
+    right: 18px;
+    top: 15px;
+    z-index: 2;
+    width: 21px;
+    height: 21px;
+    background: url('../images/qydz_jt.png') no-repeat 0 0;
+}
+.qydz_info .list_textarea .inp {
+    padding-top: 40px;
+    padding-left: 0;
+}
+.qydz_info .list_textarea .inp textarea {
+    width: 100%;
+    border: none;
+    outline: none;
+    padding: 5px 10px;
+    background: none;
+    font-size: 16px;
+}
+.qydz_info .list_btn {
+    background: none;
+    padding: 0 180px;
+    margin-top: 40px;
+}
+.qydz_info .list_btn .inp {
+    padding: 0;
+}
+.qydz_info .list_btn .inp input {
+    color: #fff;
+    font-size: 22px;
+    cursor: pointer;
+    background: #ffe228;
+    border-radius: 4px;
+}
