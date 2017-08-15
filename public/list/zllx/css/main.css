@@ -12,7 +12,6 @@ body {
     background: url(../images/theme_navbg.png) repeat-x center bottom;
 }
 .top .header {
-    height: 166px;
 }
 .theme .list {
     position: relative;
