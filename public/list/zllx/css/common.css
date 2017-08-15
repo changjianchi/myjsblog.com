@@ -37,9 +37,12 @@ input::-moz-placeholder{
 input:-ms-input-placeholder{
     color: #e2e5e7;
 }
+.top {
+    background: #182026;
+}
 .header {
     position: relative;
-    height: 106px;
+    height: 84px;
 }
 .logo {
     position: absolute;
@@ -56,24 +59,26 @@ input:-ms-input-placeholder{
     top: 0;
     bottom: 0;
     margin: auto;
-    height: 54px;
+    height: 38px;
     overflow: hidden;
 }
 .header .nav li {
     float: left;
-    font-weight: bold;
     display: inline-block;
     margin-left: 83px;
-    font-size: 18px;
+    font-size: 14px;
 }
 .header .nav li a{
-    color: #000;
+    color: #fff;
     display: block;
 }
 .header .nav li a p {
     color: #717071;
-    font-size: 17px;
+    font-size: 13px;
     font-family: Helvetica;
+}
+.header .nav li.active {
+    font-weight: bold;
 }
 .header .nav li.active a,
 .header .nav li.active a p {
@@ -100,7 +105,10 @@ input:-ms-input-placeholder{
     position: absolute;
     top: 0;
     bottom: 0;
+    right: 0;
+    text-align: right;
     height: 72px;
+    font-size: 13px;
     margin: auto;
     padding-left: 204px;
 }
@@ -142,6 +150,16 @@ input:-ms-input-placeholder{
     width: 100px;
     height: auto;
 }
-.ewm_info img:not(:last-child) {
-    margin-bottom: 10px;
+.ewm_info img:not(:first-child) {
+    margin-top: 10px;
+}
+.ewm_info p {
+    text-align: center;
+    margin-top: 10px;
+}
+.border {
+    width: 100%;
+    height: 1px;
+    background: #e5e7ea;
+    margin-top: 5px;
 }

@@ -27,7 +27,7 @@
     display: inline-block;
     padding: 0 8px 5px;
     color: #fff;
-    background: rgba(0, 0, 0, .8);
+    background: rgba(24, 32, 38, .8);
 }
 .banner .swiper-slide .img .title {
     font-weight: bold;
@@ -47,7 +47,7 @@
     background: url(../images/banBg.png) repeat-x;
 }
 .travel .title {
-    margin: -21px 0 0 0;
+    margin: 4px 0 0 0;
 }
 .travel form {
     display: inline-block;
@@ -76,28 +76,37 @@
     vertical-align: middle;
 }
 .travel .box .list .list_box .bg img {
+    width: auto;
+    height: 24px;
     vertical-align: middle;
     display: inline-block;
 }
 .travel .box .list .list_box .inp {
-    width: 218px;
-    height: 45px;
-    line-height: 45px;
+    width: 210px;
+    height: 38px;
+    line-height: 38px;
     font-size: 15px;
     border: none;
     outline: none;
-    padding: 0 15px;
+    padding: 0 15px 0 58px;
     border-radius: 3px;
     margin-left: 12px;
     border: 1px solid #fff;
 }
-.travel .box .list .list_box .bg2 {
+.travel .box .list .list_box .bg2,
+.travel .box .list .list_box .bg3 {
     position: absolute;
-    right: 15px;
     top: 0;
-    height: 45px;
-    line-height: 45px;
+    height: 38px;
+    line-height: 38px;
     z-index: 2;
+}
+.travel .box .list .list_box .bg2 {
+    right: 15px;
+    color: #e2e5e7;
+}
+.travel .box .list .list_box .bg3 {
+    left: 44px;
     font-weight: bold;
 }
 .travel .box .list .list_box2 .bg {
@@ -106,7 +115,7 @@
     vertical-align: top;
 }
 .travel .box .list .list_box .textarea {
-    width: 489px;
+    width: 473px;
     height: 92px;
     font-family: '微软雅黑';
 }
@@ -114,11 +123,11 @@
     left: 52px;
     right: auto;
 }
-.travel .box .list .list_box2 .bg2 em {
+.travel .box .list .list_box2 .bg3 em {
     font-style: normal;
     font-weight: normal;
     color: #e2e5e7;
-    margin-right: 8px;
+    margin-left: 8px;
 }
 .travel .box .list .list_box.active .inp {
     border: 2px solid #ffe228;
@@ -129,6 +138,7 @@
     color: #fff;
     font-size: 22px;
     cursor: pointer;
+    padding: 0 15px;
 }
 .ban_foot {
     height: 100px;
@@ -164,7 +174,7 @@
 }
 .ban_foot_right .share {
     position: absolute;
-    right: 50px;
+    right: 0;
     top: 36px;
 }
 .qydz {
