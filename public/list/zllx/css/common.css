@@ -163,3 +163,12 @@ input:-ms-input-placeholder{
     background: #e5e7ea;
     margin-top: 5px;
 }
+.bsBox,
+.bsBox *,
+#bsPanelHolder,
+#bsPanelHolder *,
+#ads,
+#ads * {
+    -webkit-box-sizing: unset;
+    box-sizing: unset;
+}
