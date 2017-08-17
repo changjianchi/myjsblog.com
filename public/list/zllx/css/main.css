@@ -9,10 +9,7 @@ body {
 }
 .top {
     width: 100%;
-    background: url(../images/theme_navbg.png) repeat-x center bottom;
-}
-.top .header {
-    background-color: #182026;
+    background: #182026 url(../images/theme_navbg.png) repeat-x center bottom;
 }
 .theme .list {
     position: relative;
@@ -74,9 +71,10 @@ body {
 }
 .list_info .list_btn {
     height: 22px;
-    padding-left: 30px;
+    padding-left: 26px;
     margin-top: 10px;
-    background: url(../images/write.png) no-repeat 0 1px;
+    background: url(../images/write.png) no-repeat 0 4px;
+    background-size: 16px auto;
 }
 .pagelist{
     width: auto;
@@ -126,7 +124,8 @@ body {
 }
 .zlgs_title {
     text-align: center;
-    margin-top: 50px;
+    margin-top: 60px;
+    padding-bottom: 60px;
     border-bottom: 1px solid #dbdbdb;
 }
 .zlgs_title img {
@@ -217,6 +216,7 @@ body {
     width: 100%;
     height: auto;
     background: #fff;
+    border: 1px solid #e9edf0;
 }
 .option p{
     padding: 0 5px;

@@ -94,6 +94,7 @@
     padding: 0 15px 0 54px;
     border-radius: 3px;
     border: 1px solid #fff;
+    background-color: #fff;
 }
 .travel .box .list .list_box .bg2,
 .travel .box .list .list_box .bg3 {
@@ -221,7 +222,7 @@
 .theme .title h3 {
     font-size: 32px;
     color: #000;
-    margin-top: 60px;
+    margin-top: 70px;
 }
 .theme .title p {
     font-size: 20px;
