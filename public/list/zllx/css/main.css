@@ -71,10 +71,10 @@ body {
 }
 .list_info .list_btn {
     height: 22px;
-    padding-left: 26px;
+    padding-left: 20px;
     margin-top: 10px;
     background: url(../images/write.png) no-repeat 0 4px;
-    background-size: 16px auto;
+    background-size: 12px auto;
 }
 .pagelist{
     width: auto;
