@@ -8,7 +8,11 @@ function push(receiver, to) {
     });
 }
 
-var dev = 'http://115.28.207.231:30000/';
+var dev = 'http://www.febaidu.com:30000/receiver';
+
+fis.match('/node_modules/', {
+    release: false
+});
 
 fis.match('*', {
     deploy: push(dev, '/home/work/wwwroot/myjsblog.com')

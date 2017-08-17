@@ -91,9 +91,8 @@
     font-size: 15px;
     border: none;
     outline: none;
-    padding: 0 15px 0 58px;
+    padding: 0 15px 0 54px;
     border-radius: 3px;
-    margin-left: 12px;
     border: 1px solid #fff;
 }
 .travel .box .list .list_box .bg2,
@@ -109,7 +108,7 @@
     color: #e2e5e7;
 }
 .travel .box .list .list_box .bg3 {
-    left: 44px;
+    left: 10px;
 }
 .travel .box .list .list_box2 .bg {
     position: relative;
@@ -117,7 +116,7 @@
     vertical-align: top;
 }
 .travel .box .list .list_box .textarea {
-    width: 473px;
+    width: 398px;
     height: 92px;
     font-family: '微软雅黑';
 }
@@ -138,9 +137,10 @@
     background: #ffe228;
     border: none;
     color: #fff;
-    font-size: 22px;
+    font-size: 17px;
     cursor: pointer;
     padding: 0 15px;
+    font-weight: bold;
 }
 .ban_foot {
     height: 50px;
@@ -221,7 +221,7 @@
 .theme .title h3 {
     font-size: 32px;
     color: #000;
-    margin-top: 40px;
+    margin-top: 60px;
 }
 .theme .title p {
     font-size: 20px;
@@ -272,6 +272,9 @@
     overflow: hidden;
     line-height: 22px;
     padding: 12px 15px 0;
+}
+.theme .content ul li .con p {
+    line-height: 24px;
 }
 .theme .content ul li .con::after {
     content: "";

@@ -37,9 +37,6 @@ input::-moz-placeholder{
 input:-ms-input-placeholder{
     color: #e2e5e7;
 }
-.top {
-    background: #182026;
-}
 .header {
     position: relative;
     height: 84px;
@@ -69,7 +66,7 @@ input:-ms-input-placeholder{
     font-size: 14px;
 }
 .header .nav li a{
-    color: #fff;
+    color: #424244;
     display: block;
 }
 .header .nav li a p {
@@ -162,13 +159,4 @@ input:-ms-input-placeholder{
     height: 1px;
     background: #e5e7ea;
     margin-top: 5px;
-}
-.bsBox,
-.bsBox *,
-#bsPanelHolder,
-#bsPanelHolder *,
-#ads,
-#ads * {
-    -webkit-box-sizing: unset;
-    box-sizing: unset;
 }

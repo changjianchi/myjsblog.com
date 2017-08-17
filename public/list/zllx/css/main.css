@@ -12,6 +12,7 @@ body {
     background: url(../images/theme_navbg.png) repeat-x center bottom;
 }
 .top .header {
+    background-color: #182026;
 }
 .theme .list {
     position: relative;
@@ -19,7 +20,7 @@ body {
     height: 240px;
     background: #fff;
     overflow: hidden;
-    border-radius: 5px;
+    border-radius: 4px;
 }
 .theme {
     padding: 20px 0 30px;
@@ -50,7 +51,7 @@ body {
     width: 270px;
     height: 240px;
     overflow: hidden;
-    border-radius: 0 5px 5px 0;
+    border-radius: 0 4px 4px 0;
 }
 .list_img img {
     width: 100%;
@@ -120,7 +121,7 @@ body {
     height: auto;
     background: #fff;
     overflow: hidden;
-    border-radius: 5px;
+    border-radius: 4px;
     margin: 50px auto 120px;
 }
 .zlgs_title {
@@ -147,7 +148,7 @@ body {
     width: 100%;
     background: #e9edf0;
     margin-top: 20px;
-    border-radius: 5px;
+    border-radius: 4px;
 }
 .qydz_info .list .inp {
     width: auto;
@@ -262,7 +263,7 @@ body {
     font-size: 22px;
     cursor: pointer;
     background: #ffe228;
-    border-radius: 5px;
+    border-radius: 4px;
 }
 .qqdr_ban {
     width: auto;
@@ -281,7 +282,7 @@ body {
     margin-top: 43px;
 }
 .qqdr_ban_info .swiper-slide {
-    border-radius: 5px;
+    border-radius: 4px;
     overflow: hidden;
 }
 .qqdr_ul {
@@ -342,7 +343,7 @@ body {
     width: auto;
     height: auto;
     background-color: #fff;
-    border-radius: 5px;
+    border-radius: 4px;
     overflow: hidden;
     padding: 0 170px;
     margin-top: 52px;
